@@ -1,0 +1,67 @@
+grammar es.skyrim.alchemy.AlchemyLab with org.eclipse.xtext.common.Terminals
+
+import "http://www.eclipse.org/emf/2002/Ecore" as ecore
+
+generate alchemyLab "http://www.skyrim.es/alchemy/AlchemyLab"
+
+AlchemyLabModel:
+	effects += Effect*
+	ingredients += Ingredient*
+	recipes += Recipe*;
+	
+
+Ingredient:
+	'ingredient' name=ID '{'
+		effects+=EffectRef* 
+		
+		'price:' price = NUMBER
+		'weight:' weight = NUMBER 
+		'source:' source = STRING
+	'}'
+;
+
+
+Effect:
+	'effect' name=ID '(' type=EffectType ')' (':' description=STRING)?
+;
+
+
+
+
+enum EffectType:
+	FORTIFY='+' | WEAKEN='-';
+
+
+EffectRef returns Effect : '->' effect=[Effect];
+
+
+Recipe:
+	toxicity=Toxicity name=ID '{'
+		effects+=EffectRef+
+	
+		'price:' price = NUMBER
+
+	'}' '=' ingredients+=[Ingredient] ('+' ingredients+=[Ingredient])*
+;
+
+
+enum Toxicity:
+	POTION='potion' | POISON='poison';
+
+
+terminal ID : 
+		'"'	'^'?('a'..'z'|'A'..'Z'|' '|'ä'|'Ä'|'ö'|'Ö'|'Ü'|'ü')+ '"'
+; 
+
+
+terminal STRING : 
+			"'" ( '\\' ('b'|'t'|'n'|'f'|'r'|'u'|'"'|"'"|'\\') | !('\\'|"'") )* "'"
+;
+
+terminal NUMBER returns ecore::EFloat:
+	('0'..'9')+ ('.' ('0'..'9')+)?;
+	
+terminal INT returns ecore::EInt:
+	'this one has been deactivated';
+
+
