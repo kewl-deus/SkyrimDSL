@@ -70,8 +70,12 @@ public class AlchemyLabFactoryImpl extends EFactoryImpl implements AlchemyLabFac
     switch (eClass.getClassifierID())
     {
       case AlchemyLabPackage.ALCHEMY_LAB_MODEL: return createAlchemyLabModel();
-      case AlchemyLabPackage.INGREDIENT: return createIngredient();
       case AlchemyLabPackage.EFFECT: return createEffect();
+      case AlchemyLabPackage.EFFECT_DEF: return createEffectDef();
+      case AlchemyLabPackage.EFFECT_ALIAS: return createEffectAlias();
+      case AlchemyLabPackage.INGREDIENT: return createIngredient();
+      case AlchemyLabPackage.INGREDIENT_DEF: return createIngredientDef();
+      case AlchemyLabPackage.INGREDIENT_ALIAS: return createIngredientAlias();
       case AlchemyLabPackage.RECIPE: return createRecipe();
       default:
         throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
@@ -132,6 +136,39 @@ public class AlchemyLabFactoryImpl extends EFactoryImpl implements AlchemyLabFac
    * <!-- end-user-doc -->
    * @generated
    */
+  public Effect createEffect()
+  {
+    EffectImpl effect = new EffectImpl();
+    return effect;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EffectDef createEffectDef()
+  {
+    EffectDefImpl effectDef = new EffectDefImpl();
+    return effectDef;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EffectAlias createEffectAlias()
+  {
+    EffectAliasImpl effectAlias = new EffectAliasImpl();
+    return effectAlias;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public Ingredient createIngredient()
   {
     IngredientImpl ingredient = new IngredientImpl();
@@ -143,10 +180,21 @@ public class AlchemyLabFactoryImpl extends EFactoryImpl implements AlchemyLabFac
    * <!-- end-user-doc -->
    * @generated
    */
-  public Effect createEffect()
+  public IngredientDef createIngredientDef()
   {
-    EffectImpl effect = new EffectImpl();
-    return effect;
+    IngredientDefImpl ingredientDef = new IngredientDefImpl();
+    return ingredientDef;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public IngredientAlias createIngredientAlias()
+  {
+    IngredientAliasImpl ingredientAlias = new IngredientAliasImpl();
+    return ingredientAlias;
   }
 
   /**

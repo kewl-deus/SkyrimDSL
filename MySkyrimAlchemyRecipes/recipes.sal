@@ -3,4 +3,4 @@ potion "Trank" {
 	-> "Wiederherstellung verstärken"
 	price: 500
 	
-} = "Abeceanischer Mirakelbarsch"
+} = "Abeceanischer Mirakelbarsch" + "Berits Asche"

@@ -7,47 +7,55 @@
 package es.skyrim.alchemy.alchemyLab.impl;
 
 import es.skyrim.alchemy.alchemyLab.AlchemyLabPackage;
-import es.skyrim.alchemy.alchemyLab.Effect;
+import es.skyrim.alchemy.alchemyLab.IngredientAlias;
 
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Effect</b></em>'.
+ * An implementation of the model object '<em><b>Ingredient Alias</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link es.skyrim.alchemy.alchemyLab.impl.EffectImpl#getEffect <em>Effect</em>}</li>
+ *   <li>{@link es.skyrim.alchemy.alchemyLab.impl.IngredientAliasImpl#getAlias <em>Alias</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
-public class EffectImpl extends MinimalEObjectImpl.Container implements Effect
+public class IngredientAliasImpl extends IngredientImpl implements IngredientAlias
 {
   /**
-   * The cached value of the '{@link #getEffect() <em>Effect</em>}' reference.
+   * The default value of the '{@link #getAlias() <em>Alias</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getEffect()
+   * @see #getAlias()
    * @generated
    * @ordered
    */
-  protected Effect effect;
+  protected static final String ALIAS_EDEFAULT = null;
+
+  /**
+   * The cached value of the '{@link #getAlias() <em>Alias</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getAlias()
+   * @generated
+   * @ordered
+   */
+  protected String alias = ALIAS_EDEFAULT;
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  protected EffectImpl()
+  protected IngredientAliasImpl()
   {
     super();
   }
@@ -60,7 +68,7 @@ public class EffectImpl extends MinimalEObjectImpl.Container implements Effect
   @Override
   protected EClass eStaticClass()
   {
-    return AlchemyLabPackage.Literals.EFFECT;
+    return AlchemyLabPackage.Literals.INGREDIENT_ALIAS;
   }
 
   /**
@@ -68,19 +76,9 @@ public class EffectImpl extends MinimalEObjectImpl.Container implements Effect
    * <!-- end-user-doc -->
    * @generated
    */
-  public Effect getEffect()
+  public String getAlias()
   {
-    if (effect != null && effect.eIsProxy())
-    {
-      InternalEObject oldEffect = (InternalEObject)effect;
-      effect = (Effect)eResolveProxy(oldEffect);
-      if (effect != oldEffect)
-      {
-        if (eNotificationRequired())
-          eNotify(new ENotificationImpl(this, Notification.RESOLVE, AlchemyLabPackage.EFFECT__EFFECT, oldEffect, effect));
-      }
-    }
-    return effect;
+    return alias;
   }
 
   /**
@@ -88,22 +86,12 @@ public class EffectImpl extends MinimalEObjectImpl.Container implements Effect
    * <!-- end-user-doc -->
    * @generated
    */
-  public Effect basicGetEffect()
+  public void setAlias(String newAlias)
   {
-    return effect;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public void setEffect(Effect newEffect)
-  {
-    Effect oldEffect = effect;
-    effect = newEffect;
+    String oldAlias = alias;
+    alias = newAlias;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, AlchemyLabPackage.EFFECT__EFFECT, oldEffect, effect));
+      eNotify(new ENotificationImpl(this, Notification.SET, AlchemyLabPackage.INGREDIENT_ALIAS__ALIAS, oldAlias, alias));
   }
 
   /**
@@ -116,9 +104,8 @@ public class EffectImpl extends MinimalEObjectImpl.Container implements Effect
   {
     switch (featureID)
     {
-      case AlchemyLabPackage.EFFECT__EFFECT:
-        if (resolve) return getEffect();
-        return basicGetEffect();
+      case AlchemyLabPackage.INGREDIENT_ALIAS__ALIAS:
+        return getAlias();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -133,8 +120,8 @@ public class EffectImpl extends MinimalEObjectImpl.Container implements Effect
   {
     switch (featureID)
     {
-      case AlchemyLabPackage.EFFECT__EFFECT:
-        setEffect((Effect)newValue);
+      case AlchemyLabPackage.INGREDIENT_ALIAS__ALIAS:
+        setAlias((String)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -150,8 +137,8 @@ public class EffectImpl extends MinimalEObjectImpl.Container implements Effect
   {
     switch (featureID)
     {
-      case AlchemyLabPackage.EFFECT__EFFECT:
-        setEffect((Effect)null);
+      case AlchemyLabPackage.INGREDIENT_ALIAS__ALIAS:
+        setAlias(ALIAS_EDEFAULT);
         return;
     }
     super.eUnset(featureID);
@@ -167,10 +154,27 @@ public class EffectImpl extends MinimalEObjectImpl.Container implements Effect
   {
     switch (featureID)
     {
-      case AlchemyLabPackage.EFFECT__EFFECT:
-        return effect != null;
+      case AlchemyLabPackage.INGREDIENT_ALIAS__ALIAS:
+        return ALIAS_EDEFAULT == null ? alias != null : !ALIAS_EDEFAULT.equals(alias);
     }
     return super.eIsSet(featureID);
   }
 
-} //EffectImpl
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public String toString()
+  {
+    if (eIsProxy()) return super.toString();
+
+    StringBuffer result = new StringBuffer(super.toString());
+    result.append(" (alias: ");
+    result.append(alias);
+    result.append(')');
+    return result.toString();
+  }
+
+} //IngredientAliasImpl

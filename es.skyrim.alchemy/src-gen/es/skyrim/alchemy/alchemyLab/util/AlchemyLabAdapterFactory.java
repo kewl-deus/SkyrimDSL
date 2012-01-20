@@ -84,14 +84,34 @@ public class AlchemyLabAdapterFactory extends AdapterFactoryImpl
         return createAlchemyLabModelAdapter();
       }
       @Override
+      public Adapter caseEffect(Effect object)
+      {
+        return createEffectAdapter();
+      }
+      @Override
+      public Adapter caseEffectDef(EffectDef object)
+      {
+        return createEffectDefAdapter();
+      }
+      @Override
+      public Adapter caseEffectAlias(EffectAlias object)
+      {
+        return createEffectAliasAdapter();
+      }
+      @Override
       public Adapter caseIngredient(Ingredient object)
       {
         return createIngredientAdapter();
       }
       @Override
-      public Adapter caseEffect(Effect object)
+      public Adapter caseIngredientDef(IngredientDef object)
       {
-        return createEffectAdapter();
+        return createIngredientDefAdapter();
+      }
+      @Override
+      public Adapter caseIngredientAlias(IngredientAlias object)
+      {
+        return createIngredientAliasAdapter();
       }
       @Override
       public Adapter caseRecipe(Recipe object)
@@ -136,6 +156,51 @@ public class AlchemyLabAdapterFactory extends AdapterFactoryImpl
   }
 
   /**
+   * Creates a new adapter for an object of class '{@link es.skyrim.alchemy.alchemyLab.Effect <em>Effect</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see es.skyrim.alchemy.alchemyLab.Effect
+   * @generated
+   */
+  public Adapter createEffectAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link es.skyrim.alchemy.alchemyLab.EffectDef <em>Effect Def</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see es.skyrim.alchemy.alchemyLab.EffectDef
+   * @generated
+   */
+  public Adapter createEffectDefAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link es.skyrim.alchemy.alchemyLab.EffectAlias <em>Effect Alias</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see es.skyrim.alchemy.alchemyLab.EffectAlias
+   * @generated
+   */
+  public Adapter createEffectAliasAdapter()
+  {
+    return null;
+  }
+
+  /**
    * Creates a new adapter for an object of class '{@link es.skyrim.alchemy.alchemyLab.Ingredient <em>Ingredient</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
@@ -151,16 +216,31 @@ public class AlchemyLabAdapterFactory extends AdapterFactoryImpl
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link es.skyrim.alchemy.alchemyLab.Effect <em>Effect</em>}'.
+   * Creates a new adapter for an object of class '{@link es.skyrim.alchemy.alchemyLab.IngredientDef <em>Ingredient Def</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see es.skyrim.alchemy.alchemyLab.Effect
+   * @see es.skyrim.alchemy.alchemyLab.IngredientDef
    * @generated
    */
-  public Adapter createEffectAdapter()
+  public Adapter createIngredientDefAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link es.skyrim.alchemy.alchemyLab.IngredientAlias <em>Ingredient Alias</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see es.skyrim.alchemy.alchemyLab.IngredientAlias
+   * @generated
+   */
+  public Adapter createIngredientAliasAdapter()
   {
     return null;
   }

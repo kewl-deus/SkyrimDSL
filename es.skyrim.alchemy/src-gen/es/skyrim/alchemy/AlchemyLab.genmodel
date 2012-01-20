@@ -16,31 +16,43 @@
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="AlchemyLab.ecore#//Toxicity">
       <genEnumLiterals ecoreEnumLiteral="AlchemyLab.ecore#//Toxicity/POTION"/>
       <genEnumLiterals ecoreEnumLiteral="AlchemyLab.ecore#//Toxicity/POISON"/>
+      <genEnumLiterals ecoreEnumLiteral="AlchemyLab.ecore#//Toxicity/MIXTURE"/>
     </genEnums>
     <genClasses ecoreClass="AlchemyLab.ecore#//AlchemyLabModel">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AlchemyLab.ecore#//AlchemyLabModel/effects"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AlchemyLab.ecore#//AlchemyLabModel/ingredients"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AlchemyLab.ecore#//AlchemyLabModel/recipes"/>
     </genClasses>
-    <genClasses ecoreClass="AlchemyLab.ecore#//Ingredient">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlchemyLab.ecore#//Ingredient/name"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AlchemyLab.ecore#//Ingredient/effects"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlchemyLab.ecore#//Ingredient/price"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlchemyLab.ecore#//Ingredient/weight"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlchemyLab.ecore#//Ingredient/source"/>
-    </genClasses>
     <genClasses ecoreClass="AlchemyLab.ecore#//Effect">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlchemyLab.ecore#//Effect/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlchemyLab.ecore#//Effect/type"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlchemyLab.ecore#//Effect/description"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference AlchemyLab.ecore#//Effect/effect"/>
+    </genClasses>
+    <genClasses ecoreClass="AlchemyLab.ecore#//EffectDef">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlchemyLab.ecore#//EffectDef/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlchemyLab.ecore#//EffectDef/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlchemyLab.ecore#//EffectDef/description"/>
+    </genClasses>
+    <genClasses ecoreClass="AlchemyLab.ecore#//EffectAlias">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlchemyLab.ecore#//EffectAlias/alias"/>
+    </genClasses>
+    <genClasses ecoreClass="AlchemyLab.ecore#//Ingredient">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference AlchemyLab.ecore#//Ingredient/ingredient"/>
+    </genClasses>
+    <genClasses ecoreClass="AlchemyLab.ecore#//IngredientDef">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlchemyLab.ecore#//IngredientDef/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AlchemyLab.ecore#//IngredientDef/effects"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlchemyLab.ecore#//IngredientDef/price"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlchemyLab.ecore#//IngredientDef/weight"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlchemyLab.ecore#//IngredientDef/source"/>
+    </genClasses>
+    <genClasses ecoreClass="AlchemyLab.ecore#//IngredientAlias">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlchemyLab.ecore#//IngredientAlias/alias"/>
     </genClasses>
     <genClasses ecoreClass="AlchemyLab.ecore#//Recipe">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlchemyLab.ecore#//Recipe/toxicity"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlchemyLab.ecore#//Recipe/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AlchemyLab.ecore#//Recipe/effects"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlchemyLab.ecore#//Recipe/price"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference AlchemyLab.ecore#//Recipe/ingredients"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AlchemyLab.ecore#//Recipe/ingredients"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

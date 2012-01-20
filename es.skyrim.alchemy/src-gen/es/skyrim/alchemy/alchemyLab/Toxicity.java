@@ -41,7 +41,17 @@ public enum Toxicity implements Enumerator
    * @generated
    * @ordered
    */
-  POISON(1, "POISON", "poison");
+  POISON(1, "POISON", "poison"),
+
+  /**
+   * The '<em><b>MIXTURE</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #MIXTURE_VALUE
+   * @generated
+   * @ordered
+   */
+  MIXTURE(2, "MIXTURE", "mixture");
 
   /**
    * The '<em><b>POTION</b></em>' literal value.
@@ -74,6 +84,21 @@ public enum Toxicity implements Enumerator
   public static final int POISON_VALUE = 1;
 
   /**
+   * The '<em><b>MIXTURE</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of '<em><b>MIXTURE</b></em>' literal object isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @see #MIXTURE
+   * @model literal="mixture"
+   * @generated
+   * @ordered
+   */
+  public static final int MIXTURE_VALUE = 2;
+
+  /**
    * An array of all the '<em><b>Toxicity</b></em>' enumerators.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -84,6 +109,7 @@ public enum Toxicity implements Enumerator
     {
       POTION,
       POISON,
+      MIXTURE,
     };
 
   /**
@@ -144,6 +170,7 @@ public enum Toxicity implements Enumerator
     {
       case POTION_VALUE: return POTION;
       case POISON_VALUE: return POISON;
+      case MIXTURE_VALUE: return MIXTURE;
     }
     return null;
   }

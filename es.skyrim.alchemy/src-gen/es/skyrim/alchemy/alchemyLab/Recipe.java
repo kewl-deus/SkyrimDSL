@@ -130,17 +130,17 @@ public interface Recipe extends EObject
   void setPrice(float value);
 
   /**
-   * Returns the value of the '<em><b>Ingredients</b></em>' reference list.
+   * Returns the value of the '<em><b>Ingredients</b></em>' containment reference list.
    * The list contents are of type {@link es.skyrim.alchemy.alchemyLab.Ingredient}.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Ingredients</em>' reference list isn't clear,
+   * If the meaning of the '<em>Ingredients</em>' containment reference list isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Ingredients</em>' reference list.
+   * @return the value of the '<em>Ingredients</em>' containment reference list.
    * @see es.skyrim.alchemy.alchemyLab.AlchemyLabPackage#getRecipe_Ingredients()
-   * @model
+   * @model containment="true"
    * @generated
    */
   EList<Ingredient> getIngredients();

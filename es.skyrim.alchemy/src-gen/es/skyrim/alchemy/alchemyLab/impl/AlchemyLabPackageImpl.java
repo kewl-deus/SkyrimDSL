@@ -10,8 +10,12 @@ import es.skyrim.alchemy.alchemyLab.AlchemyLabFactory;
 import es.skyrim.alchemy.alchemyLab.AlchemyLabModel;
 import es.skyrim.alchemy.alchemyLab.AlchemyLabPackage;
 import es.skyrim.alchemy.alchemyLab.Effect;
+import es.skyrim.alchemy.alchemyLab.EffectAlias;
+import es.skyrim.alchemy.alchemyLab.EffectDef;
 import es.skyrim.alchemy.alchemyLab.EffectType;
 import es.skyrim.alchemy.alchemyLab.Ingredient;
+import es.skyrim.alchemy.alchemyLab.IngredientAlias;
+import es.skyrim.alchemy.alchemyLab.IngredientDef;
 import es.skyrim.alchemy.alchemyLab.Recipe;
 import es.skyrim.alchemy.alchemyLab.Toxicity;
 
@@ -43,6 +47,27 @@ public class AlchemyLabPackageImpl extends EPackageImpl implements AlchemyLabPac
    * <!-- end-user-doc -->
    * @generated
    */
+  private EClass effectEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass effectDefEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass effectAliasEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   private EClass ingredientEClass = null;
 
   /**
@@ -50,7 +75,14 @@ public class AlchemyLabPackageImpl extends EPackageImpl implements AlchemyLabPac
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass effectEClass = null;
+  private EClass ingredientDefEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass ingredientAliasEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -181,66 +213,6 @@ public class AlchemyLabPackageImpl extends EPackageImpl implements AlchemyLabPac
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getIngredient()
-  {
-    return ingredientEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getIngredient_Name()
-  {
-    return (EAttribute)ingredientEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EReference getIngredient_Effects()
-  {
-    return (EReference)ingredientEClass.getEStructuralFeatures().get(1);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getIngredient_Price()
-  {
-    return (EAttribute)ingredientEClass.getEStructuralFeatures().get(2);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getIngredient_Weight()
-  {
-    return (EAttribute)ingredientEClass.getEStructuralFeatures().get(3);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getIngredient_Source()
-  {
-    return (EAttribute)ingredientEClass.getEStructuralFeatures().get(4);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public EClass getEffect()
   {
     return effectEClass;
@@ -251,39 +223,169 @@ public class AlchemyLabPackageImpl extends EPackageImpl implements AlchemyLabPac
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getEffect_Name()
-  {
-    return (EAttribute)effectEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getEffect_Type()
-  {
-    return (EAttribute)effectEClass.getEStructuralFeatures().get(1);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getEffect_Description()
-  {
-    return (EAttribute)effectEClass.getEStructuralFeatures().get(2);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public EReference getEffect_Effect()
   {
-    return (EReference)effectEClass.getEStructuralFeatures().get(3);
+    return (EReference)effectEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getEffectDef()
+  {
+    return effectDefEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getEffectDef_Name()
+  {
+    return (EAttribute)effectDefEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getEffectDef_Type()
+  {
+    return (EAttribute)effectDefEClass.getEStructuralFeatures().get(1);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getEffectDef_Description()
+  {
+    return (EAttribute)effectDefEClass.getEStructuralFeatures().get(2);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getEffectAlias()
+  {
+    return effectAliasEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getEffectAlias_Alias()
+  {
+    return (EAttribute)effectAliasEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getIngredient()
+  {
+    return ingredientEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getIngredient_Ingredient()
+  {
+    return (EReference)ingredientEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getIngredientDef()
+  {
+    return ingredientDefEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getIngredientDef_Name()
+  {
+    return (EAttribute)ingredientDefEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getIngredientDef_Effects()
+  {
+    return (EReference)ingredientDefEClass.getEStructuralFeatures().get(1);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getIngredientDef_Price()
+  {
+    return (EAttribute)ingredientDefEClass.getEStructuralFeatures().get(2);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getIngredientDef_Weight()
+  {
+    return (EAttribute)ingredientDefEClass.getEStructuralFeatures().get(3);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getIngredientDef_Source()
+  {
+    return (EAttribute)ingredientDefEClass.getEStructuralFeatures().get(4);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getIngredientAlias()
+  {
+    return ingredientAliasEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getIngredientAlias_Alias()
+  {
+    return (EAttribute)ingredientAliasEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -401,18 +503,29 @@ public class AlchemyLabPackageImpl extends EPackageImpl implements AlchemyLabPac
     createEReference(alchemyLabModelEClass, ALCHEMY_LAB_MODEL__INGREDIENTS);
     createEReference(alchemyLabModelEClass, ALCHEMY_LAB_MODEL__RECIPES);
 
-    ingredientEClass = createEClass(INGREDIENT);
-    createEAttribute(ingredientEClass, INGREDIENT__NAME);
-    createEReference(ingredientEClass, INGREDIENT__EFFECTS);
-    createEAttribute(ingredientEClass, INGREDIENT__PRICE);
-    createEAttribute(ingredientEClass, INGREDIENT__WEIGHT);
-    createEAttribute(ingredientEClass, INGREDIENT__SOURCE);
-
     effectEClass = createEClass(EFFECT);
-    createEAttribute(effectEClass, EFFECT__NAME);
-    createEAttribute(effectEClass, EFFECT__TYPE);
-    createEAttribute(effectEClass, EFFECT__DESCRIPTION);
     createEReference(effectEClass, EFFECT__EFFECT);
+
+    effectDefEClass = createEClass(EFFECT_DEF);
+    createEAttribute(effectDefEClass, EFFECT_DEF__NAME);
+    createEAttribute(effectDefEClass, EFFECT_DEF__TYPE);
+    createEAttribute(effectDefEClass, EFFECT_DEF__DESCRIPTION);
+
+    effectAliasEClass = createEClass(EFFECT_ALIAS);
+    createEAttribute(effectAliasEClass, EFFECT_ALIAS__ALIAS);
+
+    ingredientEClass = createEClass(INGREDIENT);
+    createEReference(ingredientEClass, INGREDIENT__INGREDIENT);
+
+    ingredientDefEClass = createEClass(INGREDIENT_DEF);
+    createEAttribute(ingredientDefEClass, INGREDIENT_DEF__NAME);
+    createEReference(ingredientDefEClass, INGREDIENT_DEF__EFFECTS);
+    createEAttribute(ingredientDefEClass, INGREDIENT_DEF__PRICE);
+    createEAttribute(ingredientDefEClass, INGREDIENT_DEF__WEIGHT);
+    createEAttribute(ingredientDefEClass, INGREDIENT_DEF__SOURCE);
+
+    ingredientAliasEClass = createEClass(INGREDIENT_ALIAS);
+    createEAttribute(ingredientAliasEClass, INGREDIENT_ALIAS__ALIAS);
 
     recipeEClass = createEClass(RECIPE);
     createEAttribute(recipeEClass, RECIPE__TOXICITY);
@@ -455,6 +568,10 @@ public class AlchemyLabPackageImpl extends EPackageImpl implements AlchemyLabPac
     // Set bounds for type parameters
 
     // Add supertypes to classes
+    effectDefEClass.getESuperTypes().add(this.getEffect());
+    effectAliasEClass.getESuperTypes().add(this.getEffect());
+    ingredientDefEClass.getESuperTypes().add(this.getIngredient());
+    ingredientAliasEClass.getESuperTypes().add(this.getIngredient());
 
     // Initialize classes and features; add operations and parameters
     initEClass(alchemyLabModelEClass, AlchemyLabModel.class, "AlchemyLabModel", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -462,25 +579,36 @@ public class AlchemyLabPackageImpl extends EPackageImpl implements AlchemyLabPac
     initEReference(getAlchemyLabModel_Ingredients(), this.getIngredient(), null, "ingredients", null, 0, -1, AlchemyLabModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getAlchemyLabModel_Recipes(), this.getRecipe(), null, "recipes", null, 0, -1, AlchemyLabModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-    initEClass(ingredientEClass, Ingredient.class, "Ingredient", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getIngredient_Name(), ecorePackage.getEString(), "name", null, 0, 1, Ingredient.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getIngredient_Effects(), this.getEffect(), null, "effects", null, 0, -1, Ingredient.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getIngredient_Price(), ecorePackage.getEFloat(), "price", null, 0, 1, Ingredient.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getIngredient_Weight(), ecorePackage.getEFloat(), "weight", null, 0, 1, Ingredient.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getIngredient_Source(), ecorePackage.getEString(), "source", null, 0, 1, Ingredient.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
     initEClass(effectEClass, Effect.class, "Effect", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getEffect_Name(), ecorePackage.getEString(), "name", null, 0, 1, Effect.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getEffect_Type(), this.getEffectType(), "type", null, 0, 1, Effect.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getEffect_Description(), ecorePackage.getEString(), "description", null, 0, 1, Effect.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getEffect_Effect(), this.getEffect(), null, "effect", null, 0, 1, Effect.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(effectDefEClass, EffectDef.class, "EffectDef", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getEffectDef_Name(), ecorePackage.getEString(), "name", null, 0, 1, EffectDef.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getEffectDef_Type(), this.getEffectType(), "type", null, 0, 1, EffectDef.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getEffectDef_Description(), ecorePackage.getEString(), "description", null, 0, 1, EffectDef.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(effectAliasEClass, EffectAlias.class, "EffectAlias", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getEffectAlias_Alias(), ecorePackage.getEString(), "alias", null, 0, 1, EffectAlias.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(ingredientEClass, Ingredient.class, "Ingredient", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEReference(getIngredient_Ingredient(), this.getIngredient(), null, "ingredient", null, 0, 1, Ingredient.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(ingredientDefEClass, IngredientDef.class, "IngredientDef", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getIngredientDef_Name(), ecorePackage.getEString(), "name", null, 0, 1, IngredientDef.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getIngredientDef_Effects(), this.getEffect(), null, "effects", null, 0, -1, IngredientDef.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getIngredientDef_Price(), ecorePackage.getEFloat(), "price", null, 0, 1, IngredientDef.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getIngredientDef_Weight(), ecorePackage.getEFloat(), "weight", null, 0, 1, IngredientDef.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getIngredientDef_Source(), ecorePackage.getEString(), "source", null, 0, 1, IngredientDef.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(ingredientAliasEClass, IngredientAlias.class, "IngredientAlias", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getIngredientAlias_Alias(), ecorePackage.getEString(), "alias", null, 0, 1, IngredientAlias.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(recipeEClass, Recipe.class, "Recipe", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getRecipe_Toxicity(), this.getToxicity(), "toxicity", null, 0, 1, Recipe.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getRecipe_Name(), ecorePackage.getEString(), "name", null, 0, 1, Recipe.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getRecipe_Effects(), this.getEffect(), null, "effects", null, 0, -1, Recipe.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getRecipe_Price(), ecorePackage.getEFloat(), "price", null, 0, 1, Recipe.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getRecipe_Ingredients(), this.getIngredient(), null, "ingredients", null, 0, -1, Recipe.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getRecipe_Ingredients(), this.getIngredient(), null, "ingredients", null, 0, -1, Recipe.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     // Initialize enums and add enum literals
     initEEnum(effectTypeEEnum, EffectType.class, "EffectType");
@@ -490,6 +618,7 @@ public class AlchemyLabPackageImpl extends EPackageImpl implements AlchemyLabPac
     initEEnum(toxicityEEnum, Toxicity.class, "Toxicity");
     addEEnumLiteral(toxicityEEnum, Toxicity.POTION);
     addEEnumLiteral(toxicityEEnum, Toxicity.POISON);
+    addEEnumLiteral(toxicityEEnum, Toxicity.MIXTURE);
 
     // Create resource
     createResource(eNS_URI);

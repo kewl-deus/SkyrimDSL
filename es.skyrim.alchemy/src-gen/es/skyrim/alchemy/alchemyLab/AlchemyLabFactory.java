@@ -36,6 +36,33 @@ public interface AlchemyLabFactory extends EFactory
   AlchemyLabModel createAlchemyLabModel();
 
   /**
+   * Returns a new object of class '<em>Effect</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Effect</em>'.
+   * @generated
+   */
+  Effect createEffect();
+
+  /**
+   * Returns a new object of class '<em>Effect Def</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Effect Def</em>'.
+   * @generated
+   */
+  EffectDef createEffectDef();
+
+  /**
+   * Returns a new object of class '<em>Effect Alias</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Effect Alias</em>'.
+   * @generated
+   */
+  EffectAlias createEffectAlias();
+
+  /**
    * Returns a new object of class '<em>Ingredient</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -45,13 +72,22 @@ public interface AlchemyLabFactory extends EFactory
   Ingredient createIngredient();
 
   /**
-   * Returns a new object of class '<em>Effect</em>'.
+   * Returns a new object of class '<em>Ingredient Def</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Effect</em>'.
+   * @return a new object of class '<em>Ingredient Def</em>'.
    * @generated
    */
-  Effect createEffect();
+  IngredientDef createIngredientDef();
+
+  /**
+   * Returns a new object of class '<em>Ingredient Alias</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Ingredient Alias</em>'.
+   * @generated
+   */
+  IngredientAlias createIngredientAlias();
 
   /**
    * Returns a new object of class '<em>Recipe</em>'.

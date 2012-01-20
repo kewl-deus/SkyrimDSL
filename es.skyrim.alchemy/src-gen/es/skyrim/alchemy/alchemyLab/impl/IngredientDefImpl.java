@@ -8,9 +8,7 @@ package es.skyrim.alchemy.alchemyLab.impl;
 
 import es.skyrim.alchemy.alchemyLab.AlchemyLabPackage;
 import es.skyrim.alchemy.alchemyLab.Effect;
-import es.skyrim.alchemy.alchemyLab.Ingredient;
-import es.skyrim.alchemy.alchemyLab.Recipe;
-import es.skyrim.alchemy.alchemyLab.Toxicity;
+import es.skyrim.alchemy.alchemyLab.IngredientDef;
 
 import java.util.Collection;
 
@@ -23,50 +21,29 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Recipe</b></em>'.
+ * An implementation of the model object '<em><b>Ingredient Def</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link es.skyrim.alchemy.alchemyLab.impl.RecipeImpl#getToxicity <em>Toxicity</em>}</li>
- *   <li>{@link es.skyrim.alchemy.alchemyLab.impl.RecipeImpl#getName <em>Name</em>}</li>
- *   <li>{@link es.skyrim.alchemy.alchemyLab.impl.RecipeImpl#getEffects <em>Effects</em>}</li>
- *   <li>{@link es.skyrim.alchemy.alchemyLab.impl.RecipeImpl#getPrice <em>Price</em>}</li>
- *   <li>{@link es.skyrim.alchemy.alchemyLab.impl.RecipeImpl#getIngredients <em>Ingredients</em>}</li>
+ *   <li>{@link es.skyrim.alchemy.alchemyLab.impl.IngredientDefImpl#getName <em>Name</em>}</li>
+ *   <li>{@link es.skyrim.alchemy.alchemyLab.impl.IngredientDefImpl#getEffects <em>Effects</em>}</li>
+ *   <li>{@link es.skyrim.alchemy.alchemyLab.impl.IngredientDefImpl#getPrice <em>Price</em>}</li>
+ *   <li>{@link es.skyrim.alchemy.alchemyLab.impl.IngredientDefImpl#getWeight <em>Weight</em>}</li>
+ *   <li>{@link es.skyrim.alchemy.alchemyLab.impl.IngredientDefImpl#getSource <em>Source</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
-public class RecipeImpl extends MinimalEObjectImpl.Container implements Recipe
+public class IngredientDefImpl extends IngredientImpl implements IngredientDef
 {
-  /**
-   * The default value of the '{@link #getToxicity() <em>Toxicity</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getToxicity()
-   * @generated
-   * @ordered
-   */
-  protected static final Toxicity TOXICITY_EDEFAULT = Toxicity.POTION;
-
-  /**
-   * The cached value of the '{@link #getToxicity() <em>Toxicity</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getToxicity()
-   * @generated
-   * @ordered
-   */
-  protected Toxicity toxicity = TOXICITY_EDEFAULT;
-
   /**
    * The default value of the '{@link #getName() <em>Name</em>}' attribute.
    * <!-- begin-user-doc -->
@@ -118,21 +95,51 @@ public class RecipeImpl extends MinimalEObjectImpl.Container implements Recipe
   protected float price = PRICE_EDEFAULT;
 
   /**
-   * The cached value of the '{@link #getIngredients() <em>Ingredients</em>}' containment reference list.
+   * The default value of the '{@link #getWeight() <em>Weight</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getIngredients()
+   * @see #getWeight()
    * @generated
    * @ordered
    */
-  protected EList<Ingredient> ingredients;
+  protected static final float WEIGHT_EDEFAULT = 0.0F;
+
+  /**
+   * The cached value of the '{@link #getWeight() <em>Weight</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getWeight()
+   * @generated
+   * @ordered
+   */
+  protected float weight = WEIGHT_EDEFAULT;
+
+  /**
+   * The default value of the '{@link #getSource() <em>Source</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getSource()
+   * @generated
+   * @ordered
+   */
+  protected static final String SOURCE_EDEFAULT = null;
+
+  /**
+   * The cached value of the '{@link #getSource() <em>Source</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getSource()
+   * @generated
+   * @ordered
+   */
+  protected String source = SOURCE_EDEFAULT;
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  protected RecipeImpl()
+  protected IngredientDefImpl()
   {
     super();
   }
@@ -145,30 +152,7 @@ public class RecipeImpl extends MinimalEObjectImpl.Container implements Recipe
   @Override
   protected EClass eStaticClass()
   {
-    return AlchemyLabPackage.Literals.RECIPE;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public Toxicity getToxicity()
-  {
-    return toxicity;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public void setToxicity(Toxicity newToxicity)
-  {
-    Toxicity oldToxicity = toxicity;
-    toxicity = newToxicity == null ? TOXICITY_EDEFAULT : newToxicity;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, AlchemyLabPackage.RECIPE__TOXICITY, oldToxicity, toxicity));
+    return AlchemyLabPackage.Literals.INGREDIENT_DEF;
   }
 
   /**
@@ -191,7 +175,7 @@ public class RecipeImpl extends MinimalEObjectImpl.Container implements Recipe
     String oldName = name;
     name = newName;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, AlchemyLabPackage.RECIPE__NAME, oldName, name));
+      eNotify(new ENotificationImpl(this, Notification.SET, AlchemyLabPackage.INGREDIENT_DEF__NAME, oldName, name));
   }
 
   /**
@@ -203,7 +187,7 @@ public class RecipeImpl extends MinimalEObjectImpl.Container implements Recipe
   {
     if (effects == null)
     {
-      effects = new EObjectContainmentEList<Effect>(Effect.class, this, AlchemyLabPackage.RECIPE__EFFECTS);
+      effects = new EObjectContainmentEList<Effect>(Effect.class, this, AlchemyLabPackage.INGREDIENT_DEF__EFFECTS);
     }
     return effects;
   }
@@ -228,7 +212,7 @@ public class RecipeImpl extends MinimalEObjectImpl.Container implements Recipe
     float oldPrice = price;
     price = newPrice;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, AlchemyLabPackage.RECIPE__PRICE, oldPrice, price));
+      eNotify(new ENotificationImpl(this, Notification.SET, AlchemyLabPackage.INGREDIENT_DEF__PRICE, oldPrice, price));
   }
 
   /**
@@ -236,13 +220,45 @@ public class RecipeImpl extends MinimalEObjectImpl.Container implements Recipe
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<Ingredient> getIngredients()
+  public float getWeight()
   {
-    if (ingredients == null)
-    {
-      ingredients = new EObjectContainmentEList<Ingredient>(Ingredient.class, this, AlchemyLabPackage.RECIPE__INGREDIENTS);
-    }
-    return ingredients;
+    return weight;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setWeight(float newWeight)
+  {
+    float oldWeight = weight;
+    weight = newWeight;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, AlchemyLabPackage.INGREDIENT_DEF__WEIGHT, oldWeight, weight));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public String getSource()
+  {
+    return source;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setSource(String newSource)
+  {
+    String oldSource = source;
+    source = newSource;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, AlchemyLabPackage.INGREDIENT_DEF__SOURCE, oldSource, source));
   }
 
   /**
@@ -255,10 +271,8 @@ public class RecipeImpl extends MinimalEObjectImpl.Container implements Recipe
   {
     switch (featureID)
     {
-      case AlchemyLabPackage.RECIPE__EFFECTS:
+      case AlchemyLabPackage.INGREDIENT_DEF__EFFECTS:
         return ((InternalEList<?>)getEffects()).basicRemove(otherEnd, msgs);
-      case AlchemyLabPackage.RECIPE__INGREDIENTS:
-        return ((InternalEList<?>)getIngredients()).basicRemove(otherEnd, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
@@ -273,16 +287,16 @@ public class RecipeImpl extends MinimalEObjectImpl.Container implements Recipe
   {
     switch (featureID)
     {
-      case AlchemyLabPackage.RECIPE__TOXICITY:
-        return getToxicity();
-      case AlchemyLabPackage.RECIPE__NAME:
+      case AlchemyLabPackage.INGREDIENT_DEF__NAME:
         return getName();
-      case AlchemyLabPackage.RECIPE__EFFECTS:
+      case AlchemyLabPackage.INGREDIENT_DEF__EFFECTS:
         return getEffects();
-      case AlchemyLabPackage.RECIPE__PRICE:
+      case AlchemyLabPackage.INGREDIENT_DEF__PRICE:
         return getPrice();
-      case AlchemyLabPackage.RECIPE__INGREDIENTS:
-        return getIngredients();
+      case AlchemyLabPackage.INGREDIENT_DEF__WEIGHT:
+        return getWeight();
+      case AlchemyLabPackage.INGREDIENT_DEF__SOURCE:
+        return getSource();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -298,22 +312,21 @@ public class RecipeImpl extends MinimalEObjectImpl.Container implements Recipe
   {
     switch (featureID)
     {
-      case AlchemyLabPackage.RECIPE__TOXICITY:
-        setToxicity((Toxicity)newValue);
-        return;
-      case AlchemyLabPackage.RECIPE__NAME:
+      case AlchemyLabPackage.INGREDIENT_DEF__NAME:
         setName((String)newValue);
         return;
-      case AlchemyLabPackage.RECIPE__EFFECTS:
+      case AlchemyLabPackage.INGREDIENT_DEF__EFFECTS:
         getEffects().clear();
         getEffects().addAll((Collection<? extends Effect>)newValue);
         return;
-      case AlchemyLabPackage.RECIPE__PRICE:
+      case AlchemyLabPackage.INGREDIENT_DEF__PRICE:
         setPrice((Float)newValue);
         return;
-      case AlchemyLabPackage.RECIPE__INGREDIENTS:
-        getIngredients().clear();
-        getIngredients().addAll((Collection<? extends Ingredient>)newValue);
+      case AlchemyLabPackage.INGREDIENT_DEF__WEIGHT:
+        setWeight((Float)newValue);
+        return;
+      case AlchemyLabPackage.INGREDIENT_DEF__SOURCE:
+        setSource((String)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -329,20 +342,20 @@ public class RecipeImpl extends MinimalEObjectImpl.Container implements Recipe
   {
     switch (featureID)
     {
-      case AlchemyLabPackage.RECIPE__TOXICITY:
-        setToxicity(TOXICITY_EDEFAULT);
-        return;
-      case AlchemyLabPackage.RECIPE__NAME:
+      case AlchemyLabPackage.INGREDIENT_DEF__NAME:
         setName(NAME_EDEFAULT);
         return;
-      case AlchemyLabPackage.RECIPE__EFFECTS:
+      case AlchemyLabPackage.INGREDIENT_DEF__EFFECTS:
         getEffects().clear();
         return;
-      case AlchemyLabPackage.RECIPE__PRICE:
+      case AlchemyLabPackage.INGREDIENT_DEF__PRICE:
         setPrice(PRICE_EDEFAULT);
         return;
-      case AlchemyLabPackage.RECIPE__INGREDIENTS:
-        getIngredients().clear();
+      case AlchemyLabPackage.INGREDIENT_DEF__WEIGHT:
+        setWeight(WEIGHT_EDEFAULT);
+        return;
+      case AlchemyLabPackage.INGREDIENT_DEF__SOURCE:
+        setSource(SOURCE_EDEFAULT);
         return;
     }
     super.eUnset(featureID);
@@ -358,16 +371,16 @@ public class RecipeImpl extends MinimalEObjectImpl.Container implements Recipe
   {
     switch (featureID)
     {
-      case AlchemyLabPackage.RECIPE__TOXICITY:
-        return toxicity != TOXICITY_EDEFAULT;
-      case AlchemyLabPackage.RECIPE__NAME:
+      case AlchemyLabPackage.INGREDIENT_DEF__NAME:
         return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-      case AlchemyLabPackage.RECIPE__EFFECTS:
+      case AlchemyLabPackage.INGREDIENT_DEF__EFFECTS:
         return effects != null && !effects.isEmpty();
-      case AlchemyLabPackage.RECIPE__PRICE:
+      case AlchemyLabPackage.INGREDIENT_DEF__PRICE:
         return price != PRICE_EDEFAULT;
-      case AlchemyLabPackage.RECIPE__INGREDIENTS:
-        return ingredients != null && !ingredients.isEmpty();
+      case AlchemyLabPackage.INGREDIENT_DEF__WEIGHT:
+        return weight != WEIGHT_EDEFAULT;
+      case AlchemyLabPackage.INGREDIENT_DEF__SOURCE:
+        return SOURCE_EDEFAULT == null ? source != null : !SOURCE_EDEFAULT.equals(source);
     }
     return super.eIsSet(featureID);
   }
@@ -383,14 +396,16 @@ public class RecipeImpl extends MinimalEObjectImpl.Container implements Recipe
     if (eIsProxy()) return super.toString();
 
     StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (toxicity: ");
-    result.append(toxicity);
-    result.append(", name: ");
+    result.append(" (name: ");
     result.append(name);
     result.append(", price: ");
     result.append(price);
+    result.append(", weight: ");
+    result.append(weight);
+    result.append(", source: ");
+    result.append(source);
     result.append(')');
     return result.toString();
   }
 
-} //RecipeImpl
+} //IngredientDefImpl

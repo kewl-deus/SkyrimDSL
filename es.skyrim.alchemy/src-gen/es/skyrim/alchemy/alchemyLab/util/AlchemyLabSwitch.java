@@ -83,6 +83,29 @@ public class AlchemyLabSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
+      case AlchemyLabPackage.EFFECT:
+      {
+        Effect effect = (Effect)theEObject;
+        T result = caseEffect(effect);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case AlchemyLabPackage.EFFECT_DEF:
+      {
+        EffectDef effectDef = (EffectDef)theEObject;
+        T result = caseEffectDef(effectDef);
+        if (result == null) result = caseEffect(effectDef);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case AlchemyLabPackage.EFFECT_ALIAS:
+      {
+        EffectAlias effectAlias = (EffectAlias)theEObject;
+        T result = caseEffectAlias(effectAlias);
+        if (result == null) result = caseEffect(effectAlias);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
       case AlchemyLabPackage.INGREDIENT:
       {
         Ingredient ingredient = (Ingredient)theEObject;
@@ -90,10 +113,19 @@ public class AlchemyLabSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case AlchemyLabPackage.EFFECT:
+      case AlchemyLabPackage.INGREDIENT_DEF:
       {
-        Effect effect = (Effect)theEObject;
-        T result = caseEffect(effect);
+        IngredientDef ingredientDef = (IngredientDef)theEObject;
+        T result = caseIngredientDef(ingredientDef);
+        if (result == null) result = caseIngredient(ingredientDef);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case AlchemyLabPackage.INGREDIENT_ALIAS:
+      {
+        IngredientAlias ingredientAlias = (IngredientAlias)theEObject;
+        T result = caseIngredientAlias(ingredientAlias);
+        if (result == null) result = caseIngredient(ingredientAlias);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -125,6 +157,54 @@ public class AlchemyLabSwitch<T> extends Switch<T>
   }
 
   /**
+   * Returns the result of interpreting the object as an instance of '<em>Effect</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Effect</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseEffect(Effect object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Effect Def</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Effect Def</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseEffectDef(EffectDef object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Effect Alias</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Effect Alias</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseEffectAlias(EffectAlias object)
+  {
+    return null;
+  }
+
+  /**
    * Returns the result of interpreting the object as an instance of '<em>Ingredient</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
@@ -141,17 +221,33 @@ public class AlchemyLabSwitch<T> extends Switch<T>
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Effect</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Ingredient Def</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Effect</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Ingredient Def</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseEffect(Effect object)
+  public T caseIngredientDef(IngredientDef object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Ingredient Alias</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Ingredient Alias</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseIngredientAlias(IngredientAlias object)
   {
     return null;
   }

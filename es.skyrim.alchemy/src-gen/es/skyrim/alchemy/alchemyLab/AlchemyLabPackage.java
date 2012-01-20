@@ -108,70 +108,6 @@ public interface AlchemyLabPackage extends EPackage
   int ALCHEMY_LAB_MODEL_FEATURE_COUNT = 3;
 
   /**
-   * The meta object id for the '{@link es.skyrim.alchemy.alchemyLab.impl.IngredientImpl <em>Ingredient</em>}' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see es.skyrim.alchemy.alchemyLab.impl.IngredientImpl
-   * @see es.skyrim.alchemy.alchemyLab.impl.AlchemyLabPackageImpl#getIngredient()
-   * @generated
-   */
-  int INGREDIENT = 1;
-
-  /**
-   * The feature id for the '<em><b>Name</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int INGREDIENT__NAME = 0;
-
-  /**
-   * The feature id for the '<em><b>Effects</b></em>' containment reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int INGREDIENT__EFFECTS = 1;
-
-  /**
-   * The feature id for the '<em><b>Price</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int INGREDIENT__PRICE = 2;
-
-  /**
-   * The feature id for the '<em><b>Weight</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int INGREDIENT__WEIGHT = 3;
-
-  /**
-   * The feature id for the '<em><b>Source</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int INGREDIENT__SOURCE = 4;
-
-  /**
-   * The number of structural features of the '<em>Ingredient</em>' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int INGREDIENT_FEATURE_COUNT = 5;
-
-  /**
    * The meta object id for the '{@link es.skyrim.alchemy.alchemyLab.impl.EffectImpl <em>Effect</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -179,34 +115,7 @@ public interface AlchemyLabPackage extends EPackage
    * @see es.skyrim.alchemy.alchemyLab.impl.AlchemyLabPackageImpl#getEffect()
    * @generated
    */
-  int EFFECT = 2;
-
-  /**
-   * The feature id for the '<em><b>Name</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int EFFECT__NAME = 0;
-
-  /**
-   * The feature id for the '<em><b>Type</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int EFFECT__TYPE = 1;
-
-  /**
-   * The feature id for the '<em><b>Description</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int EFFECT__DESCRIPTION = 2;
+  int EFFECT = 1;
 
   /**
    * The feature id for the '<em><b>Effect</b></em>' reference.
@@ -215,7 +124,7 @@ public interface AlchemyLabPackage extends EPackage
    * @generated
    * @ordered
    */
-  int EFFECT__EFFECT = 3;
+  int EFFECT__EFFECT = 0;
 
   /**
    * The number of structural features of the '<em>Effect</em>' class.
@@ -224,7 +133,237 @@ public interface AlchemyLabPackage extends EPackage
    * @generated
    * @ordered
    */
-  int EFFECT_FEATURE_COUNT = 4;
+  int EFFECT_FEATURE_COUNT = 1;
+
+  /**
+   * The meta object id for the '{@link es.skyrim.alchemy.alchemyLab.impl.EffectDefImpl <em>Effect Def</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see es.skyrim.alchemy.alchemyLab.impl.EffectDefImpl
+   * @see es.skyrim.alchemy.alchemyLab.impl.AlchemyLabPackageImpl#getEffectDef()
+   * @generated
+   */
+  int EFFECT_DEF = 2;
+
+  /**
+   * The feature id for the '<em><b>Effect</b></em>' reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int EFFECT_DEF__EFFECT = EFFECT__EFFECT;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int EFFECT_DEF__NAME = EFFECT_FEATURE_COUNT + 0;
+
+  /**
+   * The feature id for the '<em><b>Type</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int EFFECT_DEF__TYPE = EFFECT_FEATURE_COUNT + 1;
+
+  /**
+   * The feature id for the '<em><b>Description</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int EFFECT_DEF__DESCRIPTION = EFFECT_FEATURE_COUNT + 2;
+
+  /**
+   * The number of structural features of the '<em>Effect Def</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int EFFECT_DEF_FEATURE_COUNT = EFFECT_FEATURE_COUNT + 3;
+
+  /**
+   * The meta object id for the '{@link es.skyrim.alchemy.alchemyLab.impl.EffectAliasImpl <em>Effect Alias</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see es.skyrim.alchemy.alchemyLab.impl.EffectAliasImpl
+   * @see es.skyrim.alchemy.alchemyLab.impl.AlchemyLabPackageImpl#getEffectAlias()
+   * @generated
+   */
+  int EFFECT_ALIAS = 3;
+
+  /**
+   * The feature id for the '<em><b>Effect</b></em>' reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int EFFECT_ALIAS__EFFECT = EFFECT__EFFECT;
+
+  /**
+   * The feature id for the '<em><b>Alias</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int EFFECT_ALIAS__ALIAS = EFFECT_FEATURE_COUNT + 0;
+
+  /**
+   * The number of structural features of the '<em>Effect Alias</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int EFFECT_ALIAS_FEATURE_COUNT = EFFECT_FEATURE_COUNT + 1;
+
+  /**
+   * The meta object id for the '{@link es.skyrim.alchemy.alchemyLab.impl.IngredientImpl <em>Ingredient</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see es.skyrim.alchemy.alchemyLab.impl.IngredientImpl
+   * @see es.skyrim.alchemy.alchemyLab.impl.AlchemyLabPackageImpl#getIngredient()
+   * @generated
+   */
+  int INGREDIENT = 4;
+
+  /**
+   * The feature id for the '<em><b>Ingredient</b></em>' reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int INGREDIENT__INGREDIENT = 0;
+
+  /**
+   * The number of structural features of the '<em>Ingredient</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int INGREDIENT_FEATURE_COUNT = 1;
+
+  /**
+   * The meta object id for the '{@link es.skyrim.alchemy.alchemyLab.impl.IngredientDefImpl <em>Ingredient Def</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see es.skyrim.alchemy.alchemyLab.impl.IngredientDefImpl
+   * @see es.skyrim.alchemy.alchemyLab.impl.AlchemyLabPackageImpl#getIngredientDef()
+   * @generated
+   */
+  int INGREDIENT_DEF = 5;
+
+  /**
+   * The feature id for the '<em><b>Ingredient</b></em>' reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int INGREDIENT_DEF__INGREDIENT = INGREDIENT__INGREDIENT;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int INGREDIENT_DEF__NAME = INGREDIENT_FEATURE_COUNT + 0;
+
+  /**
+   * The feature id for the '<em><b>Effects</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int INGREDIENT_DEF__EFFECTS = INGREDIENT_FEATURE_COUNT + 1;
+
+  /**
+   * The feature id for the '<em><b>Price</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int INGREDIENT_DEF__PRICE = INGREDIENT_FEATURE_COUNT + 2;
+
+  /**
+   * The feature id for the '<em><b>Weight</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int INGREDIENT_DEF__WEIGHT = INGREDIENT_FEATURE_COUNT + 3;
+
+  /**
+   * The feature id for the '<em><b>Source</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int INGREDIENT_DEF__SOURCE = INGREDIENT_FEATURE_COUNT + 4;
+
+  /**
+   * The number of structural features of the '<em>Ingredient Def</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int INGREDIENT_DEF_FEATURE_COUNT = INGREDIENT_FEATURE_COUNT + 5;
+
+  /**
+   * The meta object id for the '{@link es.skyrim.alchemy.alchemyLab.impl.IngredientAliasImpl <em>Ingredient Alias</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see es.skyrim.alchemy.alchemyLab.impl.IngredientAliasImpl
+   * @see es.skyrim.alchemy.alchemyLab.impl.AlchemyLabPackageImpl#getIngredientAlias()
+   * @generated
+   */
+  int INGREDIENT_ALIAS = 6;
+
+  /**
+   * The feature id for the '<em><b>Ingredient</b></em>' reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int INGREDIENT_ALIAS__INGREDIENT = INGREDIENT__INGREDIENT;
+
+  /**
+   * The feature id for the '<em><b>Alias</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int INGREDIENT_ALIAS__ALIAS = INGREDIENT_FEATURE_COUNT + 0;
+
+  /**
+   * The number of structural features of the '<em>Ingredient Alias</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int INGREDIENT_ALIAS_FEATURE_COUNT = INGREDIENT_FEATURE_COUNT + 1;
 
   /**
    * The meta object id for the '{@link es.skyrim.alchemy.alchemyLab.impl.RecipeImpl <em>Recipe</em>}' class.
@@ -234,7 +373,7 @@ public interface AlchemyLabPackage extends EPackage
    * @see es.skyrim.alchemy.alchemyLab.impl.AlchemyLabPackageImpl#getRecipe()
    * @generated
    */
-  int RECIPE = 3;
+  int RECIPE = 7;
 
   /**
    * The feature id for the '<em><b>Toxicity</b></em>' attribute.
@@ -273,7 +412,7 @@ public interface AlchemyLabPackage extends EPackage
   int RECIPE__PRICE = 3;
 
   /**
-   * The feature id for the '<em><b>Ingredients</b></em>' reference list.
+   * The feature id for the '<em><b>Ingredients</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -298,7 +437,7 @@ public interface AlchemyLabPackage extends EPackage
    * @see es.skyrim.alchemy.alchemyLab.impl.AlchemyLabPackageImpl#getEffectType()
    * @generated
    */
-  int EFFECT_TYPE = 4;
+  int EFFECT_TYPE = 8;
 
   /**
    * The meta object id for the '{@link es.skyrim.alchemy.alchemyLab.Toxicity <em>Toxicity</em>}' enum.
@@ -308,7 +447,7 @@ public interface AlchemyLabPackage extends EPackage
    * @see es.skyrim.alchemy.alchemyLab.impl.AlchemyLabPackageImpl#getToxicity()
    * @generated
    */
-  int TOXICITY = 5;
+  int TOXICITY = 9;
 
 
   /**
@@ -355,71 +494,6 @@ public interface AlchemyLabPackage extends EPackage
   EReference getAlchemyLabModel_Recipes();
 
   /**
-   * Returns the meta object for class '{@link es.skyrim.alchemy.alchemyLab.Ingredient <em>Ingredient</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Ingredient</em>'.
-   * @see es.skyrim.alchemy.alchemyLab.Ingredient
-   * @generated
-   */
-  EClass getIngredient();
-
-  /**
-   * Returns the meta object for the attribute '{@link es.skyrim.alchemy.alchemyLab.Ingredient#getName <em>Name</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Name</em>'.
-   * @see es.skyrim.alchemy.alchemyLab.Ingredient#getName()
-   * @see #getIngredient()
-   * @generated
-   */
-  EAttribute getIngredient_Name();
-
-  /**
-   * Returns the meta object for the containment reference list '{@link es.skyrim.alchemy.alchemyLab.Ingredient#getEffects <em>Effects</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Effects</em>'.
-   * @see es.skyrim.alchemy.alchemyLab.Ingredient#getEffects()
-   * @see #getIngredient()
-   * @generated
-   */
-  EReference getIngredient_Effects();
-
-  /**
-   * Returns the meta object for the attribute '{@link es.skyrim.alchemy.alchemyLab.Ingredient#getPrice <em>Price</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Price</em>'.
-   * @see es.skyrim.alchemy.alchemyLab.Ingredient#getPrice()
-   * @see #getIngredient()
-   * @generated
-   */
-  EAttribute getIngredient_Price();
-
-  /**
-   * Returns the meta object for the attribute '{@link es.skyrim.alchemy.alchemyLab.Ingredient#getWeight <em>Weight</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Weight</em>'.
-   * @see es.skyrim.alchemy.alchemyLab.Ingredient#getWeight()
-   * @see #getIngredient()
-   * @generated
-   */
-  EAttribute getIngredient_Weight();
-
-  /**
-   * Returns the meta object for the attribute '{@link es.skyrim.alchemy.alchemyLab.Ingredient#getSource <em>Source</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Source</em>'.
-   * @see es.skyrim.alchemy.alchemyLab.Ingredient#getSource()
-   * @see #getIngredient()
-   * @generated
-   */
-  EAttribute getIngredient_Source();
-
-  /**
    * Returns the meta object for class '{@link es.skyrim.alchemy.alchemyLab.Effect <em>Effect</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -428,39 +502,6 @@ public interface AlchemyLabPackage extends EPackage
    * @generated
    */
   EClass getEffect();
-
-  /**
-   * Returns the meta object for the attribute '{@link es.skyrim.alchemy.alchemyLab.Effect#getName <em>Name</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Name</em>'.
-   * @see es.skyrim.alchemy.alchemyLab.Effect#getName()
-   * @see #getEffect()
-   * @generated
-   */
-  EAttribute getEffect_Name();
-
-  /**
-   * Returns the meta object for the attribute '{@link es.skyrim.alchemy.alchemyLab.Effect#getType <em>Type</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Type</em>'.
-   * @see es.skyrim.alchemy.alchemyLab.Effect#getType()
-   * @see #getEffect()
-   * @generated
-   */
-  EAttribute getEffect_Type();
-
-  /**
-   * Returns the meta object for the attribute '{@link es.skyrim.alchemy.alchemyLab.Effect#getDescription <em>Description</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Description</em>'.
-   * @see es.skyrim.alchemy.alchemyLab.Effect#getDescription()
-   * @see #getEffect()
-   * @generated
-   */
-  EAttribute getEffect_Description();
 
   /**
    * Returns the meta object for the reference '{@link es.skyrim.alchemy.alchemyLab.Effect#getEffect <em>Effect</em>}'.
@@ -472,6 +513,177 @@ public interface AlchemyLabPackage extends EPackage
    * @generated
    */
   EReference getEffect_Effect();
+
+  /**
+   * Returns the meta object for class '{@link es.skyrim.alchemy.alchemyLab.EffectDef <em>Effect Def</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Effect Def</em>'.
+   * @see es.skyrim.alchemy.alchemyLab.EffectDef
+   * @generated
+   */
+  EClass getEffectDef();
+
+  /**
+   * Returns the meta object for the attribute '{@link es.skyrim.alchemy.alchemyLab.EffectDef#getName <em>Name</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Name</em>'.
+   * @see es.skyrim.alchemy.alchemyLab.EffectDef#getName()
+   * @see #getEffectDef()
+   * @generated
+   */
+  EAttribute getEffectDef_Name();
+
+  /**
+   * Returns the meta object for the attribute '{@link es.skyrim.alchemy.alchemyLab.EffectDef#getType <em>Type</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Type</em>'.
+   * @see es.skyrim.alchemy.alchemyLab.EffectDef#getType()
+   * @see #getEffectDef()
+   * @generated
+   */
+  EAttribute getEffectDef_Type();
+
+  /**
+   * Returns the meta object for the attribute '{@link es.skyrim.alchemy.alchemyLab.EffectDef#getDescription <em>Description</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Description</em>'.
+   * @see es.skyrim.alchemy.alchemyLab.EffectDef#getDescription()
+   * @see #getEffectDef()
+   * @generated
+   */
+  EAttribute getEffectDef_Description();
+
+  /**
+   * Returns the meta object for class '{@link es.skyrim.alchemy.alchemyLab.EffectAlias <em>Effect Alias</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Effect Alias</em>'.
+   * @see es.skyrim.alchemy.alchemyLab.EffectAlias
+   * @generated
+   */
+  EClass getEffectAlias();
+
+  /**
+   * Returns the meta object for the attribute '{@link es.skyrim.alchemy.alchemyLab.EffectAlias#getAlias <em>Alias</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Alias</em>'.
+   * @see es.skyrim.alchemy.alchemyLab.EffectAlias#getAlias()
+   * @see #getEffectAlias()
+   * @generated
+   */
+  EAttribute getEffectAlias_Alias();
+
+  /**
+   * Returns the meta object for class '{@link es.skyrim.alchemy.alchemyLab.Ingredient <em>Ingredient</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Ingredient</em>'.
+   * @see es.skyrim.alchemy.alchemyLab.Ingredient
+   * @generated
+   */
+  EClass getIngredient();
+
+  /**
+   * Returns the meta object for the reference '{@link es.skyrim.alchemy.alchemyLab.Ingredient#getIngredient <em>Ingredient</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the reference '<em>Ingredient</em>'.
+   * @see es.skyrim.alchemy.alchemyLab.Ingredient#getIngredient()
+   * @see #getIngredient()
+   * @generated
+   */
+  EReference getIngredient_Ingredient();
+
+  /**
+   * Returns the meta object for class '{@link es.skyrim.alchemy.alchemyLab.IngredientDef <em>Ingredient Def</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Ingredient Def</em>'.
+   * @see es.skyrim.alchemy.alchemyLab.IngredientDef
+   * @generated
+   */
+  EClass getIngredientDef();
+
+  /**
+   * Returns the meta object for the attribute '{@link es.skyrim.alchemy.alchemyLab.IngredientDef#getName <em>Name</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Name</em>'.
+   * @see es.skyrim.alchemy.alchemyLab.IngredientDef#getName()
+   * @see #getIngredientDef()
+   * @generated
+   */
+  EAttribute getIngredientDef_Name();
+
+  /**
+   * Returns the meta object for the containment reference list '{@link es.skyrim.alchemy.alchemyLab.IngredientDef#getEffects <em>Effects</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference list '<em>Effects</em>'.
+   * @see es.skyrim.alchemy.alchemyLab.IngredientDef#getEffects()
+   * @see #getIngredientDef()
+   * @generated
+   */
+  EReference getIngredientDef_Effects();
+
+  /**
+   * Returns the meta object for the attribute '{@link es.skyrim.alchemy.alchemyLab.IngredientDef#getPrice <em>Price</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Price</em>'.
+   * @see es.skyrim.alchemy.alchemyLab.IngredientDef#getPrice()
+   * @see #getIngredientDef()
+   * @generated
+   */
+  EAttribute getIngredientDef_Price();
+
+  /**
+   * Returns the meta object for the attribute '{@link es.skyrim.alchemy.alchemyLab.IngredientDef#getWeight <em>Weight</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Weight</em>'.
+   * @see es.skyrim.alchemy.alchemyLab.IngredientDef#getWeight()
+   * @see #getIngredientDef()
+   * @generated
+   */
+  EAttribute getIngredientDef_Weight();
+
+  /**
+   * Returns the meta object for the attribute '{@link es.skyrim.alchemy.alchemyLab.IngredientDef#getSource <em>Source</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Source</em>'.
+   * @see es.skyrim.alchemy.alchemyLab.IngredientDef#getSource()
+   * @see #getIngredientDef()
+   * @generated
+   */
+  EAttribute getIngredientDef_Source();
+
+  /**
+   * Returns the meta object for class '{@link es.skyrim.alchemy.alchemyLab.IngredientAlias <em>Ingredient Alias</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Ingredient Alias</em>'.
+   * @see es.skyrim.alchemy.alchemyLab.IngredientAlias
+   * @generated
+   */
+  EClass getIngredientAlias();
+
+  /**
+   * Returns the meta object for the attribute '{@link es.skyrim.alchemy.alchemyLab.IngredientAlias#getAlias <em>Alias</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Alias</em>'.
+   * @see es.skyrim.alchemy.alchemyLab.IngredientAlias#getAlias()
+   * @see #getIngredientAlias()
+   * @generated
+   */
+  EAttribute getIngredientAlias_Alias();
 
   /**
    * Returns the meta object for class '{@link es.skyrim.alchemy.alchemyLab.Recipe <em>Recipe</em>}'.
@@ -528,10 +740,10 @@ public interface AlchemyLabPackage extends EPackage
   EAttribute getRecipe_Price();
 
   /**
-   * Returns the meta object for the reference list '{@link es.skyrim.alchemy.alchemyLab.Recipe#getIngredients <em>Ingredients</em>}'.
+   * Returns the meta object for the containment reference list '{@link es.skyrim.alchemy.alchemyLab.Recipe#getIngredients <em>Ingredients</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the reference list '<em>Ingredients</em>'.
+   * @return the meta object for the containment reference list '<em>Ingredients</em>'.
    * @see es.skyrim.alchemy.alchemyLab.Recipe#getIngredients()
    * @see #getRecipe()
    * @generated
@@ -616,56 +828,6 @@ public interface AlchemyLabPackage extends EPackage
     EReference ALCHEMY_LAB_MODEL__RECIPES = eINSTANCE.getAlchemyLabModel_Recipes();
 
     /**
-     * The meta object literal for the '{@link es.skyrim.alchemy.alchemyLab.impl.IngredientImpl <em>Ingredient</em>}' class.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @see es.skyrim.alchemy.alchemyLab.impl.IngredientImpl
-     * @see es.skyrim.alchemy.alchemyLab.impl.AlchemyLabPackageImpl#getIngredient()
-     * @generated
-     */
-    EClass INGREDIENT = eINSTANCE.getIngredient();
-
-    /**
-     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute INGREDIENT__NAME = eINSTANCE.getIngredient_Name();
-
-    /**
-     * The meta object literal for the '<em><b>Effects</b></em>' containment reference list feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EReference INGREDIENT__EFFECTS = eINSTANCE.getIngredient_Effects();
-
-    /**
-     * The meta object literal for the '<em><b>Price</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute INGREDIENT__PRICE = eINSTANCE.getIngredient_Price();
-
-    /**
-     * The meta object literal for the '<em><b>Weight</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute INGREDIENT__WEIGHT = eINSTANCE.getIngredient_Weight();
-
-    /**
-     * The meta object literal for the '<em><b>Source</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute INGREDIENT__SOURCE = eINSTANCE.getIngredient_Source();
-
-    /**
      * The meta object literal for the '{@link es.skyrim.alchemy.alchemyLab.impl.EffectImpl <em>Effect</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -676,12 +838,30 @@ public interface AlchemyLabPackage extends EPackage
     EClass EFFECT = eINSTANCE.getEffect();
 
     /**
+     * The meta object literal for the '<em><b>Effect</b></em>' reference feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference EFFECT__EFFECT = eINSTANCE.getEffect_Effect();
+
+    /**
+     * The meta object literal for the '{@link es.skyrim.alchemy.alchemyLab.impl.EffectDefImpl <em>Effect Def</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see es.skyrim.alchemy.alchemyLab.impl.EffectDefImpl
+     * @see es.skyrim.alchemy.alchemyLab.impl.AlchemyLabPackageImpl#getEffectDef()
+     * @generated
+     */
+    EClass EFFECT_DEF = eINSTANCE.getEffectDef();
+
+    /**
      * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute EFFECT__NAME = eINSTANCE.getEffect_Name();
+    EAttribute EFFECT_DEF__NAME = eINSTANCE.getEffectDef_Name();
 
     /**
      * The meta object literal for the '<em><b>Type</b></em>' attribute feature.
@@ -689,7 +869,7 @@ public interface AlchemyLabPackage extends EPackage
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute EFFECT__TYPE = eINSTANCE.getEffect_Type();
+    EAttribute EFFECT_DEF__TYPE = eINSTANCE.getEffectDef_Type();
 
     /**
      * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
@@ -697,15 +877,111 @@ public interface AlchemyLabPackage extends EPackage
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute EFFECT__DESCRIPTION = eINSTANCE.getEffect_Description();
+    EAttribute EFFECT_DEF__DESCRIPTION = eINSTANCE.getEffectDef_Description();
 
     /**
-     * The meta object literal for the '<em><b>Effect</b></em>' reference feature.
+     * The meta object literal for the '{@link es.skyrim.alchemy.alchemyLab.impl.EffectAliasImpl <em>Effect Alias</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see es.skyrim.alchemy.alchemyLab.impl.EffectAliasImpl
+     * @see es.skyrim.alchemy.alchemyLab.impl.AlchemyLabPackageImpl#getEffectAlias()
+     * @generated
+     */
+    EClass EFFECT_ALIAS = eINSTANCE.getEffectAlias();
+
+    /**
+     * The meta object literal for the '<em><b>Alias</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference EFFECT__EFFECT = eINSTANCE.getEffect_Effect();
+    EAttribute EFFECT_ALIAS__ALIAS = eINSTANCE.getEffectAlias_Alias();
+
+    /**
+     * The meta object literal for the '{@link es.skyrim.alchemy.alchemyLab.impl.IngredientImpl <em>Ingredient</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see es.skyrim.alchemy.alchemyLab.impl.IngredientImpl
+     * @see es.skyrim.alchemy.alchemyLab.impl.AlchemyLabPackageImpl#getIngredient()
+     * @generated
+     */
+    EClass INGREDIENT = eINSTANCE.getIngredient();
+
+    /**
+     * The meta object literal for the '<em><b>Ingredient</b></em>' reference feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference INGREDIENT__INGREDIENT = eINSTANCE.getIngredient_Ingredient();
+
+    /**
+     * The meta object literal for the '{@link es.skyrim.alchemy.alchemyLab.impl.IngredientDefImpl <em>Ingredient Def</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see es.skyrim.alchemy.alchemyLab.impl.IngredientDefImpl
+     * @see es.skyrim.alchemy.alchemyLab.impl.AlchemyLabPackageImpl#getIngredientDef()
+     * @generated
+     */
+    EClass INGREDIENT_DEF = eINSTANCE.getIngredientDef();
+
+    /**
+     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute INGREDIENT_DEF__NAME = eINSTANCE.getIngredientDef_Name();
+
+    /**
+     * The meta object literal for the '<em><b>Effects</b></em>' containment reference list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference INGREDIENT_DEF__EFFECTS = eINSTANCE.getIngredientDef_Effects();
+
+    /**
+     * The meta object literal for the '<em><b>Price</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute INGREDIENT_DEF__PRICE = eINSTANCE.getIngredientDef_Price();
+
+    /**
+     * The meta object literal for the '<em><b>Weight</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute INGREDIENT_DEF__WEIGHT = eINSTANCE.getIngredientDef_Weight();
+
+    /**
+     * The meta object literal for the '<em><b>Source</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute INGREDIENT_DEF__SOURCE = eINSTANCE.getIngredientDef_Source();
+
+    /**
+     * The meta object literal for the '{@link es.skyrim.alchemy.alchemyLab.impl.IngredientAliasImpl <em>Ingredient Alias</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see es.skyrim.alchemy.alchemyLab.impl.IngredientAliasImpl
+     * @see es.skyrim.alchemy.alchemyLab.impl.AlchemyLabPackageImpl#getIngredientAlias()
+     * @generated
+     */
+    EClass INGREDIENT_ALIAS = eINSTANCE.getIngredientAlias();
+
+    /**
+     * The meta object literal for the '<em><b>Alias</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute INGREDIENT_ALIAS__ALIAS = eINSTANCE.getIngredientAlias_Alias();
 
     /**
      * The meta object literal for the '{@link es.skyrim.alchemy.alchemyLab.impl.RecipeImpl <em>Recipe</em>}' class.
@@ -750,7 +1026,7 @@ public interface AlchemyLabPackage extends EPackage
     EAttribute RECIPE__PRICE = eINSTANCE.getRecipe_Price();
 
     /**
-     * The meta object literal for the '<em><b>Ingredients</b></em>' reference list feature.
+     * The meta object literal for the '<em><b>Ingredients</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
