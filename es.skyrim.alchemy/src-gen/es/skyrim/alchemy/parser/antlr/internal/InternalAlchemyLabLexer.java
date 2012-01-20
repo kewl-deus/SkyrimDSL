@@ -384,8 +384,8 @@ public class InternalAlchemyLabLexer extends Lexer {
         try {
             int _type = RULE_ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:583:9: ( '\"' ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | ' ' | '\\u00E4' | '\\u00C4' | '\\u00F6' | '\\u00D6' | '\\u00DC' | '\\u00FC' )+ '\"' )
-            // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:583:11: '\"' ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | ' ' | '\\u00E4' | '\\u00C4' | '\\u00F6' | '\\u00D6' | '\\u00DC' | '\\u00FC' )+ '\"'
+            // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:583:9: ( '\"' ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | ' ' | '\\u00E4' | '\\u00C4' | '\\u00F6' | '\\u00D6' | '\\u00DC' | '\\u00FC' | '\\u00DF' )+ '\"' )
+            // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:583:11: '\"' ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | ' ' | '\\u00E4' | '\\u00C4' | '\\u00F6' | '\\u00D6' | '\\u00DC' | '\\u00FC' | '\\u00DF' )+ '\"'
             {
             match('\"'); 
             // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:583:15: ( '^' )?
@@ -406,14 +406,14 @@ public class InternalAlchemyLabLexer extends Lexer {
 
             }
 
-            // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:583:20: ( 'a' .. 'z' | 'A' .. 'Z' | ' ' | '\\u00E4' | '\\u00C4' | '\\u00F6' | '\\u00D6' | '\\u00DC' | '\\u00FC' )+
+            // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:583:20: ( 'a' .. 'z' | 'A' .. 'Z' | ' ' | '\\u00E4' | '\\u00C4' | '\\u00F6' | '\\u00D6' | '\\u00DC' | '\\u00FC' | '\\u00DF' )+
             int cnt2=0;
             loop2:
             do {
                 int alt2=2;
                 int LA2_0 = input.LA(1);
 
-                if ( (LA2_0==' '||(LA2_0>='A' && LA2_0<='Z')||(LA2_0>='a' && LA2_0<='z')||LA2_0=='\u00C4'||LA2_0=='\u00D6'||LA2_0=='\u00DC'||LA2_0=='\u00E4'||LA2_0=='\u00F6'||LA2_0=='\u00FC') ) {
+                if ( (LA2_0==' '||(LA2_0>='A' && LA2_0<='Z')||(LA2_0>='a' && LA2_0<='z')||LA2_0=='\u00C4'||LA2_0=='\u00D6'||LA2_0=='\u00DC'||LA2_0=='\u00DF'||LA2_0=='\u00E4'||LA2_0=='\u00F6'||LA2_0=='\u00FC') ) {
                     alt2=1;
                 }
 
@@ -422,7 +422,7 @@ public class InternalAlchemyLabLexer extends Lexer {
             	case 1 :
             	    // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:
             	    {
-            	    if ( input.LA(1)==' '||(input.LA(1)>='A' && input.LA(1)<='Z')||(input.LA(1)>='a' && input.LA(1)<='z')||input.LA(1)=='\u00C4'||input.LA(1)=='\u00D6'||input.LA(1)=='\u00DC'||input.LA(1)=='\u00E4'||input.LA(1)=='\u00F6'||input.LA(1)=='\u00FC' ) {
+            	    if ( input.LA(1)==' '||(input.LA(1)>='A' && input.LA(1)<='Z')||(input.LA(1)>='a' && input.LA(1)<='z')||input.LA(1)=='\u00C4'||input.LA(1)=='\u00D6'||input.LA(1)=='\u00DC'||input.LA(1)=='\u00DF'||input.LA(1)=='\u00E4'||input.LA(1)=='\u00F6'||input.LA(1)=='\u00FC' ) {
             	        input.consume();
 
             	    }
@@ -1092,8 +1092,8 @@ public class InternalAlchemyLabLexer extends Lexer {
             "",
             "",
             "\1\44\40\uffff\32\44\3\uffff\1\44\2\uffff\32\44\111\uffff"+
-            "\1\44\21\uffff\1\44\5\uffff\1\44\7\uffff\1\44\21\uffff\1\44"+
-            "\5\uffff\1\44",
+            "\1\44\21\uffff\1\44\5\uffff\1\44\2\uffff\1\44\4\uffff\1\44\21"+
+            "\uffff\1\44\5\uffff\1\44",
             "\0\45",
             "",
             "\1\47",

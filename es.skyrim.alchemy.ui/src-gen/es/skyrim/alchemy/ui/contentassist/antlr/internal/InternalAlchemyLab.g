@@ -635,11 +635,9 @@ rule__Ingredient__Group__8__Impl
     }
 :
 (
-{ before(grammarAccess.getIngredientAccess().getSourceKeyword_8()); }
-
-	'source:' 
-
-{ after(grammarAccess.getIngredientAccess().getSourceKeyword_8()); }
+{ before(grammarAccess.getIngredientAccess().getGroup_8()); }
+(rule__Ingredient__Group_8__0)?
+{ after(grammarAccess.getIngredientAccess().getGroup_8()); }
 )
 
 ;
@@ -654,7 +652,6 @@ rule__Ingredient__Group__9
     }
 :
 	rule__Ingredient__Group__9__Impl
-	rule__Ingredient__Group__10
 ;
 finally {
 	restoreStackSize(stackSize);
@@ -666,9 +663,11 @@ rule__Ingredient__Group__9__Impl
     }
 :
 (
-{ before(grammarAccess.getIngredientAccess().getSourceAssignment_9()); }
-(rule__Ingredient__SourceAssignment_9)
-{ after(grammarAccess.getIngredientAccess().getSourceAssignment_9()); }
+{ before(grammarAccess.getIngredientAccess().getRightCurlyBracketKeyword_9()); }
+
+	'}' 
+
+{ after(grammarAccess.getIngredientAccess().getRightCurlyBracketKeyword_9()); }
 )
 
 ;
@@ -677,28 +676,49 @@ finally {
 }
 
 
-rule__Ingredient__Group__10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+rule__Ingredient__Group_8__0
     @init {
 		int stackSize = keepStackSize();
     }
 :
-	rule__Ingredient__Group__10__Impl
+	rule__Ingredient__Group_8__0__Impl
+	rule__Ingredient__Group_8__1
 ;
 finally {
 	restoreStackSize(stackSize);
 }
 
-rule__Ingredient__Group__10__Impl
+rule__Ingredient__Group_8__0__Impl
     @init {
 		int stackSize = keepStackSize();
     }
 :
 (
-{ before(grammarAccess.getIngredientAccess().getRightCurlyBracketKeyword_10()); }
+{ before(grammarAccess.getIngredientAccess().getSourceKeyword_8_0()); }
 
-	'}' 
+	'source:' 
 
-{ after(grammarAccess.getIngredientAccess().getRightCurlyBracketKeyword_10()); }
+{ after(grammarAccess.getIngredientAccess().getSourceKeyword_8_0()); }
 )
 
 ;
@@ -707,22 +727,32 @@ finally {
 }
 
 
+rule__Ingredient__Group_8__1
+    @init {
+		int stackSize = keepStackSize();
+    }
+:
+	rule__Ingredient__Group_8__1__Impl
+;
+finally {
+	restoreStackSize(stackSize);
+}
 
+rule__Ingredient__Group_8__1__Impl
+    @init {
+		int stackSize = keepStackSize();
+    }
+:
+(
+{ before(grammarAccess.getIngredientAccess().getSourceAssignment_8_1()); }
+(rule__Ingredient__SourceAssignment_8_1)
+{ after(grammarAccess.getIngredientAccess().getSourceAssignment_8_1()); }
+)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+;
+finally {
+	restoreStackSize(stackSize);
+}
 
 
 
@@ -1539,14 +1569,14 @@ finally {
 	restoreStackSize(stackSize);
 }
 
-rule__Ingredient__SourceAssignment_9
+rule__Ingredient__SourceAssignment_8_1
     @init {
 		int stackSize = keepStackSize();
     }
 :
 (
-{ before(grammarAccess.getIngredientAccess().getSourceSTRINGTerminalRuleCall_9_0()); }
-	RULE_STRING{ after(grammarAccess.getIngredientAccess().getSourceSTRINGTerminalRuleCall_9_0()); }
+{ before(grammarAccess.getIngredientAccess().getSourceSTRINGTerminalRuleCall_8_1_0()); }
+	RULE_STRING{ after(grammarAccess.getIngredientAccess().getSourceSTRINGTerminalRuleCall_8_1_0()); }
 )
 
 ;
@@ -1717,7 +1747,7 @@ finally {
 }
 
 
-RULE_ID : '"' '^'? ('a'..'z'|'A'..'Z'|' '|'\u00E4'|'\u00C4'|'\u00F6'|'\u00D6'|'\u00DC'|'\u00FC')+ '"';
+RULE_ID : '"' '^'? ('a'..'z'|'A'..'Z'|' '|'\u00E4'|'\u00C4'|'\u00F6'|'\u00D6'|'\u00DC'|'\u00FC'|'\u00DF')+ '"';
 
 RULE_STRING : '\'' ('\\' ('b'|'t'|'n'|'f'|'r'|'u'|'"'|'\''|'\\')|~(('\\'|'\'')))* '\'';
 

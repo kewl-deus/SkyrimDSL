@@ -1,8 +1,6 @@
 
-potion "Andrews Favorite" {
-	-> "Damage Health"
-	-> "Weakness to Poison"
-	
+potion "Trank" {
+	-> "Wiederherstellung verstärken"
 	price: 500
 	
 } = "Abeceanischer Mirakelbarsch"

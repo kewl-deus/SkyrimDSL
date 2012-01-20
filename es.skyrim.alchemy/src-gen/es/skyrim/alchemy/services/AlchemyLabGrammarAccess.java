@@ -68,17 +68,19 @@ public class AlchemyLabGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cWeightKeyword_6 = (Keyword)cGroup.eContents().get(6);
 		private final Assignment cWeightAssignment_7 = (Assignment)cGroup.eContents().get(7);
 		private final RuleCall cWeightNUMBERTerminalRuleCall_7_0 = (RuleCall)cWeightAssignment_7.eContents().get(0);
-		private final Keyword cSourceKeyword_8 = (Keyword)cGroup.eContents().get(8);
-		private final Assignment cSourceAssignment_9 = (Assignment)cGroup.eContents().get(9);
-		private final RuleCall cSourceSTRINGTerminalRuleCall_9_0 = (RuleCall)cSourceAssignment_9.eContents().get(0);
-		private final Keyword cRightCurlyBracketKeyword_10 = (Keyword)cGroup.eContents().get(10);
+		private final Group cGroup_8 = (Group)cGroup.eContents().get(8);
+		private final Keyword cSourceKeyword_8_0 = (Keyword)cGroup_8.eContents().get(0);
+		private final Assignment cSourceAssignment_8_1 = (Assignment)cGroup_8.eContents().get(1);
+		private final RuleCall cSourceSTRINGTerminalRuleCall_8_1_0 = (RuleCall)cSourceAssignment_8_1.eContents().get(0);
+		private final Keyword cRightCurlyBracketKeyword_9 = (Keyword)cGroup.eContents().get(9);
 		
 		//Ingredient:
-		//	"ingredient" name=ID "{" effects+=EffectRef* "price:" price=NUMBER "weight:" weight=NUMBER "source:" source=STRING
+		//	"ingredient" name=ID "{" effects+=EffectRef* "price:" price=NUMBER "weight:" weight=NUMBER ("source:" source=STRING)?
 		//	"}";
 		public ParserRule getRule() { return rule; }
 
-		//"ingredient" name=ID "{" effects+=EffectRef* "price:" price=NUMBER "weight:" weight=NUMBER "source:" source=STRING "}"
+		//"ingredient" name=ID "{" effects+=EffectRef* "price:" price=NUMBER "weight:" weight=NUMBER ("source:" source=STRING)?
+		//"}"
 		public Group getGroup() { return cGroup; }
 
 		//"ingredient"
@@ -117,17 +119,20 @@ public class AlchemyLabGrammarAccess extends AbstractGrammarElementFinder {
 		//NUMBER
 		public RuleCall getWeightNUMBERTerminalRuleCall_7_0() { return cWeightNUMBERTerminalRuleCall_7_0; }
 
+		//("source:" source=STRING)?
+		public Group getGroup_8() { return cGroup_8; }
+
 		//"source:"
-		public Keyword getSourceKeyword_8() { return cSourceKeyword_8; }
+		public Keyword getSourceKeyword_8_0() { return cSourceKeyword_8_0; }
 
 		//source=STRING
-		public Assignment getSourceAssignment_9() { return cSourceAssignment_9; }
+		public Assignment getSourceAssignment_8_1() { return cSourceAssignment_8_1; }
 
 		//STRING
-		public RuleCall getSourceSTRINGTerminalRuleCall_9_0() { return cSourceSTRINGTerminalRuleCall_9_0; }
+		public RuleCall getSourceSTRINGTerminalRuleCall_8_1_0() { return cSourceSTRINGTerminalRuleCall_8_1_0; }
 
 		//"}"
-		public Keyword getRightCurlyBracketKeyword_10() { return cRightCurlyBracketKeyword_10; }
+		public Keyword getRightCurlyBracketKeyword_9() { return cRightCurlyBracketKeyword_9; }
 	}
 
 	public class EffectElements extends AbstractParserRuleElementFinder {
@@ -409,7 +414,7 @@ public class AlchemyLabGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Ingredient:
-	//	"ingredient" name=ID "{" effects+=EffectRef* "price:" price=NUMBER "weight:" weight=NUMBER "source:" source=STRING
+	//	"ingredient" name=ID "{" effects+=EffectRef* "price:" price=NUMBER "weight:" weight=NUMBER ("source:" source=STRING)?
 	//	"}";
 	public IngredientElements getIngredientAccess() {
 		return (pIngredient != null) ? pIngredient : (pIngredient = new IngredientElements());
@@ -471,7 +476,7 @@ public class AlchemyLabGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//terminal ID:
-	//	"\"" "^"? ("a".."z" | "A".."Z" | " " | "ä" | "Ä" | "ö" | "Ö" | "Ü" | "ü")+ "\"";
+	//	"\"" "^"? ("a".."z" | "A".."Z" | " " | "ä" | "Ä" | "ö" | "Ö" | "Ü" | "ü" | "ß")+ "\"";
 	public TerminalRule getIDRule() {
 		return (tID != null) ? tID : (tID = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "ID"));
 	} 

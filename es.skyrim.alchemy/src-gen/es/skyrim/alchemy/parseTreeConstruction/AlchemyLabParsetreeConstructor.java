@@ -228,12 +228,13 @@ protected class AlchemyLabModel_RecipesAssignment_2 extends AssignmentToken  {
 /************ begin Rule Ingredient ****************
  *
  * Ingredient:
- * 	"ingredient" name=ID "{" effects+=EffectRef* "price:" price=NUMBER "weight:" weight=NUMBER "source:" source=STRING
+ * 	"ingredient" name=ID "{" effects+=EffectRef* "price:" price=NUMBER "weight:" weight=NUMBER ("source:" source=STRING)?
  * 	"}";
  *
  **/
 
-// "ingredient" name=ID "{" effects+=EffectRef* "price:" price=NUMBER "weight:" weight=NUMBER "source:" source=STRING "}"
+// "ingredient" name=ID "{" effects+=EffectRef* "price:" price=NUMBER "weight:" weight=NUMBER ("source:" source=STRING)?
+// "}"
 protected class Ingredient_Group extends GroupToken {
 	
 	public Ingredient_Group(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -248,7 +249,7 @@ protected class Ingredient_Group extends GroupToken {
     @Override
 	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
 		switch(index) {
-			case 0: return new Ingredient_RightCurlyBracketKeyword_10(lastRuleCallOrigin, this, 0, inst);
+			case 0: return new Ingredient_RightCurlyBracketKeyword_9(lastRuleCallOrigin, this, 0, inst);
 			default: return null;
 		}	
 	}
@@ -499,16 +500,38 @@ protected class Ingredient_WeightAssignment_7 extends AssignmentToken  {
 
 }
 
-// "source:"
-protected class Ingredient_SourceKeyword_8 extends KeywordToken  {
+// ("source:" source=STRING)?
+protected class Ingredient_Group_8 extends GroupToken {
 	
-	public Ingredient_SourceKeyword_8(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+	public Ingredient_Group_8(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
+	}
+	
+	@Override
+	public Group getGrammarElement() {
+		return grammarAccess.getIngredientAccess().getGroup_8();
+	}
+
+    @Override
+	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
+		switch(index) {
+			case 0: return new Ingredient_SourceAssignment_8_1(lastRuleCallOrigin, this, 0, inst);
+			default: return null;
+		}	
+	}
+
+}
+
+// "source:"
+protected class Ingredient_SourceKeyword_8_0 extends KeywordToken  {
+	
+	public Ingredient_SourceKeyword_8_0(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
 		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
 	}
 	
 	@Override
 	public Keyword getGrammarElement() {
-		return grammarAccess.getIngredientAccess().getSourceKeyword_8();
+		return grammarAccess.getIngredientAccess().getSourceKeyword_8_0();
 	}
 
     @Override
@@ -522,32 +545,32 @@ protected class Ingredient_SourceKeyword_8 extends KeywordToken  {
 }
 
 // source=STRING
-protected class Ingredient_SourceAssignment_9 extends AssignmentToken  {
+protected class Ingredient_SourceAssignment_8_1 extends AssignmentToken  {
 	
-	public Ingredient_SourceAssignment_9(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+	public Ingredient_SourceAssignment_8_1(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
 		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
 	}
 	
 	@Override
 	public Assignment getGrammarElement() {
-		return grammarAccess.getIngredientAccess().getSourceAssignment_9();
+		return grammarAccess.getIngredientAccess().getSourceAssignment_8_1();
 	}
 
     @Override
 	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
 		switch(index) {
-			case 0: return new Ingredient_SourceKeyword_8(lastRuleCallOrigin, this, 0, inst);
+			case 0: return new Ingredient_SourceKeyword_8_0(lastRuleCallOrigin, this, 0, inst);
 			default: return null;
 		}	
 	}
 
     @Override	
 	public IEObjectConsumer tryConsume() {
-		if((value = eObjectConsumer.getConsumable("source",true)) == null) return null;
+		if((value = eObjectConsumer.getConsumable("source",false)) == null) return null;
 		IEObjectConsumer obj = eObjectConsumer.cloneAndConsume("source");
-		if(valueSerializer.isValid(obj.getEObject(), grammarAccess.getIngredientAccess().getSourceSTRINGTerminalRuleCall_9_0(), value, null)) {
+		if(valueSerializer.isValid(obj.getEObject(), grammarAccess.getIngredientAccess().getSourceSTRINGTerminalRuleCall_8_1_0(), value, null)) {
 			type = AssignmentType.TERMINAL_RULE_CALL;
-			element = grammarAccess.getIngredientAccess().getSourceSTRINGTerminalRuleCall_9_0();
+			element = grammarAccess.getIngredientAccess().getSourceSTRINGTerminalRuleCall_8_1_0();
 			return obj;
 		}
 		return null;
@@ -555,22 +578,24 @@ protected class Ingredient_SourceAssignment_9 extends AssignmentToken  {
 
 }
 
+
 // "}"
-protected class Ingredient_RightCurlyBracketKeyword_10 extends KeywordToken  {
+protected class Ingredient_RightCurlyBracketKeyword_9 extends KeywordToken  {
 	
-	public Ingredient_RightCurlyBracketKeyword_10(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+	public Ingredient_RightCurlyBracketKeyword_9(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
 		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
 	}
 	
 	@Override
 	public Keyword getGrammarElement() {
-		return grammarAccess.getIngredientAccess().getRightCurlyBracketKeyword_10();
+		return grammarAccess.getIngredientAccess().getRightCurlyBracketKeyword_9();
 	}
 
     @Override
 	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
 		switch(index) {
-			case 0: return new Ingredient_SourceAssignment_9(lastRuleCallOrigin, this, 0, inst);
+			case 0: return new Ingredient_Group_8(lastRuleCallOrigin, this, 0, inst);
+			case 1: return new Ingredient_WeightAssignment_7(lastRuleCallOrigin, this, 1, inst);
 			default: return null;
 		}	
 	}

@@ -349,7 +349,7 @@ public class InternalAlchemyLabParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleIngredient"
-    // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:152:1: ruleIngredient returns [EObject current=null] : (otherlv_0= 'ingredient' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_effects_3_0= ruleEffectRef ) )* otherlv_4= 'price:' ( (lv_price_5_0= RULE_NUMBER ) ) otherlv_6= 'weight:' ( (lv_weight_7_0= RULE_NUMBER ) ) otherlv_8= 'source:' ( (lv_source_9_0= RULE_STRING ) ) otherlv_10= '}' ) ;
+    // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:152:1: ruleIngredient returns [EObject current=null] : (otherlv_0= 'ingredient' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_effects_3_0= ruleEffectRef ) )* otherlv_4= 'price:' ( (lv_price_5_0= RULE_NUMBER ) ) otherlv_6= 'weight:' ( (lv_weight_7_0= RULE_NUMBER ) ) (otherlv_8= 'source:' ( (lv_source_9_0= RULE_STRING ) ) )? otherlv_10= '}' ) ;
     public final EObject ruleIngredient() throws RecognitionException {
         EObject current = null;
 
@@ -369,11 +369,11 @@ public class InternalAlchemyLabParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:155:28: ( (otherlv_0= 'ingredient' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_effects_3_0= ruleEffectRef ) )* otherlv_4= 'price:' ( (lv_price_5_0= RULE_NUMBER ) ) otherlv_6= 'weight:' ( (lv_weight_7_0= RULE_NUMBER ) ) otherlv_8= 'source:' ( (lv_source_9_0= RULE_STRING ) ) otherlv_10= '}' ) )
-            // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:156:1: (otherlv_0= 'ingredient' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_effects_3_0= ruleEffectRef ) )* otherlv_4= 'price:' ( (lv_price_5_0= RULE_NUMBER ) ) otherlv_6= 'weight:' ( (lv_weight_7_0= RULE_NUMBER ) ) otherlv_8= 'source:' ( (lv_source_9_0= RULE_STRING ) ) otherlv_10= '}' )
+            // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:155:28: ( (otherlv_0= 'ingredient' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_effects_3_0= ruleEffectRef ) )* otherlv_4= 'price:' ( (lv_price_5_0= RULE_NUMBER ) ) otherlv_6= 'weight:' ( (lv_weight_7_0= RULE_NUMBER ) ) (otherlv_8= 'source:' ( (lv_source_9_0= RULE_STRING ) ) )? otherlv_10= '}' ) )
+            // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:156:1: (otherlv_0= 'ingredient' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_effects_3_0= ruleEffectRef ) )* otherlv_4= 'price:' ( (lv_price_5_0= RULE_NUMBER ) ) otherlv_6= 'weight:' ( (lv_weight_7_0= RULE_NUMBER ) ) (otherlv_8= 'source:' ( (lv_source_9_0= RULE_STRING ) ) )? otherlv_10= '}' )
             {
-            // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:156:1: (otherlv_0= 'ingredient' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_effects_3_0= ruleEffectRef ) )* otherlv_4= 'price:' ( (lv_price_5_0= RULE_NUMBER ) ) otherlv_6= 'weight:' ( (lv_weight_7_0= RULE_NUMBER ) ) otherlv_8= 'source:' ( (lv_source_9_0= RULE_STRING ) ) otherlv_10= '}' )
-            // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:156:3: otherlv_0= 'ingredient' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_effects_3_0= ruleEffectRef ) )* otherlv_4= 'price:' ( (lv_price_5_0= RULE_NUMBER ) ) otherlv_6= 'weight:' ( (lv_weight_7_0= RULE_NUMBER ) ) otherlv_8= 'source:' ( (lv_source_9_0= RULE_STRING ) ) otherlv_10= '}'
+            // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:156:1: (otherlv_0= 'ingredient' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_effects_3_0= ruleEffectRef ) )* otherlv_4= 'price:' ( (lv_price_5_0= RULE_NUMBER ) ) otherlv_6= 'weight:' ( (lv_weight_7_0= RULE_NUMBER ) ) (otherlv_8= 'source:' ( (lv_source_9_0= RULE_STRING ) ) )? otherlv_10= '}' )
+            // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:156:3: otherlv_0= 'ingredient' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_effects_3_0= ruleEffectRef ) )* otherlv_4= 'price:' ( (lv_price_5_0= RULE_NUMBER ) ) otherlv_6= 'weight:' ( (lv_weight_7_0= RULE_NUMBER ) ) (otherlv_8= 'source:' ( (lv_source_9_0= RULE_STRING ) ) )? otherlv_10= '}'
             {
             otherlv_0=(Token)match(input,12,FOLLOW_12_in_ruleIngredient259); 
 
@@ -518,39 +518,56 @@ public class InternalAlchemyLabParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_8=(Token)match(input,16,FOLLOW_16_in_ruleIngredient395); 
+            // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:244:2: (otherlv_8= 'source:' ( (lv_source_9_0= RULE_STRING ) ) )?
+            int alt5=2;
+            int LA5_0 = input.LA(1);
 
-                	newLeafNode(otherlv_8, grammarAccess.getIngredientAccess().getSourceKeyword_8());
-                
-            // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:248:1: ( (lv_source_9_0= RULE_STRING ) )
-            // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:249:1: (lv_source_9_0= RULE_STRING )
-            {
-            // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:249:1: (lv_source_9_0= RULE_STRING )
-            // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:250:3: lv_source_9_0= RULE_STRING
-            {
-            lv_source_9_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleIngredient412); 
+            if ( (LA5_0==16) ) {
+                alt5=1;
+            }
+            switch (alt5) {
+                case 1 :
+                    // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:244:4: otherlv_8= 'source:' ( (lv_source_9_0= RULE_STRING ) )
+                    {
+                    otherlv_8=(Token)match(input,16,FOLLOW_16_in_ruleIngredient396); 
 
-            			newLeafNode(lv_source_9_0, grammarAccess.getIngredientAccess().getSourceSTRINGTerminalRuleCall_9_0()); 
-            		
+                        	newLeafNode(otherlv_8, grammarAccess.getIngredientAccess().getSourceKeyword_8_0());
+                        
+                    // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:248:1: ( (lv_source_9_0= RULE_STRING ) )
+                    // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:249:1: (lv_source_9_0= RULE_STRING )
+                    {
+                    // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:249:1: (lv_source_9_0= RULE_STRING )
+                    // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:250:3: lv_source_9_0= RULE_STRING
+                    {
+                    lv_source_9_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleIngredient413); 
 
-            	        if (current==null) {
-            	            current = createModelElement(grammarAccess.getIngredientRule());
-            	        }
-                   		setWithLastConsumed(
-                   			current, 
-                   			"source",
-                    		lv_source_9_0, 
-                    		"STRING");
-            	    
+                    			newLeafNode(lv_source_9_0, grammarAccess.getIngredientAccess().getSourceSTRINGTerminalRuleCall_8_1_0()); 
+                    		
+
+                    	        if (current==null) {
+                    	            current = createModelElement(grammarAccess.getIngredientRule());
+                    	        }
+                           		setWithLastConsumed(
+                           			current, 
+                           			"source",
+                            		lv_source_9_0, 
+                            		"STRING");
+                    	    
+
+                    }
+
+
+                    }
+
+
+                    }
+                    break;
 
             }
 
+            otherlv_10=(Token)match(input,17,FOLLOW_17_in_ruleIngredient432); 
 
-            }
-
-            otherlv_10=(Token)match(input,17,FOLLOW_17_in_ruleIngredient429); 
-
-                	newLeafNode(otherlv_10, grammarAccess.getIngredientAccess().getRightCurlyBracketKeyword_10());
+                	newLeafNode(otherlv_10, grammarAccess.getIngredientAccess().getRightCurlyBracketKeyword_9());
                 
 
             }
@@ -585,13 +602,13 @@ public class InternalAlchemyLabParser extends AbstractInternalAntlrParser {
             // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:280:2: iv_ruleEffect= ruleEffect EOF
             {
              newCompositeNode(grammarAccess.getEffectRule()); 
-            pushFollow(FOLLOW_ruleEffect_in_entryRuleEffect465);
+            pushFollow(FOLLOW_ruleEffect_in_entryRuleEffect468);
             iv_ruleEffect=ruleEffect();
 
             state._fsp--;
 
              current =iv_ruleEffect; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleEffect475); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleEffect478); 
 
             }
 
@@ -631,7 +648,7 @@ public class InternalAlchemyLabParser extends AbstractInternalAntlrParser {
             // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:291:1: (otherlv_0= 'effect' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '(' ( (lv_type_3_0= ruleEffectType ) ) otherlv_4= ')' (otherlv_5= ':' ( (lv_description_6_0= RULE_STRING ) ) )? )
             // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:291:3: otherlv_0= 'effect' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '(' ( (lv_type_3_0= ruleEffectType ) ) otherlv_4= ')' (otherlv_5= ':' ( (lv_description_6_0= RULE_STRING ) ) )?
             {
-            otherlv_0=(Token)match(input,18,FOLLOW_18_in_ruleEffect512); 
+            otherlv_0=(Token)match(input,18,FOLLOW_18_in_ruleEffect515); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getEffectAccess().getEffectKeyword_0());
                 
@@ -641,7 +658,7 @@ public class InternalAlchemyLabParser extends AbstractInternalAntlrParser {
             // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:296:1: (lv_name_1_0= RULE_ID )
             // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:297:3: lv_name_1_0= RULE_ID
             {
-            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleEffect529); 
+            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleEffect532); 
 
             			newLeafNode(lv_name_1_0, grammarAccess.getEffectAccess().getNameIDTerminalRuleCall_1_0()); 
             		
@@ -661,7 +678,7 @@ public class InternalAlchemyLabParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,19,FOLLOW_19_in_ruleEffect546); 
+            otherlv_2=(Token)match(input,19,FOLLOW_19_in_ruleEffect549); 
 
                 	newLeafNode(otherlv_2, grammarAccess.getEffectAccess().getLeftParenthesisKeyword_2());
                 
@@ -674,7 +691,7 @@ public class InternalAlchemyLabParser extends AbstractInternalAntlrParser {
              
             	        newCompositeNode(grammarAccess.getEffectAccess().getTypeEffectTypeEnumRuleCall_3_0()); 
             	    
-            pushFollow(FOLLOW_ruleEffectType_in_ruleEffect567);
+            pushFollow(FOLLOW_ruleEffectType_in_ruleEffect570);
             lv_type_3_0=ruleEffectType();
 
             state._fsp--;
@@ -696,22 +713,22 @@ public class InternalAlchemyLabParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_4=(Token)match(input,20,FOLLOW_20_in_ruleEffect579); 
+            otherlv_4=(Token)match(input,20,FOLLOW_20_in_ruleEffect582); 
 
                 	newLeafNode(otherlv_4, grammarAccess.getEffectAccess().getRightParenthesisKeyword_4());
                 
             // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:339:1: (otherlv_5= ':' ( (lv_description_6_0= RULE_STRING ) ) )?
-            int alt5=2;
-            int LA5_0 = input.LA(1);
+            int alt6=2;
+            int LA6_0 = input.LA(1);
 
-            if ( (LA5_0==21) ) {
-                alt5=1;
+            if ( (LA6_0==21) ) {
+                alt6=1;
             }
-            switch (alt5) {
+            switch (alt6) {
                 case 1 :
                     // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:339:3: otherlv_5= ':' ( (lv_description_6_0= RULE_STRING ) )
                     {
-                    otherlv_5=(Token)match(input,21,FOLLOW_21_in_ruleEffect592); 
+                    otherlv_5=(Token)match(input,21,FOLLOW_21_in_ruleEffect595); 
 
                         	newLeafNode(otherlv_5, grammarAccess.getEffectAccess().getColonKeyword_5_0());
                         
@@ -721,7 +738,7 @@ public class InternalAlchemyLabParser extends AbstractInternalAntlrParser {
                     // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:344:1: (lv_description_6_0= RULE_STRING )
                     // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:345:3: lv_description_6_0= RULE_STRING
                     {
-                    lv_description_6_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleEffect609); 
+                    lv_description_6_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleEffect612); 
 
                     			newLeafNode(lv_description_6_0, grammarAccess.getEffectAccess().getDescriptionSTRINGTerminalRuleCall_5_1_0()); 
                     		
@@ -780,13 +797,13 @@ public class InternalAlchemyLabParser extends AbstractInternalAntlrParser {
             // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:371:2: iv_ruleEffectRef= ruleEffectRef EOF
             {
              newCompositeNode(grammarAccess.getEffectRefRule()); 
-            pushFollow(FOLLOW_ruleEffectRef_in_entryRuleEffectRef652);
+            pushFollow(FOLLOW_ruleEffectRef_in_entryRuleEffectRef655);
             iv_ruleEffectRef=ruleEffectRef();
 
             state._fsp--;
 
              current =iv_ruleEffectRef; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleEffectRef662); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleEffectRef665); 
 
             }
 
@@ -820,7 +837,7 @@ public class InternalAlchemyLabParser extends AbstractInternalAntlrParser {
             // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:382:1: (otherlv_0= '->' ( (otherlv_1= RULE_ID ) ) )
             // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:382:3: otherlv_0= '->' ( (otherlv_1= RULE_ID ) )
             {
-            otherlv_0=(Token)match(input,22,FOLLOW_22_in_ruleEffectRef699); 
+            otherlv_0=(Token)match(input,22,FOLLOW_22_in_ruleEffectRef702); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getEffectRefAccess().getHyphenMinusGreaterThanSignKeyword_0());
                 
@@ -835,7 +852,7 @@ public class InternalAlchemyLabParser extends AbstractInternalAntlrParser {
             	            current = createModelElement(grammarAccess.getEffectRefRule());
             	        }
                     
-            otherlv_1=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleEffectRef719); 
+            otherlv_1=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleEffectRef722); 
 
             		newLeafNode(otherlv_1, grammarAccess.getEffectRefAccess().getEffectEffectCrossReference_1_0()); 
             	
@@ -878,13 +895,13 @@ public class InternalAlchemyLabParser extends AbstractInternalAntlrParser {
             // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:409:2: iv_ruleRecipe= ruleRecipe EOF
             {
              newCompositeNode(grammarAccess.getRecipeRule()); 
-            pushFollow(FOLLOW_ruleRecipe_in_entryRuleRecipe755);
+            pushFollow(FOLLOW_ruleRecipe_in_entryRuleRecipe758);
             iv_ruleRecipe=ruleRecipe();
 
             state._fsp--;
 
              current =iv_ruleRecipe; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleRecipe765); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleRecipe768); 
 
             }
 
@@ -938,7 +955,7 @@ public class InternalAlchemyLabParser extends AbstractInternalAntlrParser {
              
             	        newCompositeNode(grammarAccess.getRecipeAccess().getToxicityToxicityEnumRuleCall_0_0()); 
             	    
-            pushFollow(FOLLOW_ruleToxicity_in_ruleRecipe811);
+            pushFollow(FOLLOW_ruleToxicity_in_ruleRecipe814);
             lv_toxicity_0_0=ruleToxicity();
 
             state._fsp--;
@@ -966,7 +983,7 @@ public class InternalAlchemyLabParser extends AbstractInternalAntlrParser {
             // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:439:1: (lv_name_1_0= RULE_ID )
             // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:440:3: lv_name_1_0= RULE_ID
             {
-            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleRecipe828); 
+            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleRecipe831); 
 
             			newLeafNode(lv_name_1_0, grammarAccess.getRecipeAccess().getNameIDTerminalRuleCall_1_0()); 
             		
@@ -986,23 +1003,23 @@ public class InternalAlchemyLabParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,13,FOLLOW_13_in_ruleRecipe845); 
+            otherlv_2=(Token)match(input,13,FOLLOW_13_in_ruleRecipe848); 
 
                 	newLeafNode(otherlv_2, grammarAccess.getRecipeAccess().getLeftCurlyBracketKeyword_2());
                 
             // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:460:1: ( (lv_effects_3_0= ruleEffectRef ) )+
-            int cnt6=0;
-            loop6:
+            int cnt7=0;
+            loop7:
             do {
-                int alt6=2;
-                int LA6_0 = input.LA(1);
+                int alt7=2;
+                int LA7_0 = input.LA(1);
 
-                if ( (LA6_0==22) ) {
-                    alt6=1;
+                if ( (LA7_0==22) ) {
+                    alt7=1;
                 }
 
 
-                switch (alt6) {
+                switch (alt7) {
             	case 1 :
             	    // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:461:1: (lv_effects_3_0= ruleEffectRef )
             	    {
@@ -1012,7 +1029,7 @@ public class InternalAlchemyLabParser extends AbstractInternalAntlrParser {
             	     
             	    	        newCompositeNode(grammarAccess.getRecipeAccess().getEffectsEffectRefParserRuleCall_3_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleEffectRef_in_ruleRecipe866);
+            	    pushFollow(FOLLOW_ruleEffectRef_in_ruleRecipe869);
             	    lv_effects_3_0=ruleEffectRef();
 
             	    state._fsp--;
@@ -1036,15 +1053,15 @@ public class InternalAlchemyLabParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt6 >= 1 ) break loop6;
+            	    if ( cnt7 >= 1 ) break loop7;
                         EarlyExitException eee =
-                            new EarlyExitException(6, input);
+                            new EarlyExitException(7, input);
                         throw eee;
                 }
-                cnt6++;
+                cnt7++;
             } while (true);
 
-            otherlv_4=(Token)match(input,14,FOLLOW_14_in_ruleRecipe879); 
+            otherlv_4=(Token)match(input,14,FOLLOW_14_in_ruleRecipe882); 
 
                 	newLeafNode(otherlv_4, grammarAccess.getRecipeAccess().getPriceKeyword_4());
                 
@@ -1054,7 +1071,7 @@ public class InternalAlchemyLabParser extends AbstractInternalAntlrParser {
             // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:483:1: (lv_price_5_0= RULE_NUMBER )
             // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:484:3: lv_price_5_0= RULE_NUMBER
             {
-            lv_price_5_0=(Token)match(input,RULE_NUMBER,FOLLOW_RULE_NUMBER_in_ruleRecipe896); 
+            lv_price_5_0=(Token)match(input,RULE_NUMBER,FOLLOW_RULE_NUMBER_in_ruleRecipe899); 
 
             			newLeafNode(lv_price_5_0, grammarAccess.getRecipeAccess().getPriceNUMBERTerminalRuleCall_5_0()); 
             		
@@ -1074,11 +1091,11 @@ public class InternalAlchemyLabParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_6=(Token)match(input,17,FOLLOW_17_in_ruleRecipe913); 
+            otherlv_6=(Token)match(input,17,FOLLOW_17_in_ruleRecipe916); 
 
                 	newLeafNode(otherlv_6, grammarAccess.getRecipeAccess().getRightCurlyBracketKeyword_6());
                 
-            otherlv_7=(Token)match(input,23,FOLLOW_23_in_ruleRecipe925); 
+            otherlv_7=(Token)match(input,23,FOLLOW_23_in_ruleRecipe928); 
 
                 	newLeafNode(otherlv_7, grammarAccess.getRecipeAccess().getEqualsSignKeyword_7());
                 
@@ -1093,7 +1110,7 @@ public class InternalAlchemyLabParser extends AbstractInternalAntlrParser {
             	            current = createModelElement(grammarAccess.getRecipeRule());
             	        }
                     
-            otherlv_8=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleRecipe945); 
+            otherlv_8=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleRecipe948); 
 
             		newLeafNode(otherlv_8, grammarAccess.getRecipeAccess().getIngredientsIngredientCrossReference_8_0()); 
             	
@@ -1104,21 +1121,21 @@ public class InternalAlchemyLabParser extends AbstractInternalAntlrParser {
             }
 
             // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:521:2: (otherlv_9= '+' ( (otherlv_10= RULE_ID ) ) )*
-            loop7:
+            loop8:
             do {
-                int alt7=2;
-                int LA7_0 = input.LA(1);
+                int alt8=2;
+                int LA8_0 = input.LA(1);
 
-                if ( (LA7_0==24) ) {
-                    alt7=1;
+                if ( (LA8_0==24) ) {
+                    alt8=1;
                 }
 
 
-                switch (alt7) {
+                switch (alt8) {
             	case 1 :
             	    // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:521:4: otherlv_9= '+' ( (otherlv_10= RULE_ID ) )
             	    {
-            	    otherlv_9=(Token)match(input,24,FOLLOW_24_in_ruleRecipe958); 
+            	    otherlv_9=(Token)match(input,24,FOLLOW_24_in_ruleRecipe961); 
 
             	        	newLeafNode(otherlv_9, grammarAccess.getRecipeAccess().getPlusSignKeyword_9_0());
             	        
@@ -1133,7 +1150,7 @@ public class InternalAlchemyLabParser extends AbstractInternalAntlrParser {
             	    	            current = createModelElement(grammarAccess.getRecipeRule());
             	    	        }
             	            
-            	    otherlv_10=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleRecipe978); 
+            	    otherlv_10=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleRecipe981); 
 
             	    		newLeafNode(otherlv_10, grammarAccess.getRecipeAccess().getIngredientsIngredientCrossReference_9_1_0()); 
             	    	
@@ -1148,7 +1165,7 @@ public class InternalAlchemyLabParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop7;
+            	    break loop8;
                 }
             } while (true);
 
@@ -1186,29 +1203,29 @@ public class InternalAlchemyLabParser extends AbstractInternalAntlrParser {
             // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:549:1: ( (enumLiteral_0= '+' ) | (enumLiteral_1= '-' ) )
             {
             // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:549:1: ( (enumLiteral_0= '+' ) | (enumLiteral_1= '-' ) )
-            int alt8=2;
-            int LA8_0 = input.LA(1);
+            int alt9=2;
+            int LA9_0 = input.LA(1);
 
-            if ( (LA8_0==24) ) {
-                alt8=1;
+            if ( (LA9_0==24) ) {
+                alt9=1;
             }
-            else if ( (LA8_0==25) ) {
-                alt8=2;
+            else if ( (LA9_0==25) ) {
+                alt9=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 8, 0, input);
+                    new NoViableAltException("", 9, 0, input);
 
                 throw nvae;
             }
-            switch (alt8) {
+            switch (alt9) {
                 case 1 :
                     // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:549:2: (enumLiteral_0= '+' )
                     {
                     // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:549:2: (enumLiteral_0= '+' )
                     // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:549:4: enumLiteral_0= '+'
                     {
-                    enumLiteral_0=(Token)match(input,24,FOLLOW_24_in_ruleEffectType1030); 
+                    enumLiteral_0=(Token)match(input,24,FOLLOW_24_in_ruleEffectType1033); 
 
                             current = grammarAccess.getEffectTypeAccess().getFORTIFYEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_0, grammarAccess.getEffectTypeAccess().getFORTIFYEnumLiteralDeclaration_0()); 
@@ -1225,7 +1242,7 @@ public class InternalAlchemyLabParser extends AbstractInternalAntlrParser {
                     // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:555:6: (enumLiteral_1= '-' )
                     // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:555:8: enumLiteral_1= '-'
                     {
-                    enumLiteral_1=(Token)match(input,25,FOLLOW_25_in_ruleEffectType1047); 
+                    enumLiteral_1=(Token)match(input,25,FOLLOW_25_in_ruleEffectType1050); 
 
                             current = grammarAccess.getEffectTypeAccess().getWEAKENEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_1, grammarAccess.getEffectTypeAccess().getWEAKENEnumLiteralDeclaration_1()); 
@@ -1270,29 +1287,29 @@ public class InternalAlchemyLabParser extends AbstractInternalAntlrParser {
             // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:568:1: ( (enumLiteral_0= 'potion' ) | (enumLiteral_1= 'poison' ) )
             {
             // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:568:1: ( (enumLiteral_0= 'potion' ) | (enumLiteral_1= 'poison' ) )
-            int alt9=2;
-            int LA9_0 = input.LA(1);
+            int alt10=2;
+            int LA10_0 = input.LA(1);
 
-            if ( (LA9_0==26) ) {
-                alt9=1;
+            if ( (LA10_0==26) ) {
+                alt10=1;
             }
-            else if ( (LA9_0==27) ) {
-                alt9=2;
+            else if ( (LA10_0==27) ) {
+                alt10=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 9, 0, input);
+                    new NoViableAltException("", 10, 0, input);
 
                 throw nvae;
             }
-            switch (alt9) {
+            switch (alt10) {
                 case 1 :
                     // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:568:2: (enumLiteral_0= 'potion' )
                     {
                     // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:568:2: (enumLiteral_0= 'potion' )
                     // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:568:4: enumLiteral_0= 'potion'
                     {
-                    enumLiteral_0=(Token)match(input,26,FOLLOW_26_in_ruleToxicity1092); 
+                    enumLiteral_0=(Token)match(input,26,FOLLOW_26_in_ruleToxicity1095); 
 
                             current = grammarAccess.getToxicityAccess().getPOTIONEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_0, grammarAccess.getToxicityAccess().getPOTIONEnumLiteralDeclaration_0()); 
@@ -1309,7 +1326,7 @@ public class InternalAlchemyLabParser extends AbstractInternalAntlrParser {
                     // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:574:6: (enumLiteral_1= 'poison' )
                     // ../es.skyrim.alchemy/src-gen/es/skyrim/alchemy/parser/antlr/internal/InternalAlchemyLab.g:574:8: enumLiteral_1= 'poison'
                     {
-                    enumLiteral_1=(Token)match(input,27,FOLLOW_27_in_ruleToxicity1109); 
+                    enumLiteral_1=(Token)match(input,27,FOLLOW_27_in_ruleToxicity1112); 
 
                             current = grammarAccess.getToxicityAccess().getPOISONEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
                             newLeafNode(enumLiteral_1, grammarAccess.getToxicityAccess().getPOISONEnumLiteralDeclaration_1()); 
@@ -1358,39 +1375,39 @@ public class InternalAlchemyLabParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_14_in_ruleIngredient327 = new BitSet(new long[]{0x0000000000000020L});
     public static final BitSet FOLLOW_RULE_NUMBER_in_ruleIngredient344 = new BitSet(new long[]{0x0000000000008000L});
     public static final BitSet FOLLOW_15_in_ruleIngredient361 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_RULE_NUMBER_in_ruleIngredient378 = new BitSet(new long[]{0x0000000000010000L});
-    public static final BitSet FOLLOW_16_in_ruleIngredient395 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleIngredient412 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_17_in_ruleIngredient429 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEffect_in_entryRuleEffect465 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleEffect475 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_18_in_ruleEffect512 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleEffect529 = new BitSet(new long[]{0x0000000000080000L});
-    public static final BitSet FOLLOW_19_in_ruleEffect546 = new BitSet(new long[]{0x0000000003000000L});
-    public static final BitSet FOLLOW_ruleEffectType_in_ruleEffect567 = new BitSet(new long[]{0x0000000000100000L});
-    public static final BitSet FOLLOW_20_in_ruleEffect579 = new BitSet(new long[]{0x0000000000200002L});
-    public static final BitSet FOLLOW_21_in_ruleEffect592 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleEffect609 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEffectRef_in_entryRuleEffectRef652 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleEffectRef662 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_22_in_ruleEffectRef699 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleEffectRef719 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleRecipe_in_entryRuleRecipe755 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleRecipe765 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleToxicity_in_ruleRecipe811 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleRecipe828 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_13_in_ruleRecipe845 = new BitSet(new long[]{0x0000000000400000L});
-    public static final BitSet FOLLOW_ruleEffectRef_in_ruleRecipe866 = new BitSet(new long[]{0x0000000000404000L});
-    public static final BitSet FOLLOW_14_in_ruleRecipe879 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_RULE_NUMBER_in_ruleRecipe896 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_17_in_ruleRecipe913 = new BitSet(new long[]{0x0000000000800000L});
-    public static final BitSet FOLLOW_23_in_ruleRecipe925 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleRecipe945 = new BitSet(new long[]{0x0000000001000002L});
-    public static final BitSet FOLLOW_24_in_ruleRecipe958 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleRecipe978 = new BitSet(new long[]{0x0000000001000002L});
-    public static final BitSet FOLLOW_24_in_ruleEffectType1030 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_25_in_ruleEffectType1047 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_26_in_ruleToxicity1092 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_27_in_ruleToxicity1109 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_NUMBER_in_ruleIngredient378 = new BitSet(new long[]{0x0000000000030000L});
+    public static final BitSet FOLLOW_16_in_ruleIngredient396 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleIngredient413 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_17_in_ruleIngredient432 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEffect_in_entryRuleEffect468 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleEffect478 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_18_in_ruleEffect515 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleEffect532 = new BitSet(new long[]{0x0000000000080000L});
+    public static final BitSet FOLLOW_19_in_ruleEffect549 = new BitSet(new long[]{0x0000000003000000L});
+    public static final BitSet FOLLOW_ruleEffectType_in_ruleEffect570 = new BitSet(new long[]{0x0000000000100000L});
+    public static final BitSet FOLLOW_20_in_ruleEffect582 = new BitSet(new long[]{0x0000000000200002L});
+    public static final BitSet FOLLOW_21_in_ruleEffect595 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleEffect612 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEffectRef_in_entryRuleEffectRef655 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleEffectRef665 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_22_in_ruleEffectRef702 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleEffectRef722 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleRecipe_in_entryRuleRecipe758 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleRecipe768 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleToxicity_in_ruleRecipe814 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleRecipe831 = new BitSet(new long[]{0x0000000000002000L});
+    public static final BitSet FOLLOW_13_in_ruleRecipe848 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_ruleEffectRef_in_ruleRecipe869 = new BitSet(new long[]{0x0000000000404000L});
+    public static final BitSet FOLLOW_14_in_ruleRecipe882 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_RULE_NUMBER_in_ruleRecipe899 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_17_in_ruleRecipe916 = new BitSet(new long[]{0x0000000000800000L});
+    public static final BitSet FOLLOW_23_in_ruleRecipe928 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleRecipe948 = new BitSet(new long[]{0x0000000001000002L});
+    public static final BitSet FOLLOW_24_in_ruleRecipe961 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleRecipe981 = new BitSet(new long[]{0x0000000001000002L});
+    public static final BitSet FOLLOW_24_in_ruleEffectType1033 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_25_in_ruleEffectType1050 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_26_in_ruleToxicity1095 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_27_in_ruleToxicity1112 = new BitSet(new long[]{0x0000000000000002L});
 
 }

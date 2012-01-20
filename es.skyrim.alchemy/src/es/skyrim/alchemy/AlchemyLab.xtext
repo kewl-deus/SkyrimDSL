@@ -16,7 +16,7 @@ Ingredient:
 		
 		'price:' price = NUMBER
 		'weight:' weight = NUMBER 
-		'source:' source = STRING
+		('source:' source = STRING)?
 	'}'
 ;
 
@@ -50,7 +50,7 @@ enum Toxicity:
 
 
 terminal ID : 
-		'"'	'^'?('a'..'z'|'A'..'Z'|' '|'ä'|'Ä'|'ö'|'Ö'|'Ü'|'ü')+ '"'
+		'"'	'^'?('a'..'z'|'A'..'Z'|' '|'ä'|'Ä'|'ö'|'Ö'|'Ü'|'ü'|'ß')+ '"'
 ; 
 
 

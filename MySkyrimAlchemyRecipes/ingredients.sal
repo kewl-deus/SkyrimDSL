@@ -1,7 +1,93 @@
-ingredient "Abeceanischer Mirakelbarsch" {
-	-> "Damage Health"
-	-> "Weakness to Poison"
-	price: 15
-	weight: 0.5
-	source: 'Flüsse'
-}
+ingredient "Abeceanischer Mirakelbarsch" { -> "Wiederherstellung verstärken" ->"Anfälligkeit für Frost" -> "Anfälligkeit für Gift" -> "Schleichen verstärken" price: 15 weight: 0.5 source: 'Flüsse' }
+ingredient "Bärenklaue" { -> "Ausdauer wiederherstellen" -> "Gesundheit verstärken" -> "Einhändig verstärken" -> "Magickaregeneration senken" price: 2 weight: 0.1  source: 'Wildnis' }
+ingredient "Berits Asche" { -> "Ausdauer senken" -> "Feuerresistenz" -> "Beschwörung verstärken" -> "Ausdauer senken" price: 5 weight: 0.2   }
+ingredient "Biene" { -> "Anfälligkeit für Blitz" -> "Ausdauer regenerieren" -> "Ausdauer senken" -> "Ausdauer wiederherstellen" price: 3 weight: 0.1 source: 'Bienenstock' }
+ingredient "Bienenstockhülle" { -> "Giftresistenz" -> "Leichte Rüstung verstärken" -> "Schleichen verstärken" -> "Zerstörung verstärken" price: 5 weight: 1 source: 'Bienenstock' }
+ingredient "Blasenpilz" { -> "Ausdauer senken" -> "Gesundheit wiederherstellen" -> "Erzürnen" -> "Schmiedekunst verstärken" price: 12 weight: 0.2  source: 'Höhlen' }
+ingredient "Blaue Bergblume" { -> "Beschwörung verstärken" -> "Gesundheit wiederherstellen" -> "Gesundheit verstärken" -> "Magickaregeneration senken" price: 2 weight: 0.1  source: 'Steppenlandschaft' }
+ingredient "Blaue Pfeilfedern" { -> "Blitzresistenz" -> "Taschendiebstahl verstärken" -> "Gesundheit wiederherstellen" -> "Furcht" price: 1 weight: 0.1 source: 'Libellen' }
+ingredient "Blauer Schmetterlingsflügel" { -> "Verzaubern verstärken" -> "Beschwörung verstärken" -> "Ausdauer senken" -> "Magickaregeneration senken" price: 2 weight: 0.1 source: 'Blauer Schmetterling' }
+ingredient "Blutende Krone" { -> "Anfälligkeit für Feuer" -> "Blocken verstärken" -> "Magieresistenz" -> "Anfälligkeit für Gift" price: 10 weight: 0.3 source: 'Höhlen' }
+ingredient "Caniswurzel" { -> "Ausdauer senken" -> "Zielkunst verstärken" -> "Einhändig verstärken" -> "Lähmen" price: 5 weight: 0.1 source: 'Klippen/Felsen' }
+ingredient "Chauruseier" { -> "Anfälligkeit für Gift" -> "Magicka senken" -> "Unsichtbarkeit" -> "Ausdauer verstärken" price: 10 weight: 0.2 source: 'Schwarzweite' }
+ingredient "Cyrodilischer Spatenschwanz" { -> "Ausdauer senken" -> "Wiederherstellung verstärken" -> "Furcht" -> "Gesundheit senken" price: 15 weight: 0.3 source: 'Flüsse' }
+ingredient "Daedraherz" { -> "Gesundheit wiederherstellen" -> "Magicka senken" -> "Ausdauerregeneration senken" -> "Furcht" price: 250 weight: 0.5 source: 'Daedra' }
+ingredient "Distelzweig" { -> "Ausdauer senken" -> "Frostresistenz" -> "Giftresistenz" -> "Schwere Rüstung verstärken" price: 1 weight: 0.1 source: 'Steppenlandschaft' }
+ingredient "Dornenherz" { -> "Magicka wiederherstellen" -> "Blocken verstärken" -> "Lähmen" -> "Magicka verstärken" price: 20 weight: 0.5  source: 'Büsche' }
+ingredient "Drachenbaum" { -> "Zweihändig verstärken" -> "Feuerresistenz" -> "Redekunst verstärken" -> "Illusion verstärken" price: 5 weight: 0.1 source: 'Vulkanische Tundra' }
+ingredient "Drosselei" { -> "Anfälligkeit für Gift" -> "Ausdauer wiederherstellen" -> "Schloßknacken verstärken" -> "Blitzresistenz" price: 2 weight: 0.5 source: 'Vogelnester' }
+ingredient "Eisgeistzähne" { -> "Anfälligkeit für Feuer" -> "Unsichtbarkeit" -> "Schwere Rüstung verstärken" -> "Anfälligkeit für Frost" price: 30 weight: 0.3 source: 'Eisgeister' }
+ingredient "Eismirriam" { -> "Frostresistenz" -> "Magicka senken" -> "Schleichen verstärken" -> "Ausdauerregeneration senken" price: 1 weight: 0.1  }
+ingredient "Ektoplasma" { -> "Magicka wiederherstellen" -> "Magicka verstärken" -> "Zerstörung verstärken" -> "Gesundheit senken" price: 25 weight: 0.1 source: 'Geisterwesen' }
+ingredient "Elfenohr" { -> "Magicka wiederherstellen" -> "Zielkunst verstärken" -> "Anfälligkeit für Frost" -> "Feuerresistenz" price: 10 weight: 0.1  }
+ingredient "Fackelwürmchenbrust" { -> "Anfälligkeit für Magie" -> "Ausdauer verstärken" -> "Ausdauer wiederherstellen" -> "Dauerhafter Magickaschaden" price: 1 weight: 0.1  }
+ingredient "Falkenfedern" { -> "Krankheit heilen" -> "Leichte Rüstung verstärken" -> "Einhändig verstärken" -> "Schleichen verstärken" price: 15 weight: 0.1  }
+ingredient "Falkenschnabel" { -> "Tragfähigkeit verstärken" -> "Blitzresistenz" -> "Frostresistenz" -> "Ausdauer wiederherstellen" price: 15 weight: 0.25   }
+ingredient "Falmerohr" { -> "Gesundheit senken" -> "Erzürnen" -> "Giftresistenz" -> "Schloßknacken verstärken" price: 10 weight: 0.2 source: 'Falmer' }
+ingredient "Feuersalze" { -> "Feuerresistenz" -> "Magicka wiederherstellen" -> "Anfälligkeit für Frost" -> "Magicka regenerieren" price: 50 weight: 0.3  source: 'Feueratronach' }
+ingredient "Flusspeitscher" { -> "Gesundheit senken" -> "Verlangsamen" -> "Tragfähigkeit verstärken" -> "Veränderung verstärken" price: 15 weight: 0.25  }
+ingredient "Frostsalze" { -> "Anfälligkeit für Feuer" -> "Frostresistenz" -> "Magicka wiederherstellen" -> "Beschwörung verstärken" price: 100 weight: 0.3  source: 'Frostatronach' }
+ingredient "Glühstaub" { -> "Magicka senken" -> "Magickaregeneration senken" -> "Zerstörung verstärken" -> "Blitzresistenz" price: 20 weight: 0.5  source: 'Irrlichtmutter' }
+ingredient "Grassamen" { -> "Giftresistenz" -> "Magicka senken" -> "Veränderung verstärken" -> "Magicka wiederherstellen" price: 1 weight: 0.1   }
+ingredient "Großes Geweih" { -> "Ausdauer wiederherstellen" -> "Ausdauer verstärken" -> "Verlangsamen" -> "Ausdauerregeneration senken" price: 2 weight: 0.1  source: 'Elche' }
+ingredient "Hängemoos" { -> "Magicka senken" -> "Gesundheit verstärken" -> "Magickaregeneration senken" -> "Einhändig verstärken" price: 1 weight: 0.3  source: 'Ruinen/Felsen' }
+ingredient "Hexenrabenfedern" { -> "Erzürnen" -> "Magicka senken" -> "Beschwörung verstärken" -> "Anfälligkeit für Blitz" price: 20 weight: 0.1  source: 'Hexenraben' }
+ingredient "Hexenrabenklaue" { -> "Magieresistenz" -> "Dauerhafter Magickaschaden" -> "Verzaubern verstärken" -> "Redekunst verstärken" price: 20 weight: 0.3  source: 'Hexenraben' }
+ingredient "Histkarpfen" { -> "Ausdauer wiederherstellen" -> "Magicka verstärken" -> "Ausdauerregeneration senken" -> "Wasseratmung" price: 6 weight: 0.3  source: 'Flüsse' }
+ingredient "Honigwabe" { -> "Blocken verstärken" -> "Ausdauer senken" -> "Leichte Rüstung verstärken" -> "Ausdauer wiederherstellen" price: 5 weight: 1 source: 'Bienenstock' }
+ingredient "Hühnerei" { -> "Magieresistenz" -> "Magickaregeneration senken" -> "Wasseratmung" -> "Dauerhafter Ausdauerschaden" price: 2 weight: 0.5  source: 'Hühnernester' }
+ingredient "Jarrinwurzel" { -> "Gesundheit senken" -> "Magickaregeneration senken" -> "Magicka senken" -> "Ausdauer senken" price: 10 weight: 0.5   }
+ingredient "Jasbaytrauben" { -> "Magicka senken" -> "Anfälligkeit für Magie" -> "Magicka verstärken" -> "Gesundheit senken" price: 1 weight: 0.2  source: 'Vulkanische Tundra' }
+ingredient "Kleine Perle" { -> "Frostresistenz" -> "Einhändig verstärken" -> "Wiederherstellung verstärken" -> "Ausdauer wiederherstellen" price: 2 weight: 0.1   }
+ingredient "Kleines Geweih" { -> "Anfälligkeit für Gift" -> "Wiederherstellung verstärken" -> "Dauerhafter Ausdauerschaden" -> "Gesundheit senken" price: 2 weight: 0.1   }
+ingredient "Knoblauch" { -> "Ausdauer verstärken" -> "Gesundheit regenerieren" -> "Giftresistenz" -> "Magicka regenerieren" price: 1 weight: 0.3   }
+ingredient "Knochenmehl" { -> "Ausdauer senken" -> "Ausdauer senken" -> "Beschwörung verstärken" -> "Feuerresistenz" price: 5 weight: 0.5  source: 'Skelette/Draugr' }
+ingredient "Koboldschemel" { -> "Gesundheit senken" -> "Gesundheit senken" -> "Lähmen" -> "Gesundheit wiederherstellen" price: 0 weight: 0.3  source: 'Höhlen' }
+ingredient "Kriechranke" { -> "Magicka wiederherstellen" -> "Ausdauerregeneration senken" -> "Gesundheit verstärken" -> "Anfälligkeit für Magie" price: 1 weight: 0.2  source: 'Vulkanische Tundra' }
+ingredient "Lavendel" { -> "Ausdauer verstärken" -> "Beschwörung verstärken" -> "Magicka senken" -> "Magieresistenz" price: 1 weight: 0.1  source: 'Lavendelpflanze' }
+ingredient "Magisches Leichentuch" { -> "Ausdauer wiederherstellen" -> "Zerstörung verstärken" -> "Gesundheit verstärken" -> "Magieresistenz" price: 2 weight: 0.1  source: 'Irrlichtmutter' }
+ingredient "Menschenfleisch" { -> "Gesundheit senken" -> "Lähmen" -> "Magicka wiederherstellen" -> "Schleichen verstärken" price: 1 weight: 0.3   }
+ingredient "Menschliches Herz" { -> "Magickaregeneration senken" -> "Magicka senken" -> "Raserei" -> "Gesundheit senken" price: 1 weight: 0.25   }
+ingredient "Mondfalterflügel" { -> "Magicka senken" -> "Leichte Rüstung verstärken" -> "Gesundheit regenerieren" -> "Unsichtbarkeit" price: 5 weight: 0.1  source: 'Mondfalter' }
+ingredient "Mondzucker" { -> "Anfälligkeit für Feuer" -> "Frostresistenz" -> "Magicka wiederherstellen" -> "Magicka regenerieren" price: 50 weight: 0.25   }
+ingredient "Mora Tapinella" { -> "Magicka wiederherstellen" -> "Gesundheit senken" -> "Ausdauer regenerieren" -> "Illusion verstärken" price: 4 weight: 0.3  source: 'Tote Bäume' }
+ingredient "Namiras Fäulnis" { -> "Magicka senken" -> "Schloßknacken verstärken" -> "Furcht" -> "Gesundheit regenerieren" price: 0 weight: 0.3  source: 'Höhlen' }
+ingredient "Nirnwurz" { -> "Gesundheit senken" -> "Ausdauer senken" -> "Unsichtbarkeit" -> "Magieresistenz" price: 10 weight: 0.2  source: 'Gewässer' }
+ingredient "Nordranke" { -> "Magicka senken" -> "Wasseratmung" -> "Gesundheit regenerieren" -> "Taschendiebstahl verstärken" price: 5 weight: 0.2  source: 'Unterwasser' }
+ingredient "Orangene Pfeilfedern" { -> "Ausdauer wiederherstellen" -> "Magicka senken" -> "Taschendiebstahl verstärken" -> "Gesundheit senken" price: 1 weight: 0.1  source: 'Libellen' }
+ingredient "Perle" { -> "Ausdauer wiederherstellen" -> "Blocken verstärken" -> "Blitzresistenz" -> "Magicka wiederherstellen" price: 2 weight: 0.1   }
+ingredient "Pfahlwurzel" { -> "Anfälligkeit für Magie" -> "Illusion verstärken" -> "Magicka regenerieren" -> "Magicka wiederherstellen" price: 15 weight: 0.5  source: 'Zweiglinge' }
+ingredient "Pulverisierter Mammutstoßzahn" { -> "Ausdauer wiederherstellen" -> "Schleichen verstärken" -> "Anfälligkeit für Feuer" -> "Furcht" price: 2 weight: 0.1  source: 'Mammuts' }
+ingredient "Purpurne Nirnwurz" { -> "Magieresistenz" -> "Unsichtbarkeit" -> "Gesundheit senken" -> "Ausdauer senken" price: 10 weight: 0.2  source: 'Schwarzweite' }
+ingredient "Rauer Wulstling" { -> "Feuerresistenz" -> "Zweihändig verstärken" -> "Raserei" -> "Ausdauer regenerieren" price: 2 weight: 0.1  source: 'Höhlen' }
+ingredient "Riesenflechte" { -> "Anfälligkeit für Blitz" -> "Gesundheit senken" -> "Anfälligkeit für Gift" -> "Magicka wiederherstellen" price: 5 weight: 0.25   }
+ingredient "Riesenzeh" { -> "Ausdauer senken" -> "Gesundheit verstärken" -> "Tragfähigkeit verstärken" -> "Ausdauerregeneration senken" price: 20 weight: 1 source: 'Riesen' }
+ingredient "Rote Bergblume" { -> "Magicka wiederherstellen" -> "Magicka senken" -> "Magicka verstärken" -> "Gesundheit senken" price: 2 weight: 0.1  source: 'Steppenlandschaft' }
+ingredient "Säbelzahntigerauge" { -> "Ausdauer wiederherstellen" -> "Gesundheit wiederherstellen" -> "Gesundheit senken" -> "Magicka senken" price: 2 weight: 0.1 source: 'Säbelzahntiger' }
+ingredient "Säbelzahntigerreißzahn" { -> "Ausdauer wiederherstellen" -> "Schwere Rüstung verstärken" -> "Schmiedekunst verstärken" -> "Anfälligkeit für Gift" price: 2 weight: 0.1  source: 'Säbelzahntiger' }
+ingredient "Salz" { -> "Wiederherstellung verstärken" -> "Magicka regenerieren" -> "Verlangsamen" -> "Anfälligkeit für Magie" price: 2 weight: 0.2  source: 'Fässer' }
+ingredient "Salze der Leere" { -> "Anfälligkeit für Blitz" -> "Magieresistenz" -> "Gesundheit senken" -> "Magicka verstärken" price: 125 weight: 0.2  source: 'Sturmatronach' }
+ingredient "Schimmerpilz" { -> "Blitzresistenz" -> "Zerstörung verstärken" -> "Schmiedekunst verstärken" -> "Gesundheit verstärken" price: 5 weight: 0.2  source: 'Höhlen' }
+ingredient "Schlachterfischei" { -> "Giftresistenz" -> "Taschendiebstahl verstärken" -> "Gesundheit senken" -> "Ausdauer verstärken" price: 3 weight: 0.2  source: 'Unterwasser' }
+ingredient "Schlachterfischschuppen" { -> "Gesundheit senken" -> "Schwere Rüstung verstärken" -> "Gesundheit senken" -> "Frostresistenz" price: 3 weight: 0.1  source: 'Schlachterfisch' }
+ingredient "Schlammkrabben Chitin" { -> "Ausdauer wiederherstellen" -> "Krankheit heilen" -> "Giftresistenz" -> "Feuerresistenz" price: 2 weight: 0.3  source: 'Schlammkrabben' }
+ingredient "Schmetterlingsflügel" { -> "Gesundheit wiederherstellen" -> "Redekunst verstärken" -> "Dauerhafter Ausdauerschaden" -> "Magicka senken" price: 3 weight: 0.1  source: 'Landschaften' }
+ingredient "Schneebeeren" { -> "Feuerresistenz" -> "Frostresistenz" -> "Blitzresistenz" -> "Verzaubern verstärken" price: 4 weight: 0.1  source: 'Schneelandschaften' }
+ingredient "Schuppenschwamm" { -> "Anfälligkeit für Magie" -> "Illusion verstärken" -> "Ausdauer regenerieren" -> "Tragfähigkeit verstärken" price: 4 weight: 0.3  source: 'Morsche Birken' }
+ingredient "Silberbarsch" { -> "Ausdauer wiederherstellen" -> "Gesundheit senken" -> "Frostresistenz" -> "Ausdauerregeneration senken" price: 15 weight: 0.3  source: 'Gewässer' }
+ingredient "Skeeverschwanz" { -> "Ausdauerregeneration senken" -> "Gesundheit senken" -> "Gesundheit senken" -> "Leichte Rüstung verstärken" price: 3 weight: 0.2  source: 'Skeever' }
+ingredient "Spinnenei" { -> "Ausdauer senken" -> "Magickaregeneration senken" -> "Schloßknacken verstärken" -> "Zielkunst verstärken" price: 5 weight: 0.2  source: 'Spinnennester' }
+ingredient "Steinhuscherei" { -> "Gesundheit wiederherstellen" -> "Einhändig verstärken" -> "Ausdauer senken" -> "Anfälligkeit für Magie" price: 2 weight: 0.5  source: 'Nester' }
+ingredient "Sumpfpilzschote" { -> "Blitzresistenz" -> "Dauerhafter Magickaschaden" -> "Lähmen" -> "Gesundheit wiederherstellen" price: 3 weight: 0.5  source: 'Sumpf von Morthal' }
+ingredient "Todesglockenblume" { -> "Gesundheit senken" -> "Ausdauer senken" -> "Verlangsamen" -> "Anfälligkeit für Gift" price: 4 weight: 0.1  source: 'Mortal, gefrorene Tundra' }
+ingredient "Tollkirsche" { -> "Gesundheit senken" -> "Magickaregeneration senken" -> "Dauerhafter Ausdauerschaden" -> "Zerstörung verstärken" price: 8 weight: 0.1  source: 'Friedhöfe' }
+ingredient "Trollfett" { -> "Giftresistenz" -> "Zweihändig verstärken" -> "Erzürnen" -> "Gesundheit senken" price: 15 weight: 1 source: 'Trolle' }
+ingredient "Tundrabaumwolle" { -> "Magieresistenz" -> "Blocken verstärken" -> "Magicka verstärken" -> "Redekunst verstärken" price: 1 weight: 0.1  source: 'Siehe Name' }
+ingredient "Vampirstaub" { -> "Unsichtbarkeit" -> "Magicka wiederherstellen" -> "Gesundheit regenerieren" -> "Krankheit heilen" price: 25 weight: 0.2  source: 'Vampire, Silber Hand' }
+ingredient "Verkohltes Skeeverfell" { -> "Ausdauer wiederherstellen" -> "Krankheit heilen" -> "Giftresistenz" -> "Gesundheit wiederherstellen" price: 1 weight: 0.5  source: 'Kochstellen' }
+ingredient "Violette Bergblume" { -> "Ausdauer wiederherstellen" -> "Schleichen verstärken" -> "Dauerhafter Magickaschaden" -> "Frostresistenz" price: 2 weight: 0.1  source: 'Steppenlandschaft' }
+ingredient "Wacholderbeeren" { -> "Anfälligkeit für Feuer" -> "Ausdauerregeneration senken" -> "Zielkunst verstärken" -> "Gesundheit regenerieren" price: 1 weight: 0.1  source: 'Wacholderbusch' }
+ingredient "Weißkappe" { -> "Anfälligkeit für Frost" -> "Magicka wiederherstellen" -> "Schwere Rüstung verstärken" -> "Magicka senken" price: 0 weight: 0.3  source: 'Weißkappenpilze' }
+ingredient "Weizen" { -> "Ausdauerregeneration senken" -> "Gesundheit wiederherstellen" -> "Gesundheit verstärken" -> "Dauerhafter Magickaschaden" price: 5 weight: 0.1  source: 'Farmen, Kisten, Verkauf' }
+ingredient "Zweiglingsaft" { -> "Magickaregeneration senken" -> "Verzaubern verstärken" -> "Schmiedekunst verstärken" -> "Veränderung verstärken" price: 5 weight: 0.2  source: 'Zweiglinge' }
+ingredient "Zwergenöl" { -> "Anfälligkeit für Magie" -> "Illusion verstärken" -> "Magicka regenerieren" -> "Magicka wiederherstellen" price: 15 weight: 0.3  source: 'Zwergenruinen' }

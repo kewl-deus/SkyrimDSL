@@ -41,6 +41,7 @@ public class AlchemyLabParser extends AbstractContentAssistParser {
 					put(grammarAccess.getToxicityAccess().getAlternatives(), "rule__Toxicity__Alternatives");
 					put(grammarAccess.getAlchemyLabModelAccess().getGroup(), "rule__AlchemyLabModel__Group__0");
 					put(grammarAccess.getIngredientAccess().getGroup(), "rule__Ingredient__Group__0");
+					put(grammarAccess.getIngredientAccess().getGroup_8(), "rule__Ingredient__Group_8__0");
 					put(grammarAccess.getEffectAccess().getGroup(), "rule__Effect__Group__0");
 					put(grammarAccess.getEffectAccess().getGroup_5(), "rule__Effect__Group_5__0");
 					put(grammarAccess.getEffectRefAccess().getGroup(), "rule__EffectRef__Group__0");
@@ -53,7 +54,7 @@ public class AlchemyLabParser extends AbstractContentAssistParser {
 					put(grammarAccess.getIngredientAccess().getEffectsAssignment_3(), "rule__Ingredient__EffectsAssignment_3");
 					put(grammarAccess.getIngredientAccess().getPriceAssignment_5(), "rule__Ingredient__PriceAssignment_5");
 					put(grammarAccess.getIngredientAccess().getWeightAssignment_7(), "rule__Ingredient__WeightAssignment_7");
-					put(grammarAccess.getIngredientAccess().getSourceAssignment_9(), "rule__Ingredient__SourceAssignment_9");
+					put(grammarAccess.getIngredientAccess().getSourceAssignment_8_1(), "rule__Ingredient__SourceAssignment_8_1");
 					put(grammarAccess.getEffectAccess().getNameAssignment_1(), "rule__Effect__NameAssignment_1");
 					put(grammarAccess.getEffectAccess().getTypeAssignment_3(), "rule__Effect__TypeAssignment_3");
 					put(grammarAccess.getEffectAccess().getDescriptionAssignment_5_1(), "rule__Effect__DescriptionAssignment_5_1");

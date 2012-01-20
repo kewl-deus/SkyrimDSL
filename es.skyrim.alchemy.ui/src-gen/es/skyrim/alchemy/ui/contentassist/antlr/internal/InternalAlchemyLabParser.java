@@ -22,7 +22,7 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalAlchemyLabParser extends AbstractInternalContentAssistParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_NUMBER", "RULE_STRING", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'+'", "'-'", "'potion'", "'poison'", "'ingredient'", "'{'", "'price:'", "'weight:'", "'source:'", "'}'", "'effect'", "'('", "')'", "':'", "'->'", "'='"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_NUMBER", "RULE_STRING", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'+'", "'-'", "'potion'", "'poison'", "'ingredient'", "'{'", "'price:'", "'weight:'", "'}'", "'source:'", "'effect'", "'('", "')'", "':'", "'->'", "'='"
     };
     public static final int RULE_ID=4;
     public static final int T__27=27;
@@ -1733,21 +1733,42 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Ingredient__Group__8__Impl"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:632:1: rule__Ingredient__Group__8__Impl : ( 'source:' ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:632:1: rule__Ingredient__Group__8__Impl : ( ( rule__Ingredient__Group_8__0 )? ) ;
     public final void rule__Ingredient__Group__8__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:636:1: ( ( 'source:' ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:637:1: ( 'source:' )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:636:1: ( ( ( rule__Ingredient__Group_8__0 )? ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:637:1: ( ( rule__Ingredient__Group_8__0 )? )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:637:1: ( 'source:' )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:638:1: 'source:'
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:637:1: ( ( rule__Ingredient__Group_8__0 )? )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:638:1: ( rule__Ingredient__Group_8__0 )?
             {
-             before(grammarAccess.getIngredientAccess().getSourceKeyword_8()); 
-            match(input,20,FOLLOW_20_in_rule__Ingredient__Group__8__Impl1260); 
-             after(grammarAccess.getIngredientAccess().getSourceKeyword_8()); 
+             before(grammarAccess.getIngredientAccess().getGroup_8()); 
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:639:1: ( rule__Ingredient__Group_8__0 )?
+            int alt7=2;
+            int LA7_0 = input.LA(1);
+
+            if ( (LA7_0==21) ) {
+                alt7=1;
+            }
+            switch (alt7) {
+                case 1 :
+                    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:639:2: rule__Ingredient__Group_8__0
+                    {
+                    pushFollow(FOLLOW_rule__Ingredient__Group_8__0_in_rule__Ingredient__Group__8__Impl1259);
+                    rule__Ingredient__Group_8__0();
+
+                    state._fsp--;
+
+
+                    }
+                    break;
+
+            }
+
+             after(grammarAccess.getIngredientAccess().getGroup_8()); 
 
             }
 
@@ -1770,22 +1791,17 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Ingredient__Group__9"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:651:1: rule__Ingredient__Group__9 : rule__Ingredient__Group__9__Impl rule__Ingredient__Group__10 ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:649:1: rule__Ingredient__Group__9 : rule__Ingredient__Group__9__Impl ;
     public final void rule__Ingredient__Group__9() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:655:1: ( rule__Ingredient__Group__9__Impl rule__Ingredient__Group__10 )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:656:2: rule__Ingredient__Group__9__Impl rule__Ingredient__Group__10
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:653:1: ( rule__Ingredient__Group__9__Impl )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:654:2: rule__Ingredient__Group__9__Impl
             {
-            pushFollow(FOLLOW_rule__Ingredient__Group__9__Impl_in_rule__Ingredient__Group__91291);
+            pushFollow(FOLLOW_rule__Ingredient__Group__9__Impl_in_rule__Ingredient__Group__91290);
             rule__Ingredient__Group__9__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_rule__Ingredient__Group__10_in_rule__Ingredient__Group__91294);
-            rule__Ingredient__Group__10();
 
             state._fsp--;
 
@@ -1808,31 +1824,21 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Ingredient__Group__9__Impl"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:663:1: rule__Ingredient__Group__9__Impl : ( ( rule__Ingredient__SourceAssignment_9 ) ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:660:1: rule__Ingredient__Group__9__Impl : ( '}' ) ;
     public final void rule__Ingredient__Group__9__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:667:1: ( ( ( rule__Ingredient__SourceAssignment_9 ) ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:668:1: ( ( rule__Ingredient__SourceAssignment_9 ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:664:1: ( ( '}' ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:665:1: ( '}' )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:668:1: ( ( rule__Ingredient__SourceAssignment_9 ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:669:1: ( rule__Ingredient__SourceAssignment_9 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:665:1: ( '}' )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:666:1: '}'
             {
-             before(grammarAccess.getIngredientAccess().getSourceAssignment_9()); 
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:670:1: ( rule__Ingredient__SourceAssignment_9 )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:670:2: rule__Ingredient__SourceAssignment_9
-            {
-            pushFollow(FOLLOW_rule__Ingredient__SourceAssignment_9_in_rule__Ingredient__Group__9__Impl1321);
-            rule__Ingredient__SourceAssignment_9();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getIngredientAccess().getSourceAssignment_9()); 
+             before(grammarAccess.getIngredientAccess().getRightCurlyBracketKeyword_9()); 
+            match(input,20,FOLLOW_20_in_rule__Ingredient__Group__9__Impl1318); 
+             after(grammarAccess.getIngredientAccess().getRightCurlyBracketKeyword_9()); 
 
             }
 
@@ -1854,18 +1860,23 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
     // $ANTLR end "rule__Ingredient__Group__9__Impl"
 
 
-    // $ANTLR start "rule__Ingredient__Group__10"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:680:1: rule__Ingredient__Group__10 : rule__Ingredient__Group__10__Impl ;
-    public final void rule__Ingredient__Group__10() throws RecognitionException {
+    // $ANTLR start "rule__Ingredient__Group_8__0"
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:699:1: rule__Ingredient__Group_8__0 : rule__Ingredient__Group_8__0__Impl rule__Ingredient__Group_8__1 ;
+    public final void rule__Ingredient__Group_8__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:684:1: ( rule__Ingredient__Group__10__Impl )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:685:2: rule__Ingredient__Group__10__Impl
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:703:1: ( rule__Ingredient__Group_8__0__Impl rule__Ingredient__Group_8__1 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:704:2: rule__Ingredient__Group_8__0__Impl rule__Ingredient__Group_8__1
             {
-            pushFollow(FOLLOW_rule__Ingredient__Group__10__Impl_in_rule__Ingredient__Group__101351);
-            rule__Ingredient__Group__10__Impl();
+            pushFollow(FOLLOW_rule__Ingredient__Group_8__0__Impl_in_rule__Ingredient__Group_8__01369);
+            rule__Ingredient__Group_8__0__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_rule__Ingredient__Group_8__1_in_rule__Ingredient__Group_8__01372);
+            rule__Ingredient__Group_8__1();
 
             state._fsp--;
 
@@ -1884,25 +1895,25 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
         }
         return ;
     }
-    // $ANTLR end "rule__Ingredient__Group__10"
+    // $ANTLR end "rule__Ingredient__Group_8__0"
 
 
-    // $ANTLR start "rule__Ingredient__Group__10__Impl"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:691:1: rule__Ingredient__Group__10__Impl : ( '}' ) ;
-    public final void rule__Ingredient__Group__10__Impl() throws RecognitionException {
+    // $ANTLR start "rule__Ingredient__Group_8__0__Impl"
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:711:1: rule__Ingredient__Group_8__0__Impl : ( 'source:' ) ;
+    public final void rule__Ingredient__Group_8__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:695:1: ( ( '}' ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:696:1: ( '}' )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:715:1: ( ( 'source:' ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:716:1: ( 'source:' )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:696:1: ( '}' )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:697:1: '}'
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:716:1: ( 'source:' )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:717:1: 'source:'
             {
-             before(grammarAccess.getIngredientAccess().getRightCurlyBracketKeyword_10()); 
-            match(input,21,FOLLOW_21_in_rule__Ingredient__Group__10__Impl1379); 
-             after(grammarAccess.getIngredientAccess().getRightCurlyBracketKeyword_10()); 
+             before(grammarAccess.getIngredientAccess().getSourceKeyword_8_0()); 
+            match(input,21,FOLLOW_21_in_rule__Ingredient__Group_8__0__Impl1400); 
+             after(grammarAccess.getIngredientAccess().getSourceKeyword_8_0()); 
 
             }
 
@@ -1921,25 +1932,105 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
         }
         return ;
     }
-    // $ANTLR end "rule__Ingredient__Group__10__Impl"
+    // $ANTLR end "rule__Ingredient__Group_8__0__Impl"
+
+
+    // $ANTLR start "rule__Ingredient__Group_8__1"
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:730:1: rule__Ingredient__Group_8__1 : rule__Ingredient__Group_8__1__Impl ;
+    public final void rule__Ingredient__Group_8__1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:734:1: ( rule__Ingredient__Group_8__1__Impl )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:735:2: rule__Ingredient__Group_8__1__Impl
+            {
+            pushFollow(FOLLOW_rule__Ingredient__Group_8__1__Impl_in_rule__Ingredient__Group_8__11431);
+            rule__Ingredient__Group_8__1__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Ingredient__Group_8__1"
+
+
+    // $ANTLR start "rule__Ingredient__Group_8__1__Impl"
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:741:1: rule__Ingredient__Group_8__1__Impl : ( ( rule__Ingredient__SourceAssignment_8_1 ) ) ;
+    public final void rule__Ingredient__Group_8__1__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:745:1: ( ( ( rule__Ingredient__SourceAssignment_8_1 ) ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:746:1: ( ( rule__Ingredient__SourceAssignment_8_1 ) )
+            {
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:746:1: ( ( rule__Ingredient__SourceAssignment_8_1 ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:747:1: ( rule__Ingredient__SourceAssignment_8_1 )
+            {
+             before(grammarAccess.getIngredientAccess().getSourceAssignment_8_1()); 
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:748:1: ( rule__Ingredient__SourceAssignment_8_1 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:748:2: rule__Ingredient__SourceAssignment_8_1
+            {
+            pushFollow(FOLLOW_rule__Ingredient__SourceAssignment_8_1_in_rule__Ingredient__Group_8__1__Impl1458);
+            rule__Ingredient__SourceAssignment_8_1();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getIngredientAccess().getSourceAssignment_8_1()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Ingredient__Group_8__1__Impl"
 
 
     // $ANTLR start "rule__Effect__Group__0"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:732:1: rule__Effect__Group__0 : rule__Effect__Group__0__Impl rule__Effect__Group__1 ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:762:1: rule__Effect__Group__0 : rule__Effect__Group__0__Impl rule__Effect__Group__1 ;
     public final void rule__Effect__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:736:1: ( rule__Effect__Group__0__Impl rule__Effect__Group__1 )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:737:2: rule__Effect__Group__0__Impl rule__Effect__Group__1
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:766:1: ( rule__Effect__Group__0__Impl rule__Effect__Group__1 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:767:2: rule__Effect__Group__0__Impl rule__Effect__Group__1
             {
-            pushFollow(FOLLOW_rule__Effect__Group__0__Impl_in_rule__Effect__Group__01432);
+            pushFollow(FOLLOW_rule__Effect__Group__0__Impl_in_rule__Effect__Group__01492);
             rule__Effect__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Effect__Group__1_in_rule__Effect__Group__01435);
+            pushFollow(FOLLOW_rule__Effect__Group__1_in_rule__Effect__Group__01495);
             rule__Effect__Group__1();
 
             state._fsp--;
@@ -1963,20 +2054,20 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Effect__Group__0__Impl"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:744:1: rule__Effect__Group__0__Impl : ( 'effect' ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:774:1: rule__Effect__Group__0__Impl : ( 'effect' ) ;
     public final void rule__Effect__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:748:1: ( ( 'effect' ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:749:1: ( 'effect' )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:778:1: ( ( 'effect' ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:779:1: ( 'effect' )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:749:1: ( 'effect' )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:750:1: 'effect'
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:779:1: ( 'effect' )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:780:1: 'effect'
             {
              before(grammarAccess.getEffectAccess().getEffectKeyword_0()); 
-            match(input,22,FOLLOW_22_in_rule__Effect__Group__0__Impl1463); 
+            match(input,22,FOLLOW_22_in_rule__Effect__Group__0__Impl1523); 
              after(grammarAccess.getEffectAccess().getEffectKeyword_0()); 
 
             }
@@ -2000,21 +2091,21 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Effect__Group__1"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:763:1: rule__Effect__Group__1 : rule__Effect__Group__1__Impl rule__Effect__Group__2 ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:793:1: rule__Effect__Group__1 : rule__Effect__Group__1__Impl rule__Effect__Group__2 ;
     public final void rule__Effect__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:767:1: ( rule__Effect__Group__1__Impl rule__Effect__Group__2 )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:768:2: rule__Effect__Group__1__Impl rule__Effect__Group__2
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:797:1: ( rule__Effect__Group__1__Impl rule__Effect__Group__2 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:798:2: rule__Effect__Group__1__Impl rule__Effect__Group__2
             {
-            pushFollow(FOLLOW_rule__Effect__Group__1__Impl_in_rule__Effect__Group__11494);
+            pushFollow(FOLLOW_rule__Effect__Group__1__Impl_in_rule__Effect__Group__11554);
             rule__Effect__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Effect__Group__2_in_rule__Effect__Group__11497);
+            pushFollow(FOLLOW_rule__Effect__Group__2_in_rule__Effect__Group__11557);
             rule__Effect__Group__2();
 
             state._fsp--;
@@ -2038,23 +2129,23 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Effect__Group__1__Impl"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:775:1: rule__Effect__Group__1__Impl : ( ( rule__Effect__NameAssignment_1 ) ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:805:1: rule__Effect__Group__1__Impl : ( ( rule__Effect__NameAssignment_1 ) ) ;
     public final void rule__Effect__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:779:1: ( ( ( rule__Effect__NameAssignment_1 ) ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:780:1: ( ( rule__Effect__NameAssignment_1 ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:809:1: ( ( ( rule__Effect__NameAssignment_1 ) ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:810:1: ( ( rule__Effect__NameAssignment_1 ) )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:780:1: ( ( rule__Effect__NameAssignment_1 ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:781:1: ( rule__Effect__NameAssignment_1 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:810:1: ( ( rule__Effect__NameAssignment_1 ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:811:1: ( rule__Effect__NameAssignment_1 )
             {
              before(grammarAccess.getEffectAccess().getNameAssignment_1()); 
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:782:1: ( rule__Effect__NameAssignment_1 )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:782:2: rule__Effect__NameAssignment_1
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:812:1: ( rule__Effect__NameAssignment_1 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:812:2: rule__Effect__NameAssignment_1
             {
-            pushFollow(FOLLOW_rule__Effect__NameAssignment_1_in_rule__Effect__Group__1__Impl1524);
+            pushFollow(FOLLOW_rule__Effect__NameAssignment_1_in_rule__Effect__Group__1__Impl1584);
             rule__Effect__NameAssignment_1();
 
             state._fsp--;
@@ -2085,21 +2176,21 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Effect__Group__2"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:792:1: rule__Effect__Group__2 : rule__Effect__Group__2__Impl rule__Effect__Group__3 ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:822:1: rule__Effect__Group__2 : rule__Effect__Group__2__Impl rule__Effect__Group__3 ;
     public final void rule__Effect__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:796:1: ( rule__Effect__Group__2__Impl rule__Effect__Group__3 )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:797:2: rule__Effect__Group__2__Impl rule__Effect__Group__3
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:826:1: ( rule__Effect__Group__2__Impl rule__Effect__Group__3 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:827:2: rule__Effect__Group__2__Impl rule__Effect__Group__3
             {
-            pushFollow(FOLLOW_rule__Effect__Group__2__Impl_in_rule__Effect__Group__21554);
+            pushFollow(FOLLOW_rule__Effect__Group__2__Impl_in_rule__Effect__Group__21614);
             rule__Effect__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Effect__Group__3_in_rule__Effect__Group__21557);
+            pushFollow(FOLLOW_rule__Effect__Group__3_in_rule__Effect__Group__21617);
             rule__Effect__Group__3();
 
             state._fsp--;
@@ -2123,20 +2214,20 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Effect__Group__2__Impl"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:804:1: rule__Effect__Group__2__Impl : ( '(' ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:834:1: rule__Effect__Group__2__Impl : ( '(' ) ;
     public final void rule__Effect__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:808:1: ( ( '(' ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:809:1: ( '(' )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:838:1: ( ( '(' ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:839:1: ( '(' )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:809:1: ( '(' )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:810:1: '('
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:839:1: ( '(' )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:840:1: '('
             {
              before(grammarAccess.getEffectAccess().getLeftParenthesisKeyword_2()); 
-            match(input,23,FOLLOW_23_in_rule__Effect__Group__2__Impl1585); 
+            match(input,23,FOLLOW_23_in_rule__Effect__Group__2__Impl1645); 
              after(grammarAccess.getEffectAccess().getLeftParenthesisKeyword_2()); 
 
             }
@@ -2160,21 +2251,21 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Effect__Group__3"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:823:1: rule__Effect__Group__3 : rule__Effect__Group__3__Impl rule__Effect__Group__4 ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:853:1: rule__Effect__Group__3 : rule__Effect__Group__3__Impl rule__Effect__Group__4 ;
     public final void rule__Effect__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:827:1: ( rule__Effect__Group__3__Impl rule__Effect__Group__4 )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:828:2: rule__Effect__Group__3__Impl rule__Effect__Group__4
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:857:1: ( rule__Effect__Group__3__Impl rule__Effect__Group__4 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:858:2: rule__Effect__Group__3__Impl rule__Effect__Group__4
             {
-            pushFollow(FOLLOW_rule__Effect__Group__3__Impl_in_rule__Effect__Group__31616);
+            pushFollow(FOLLOW_rule__Effect__Group__3__Impl_in_rule__Effect__Group__31676);
             rule__Effect__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Effect__Group__4_in_rule__Effect__Group__31619);
+            pushFollow(FOLLOW_rule__Effect__Group__4_in_rule__Effect__Group__31679);
             rule__Effect__Group__4();
 
             state._fsp--;
@@ -2198,23 +2289,23 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Effect__Group__3__Impl"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:835:1: rule__Effect__Group__3__Impl : ( ( rule__Effect__TypeAssignment_3 ) ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:865:1: rule__Effect__Group__3__Impl : ( ( rule__Effect__TypeAssignment_3 ) ) ;
     public final void rule__Effect__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:839:1: ( ( ( rule__Effect__TypeAssignment_3 ) ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:840:1: ( ( rule__Effect__TypeAssignment_3 ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:869:1: ( ( ( rule__Effect__TypeAssignment_3 ) ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:870:1: ( ( rule__Effect__TypeAssignment_3 ) )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:840:1: ( ( rule__Effect__TypeAssignment_3 ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:841:1: ( rule__Effect__TypeAssignment_3 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:870:1: ( ( rule__Effect__TypeAssignment_3 ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:871:1: ( rule__Effect__TypeAssignment_3 )
             {
              before(grammarAccess.getEffectAccess().getTypeAssignment_3()); 
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:842:1: ( rule__Effect__TypeAssignment_3 )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:842:2: rule__Effect__TypeAssignment_3
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:872:1: ( rule__Effect__TypeAssignment_3 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:872:2: rule__Effect__TypeAssignment_3
             {
-            pushFollow(FOLLOW_rule__Effect__TypeAssignment_3_in_rule__Effect__Group__3__Impl1646);
+            pushFollow(FOLLOW_rule__Effect__TypeAssignment_3_in_rule__Effect__Group__3__Impl1706);
             rule__Effect__TypeAssignment_3();
 
             state._fsp--;
@@ -2245,21 +2336,21 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Effect__Group__4"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:852:1: rule__Effect__Group__4 : rule__Effect__Group__4__Impl rule__Effect__Group__5 ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:882:1: rule__Effect__Group__4 : rule__Effect__Group__4__Impl rule__Effect__Group__5 ;
     public final void rule__Effect__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:856:1: ( rule__Effect__Group__4__Impl rule__Effect__Group__5 )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:857:2: rule__Effect__Group__4__Impl rule__Effect__Group__5
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:886:1: ( rule__Effect__Group__4__Impl rule__Effect__Group__5 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:887:2: rule__Effect__Group__4__Impl rule__Effect__Group__5
             {
-            pushFollow(FOLLOW_rule__Effect__Group__4__Impl_in_rule__Effect__Group__41676);
+            pushFollow(FOLLOW_rule__Effect__Group__4__Impl_in_rule__Effect__Group__41736);
             rule__Effect__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Effect__Group__5_in_rule__Effect__Group__41679);
+            pushFollow(FOLLOW_rule__Effect__Group__5_in_rule__Effect__Group__41739);
             rule__Effect__Group__5();
 
             state._fsp--;
@@ -2283,20 +2374,20 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Effect__Group__4__Impl"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:864:1: rule__Effect__Group__4__Impl : ( ')' ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:894:1: rule__Effect__Group__4__Impl : ( ')' ) ;
     public final void rule__Effect__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:868:1: ( ( ')' ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:869:1: ( ')' )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:898:1: ( ( ')' ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:899:1: ( ')' )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:869:1: ( ')' )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:870:1: ')'
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:899:1: ( ')' )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:900:1: ')'
             {
              before(grammarAccess.getEffectAccess().getRightParenthesisKeyword_4()); 
-            match(input,24,FOLLOW_24_in_rule__Effect__Group__4__Impl1707); 
+            match(input,24,FOLLOW_24_in_rule__Effect__Group__4__Impl1767); 
              after(grammarAccess.getEffectAccess().getRightParenthesisKeyword_4()); 
 
             }
@@ -2320,16 +2411,16 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Effect__Group__5"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:883:1: rule__Effect__Group__5 : rule__Effect__Group__5__Impl ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:913:1: rule__Effect__Group__5 : rule__Effect__Group__5__Impl ;
     public final void rule__Effect__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:887:1: ( rule__Effect__Group__5__Impl )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:888:2: rule__Effect__Group__5__Impl
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:917:1: ( rule__Effect__Group__5__Impl )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:918:2: rule__Effect__Group__5__Impl
             {
-            pushFollow(FOLLOW_rule__Effect__Group__5__Impl_in_rule__Effect__Group__51738);
+            pushFollow(FOLLOW_rule__Effect__Group__5__Impl_in_rule__Effect__Group__51798);
             rule__Effect__Group__5__Impl();
 
             state._fsp--;
@@ -2353,31 +2444,31 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Effect__Group__5__Impl"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:894:1: rule__Effect__Group__5__Impl : ( ( rule__Effect__Group_5__0 )? ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:924:1: rule__Effect__Group__5__Impl : ( ( rule__Effect__Group_5__0 )? ) ;
     public final void rule__Effect__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:898:1: ( ( ( rule__Effect__Group_5__0 )? ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:899:1: ( ( rule__Effect__Group_5__0 )? )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:928:1: ( ( ( rule__Effect__Group_5__0 )? ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:929:1: ( ( rule__Effect__Group_5__0 )? )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:899:1: ( ( rule__Effect__Group_5__0 )? )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:900:1: ( rule__Effect__Group_5__0 )?
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:929:1: ( ( rule__Effect__Group_5__0 )? )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:930:1: ( rule__Effect__Group_5__0 )?
             {
              before(grammarAccess.getEffectAccess().getGroup_5()); 
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:901:1: ( rule__Effect__Group_5__0 )?
-            int alt7=2;
-            int LA7_0 = input.LA(1);
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:931:1: ( rule__Effect__Group_5__0 )?
+            int alt8=2;
+            int LA8_0 = input.LA(1);
 
-            if ( (LA7_0==25) ) {
-                alt7=1;
+            if ( (LA8_0==25) ) {
+                alt8=1;
             }
-            switch (alt7) {
+            switch (alt8) {
                 case 1 :
-                    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:901:2: rule__Effect__Group_5__0
+                    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:931:2: rule__Effect__Group_5__0
                     {
-                    pushFollow(FOLLOW_rule__Effect__Group_5__0_in_rule__Effect__Group__5__Impl1765);
+                    pushFollow(FOLLOW_rule__Effect__Group_5__0_in_rule__Effect__Group__5__Impl1825);
                     rule__Effect__Group_5__0();
 
                     state._fsp--;
@@ -2411,21 +2502,21 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Effect__Group_5__0"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:923:1: rule__Effect__Group_5__0 : rule__Effect__Group_5__0__Impl rule__Effect__Group_5__1 ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:953:1: rule__Effect__Group_5__0 : rule__Effect__Group_5__0__Impl rule__Effect__Group_5__1 ;
     public final void rule__Effect__Group_5__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:927:1: ( rule__Effect__Group_5__0__Impl rule__Effect__Group_5__1 )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:928:2: rule__Effect__Group_5__0__Impl rule__Effect__Group_5__1
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:957:1: ( rule__Effect__Group_5__0__Impl rule__Effect__Group_5__1 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:958:2: rule__Effect__Group_5__0__Impl rule__Effect__Group_5__1
             {
-            pushFollow(FOLLOW_rule__Effect__Group_5__0__Impl_in_rule__Effect__Group_5__01808);
+            pushFollow(FOLLOW_rule__Effect__Group_5__0__Impl_in_rule__Effect__Group_5__01868);
             rule__Effect__Group_5__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Effect__Group_5__1_in_rule__Effect__Group_5__01811);
+            pushFollow(FOLLOW_rule__Effect__Group_5__1_in_rule__Effect__Group_5__01871);
             rule__Effect__Group_5__1();
 
             state._fsp--;
@@ -2449,20 +2540,20 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Effect__Group_5__0__Impl"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:935:1: rule__Effect__Group_5__0__Impl : ( ':' ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:965:1: rule__Effect__Group_5__0__Impl : ( ':' ) ;
     public final void rule__Effect__Group_5__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:939:1: ( ( ':' ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:940:1: ( ':' )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:969:1: ( ( ':' ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:970:1: ( ':' )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:940:1: ( ':' )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:941:1: ':'
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:970:1: ( ':' )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:971:1: ':'
             {
              before(grammarAccess.getEffectAccess().getColonKeyword_5_0()); 
-            match(input,25,FOLLOW_25_in_rule__Effect__Group_5__0__Impl1839); 
+            match(input,25,FOLLOW_25_in_rule__Effect__Group_5__0__Impl1899); 
              after(grammarAccess.getEffectAccess().getColonKeyword_5_0()); 
 
             }
@@ -2486,16 +2577,16 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Effect__Group_5__1"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:954:1: rule__Effect__Group_5__1 : rule__Effect__Group_5__1__Impl ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:984:1: rule__Effect__Group_5__1 : rule__Effect__Group_5__1__Impl ;
     public final void rule__Effect__Group_5__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:958:1: ( rule__Effect__Group_5__1__Impl )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:959:2: rule__Effect__Group_5__1__Impl
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:988:1: ( rule__Effect__Group_5__1__Impl )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:989:2: rule__Effect__Group_5__1__Impl
             {
-            pushFollow(FOLLOW_rule__Effect__Group_5__1__Impl_in_rule__Effect__Group_5__11870);
+            pushFollow(FOLLOW_rule__Effect__Group_5__1__Impl_in_rule__Effect__Group_5__11930);
             rule__Effect__Group_5__1__Impl();
 
             state._fsp--;
@@ -2519,23 +2610,23 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Effect__Group_5__1__Impl"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:965:1: rule__Effect__Group_5__1__Impl : ( ( rule__Effect__DescriptionAssignment_5_1 ) ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:995:1: rule__Effect__Group_5__1__Impl : ( ( rule__Effect__DescriptionAssignment_5_1 ) ) ;
     public final void rule__Effect__Group_5__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:969:1: ( ( ( rule__Effect__DescriptionAssignment_5_1 ) ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:970:1: ( ( rule__Effect__DescriptionAssignment_5_1 ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:999:1: ( ( ( rule__Effect__DescriptionAssignment_5_1 ) ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1000:1: ( ( rule__Effect__DescriptionAssignment_5_1 ) )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:970:1: ( ( rule__Effect__DescriptionAssignment_5_1 ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:971:1: ( rule__Effect__DescriptionAssignment_5_1 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1000:1: ( ( rule__Effect__DescriptionAssignment_5_1 ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1001:1: ( rule__Effect__DescriptionAssignment_5_1 )
             {
              before(grammarAccess.getEffectAccess().getDescriptionAssignment_5_1()); 
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:972:1: ( rule__Effect__DescriptionAssignment_5_1 )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:972:2: rule__Effect__DescriptionAssignment_5_1
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1002:1: ( rule__Effect__DescriptionAssignment_5_1 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1002:2: rule__Effect__DescriptionAssignment_5_1
             {
-            pushFollow(FOLLOW_rule__Effect__DescriptionAssignment_5_1_in_rule__Effect__Group_5__1__Impl1897);
+            pushFollow(FOLLOW_rule__Effect__DescriptionAssignment_5_1_in_rule__Effect__Group_5__1__Impl1957);
             rule__Effect__DescriptionAssignment_5_1();
 
             state._fsp--;
@@ -2566,21 +2657,21 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EffectRef__Group__0"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:986:1: rule__EffectRef__Group__0 : rule__EffectRef__Group__0__Impl rule__EffectRef__Group__1 ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1016:1: rule__EffectRef__Group__0 : rule__EffectRef__Group__0__Impl rule__EffectRef__Group__1 ;
     public final void rule__EffectRef__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:990:1: ( rule__EffectRef__Group__0__Impl rule__EffectRef__Group__1 )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:991:2: rule__EffectRef__Group__0__Impl rule__EffectRef__Group__1
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1020:1: ( rule__EffectRef__Group__0__Impl rule__EffectRef__Group__1 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1021:2: rule__EffectRef__Group__0__Impl rule__EffectRef__Group__1
             {
-            pushFollow(FOLLOW_rule__EffectRef__Group__0__Impl_in_rule__EffectRef__Group__01931);
+            pushFollow(FOLLOW_rule__EffectRef__Group__0__Impl_in_rule__EffectRef__Group__01991);
             rule__EffectRef__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__EffectRef__Group__1_in_rule__EffectRef__Group__01934);
+            pushFollow(FOLLOW_rule__EffectRef__Group__1_in_rule__EffectRef__Group__01994);
             rule__EffectRef__Group__1();
 
             state._fsp--;
@@ -2604,20 +2695,20 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EffectRef__Group__0__Impl"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:998:1: rule__EffectRef__Group__0__Impl : ( '->' ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1028:1: rule__EffectRef__Group__0__Impl : ( '->' ) ;
     public final void rule__EffectRef__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1002:1: ( ( '->' ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1003:1: ( '->' )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1032:1: ( ( '->' ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1033:1: ( '->' )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1003:1: ( '->' )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1004:1: '->'
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1033:1: ( '->' )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1034:1: '->'
             {
              before(grammarAccess.getEffectRefAccess().getHyphenMinusGreaterThanSignKeyword_0()); 
-            match(input,26,FOLLOW_26_in_rule__EffectRef__Group__0__Impl1962); 
+            match(input,26,FOLLOW_26_in_rule__EffectRef__Group__0__Impl2022); 
              after(grammarAccess.getEffectRefAccess().getHyphenMinusGreaterThanSignKeyword_0()); 
 
             }
@@ -2641,16 +2732,16 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EffectRef__Group__1"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1017:1: rule__EffectRef__Group__1 : rule__EffectRef__Group__1__Impl ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1047:1: rule__EffectRef__Group__1 : rule__EffectRef__Group__1__Impl ;
     public final void rule__EffectRef__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1021:1: ( rule__EffectRef__Group__1__Impl )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1022:2: rule__EffectRef__Group__1__Impl
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1051:1: ( rule__EffectRef__Group__1__Impl )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1052:2: rule__EffectRef__Group__1__Impl
             {
-            pushFollow(FOLLOW_rule__EffectRef__Group__1__Impl_in_rule__EffectRef__Group__11993);
+            pushFollow(FOLLOW_rule__EffectRef__Group__1__Impl_in_rule__EffectRef__Group__12053);
             rule__EffectRef__Group__1__Impl();
 
             state._fsp--;
@@ -2674,23 +2765,23 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EffectRef__Group__1__Impl"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1028:1: rule__EffectRef__Group__1__Impl : ( ( rule__EffectRef__EffectAssignment_1 ) ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1058:1: rule__EffectRef__Group__1__Impl : ( ( rule__EffectRef__EffectAssignment_1 ) ) ;
     public final void rule__EffectRef__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1032:1: ( ( ( rule__EffectRef__EffectAssignment_1 ) ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1033:1: ( ( rule__EffectRef__EffectAssignment_1 ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1062:1: ( ( ( rule__EffectRef__EffectAssignment_1 ) ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1063:1: ( ( rule__EffectRef__EffectAssignment_1 ) )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1033:1: ( ( rule__EffectRef__EffectAssignment_1 ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1034:1: ( rule__EffectRef__EffectAssignment_1 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1063:1: ( ( rule__EffectRef__EffectAssignment_1 ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1064:1: ( rule__EffectRef__EffectAssignment_1 )
             {
              before(grammarAccess.getEffectRefAccess().getEffectAssignment_1()); 
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1035:1: ( rule__EffectRef__EffectAssignment_1 )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1035:2: rule__EffectRef__EffectAssignment_1
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1065:1: ( rule__EffectRef__EffectAssignment_1 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1065:2: rule__EffectRef__EffectAssignment_1
             {
-            pushFollow(FOLLOW_rule__EffectRef__EffectAssignment_1_in_rule__EffectRef__Group__1__Impl2020);
+            pushFollow(FOLLOW_rule__EffectRef__EffectAssignment_1_in_rule__EffectRef__Group__1__Impl2080);
             rule__EffectRef__EffectAssignment_1();
 
             state._fsp--;
@@ -2721,21 +2812,21 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Recipe__Group__0"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1049:1: rule__Recipe__Group__0 : rule__Recipe__Group__0__Impl rule__Recipe__Group__1 ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1079:1: rule__Recipe__Group__0 : rule__Recipe__Group__0__Impl rule__Recipe__Group__1 ;
     public final void rule__Recipe__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1053:1: ( rule__Recipe__Group__0__Impl rule__Recipe__Group__1 )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1054:2: rule__Recipe__Group__0__Impl rule__Recipe__Group__1
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1083:1: ( rule__Recipe__Group__0__Impl rule__Recipe__Group__1 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1084:2: rule__Recipe__Group__0__Impl rule__Recipe__Group__1
             {
-            pushFollow(FOLLOW_rule__Recipe__Group__0__Impl_in_rule__Recipe__Group__02054);
+            pushFollow(FOLLOW_rule__Recipe__Group__0__Impl_in_rule__Recipe__Group__02114);
             rule__Recipe__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Recipe__Group__1_in_rule__Recipe__Group__02057);
+            pushFollow(FOLLOW_rule__Recipe__Group__1_in_rule__Recipe__Group__02117);
             rule__Recipe__Group__1();
 
             state._fsp--;
@@ -2759,23 +2850,23 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Recipe__Group__0__Impl"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1061:1: rule__Recipe__Group__0__Impl : ( ( rule__Recipe__ToxicityAssignment_0 ) ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1091:1: rule__Recipe__Group__0__Impl : ( ( rule__Recipe__ToxicityAssignment_0 ) ) ;
     public final void rule__Recipe__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1065:1: ( ( ( rule__Recipe__ToxicityAssignment_0 ) ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1066:1: ( ( rule__Recipe__ToxicityAssignment_0 ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1095:1: ( ( ( rule__Recipe__ToxicityAssignment_0 ) ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1096:1: ( ( rule__Recipe__ToxicityAssignment_0 ) )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1066:1: ( ( rule__Recipe__ToxicityAssignment_0 ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1067:1: ( rule__Recipe__ToxicityAssignment_0 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1096:1: ( ( rule__Recipe__ToxicityAssignment_0 ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1097:1: ( rule__Recipe__ToxicityAssignment_0 )
             {
              before(grammarAccess.getRecipeAccess().getToxicityAssignment_0()); 
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1068:1: ( rule__Recipe__ToxicityAssignment_0 )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1068:2: rule__Recipe__ToxicityAssignment_0
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1098:1: ( rule__Recipe__ToxicityAssignment_0 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1098:2: rule__Recipe__ToxicityAssignment_0
             {
-            pushFollow(FOLLOW_rule__Recipe__ToxicityAssignment_0_in_rule__Recipe__Group__0__Impl2084);
+            pushFollow(FOLLOW_rule__Recipe__ToxicityAssignment_0_in_rule__Recipe__Group__0__Impl2144);
             rule__Recipe__ToxicityAssignment_0();
 
             state._fsp--;
@@ -2806,21 +2897,21 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Recipe__Group__1"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1078:1: rule__Recipe__Group__1 : rule__Recipe__Group__1__Impl rule__Recipe__Group__2 ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1108:1: rule__Recipe__Group__1 : rule__Recipe__Group__1__Impl rule__Recipe__Group__2 ;
     public final void rule__Recipe__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1082:1: ( rule__Recipe__Group__1__Impl rule__Recipe__Group__2 )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1083:2: rule__Recipe__Group__1__Impl rule__Recipe__Group__2
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1112:1: ( rule__Recipe__Group__1__Impl rule__Recipe__Group__2 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1113:2: rule__Recipe__Group__1__Impl rule__Recipe__Group__2
             {
-            pushFollow(FOLLOW_rule__Recipe__Group__1__Impl_in_rule__Recipe__Group__12114);
+            pushFollow(FOLLOW_rule__Recipe__Group__1__Impl_in_rule__Recipe__Group__12174);
             rule__Recipe__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Recipe__Group__2_in_rule__Recipe__Group__12117);
+            pushFollow(FOLLOW_rule__Recipe__Group__2_in_rule__Recipe__Group__12177);
             rule__Recipe__Group__2();
 
             state._fsp--;
@@ -2844,23 +2935,23 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Recipe__Group__1__Impl"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1090:1: rule__Recipe__Group__1__Impl : ( ( rule__Recipe__NameAssignment_1 ) ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1120:1: rule__Recipe__Group__1__Impl : ( ( rule__Recipe__NameAssignment_1 ) ) ;
     public final void rule__Recipe__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1094:1: ( ( ( rule__Recipe__NameAssignment_1 ) ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1095:1: ( ( rule__Recipe__NameAssignment_1 ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1124:1: ( ( ( rule__Recipe__NameAssignment_1 ) ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1125:1: ( ( rule__Recipe__NameAssignment_1 ) )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1095:1: ( ( rule__Recipe__NameAssignment_1 ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1096:1: ( rule__Recipe__NameAssignment_1 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1125:1: ( ( rule__Recipe__NameAssignment_1 ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1126:1: ( rule__Recipe__NameAssignment_1 )
             {
              before(grammarAccess.getRecipeAccess().getNameAssignment_1()); 
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1097:1: ( rule__Recipe__NameAssignment_1 )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1097:2: rule__Recipe__NameAssignment_1
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1127:1: ( rule__Recipe__NameAssignment_1 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1127:2: rule__Recipe__NameAssignment_1
             {
-            pushFollow(FOLLOW_rule__Recipe__NameAssignment_1_in_rule__Recipe__Group__1__Impl2144);
+            pushFollow(FOLLOW_rule__Recipe__NameAssignment_1_in_rule__Recipe__Group__1__Impl2204);
             rule__Recipe__NameAssignment_1();
 
             state._fsp--;
@@ -2891,21 +2982,21 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Recipe__Group__2"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1107:1: rule__Recipe__Group__2 : rule__Recipe__Group__2__Impl rule__Recipe__Group__3 ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1137:1: rule__Recipe__Group__2 : rule__Recipe__Group__2__Impl rule__Recipe__Group__3 ;
     public final void rule__Recipe__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1111:1: ( rule__Recipe__Group__2__Impl rule__Recipe__Group__3 )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1112:2: rule__Recipe__Group__2__Impl rule__Recipe__Group__3
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1141:1: ( rule__Recipe__Group__2__Impl rule__Recipe__Group__3 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1142:2: rule__Recipe__Group__2__Impl rule__Recipe__Group__3
             {
-            pushFollow(FOLLOW_rule__Recipe__Group__2__Impl_in_rule__Recipe__Group__22174);
+            pushFollow(FOLLOW_rule__Recipe__Group__2__Impl_in_rule__Recipe__Group__22234);
             rule__Recipe__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Recipe__Group__3_in_rule__Recipe__Group__22177);
+            pushFollow(FOLLOW_rule__Recipe__Group__3_in_rule__Recipe__Group__22237);
             rule__Recipe__Group__3();
 
             state._fsp--;
@@ -2929,20 +3020,20 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Recipe__Group__2__Impl"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1119:1: rule__Recipe__Group__2__Impl : ( '{' ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1149:1: rule__Recipe__Group__2__Impl : ( '{' ) ;
     public final void rule__Recipe__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1123:1: ( ( '{' ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1124:1: ( '{' )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1153:1: ( ( '{' ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1154:1: ( '{' )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1124:1: ( '{' )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1125:1: '{'
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1154:1: ( '{' )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1155:1: '{'
             {
              before(grammarAccess.getRecipeAccess().getLeftCurlyBracketKeyword_2()); 
-            match(input,17,FOLLOW_17_in_rule__Recipe__Group__2__Impl2205); 
+            match(input,17,FOLLOW_17_in_rule__Recipe__Group__2__Impl2265); 
              after(grammarAccess.getRecipeAccess().getLeftCurlyBracketKeyword_2()); 
 
             }
@@ -2966,21 +3057,21 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Recipe__Group__3"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1138:1: rule__Recipe__Group__3 : rule__Recipe__Group__3__Impl rule__Recipe__Group__4 ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1168:1: rule__Recipe__Group__3 : rule__Recipe__Group__3__Impl rule__Recipe__Group__4 ;
     public final void rule__Recipe__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1142:1: ( rule__Recipe__Group__3__Impl rule__Recipe__Group__4 )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1143:2: rule__Recipe__Group__3__Impl rule__Recipe__Group__4
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1172:1: ( rule__Recipe__Group__3__Impl rule__Recipe__Group__4 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1173:2: rule__Recipe__Group__3__Impl rule__Recipe__Group__4
             {
-            pushFollow(FOLLOW_rule__Recipe__Group__3__Impl_in_rule__Recipe__Group__32236);
+            pushFollow(FOLLOW_rule__Recipe__Group__3__Impl_in_rule__Recipe__Group__32296);
             rule__Recipe__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Recipe__Group__4_in_rule__Recipe__Group__32239);
+            pushFollow(FOLLOW_rule__Recipe__Group__4_in_rule__Recipe__Group__32299);
             rule__Recipe__Group__4();
 
             state._fsp--;
@@ -3004,26 +3095,26 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Recipe__Group__3__Impl"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1150:1: rule__Recipe__Group__3__Impl : ( ( ( rule__Recipe__EffectsAssignment_3 ) ) ( ( rule__Recipe__EffectsAssignment_3 )* ) ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1180:1: rule__Recipe__Group__3__Impl : ( ( ( rule__Recipe__EffectsAssignment_3 ) ) ( ( rule__Recipe__EffectsAssignment_3 )* ) ) ;
     public final void rule__Recipe__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1154:1: ( ( ( ( rule__Recipe__EffectsAssignment_3 ) ) ( ( rule__Recipe__EffectsAssignment_3 )* ) ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1155:1: ( ( ( rule__Recipe__EffectsAssignment_3 ) ) ( ( rule__Recipe__EffectsAssignment_3 )* ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1184:1: ( ( ( ( rule__Recipe__EffectsAssignment_3 ) ) ( ( rule__Recipe__EffectsAssignment_3 )* ) ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1185:1: ( ( ( rule__Recipe__EffectsAssignment_3 ) ) ( ( rule__Recipe__EffectsAssignment_3 )* ) )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1155:1: ( ( ( rule__Recipe__EffectsAssignment_3 ) ) ( ( rule__Recipe__EffectsAssignment_3 )* ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1156:1: ( ( rule__Recipe__EffectsAssignment_3 ) ) ( ( rule__Recipe__EffectsAssignment_3 )* )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1185:1: ( ( ( rule__Recipe__EffectsAssignment_3 ) ) ( ( rule__Recipe__EffectsAssignment_3 )* ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1186:1: ( ( rule__Recipe__EffectsAssignment_3 ) ) ( ( rule__Recipe__EffectsAssignment_3 )* )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1156:1: ( ( rule__Recipe__EffectsAssignment_3 ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1157:1: ( rule__Recipe__EffectsAssignment_3 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1186:1: ( ( rule__Recipe__EffectsAssignment_3 ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1187:1: ( rule__Recipe__EffectsAssignment_3 )
             {
              before(grammarAccess.getRecipeAccess().getEffectsAssignment_3()); 
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1158:1: ( rule__Recipe__EffectsAssignment_3 )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1158:2: rule__Recipe__EffectsAssignment_3
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1188:1: ( rule__Recipe__EffectsAssignment_3 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1188:2: rule__Recipe__EffectsAssignment_3
             {
-            pushFollow(FOLLOW_rule__Recipe__EffectsAssignment_3_in_rule__Recipe__Group__3__Impl2268);
+            pushFollow(FOLLOW_rule__Recipe__EffectsAssignment_3_in_rule__Recipe__Group__3__Impl2328);
             rule__Recipe__EffectsAssignment_3();
 
             state._fsp--;
@@ -3035,26 +3126,26 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
             }
 
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1161:1: ( ( rule__Recipe__EffectsAssignment_3 )* )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1162:1: ( rule__Recipe__EffectsAssignment_3 )*
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1191:1: ( ( rule__Recipe__EffectsAssignment_3 )* )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1192:1: ( rule__Recipe__EffectsAssignment_3 )*
             {
              before(grammarAccess.getRecipeAccess().getEffectsAssignment_3()); 
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1163:1: ( rule__Recipe__EffectsAssignment_3 )*
-            loop8:
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1193:1: ( rule__Recipe__EffectsAssignment_3 )*
+            loop9:
             do {
-                int alt8=2;
-                int LA8_0 = input.LA(1);
+                int alt9=2;
+                int LA9_0 = input.LA(1);
 
-                if ( (LA8_0==26) ) {
-                    alt8=1;
+                if ( (LA9_0==26) ) {
+                    alt9=1;
                 }
 
 
-                switch (alt8) {
+                switch (alt9) {
             	case 1 :
-            	    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1163:2: rule__Recipe__EffectsAssignment_3
+            	    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1193:2: rule__Recipe__EffectsAssignment_3
             	    {
-            	    pushFollow(FOLLOW_rule__Recipe__EffectsAssignment_3_in_rule__Recipe__Group__3__Impl2280);
+            	    pushFollow(FOLLOW_rule__Recipe__EffectsAssignment_3_in_rule__Recipe__Group__3__Impl2340);
             	    rule__Recipe__EffectsAssignment_3();
 
             	    state._fsp--;
@@ -3064,7 +3155,7 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
             	    break;
 
             	default :
-            	    break loop8;
+            	    break loop9;
                 }
             } while (true);
 
@@ -3094,21 +3185,21 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Recipe__Group__4"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1174:1: rule__Recipe__Group__4 : rule__Recipe__Group__4__Impl rule__Recipe__Group__5 ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1204:1: rule__Recipe__Group__4 : rule__Recipe__Group__4__Impl rule__Recipe__Group__5 ;
     public final void rule__Recipe__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1178:1: ( rule__Recipe__Group__4__Impl rule__Recipe__Group__5 )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1179:2: rule__Recipe__Group__4__Impl rule__Recipe__Group__5
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1208:1: ( rule__Recipe__Group__4__Impl rule__Recipe__Group__5 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1209:2: rule__Recipe__Group__4__Impl rule__Recipe__Group__5
             {
-            pushFollow(FOLLOW_rule__Recipe__Group__4__Impl_in_rule__Recipe__Group__42313);
+            pushFollow(FOLLOW_rule__Recipe__Group__4__Impl_in_rule__Recipe__Group__42373);
             rule__Recipe__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Recipe__Group__5_in_rule__Recipe__Group__42316);
+            pushFollow(FOLLOW_rule__Recipe__Group__5_in_rule__Recipe__Group__42376);
             rule__Recipe__Group__5();
 
             state._fsp--;
@@ -3132,20 +3223,20 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Recipe__Group__4__Impl"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1186:1: rule__Recipe__Group__4__Impl : ( 'price:' ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1216:1: rule__Recipe__Group__4__Impl : ( 'price:' ) ;
     public final void rule__Recipe__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1190:1: ( ( 'price:' ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1191:1: ( 'price:' )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1220:1: ( ( 'price:' ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1221:1: ( 'price:' )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1191:1: ( 'price:' )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1192:1: 'price:'
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1221:1: ( 'price:' )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1222:1: 'price:'
             {
              before(grammarAccess.getRecipeAccess().getPriceKeyword_4()); 
-            match(input,18,FOLLOW_18_in_rule__Recipe__Group__4__Impl2344); 
+            match(input,18,FOLLOW_18_in_rule__Recipe__Group__4__Impl2404); 
              after(grammarAccess.getRecipeAccess().getPriceKeyword_4()); 
 
             }
@@ -3169,21 +3260,21 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Recipe__Group__5"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1205:1: rule__Recipe__Group__5 : rule__Recipe__Group__5__Impl rule__Recipe__Group__6 ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1235:1: rule__Recipe__Group__5 : rule__Recipe__Group__5__Impl rule__Recipe__Group__6 ;
     public final void rule__Recipe__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1209:1: ( rule__Recipe__Group__5__Impl rule__Recipe__Group__6 )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1210:2: rule__Recipe__Group__5__Impl rule__Recipe__Group__6
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1239:1: ( rule__Recipe__Group__5__Impl rule__Recipe__Group__6 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1240:2: rule__Recipe__Group__5__Impl rule__Recipe__Group__6
             {
-            pushFollow(FOLLOW_rule__Recipe__Group__5__Impl_in_rule__Recipe__Group__52375);
+            pushFollow(FOLLOW_rule__Recipe__Group__5__Impl_in_rule__Recipe__Group__52435);
             rule__Recipe__Group__5__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Recipe__Group__6_in_rule__Recipe__Group__52378);
+            pushFollow(FOLLOW_rule__Recipe__Group__6_in_rule__Recipe__Group__52438);
             rule__Recipe__Group__6();
 
             state._fsp--;
@@ -3207,23 +3298,23 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Recipe__Group__5__Impl"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1217:1: rule__Recipe__Group__5__Impl : ( ( rule__Recipe__PriceAssignment_5 ) ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1247:1: rule__Recipe__Group__5__Impl : ( ( rule__Recipe__PriceAssignment_5 ) ) ;
     public final void rule__Recipe__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1221:1: ( ( ( rule__Recipe__PriceAssignment_5 ) ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1222:1: ( ( rule__Recipe__PriceAssignment_5 ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1251:1: ( ( ( rule__Recipe__PriceAssignment_5 ) ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1252:1: ( ( rule__Recipe__PriceAssignment_5 ) )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1222:1: ( ( rule__Recipe__PriceAssignment_5 ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1223:1: ( rule__Recipe__PriceAssignment_5 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1252:1: ( ( rule__Recipe__PriceAssignment_5 ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1253:1: ( rule__Recipe__PriceAssignment_5 )
             {
              before(grammarAccess.getRecipeAccess().getPriceAssignment_5()); 
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1224:1: ( rule__Recipe__PriceAssignment_5 )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1224:2: rule__Recipe__PriceAssignment_5
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1254:1: ( rule__Recipe__PriceAssignment_5 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1254:2: rule__Recipe__PriceAssignment_5
             {
-            pushFollow(FOLLOW_rule__Recipe__PriceAssignment_5_in_rule__Recipe__Group__5__Impl2405);
+            pushFollow(FOLLOW_rule__Recipe__PriceAssignment_5_in_rule__Recipe__Group__5__Impl2465);
             rule__Recipe__PriceAssignment_5();
 
             state._fsp--;
@@ -3254,21 +3345,21 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Recipe__Group__6"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1234:1: rule__Recipe__Group__6 : rule__Recipe__Group__6__Impl rule__Recipe__Group__7 ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1264:1: rule__Recipe__Group__6 : rule__Recipe__Group__6__Impl rule__Recipe__Group__7 ;
     public final void rule__Recipe__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1238:1: ( rule__Recipe__Group__6__Impl rule__Recipe__Group__7 )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1239:2: rule__Recipe__Group__6__Impl rule__Recipe__Group__7
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1268:1: ( rule__Recipe__Group__6__Impl rule__Recipe__Group__7 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1269:2: rule__Recipe__Group__6__Impl rule__Recipe__Group__7
             {
-            pushFollow(FOLLOW_rule__Recipe__Group__6__Impl_in_rule__Recipe__Group__62435);
+            pushFollow(FOLLOW_rule__Recipe__Group__6__Impl_in_rule__Recipe__Group__62495);
             rule__Recipe__Group__6__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Recipe__Group__7_in_rule__Recipe__Group__62438);
+            pushFollow(FOLLOW_rule__Recipe__Group__7_in_rule__Recipe__Group__62498);
             rule__Recipe__Group__7();
 
             state._fsp--;
@@ -3292,20 +3383,20 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Recipe__Group__6__Impl"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1246:1: rule__Recipe__Group__6__Impl : ( '}' ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1276:1: rule__Recipe__Group__6__Impl : ( '}' ) ;
     public final void rule__Recipe__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1250:1: ( ( '}' ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1251:1: ( '}' )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1280:1: ( ( '}' ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1281:1: ( '}' )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1251:1: ( '}' )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1252:1: '}'
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1281:1: ( '}' )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1282:1: '}'
             {
              before(grammarAccess.getRecipeAccess().getRightCurlyBracketKeyword_6()); 
-            match(input,21,FOLLOW_21_in_rule__Recipe__Group__6__Impl2466); 
+            match(input,20,FOLLOW_20_in_rule__Recipe__Group__6__Impl2526); 
              after(grammarAccess.getRecipeAccess().getRightCurlyBracketKeyword_6()); 
 
             }
@@ -3329,21 +3420,21 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Recipe__Group__7"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1265:1: rule__Recipe__Group__7 : rule__Recipe__Group__7__Impl rule__Recipe__Group__8 ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1295:1: rule__Recipe__Group__7 : rule__Recipe__Group__7__Impl rule__Recipe__Group__8 ;
     public final void rule__Recipe__Group__7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1269:1: ( rule__Recipe__Group__7__Impl rule__Recipe__Group__8 )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1270:2: rule__Recipe__Group__7__Impl rule__Recipe__Group__8
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1299:1: ( rule__Recipe__Group__7__Impl rule__Recipe__Group__8 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1300:2: rule__Recipe__Group__7__Impl rule__Recipe__Group__8
             {
-            pushFollow(FOLLOW_rule__Recipe__Group__7__Impl_in_rule__Recipe__Group__72497);
+            pushFollow(FOLLOW_rule__Recipe__Group__7__Impl_in_rule__Recipe__Group__72557);
             rule__Recipe__Group__7__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Recipe__Group__8_in_rule__Recipe__Group__72500);
+            pushFollow(FOLLOW_rule__Recipe__Group__8_in_rule__Recipe__Group__72560);
             rule__Recipe__Group__8();
 
             state._fsp--;
@@ -3367,20 +3458,20 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Recipe__Group__7__Impl"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1277:1: rule__Recipe__Group__7__Impl : ( '=' ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1307:1: rule__Recipe__Group__7__Impl : ( '=' ) ;
     public final void rule__Recipe__Group__7__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1281:1: ( ( '=' ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1282:1: ( '=' )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1311:1: ( ( '=' ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1312:1: ( '=' )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1282:1: ( '=' )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1283:1: '='
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1312:1: ( '=' )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1313:1: '='
             {
              before(grammarAccess.getRecipeAccess().getEqualsSignKeyword_7()); 
-            match(input,27,FOLLOW_27_in_rule__Recipe__Group__7__Impl2528); 
+            match(input,27,FOLLOW_27_in_rule__Recipe__Group__7__Impl2588); 
              after(grammarAccess.getRecipeAccess().getEqualsSignKeyword_7()); 
 
             }
@@ -3404,21 +3495,21 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Recipe__Group__8"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1296:1: rule__Recipe__Group__8 : rule__Recipe__Group__8__Impl rule__Recipe__Group__9 ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1326:1: rule__Recipe__Group__8 : rule__Recipe__Group__8__Impl rule__Recipe__Group__9 ;
     public final void rule__Recipe__Group__8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1300:1: ( rule__Recipe__Group__8__Impl rule__Recipe__Group__9 )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1301:2: rule__Recipe__Group__8__Impl rule__Recipe__Group__9
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1330:1: ( rule__Recipe__Group__8__Impl rule__Recipe__Group__9 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1331:2: rule__Recipe__Group__8__Impl rule__Recipe__Group__9
             {
-            pushFollow(FOLLOW_rule__Recipe__Group__8__Impl_in_rule__Recipe__Group__82559);
+            pushFollow(FOLLOW_rule__Recipe__Group__8__Impl_in_rule__Recipe__Group__82619);
             rule__Recipe__Group__8__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Recipe__Group__9_in_rule__Recipe__Group__82562);
+            pushFollow(FOLLOW_rule__Recipe__Group__9_in_rule__Recipe__Group__82622);
             rule__Recipe__Group__9();
 
             state._fsp--;
@@ -3442,23 +3533,23 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Recipe__Group__8__Impl"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1308:1: rule__Recipe__Group__8__Impl : ( ( rule__Recipe__IngredientsAssignment_8 ) ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1338:1: rule__Recipe__Group__8__Impl : ( ( rule__Recipe__IngredientsAssignment_8 ) ) ;
     public final void rule__Recipe__Group__8__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1312:1: ( ( ( rule__Recipe__IngredientsAssignment_8 ) ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1313:1: ( ( rule__Recipe__IngredientsAssignment_8 ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1342:1: ( ( ( rule__Recipe__IngredientsAssignment_8 ) ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1343:1: ( ( rule__Recipe__IngredientsAssignment_8 ) )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1313:1: ( ( rule__Recipe__IngredientsAssignment_8 ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1314:1: ( rule__Recipe__IngredientsAssignment_8 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1343:1: ( ( rule__Recipe__IngredientsAssignment_8 ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1344:1: ( rule__Recipe__IngredientsAssignment_8 )
             {
              before(grammarAccess.getRecipeAccess().getIngredientsAssignment_8()); 
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1315:1: ( rule__Recipe__IngredientsAssignment_8 )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1315:2: rule__Recipe__IngredientsAssignment_8
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1345:1: ( rule__Recipe__IngredientsAssignment_8 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1345:2: rule__Recipe__IngredientsAssignment_8
             {
-            pushFollow(FOLLOW_rule__Recipe__IngredientsAssignment_8_in_rule__Recipe__Group__8__Impl2589);
+            pushFollow(FOLLOW_rule__Recipe__IngredientsAssignment_8_in_rule__Recipe__Group__8__Impl2649);
             rule__Recipe__IngredientsAssignment_8();
 
             state._fsp--;
@@ -3489,16 +3580,16 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Recipe__Group__9"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1325:1: rule__Recipe__Group__9 : rule__Recipe__Group__9__Impl ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1355:1: rule__Recipe__Group__9 : rule__Recipe__Group__9__Impl ;
     public final void rule__Recipe__Group__9() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1329:1: ( rule__Recipe__Group__9__Impl )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1330:2: rule__Recipe__Group__9__Impl
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1359:1: ( rule__Recipe__Group__9__Impl )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1360:2: rule__Recipe__Group__9__Impl
             {
-            pushFollow(FOLLOW_rule__Recipe__Group__9__Impl_in_rule__Recipe__Group__92619);
+            pushFollow(FOLLOW_rule__Recipe__Group__9__Impl_in_rule__Recipe__Group__92679);
             rule__Recipe__Group__9__Impl();
 
             state._fsp--;
@@ -3522,35 +3613,35 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Recipe__Group__9__Impl"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1336:1: rule__Recipe__Group__9__Impl : ( ( rule__Recipe__Group_9__0 )* ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1366:1: rule__Recipe__Group__9__Impl : ( ( rule__Recipe__Group_9__0 )* ) ;
     public final void rule__Recipe__Group__9__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1340:1: ( ( ( rule__Recipe__Group_9__0 )* ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1341:1: ( ( rule__Recipe__Group_9__0 )* )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1370:1: ( ( ( rule__Recipe__Group_9__0 )* ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1371:1: ( ( rule__Recipe__Group_9__0 )* )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1341:1: ( ( rule__Recipe__Group_9__0 )* )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1342:1: ( rule__Recipe__Group_9__0 )*
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1371:1: ( ( rule__Recipe__Group_9__0 )* )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1372:1: ( rule__Recipe__Group_9__0 )*
             {
              before(grammarAccess.getRecipeAccess().getGroup_9()); 
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1343:1: ( rule__Recipe__Group_9__0 )*
-            loop9:
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1373:1: ( rule__Recipe__Group_9__0 )*
+            loop10:
             do {
-                int alt9=2;
-                int LA9_0 = input.LA(1);
+                int alt10=2;
+                int LA10_0 = input.LA(1);
 
-                if ( (LA9_0==12) ) {
-                    alt9=1;
+                if ( (LA10_0==12) ) {
+                    alt10=1;
                 }
 
 
-                switch (alt9) {
+                switch (alt10) {
             	case 1 :
-            	    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1343:2: rule__Recipe__Group_9__0
+            	    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1373:2: rule__Recipe__Group_9__0
             	    {
-            	    pushFollow(FOLLOW_rule__Recipe__Group_9__0_in_rule__Recipe__Group__9__Impl2646);
+            	    pushFollow(FOLLOW_rule__Recipe__Group_9__0_in_rule__Recipe__Group__9__Impl2706);
             	    rule__Recipe__Group_9__0();
 
             	    state._fsp--;
@@ -3560,7 +3651,7 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
             	    break;
 
             	default :
-            	    break loop9;
+            	    break loop10;
                 }
             } while (true);
 
@@ -3587,21 +3678,21 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Recipe__Group_9__0"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1373:1: rule__Recipe__Group_9__0 : rule__Recipe__Group_9__0__Impl rule__Recipe__Group_9__1 ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1403:1: rule__Recipe__Group_9__0 : rule__Recipe__Group_9__0__Impl rule__Recipe__Group_9__1 ;
     public final void rule__Recipe__Group_9__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1377:1: ( rule__Recipe__Group_9__0__Impl rule__Recipe__Group_9__1 )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1378:2: rule__Recipe__Group_9__0__Impl rule__Recipe__Group_9__1
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1407:1: ( rule__Recipe__Group_9__0__Impl rule__Recipe__Group_9__1 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1408:2: rule__Recipe__Group_9__0__Impl rule__Recipe__Group_9__1
             {
-            pushFollow(FOLLOW_rule__Recipe__Group_9__0__Impl_in_rule__Recipe__Group_9__02697);
+            pushFollow(FOLLOW_rule__Recipe__Group_9__0__Impl_in_rule__Recipe__Group_9__02757);
             rule__Recipe__Group_9__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Recipe__Group_9__1_in_rule__Recipe__Group_9__02700);
+            pushFollow(FOLLOW_rule__Recipe__Group_9__1_in_rule__Recipe__Group_9__02760);
             rule__Recipe__Group_9__1();
 
             state._fsp--;
@@ -3625,20 +3716,20 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Recipe__Group_9__0__Impl"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1385:1: rule__Recipe__Group_9__0__Impl : ( '+' ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1415:1: rule__Recipe__Group_9__0__Impl : ( '+' ) ;
     public final void rule__Recipe__Group_9__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1389:1: ( ( '+' ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1390:1: ( '+' )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1419:1: ( ( '+' ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1420:1: ( '+' )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1390:1: ( '+' )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1391:1: '+'
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1420:1: ( '+' )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1421:1: '+'
             {
              before(grammarAccess.getRecipeAccess().getPlusSignKeyword_9_0()); 
-            match(input,12,FOLLOW_12_in_rule__Recipe__Group_9__0__Impl2728); 
+            match(input,12,FOLLOW_12_in_rule__Recipe__Group_9__0__Impl2788); 
              after(grammarAccess.getRecipeAccess().getPlusSignKeyword_9_0()); 
 
             }
@@ -3662,16 +3753,16 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Recipe__Group_9__1"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1404:1: rule__Recipe__Group_9__1 : rule__Recipe__Group_9__1__Impl ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1434:1: rule__Recipe__Group_9__1 : rule__Recipe__Group_9__1__Impl ;
     public final void rule__Recipe__Group_9__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1408:1: ( rule__Recipe__Group_9__1__Impl )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1409:2: rule__Recipe__Group_9__1__Impl
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1438:1: ( rule__Recipe__Group_9__1__Impl )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1439:2: rule__Recipe__Group_9__1__Impl
             {
-            pushFollow(FOLLOW_rule__Recipe__Group_9__1__Impl_in_rule__Recipe__Group_9__12759);
+            pushFollow(FOLLOW_rule__Recipe__Group_9__1__Impl_in_rule__Recipe__Group_9__12819);
             rule__Recipe__Group_9__1__Impl();
 
             state._fsp--;
@@ -3695,23 +3786,23 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Recipe__Group_9__1__Impl"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1415:1: rule__Recipe__Group_9__1__Impl : ( ( rule__Recipe__IngredientsAssignment_9_1 ) ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1445:1: rule__Recipe__Group_9__1__Impl : ( ( rule__Recipe__IngredientsAssignment_9_1 ) ) ;
     public final void rule__Recipe__Group_9__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1419:1: ( ( ( rule__Recipe__IngredientsAssignment_9_1 ) ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1420:1: ( ( rule__Recipe__IngredientsAssignment_9_1 ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1449:1: ( ( ( rule__Recipe__IngredientsAssignment_9_1 ) ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1450:1: ( ( rule__Recipe__IngredientsAssignment_9_1 ) )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1420:1: ( ( rule__Recipe__IngredientsAssignment_9_1 ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1421:1: ( rule__Recipe__IngredientsAssignment_9_1 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1450:1: ( ( rule__Recipe__IngredientsAssignment_9_1 ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1451:1: ( rule__Recipe__IngredientsAssignment_9_1 )
             {
              before(grammarAccess.getRecipeAccess().getIngredientsAssignment_9_1()); 
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1422:1: ( rule__Recipe__IngredientsAssignment_9_1 )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1422:2: rule__Recipe__IngredientsAssignment_9_1
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1452:1: ( rule__Recipe__IngredientsAssignment_9_1 )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1452:2: rule__Recipe__IngredientsAssignment_9_1
             {
-            pushFollow(FOLLOW_rule__Recipe__IngredientsAssignment_9_1_in_rule__Recipe__Group_9__1__Impl2786);
+            pushFollow(FOLLOW_rule__Recipe__IngredientsAssignment_9_1_in_rule__Recipe__Group_9__1__Impl2846);
             rule__Recipe__IngredientsAssignment_9_1();
 
             state._fsp--;
@@ -3742,20 +3833,20 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__AlchemyLabModel__EffectsAssignment_0"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1437:1: rule__AlchemyLabModel__EffectsAssignment_0 : ( ruleEffect ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1467:1: rule__AlchemyLabModel__EffectsAssignment_0 : ( ruleEffect ) ;
     public final void rule__AlchemyLabModel__EffectsAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1441:1: ( ( ruleEffect ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1442:1: ( ruleEffect )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1471:1: ( ( ruleEffect ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1472:1: ( ruleEffect )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1442:1: ( ruleEffect )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1443:1: ruleEffect
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1472:1: ( ruleEffect )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1473:1: ruleEffect
             {
              before(grammarAccess.getAlchemyLabModelAccess().getEffectsEffectParserRuleCall_0_0()); 
-            pushFollow(FOLLOW_ruleEffect_in_rule__AlchemyLabModel__EffectsAssignment_02825);
+            pushFollow(FOLLOW_ruleEffect_in_rule__AlchemyLabModel__EffectsAssignment_02885);
             ruleEffect();
 
             state._fsp--;
@@ -3783,20 +3874,20 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__AlchemyLabModel__IngredientsAssignment_1"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1452:1: rule__AlchemyLabModel__IngredientsAssignment_1 : ( ruleIngredient ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1482:1: rule__AlchemyLabModel__IngredientsAssignment_1 : ( ruleIngredient ) ;
     public final void rule__AlchemyLabModel__IngredientsAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1456:1: ( ( ruleIngredient ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1457:1: ( ruleIngredient )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1486:1: ( ( ruleIngredient ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1487:1: ( ruleIngredient )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1457:1: ( ruleIngredient )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1458:1: ruleIngredient
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1487:1: ( ruleIngredient )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1488:1: ruleIngredient
             {
              before(grammarAccess.getAlchemyLabModelAccess().getIngredientsIngredientParserRuleCall_1_0()); 
-            pushFollow(FOLLOW_ruleIngredient_in_rule__AlchemyLabModel__IngredientsAssignment_12856);
+            pushFollow(FOLLOW_ruleIngredient_in_rule__AlchemyLabModel__IngredientsAssignment_12916);
             ruleIngredient();
 
             state._fsp--;
@@ -3824,20 +3915,20 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__AlchemyLabModel__RecipesAssignment_2"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1467:1: rule__AlchemyLabModel__RecipesAssignment_2 : ( ruleRecipe ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1497:1: rule__AlchemyLabModel__RecipesAssignment_2 : ( ruleRecipe ) ;
     public final void rule__AlchemyLabModel__RecipesAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1471:1: ( ( ruleRecipe ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1472:1: ( ruleRecipe )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1501:1: ( ( ruleRecipe ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1502:1: ( ruleRecipe )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1472:1: ( ruleRecipe )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1473:1: ruleRecipe
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1502:1: ( ruleRecipe )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1503:1: ruleRecipe
             {
              before(grammarAccess.getAlchemyLabModelAccess().getRecipesRecipeParserRuleCall_2_0()); 
-            pushFollow(FOLLOW_ruleRecipe_in_rule__AlchemyLabModel__RecipesAssignment_22887);
+            pushFollow(FOLLOW_ruleRecipe_in_rule__AlchemyLabModel__RecipesAssignment_22947);
             ruleRecipe();
 
             state._fsp--;
@@ -3865,20 +3956,20 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Ingredient__NameAssignment_1"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1482:1: rule__Ingredient__NameAssignment_1 : ( RULE_ID ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1512:1: rule__Ingredient__NameAssignment_1 : ( RULE_ID ) ;
     public final void rule__Ingredient__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1486:1: ( ( RULE_ID ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1487:1: ( RULE_ID )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1516:1: ( ( RULE_ID ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1517:1: ( RULE_ID )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1487:1: ( RULE_ID )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1488:1: RULE_ID
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1517:1: ( RULE_ID )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1518:1: RULE_ID
             {
              before(grammarAccess.getIngredientAccess().getNameIDTerminalRuleCall_1_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Ingredient__NameAssignment_12918); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Ingredient__NameAssignment_12978); 
              after(grammarAccess.getIngredientAccess().getNameIDTerminalRuleCall_1_0()); 
 
             }
@@ -3902,20 +3993,20 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Ingredient__EffectsAssignment_3"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1497:1: rule__Ingredient__EffectsAssignment_3 : ( ruleEffectRef ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1527:1: rule__Ingredient__EffectsAssignment_3 : ( ruleEffectRef ) ;
     public final void rule__Ingredient__EffectsAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1501:1: ( ( ruleEffectRef ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1502:1: ( ruleEffectRef )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1531:1: ( ( ruleEffectRef ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1532:1: ( ruleEffectRef )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1502:1: ( ruleEffectRef )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1503:1: ruleEffectRef
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1532:1: ( ruleEffectRef )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1533:1: ruleEffectRef
             {
              before(grammarAccess.getIngredientAccess().getEffectsEffectRefParserRuleCall_3_0()); 
-            pushFollow(FOLLOW_ruleEffectRef_in_rule__Ingredient__EffectsAssignment_32949);
+            pushFollow(FOLLOW_ruleEffectRef_in_rule__Ingredient__EffectsAssignment_33009);
             ruleEffectRef();
 
             state._fsp--;
@@ -3943,20 +4034,20 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Ingredient__PriceAssignment_5"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1512:1: rule__Ingredient__PriceAssignment_5 : ( RULE_NUMBER ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1542:1: rule__Ingredient__PriceAssignment_5 : ( RULE_NUMBER ) ;
     public final void rule__Ingredient__PriceAssignment_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1516:1: ( ( RULE_NUMBER ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1517:1: ( RULE_NUMBER )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1546:1: ( ( RULE_NUMBER ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1547:1: ( RULE_NUMBER )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1517:1: ( RULE_NUMBER )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1518:1: RULE_NUMBER
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1547:1: ( RULE_NUMBER )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1548:1: RULE_NUMBER
             {
              before(grammarAccess.getIngredientAccess().getPriceNUMBERTerminalRuleCall_5_0()); 
-            match(input,RULE_NUMBER,FOLLOW_RULE_NUMBER_in_rule__Ingredient__PriceAssignment_52980); 
+            match(input,RULE_NUMBER,FOLLOW_RULE_NUMBER_in_rule__Ingredient__PriceAssignment_53040); 
              after(grammarAccess.getIngredientAccess().getPriceNUMBERTerminalRuleCall_5_0()); 
 
             }
@@ -3980,20 +4071,20 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Ingredient__WeightAssignment_7"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1527:1: rule__Ingredient__WeightAssignment_7 : ( RULE_NUMBER ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1557:1: rule__Ingredient__WeightAssignment_7 : ( RULE_NUMBER ) ;
     public final void rule__Ingredient__WeightAssignment_7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1531:1: ( ( RULE_NUMBER ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1532:1: ( RULE_NUMBER )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1561:1: ( ( RULE_NUMBER ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1562:1: ( RULE_NUMBER )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1532:1: ( RULE_NUMBER )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1533:1: RULE_NUMBER
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1562:1: ( RULE_NUMBER )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1563:1: RULE_NUMBER
             {
              before(grammarAccess.getIngredientAccess().getWeightNUMBERTerminalRuleCall_7_0()); 
-            match(input,RULE_NUMBER,FOLLOW_RULE_NUMBER_in_rule__Ingredient__WeightAssignment_73011); 
+            match(input,RULE_NUMBER,FOLLOW_RULE_NUMBER_in_rule__Ingredient__WeightAssignment_73071); 
              after(grammarAccess.getIngredientAccess().getWeightNUMBERTerminalRuleCall_7_0()); 
 
             }
@@ -4016,22 +4107,22 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
     // $ANTLR end "rule__Ingredient__WeightAssignment_7"
 
 
-    // $ANTLR start "rule__Ingredient__SourceAssignment_9"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1542:1: rule__Ingredient__SourceAssignment_9 : ( RULE_STRING ) ;
-    public final void rule__Ingredient__SourceAssignment_9() throws RecognitionException {
+    // $ANTLR start "rule__Ingredient__SourceAssignment_8_1"
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1572:1: rule__Ingredient__SourceAssignment_8_1 : ( RULE_STRING ) ;
+    public final void rule__Ingredient__SourceAssignment_8_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1546:1: ( ( RULE_STRING ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1547:1: ( RULE_STRING )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1576:1: ( ( RULE_STRING ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1577:1: ( RULE_STRING )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1547:1: ( RULE_STRING )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1548:1: RULE_STRING
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1577:1: ( RULE_STRING )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1578:1: RULE_STRING
             {
-             before(grammarAccess.getIngredientAccess().getSourceSTRINGTerminalRuleCall_9_0()); 
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Ingredient__SourceAssignment_93042); 
-             after(grammarAccess.getIngredientAccess().getSourceSTRINGTerminalRuleCall_9_0()); 
+             before(grammarAccess.getIngredientAccess().getSourceSTRINGTerminalRuleCall_8_1_0()); 
+            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Ingredient__SourceAssignment_8_13102); 
+             after(grammarAccess.getIngredientAccess().getSourceSTRINGTerminalRuleCall_8_1_0()); 
 
             }
 
@@ -4050,24 +4141,24 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
         }
         return ;
     }
-    // $ANTLR end "rule__Ingredient__SourceAssignment_9"
+    // $ANTLR end "rule__Ingredient__SourceAssignment_8_1"
 
 
     // $ANTLR start "rule__Effect__NameAssignment_1"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1557:1: rule__Effect__NameAssignment_1 : ( RULE_ID ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1587:1: rule__Effect__NameAssignment_1 : ( RULE_ID ) ;
     public final void rule__Effect__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1561:1: ( ( RULE_ID ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1562:1: ( RULE_ID )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1591:1: ( ( RULE_ID ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1592:1: ( RULE_ID )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1562:1: ( RULE_ID )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1563:1: RULE_ID
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1592:1: ( RULE_ID )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1593:1: RULE_ID
             {
              before(grammarAccess.getEffectAccess().getNameIDTerminalRuleCall_1_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Effect__NameAssignment_13073); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Effect__NameAssignment_13133); 
              after(grammarAccess.getEffectAccess().getNameIDTerminalRuleCall_1_0()); 
 
             }
@@ -4091,20 +4182,20 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Effect__TypeAssignment_3"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1572:1: rule__Effect__TypeAssignment_3 : ( ruleEffectType ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1602:1: rule__Effect__TypeAssignment_3 : ( ruleEffectType ) ;
     public final void rule__Effect__TypeAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1576:1: ( ( ruleEffectType ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1577:1: ( ruleEffectType )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1606:1: ( ( ruleEffectType ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1607:1: ( ruleEffectType )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1577:1: ( ruleEffectType )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1578:1: ruleEffectType
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1607:1: ( ruleEffectType )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1608:1: ruleEffectType
             {
              before(grammarAccess.getEffectAccess().getTypeEffectTypeEnumRuleCall_3_0()); 
-            pushFollow(FOLLOW_ruleEffectType_in_rule__Effect__TypeAssignment_33104);
+            pushFollow(FOLLOW_ruleEffectType_in_rule__Effect__TypeAssignment_33164);
             ruleEffectType();
 
             state._fsp--;
@@ -4132,20 +4223,20 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Effect__DescriptionAssignment_5_1"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1587:1: rule__Effect__DescriptionAssignment_5_1 : ( RULE_STRING ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1617:1: rule__Effect__DescriptionAssignment_5_1 : ( RULE_STRING ) ;
     public final void rule__Effect__DescriptionAssignment_5_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1591:1: ( ( RULE_STRING ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1592:1: ( RULE_STRING )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1621:1: ( ( RULE_STRING ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1622:1: ( RULE_STRING )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1592:1: ( RULE_STRING )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1593:1: RULE_STRING
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1622:1: ( RULE_STRING )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1623:1: RULE_STRING
             {
              before(grammarAccess.getEffectAccess().getDescriptionSTRINGTerminalRuleCall_5_1_0()); 
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Effect__DescriptionAssignment_5_13135); 
+            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Effect__DescriptionAssignment_5_13195); 
              after(grammarAccess.getEffectAccess().getDescriptionSTRINGTerminalRuleCall_5_1_0()); 
 
             }
@@ -4169,24 +4260,24 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EffectRef__EffectAssignment_1"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1602:1: rule__EffectRef__EffectAssignment_1 : ( ( RULE_ID ) ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1632:1: rule__EffectRef__EffectAssignment_1 : ( ( RULE_ID ) ) ;
     public final void rule__EffectRef__EffectAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1606:1: ( ( ( RULE_ID ) ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1607:1: ( ( RULE_ID ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1636:1: ( ( ( RULE_ID ) ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1637:1: ( ( RULE_ID ) )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1607:1: ( ( RULE_ID ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1608:1: ( RULE_ID )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1637:1: ( ( RULE_ID ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1638:1: ( RULE_ID )
             {
              before(grammarAccess.getEffectRefAccess().getEffectEffectCrossReference_1_0()); 
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1609:1: ( RULE_ID )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1610:1: RULE_ID
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1639:1: ( RULE_ID )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1640:1: RULE_ID
             {
              before(grammarAccess.getEffectRefAccess().getEffectEffectIDTerminalRuleCall_1_0_1()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__EffectRef__EffectAssignment_13170); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__EffectRef__EffectAssignment_13230); 
              after(grammarAccess.getEffectRefAccess().getEffectEffectIDTerminalRuleCall_1_0_1()); 
 
             }
@@ -4214,20 +4305,20 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Recipe__ToxicityAssignment_0"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1621:1: rule__Recipe__ToxicityAssignment_0 : ( ruleToxicity ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1651:1: rule__Recipe__ToxicityAssignment_0 : ( ruleToxicity ) ;
     public final void rule__Recipe__ToxicityAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1625:1: ( ( ruleToxicity ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1626:1: ( ruleToxicity )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1655:1: ( ( ruleToxicity ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1656:1: ( ruleToxicity )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1626:1: ( ruleToxicity )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1627:1: ruleToxicity
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1656:1: ( ruleToxicity )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1657:1: ruleToxicity
             {
              before(grammarAccess.getRecipeAccess().getToxicityToxicityEnumRuleCall_0_0()); 
-            pushFollow(FOLLOW_ruleToxicity_in_rule__Recipe__ToxicityAssignment_03205);
+            pushFollow(FOLLOW_ruleToxicity_in_rule__Recipe__ToxicityAssignment_03265);
             ruleToxicity();
 
             state._fsp--;
@@ -4255,20 +4346,20 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Recipe__NameAssignment_1"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1636:1: rule__Recipe__NameAssignment_1 : ( RULE_ID ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1666:1: rule__Recipe__NameAssignment_1 : ( RULE_ID ) ;
     public final void rule__Recipe__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1640:1: ( ( RULE_ID ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1641:1: ( RULE_ID )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1670:1: ( ( RULE_ID ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1671:1: ( RULE_ID )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1641:1: ( RULE_ID )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1642:1: RULE_ID
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1671:1: ( RULE_ID )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1672:1: RULE_ID
             {
              before(grammarAccess.getRecipeAccess().getNameIDTerminalRuleCall_1_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Recipe__NameAssignment_13236); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Recipe__NameAssignment_13296); 
              after(grammarAccess.getRecipeAccess().getNameIDTerminalRuleCall_1_0()); 
 
             }
@@ -4292,20 +4383,20 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Recipe__EffectsAssignment_3"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1651:1: rule__Recipe__EffectsAssignment_3 : ( ruleEffectRef ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1681:1: rule__Recipe__EffectsAssignment_3 : ( ruleEffectRef ) ;
     public final void rule__Recipe__EffectsAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1655:1: ( ( ruleEffectRef ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1656:1: ( ruleEffectRef )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1685:1: ( ( ruleEffectRef ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1686:1: ( ruleEffectRef )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1656:1: ( ruleEffectRef )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1657:1: ruleEffectRef
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1686:1: ( ruleEffectRef )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1687:1: ruleEffectRef
             {
              before(grammarAccess.getRecipeAccess().getEffectsEffectRefParserRuleCall_3_0()); 
-            pushFollow(FOLLOW_ruleEffectRef_in_rule__Recipe__EffectsAssignment_33267);
+            pushFollow(FOLLOW_ruleEffectRef_in_rule__Recipe__EffectsAssignment_33327);
             ruleEffectRef();
 
             state._fsp--;
@@ -4333,20 +4424,20 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Recipe__PriceAssignment_5"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1666:1: rule__Recipe__PriceAssignment_5 : ( RULE_NUMBER ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1696:1: rule__Recipe__PriceAssignment_5 : ( RULE_NUMBER ) ;
     public final void rule__Recipe__PriceAssignment_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1670:1: ( ( RULE_NUMBER ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1671:1: ( RULE_NUMBER )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1700:1: ( ( RULE_NUMBER ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1701:1: ( RULE_NUMBER )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1671:1: ( RULE_NUMBER )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1672:1: RULE_NUMBER
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1701:1: ( RULE_NUMBER )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1702:1: RULE_NUMBER
             {
              before(grammarAccess.getRecipeAccess().getPriceNUMBERTerminalRuleCall_5_0()); 
-            match(input,RULE_NUMBER,FOLLOW_RULE_NUMBER_in_rule__Recipe__PriceAssignment_53298); 
+            match(input,RULE_NUMBER,FOLLOW_RULE_NUMBER_in_rule__Recipe__PriceAssignment_53358); 
              after(grammarAccess.getRecipeAccess().getPriceNUMBERTerminalRuleCall_5_0()); 
 
             }
@@ -4370,24 +4461,24 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Recipe__IngredientsAssignment_8"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1681:1: rule__Recipe__IngredientsAssignment_8 : ( ( RULE_ID ) ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1711:1: rule__Recipe__IngredientsAssignment_8 : ( ( RULE_ID ) ) ;
     public final void rule__Recipe__IngredientsAssignment_8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1685:1: ( ( ( RULE_ID ) ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1686:1: ( ( RULE_ID ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1715:1: ( ( ( RULE_ID ) ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1716:1: ( ( RULE_ID ) )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1686:1: ( ( RULE_ID ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1687:1: ( RULE_ID )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1716:1: ( ( RULE_ID ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1717:1: ( RULE_ID )
             {
              before(grammarAccess.getRecipeAccess().getIngredientsIngredientCrossReference_8_0()); 
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1688:1: ( RULE_ID )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1689:1: RULE_ID
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1718:1: ( RULE_ID )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1719:1: RULE_ID
             {
              before(grammarAccess.getRecipeAccess().getIngredientsIngredientIDTerminalRuleCall_8_0_1()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Recipe__IngredientsAssignment_83333); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Recipe__IngredientsAssignment_83393); 
              after(grammarAccess.getRecipeAccess().getIngredientsIngredientIDTerminalRuleCall_8_0_1()); 
 
             }
@@ -4415,24 +4506,24 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Recipe__IngredientsAssignment_9_1"
-    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1700:1: rule__Recipe__IngredientsAssignment_9_1 : ( ( RULE_ID ) ) ;
+    // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1730:1: rule__Recipe__IngredientsAssignment_9_1 : ( ( RULE_ID ) ) ;
     public final void rule__Recipe__IngredientsAssignment_9_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1704:1: ( ( ( RULE_ID ) ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1705:1: ( ( RULE_ID ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1734:1: ( ( ( RULE_ID ) ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1735:1: ( ( RULE_ID ) )
             {
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1705:1: ( ( RULE_ID ) )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1706:1: ( RULE_ID )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1735:1: ( ( RULE_ID ) )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1736:1: ( RULE_ID )
             {
              before(grammarAccess.getRecipeAccess().getIngredientsIngredientCrossReference_9_1_0()); 
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1707:1: ( RULE_ID )
-            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1708:1: RULE_ID
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1737:1: ( RULE_ID )
+            // ../es.skyrim.alchemy.ui/src-gen/es/skyrim/alchemy/ui/contentassist/antlr/internal/InternalAlchemyLab.g:1738:1: RULE_ID
             {
              before(grammarAccess.getRecipeAccess().getIngredientsIngredientIDTerminalRuleCall_9_1_0_1()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Recipe__IngredientsAssignment_9_13372); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Recipe__IngredientsAssignment_9_13432); 
              after(grammarAccess.getRecipeAccess().getIngredientsIngredientIDTerminalRuleCall_9_1_0_1()); 
 
             }
@@ -4513,96 +4604,98 @@ public class InternalAlchemyLabParser extends AbstractInternalContentAssistParse
     public static final BitSet FOLLOW_rule__Ingredient__Group__6__Impl_in_rule__Ingredient__Group__61107 = new BitSet(new long[]{0x0000000000000020L});
     public static final BitSet FOLLOW_rule__Ingredient__Group__7_in_rule__Ingredient__Group__61110 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_19_in_rule__Ingredient__Group__6__Impl1138 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Ingredient__Group__7__Impl_in_rule__Ingredient__Group__71169 = new BitSet(new long[]{0x0000000000100000L});
+    public static final BitSet FOLLOW_rule__Ingredient__Group__7__Impl_in_rule__Ingredient__Group__71169 = new BitSet(new long[]{0x0000000000300000L});
     public static final BitSet FOLLOW_rule__Ingredient__Group__8_in_rule__Ingredient__Group__71172 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__Ingredient__WeightAssignment_7_in_rule__Ingredient__Group__7__Impl1199 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Ingredient__Group__8__Impl_in_rule__Ingredient__Group__81229 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_rule__Ingredient__Group__8__Impl_in_rule__Ingredient__Group__81229 = new BitSet(new long[]{0x0000000000300000L});
     public static final BitSet FOLLOW_rule__Ingredient__Group__9_in_rule__Ingredient__Group__81232 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_20_in_rule__Ingredient__Group__8__Impl1260 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Ingredient__Group__9__Impl_in_rule__Ingredient__Group__91291 = new BitSet(new long[]{0x0000000000200000L});
-    public static final BitSet FOLLOW_rule__Ingredient__Group__10_in_rule__Ingredient__Group__91294 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Ingredient__SourceAssignment_9_in_rule__Ingredient__Group__9__Impl1321 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Ingredient__Group__10__Impl_in_rule__Ingredient__Group__101351 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_21_in_rule__Ingredient__Group__10__Impl1379 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Effect__Group__0__Impl_in_rule__Effect__Group__01432 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__Effect__Group__1_in_rule__Effect__Group__01435 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_22_in_rule__Effect__Group__0__Impl1463 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Effect__Group__1__Impl_in_rule__Effect__Group__11494 = new BitSet(new long[]{0x0000000000800000L});
-    public static final BitSet FOLLOW_rule__Effect__Group__2_in_rule__Effect__Group__11497 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Effect__NameAssignment_1_in_rule__Effect__Group__1__Impl1524 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Effect__Group__2__Impl_in_rule__Effect__Group__21554 = new BitSet(new long[]{0x0000000000003000L});
-    public static final BitSet FOLLOW_rule__Effect__Group__3_in_rule__Effect__Group__21557 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_23_in_rule__Effect__Group__2__Impl1585 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Effect__Group__3__Impl_in_rule__Effect__Group__31616 = new BitSet(new long[]{0x0000000001000000L});
-    public static final BitSet FOLLOW_rule__Effect__Group__4_in_rule__Effect__Group__31619 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Effect__TypeAssignment_3_in_rule__Effect__Group__3__Impl1646 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Effect__Group__4__Impl_in_rule__Effect__Group__41676 = new BitSet(new long[]{0x0000000002000000L});
-    public static final BitSet FOLLOW_rule__Effect__Group__5_in_rule__Effect__Group__41679 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_24_in_rule__Effect__Group__4__Impl1707 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Effect__Group__5__Impl_in_rule__Effect__Group__51738 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Effect__Group_5__0_in_rule__Effect__Group__5__Impl1765 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Effect__Group_5__0__Impl_in_rule__Effect__Group_5__01808 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_rule__Effect__Group_5__1_in_rule__Effect__Group_5__01811 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_25_in_rule__Effect__Group_5__0__Impl1839 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Effect__Group_5__1__Impl_in_rule__Effect__Group_5__11870 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Effect__DescriptionAssignment_5_1_in_rule__Effect__Group_5__1__Impl1897 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EffectRef__Group__0__Impl_in_rule__EffectRef__Group__01931 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__EffectRef__Group__1_in_rule__EffectRef__Group__01934 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_26_in_rule__EffectRef__Group__0__Impl1962 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EffectRef__Group__1__Impl_in_rule__EffectRef__Group__11993 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EffectRef__EffectAssignment_1_in_rule__EffectRef__Group__1__Impl2020 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Recipe__Group__0__Impl_in_rule__Recipe__Group__02054 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__Recipe__Group__1_in_rule__Recipe__Group__02057 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Recipe__ToxicityAssignment_0_in_rule__Recipe__Group__0__Impl2084 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Recipe__Group__1__Impl_in_rule__Recipe__Group__12114 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_rule__Recipe__Group__2_in_rule__Recipe__Group__12117 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Recipe__NameAssignment_1_in_rule__Recipe__Group__1__Impl2144 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Recipe__Group__2__Impl_in_rule__Recipe__Group__22174 = new BitSet(new long[]{0x0000000004000000L});
-    public static final BitSet FOLLOW_rule__Recipe__Group__3_in_rule__Recipe__Group__22177 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_17_in_rule__Recipe__Group__2__Impl2205 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Recipe__Group__3__Impl_in_rule__Recipe__Group__32236 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_rule__Recipe__Group__4_in_rule__Recipe__Group__32239 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Recipe__EffectsAssignment_3_in_rule__Recipe__Group__3__Impl2268 = new BitSet(new long[]{0x0000000004000002L});
-    public static final BitSet FOLLOW_rule__Recipe__EffectsAssignment_3_in_rule__Recipe__Group__3__Impl2280 = new BitSet(new long[]{0x0000000004000002L});
-    public static final BitSet FOLLOW_rule__Recipe__Group__4__Impl_in_rule__Recipe__Group__42313 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_rule__Recipe__Group__5_in_rule__Recipe__Group__42316 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_18_in_rule__Recipe__Group__4__Impl2344 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Recipe__Group__5__Impl_in_rule__Recipe__Group__52375 = new BitSet(new long[]{0x0000000000200000L});
-    public static final BitSet FOLLOW_rule__Recipe__Group__6_in_rule__Recipe__Group__52378 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Recipe__PriceAssignment_5_in_rule__Recipe__Group__5__Impl2405 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Recipe__Group__6__Impl_in_rule__Recipe__Group__62435 = new BitSet(new long[]{0x0000000008000000L});
-    public static final BitSet FOLLOW_rule__Recipe__Group__7_in_rule__Recipe__Group__62438 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_21_in_rule__Recipe__Group__6__Impl2466 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Recipe__Group__7__Impl_in_rule__Recipe__Group__72497 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__Recipe__Group__8_in_rule__Recipe__Group__72500 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_27_in_rule__Recipe__Group__7__Impl2528 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Recipe__Group__8__Impl_in_rule__Recipe__Group__82559 = new BitSet(new long[]{0x0000000000001000L});
-    public static final BitSet FOLLOW_rule__Recipe__Group__9_in_rule__Recipe__Group__82562 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Recipe__IngredientsAssignment_8_in_rule__Recipe__Group__8__Impl2589 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Recipe__Group__9__Impl_in_rule__Recipe__Group__92619 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Recipe__Group_9__0_in_rule__Recipe__Group__9__Impl2646 = new BitSet(new long[]{0x0000000000001002L});
-    public static final BitSet FOLLOW_rule__Recipe__Group_9__0__Impl_in_rule__Recipe__Group_9__02697 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__Recipe__Group_9__1_in_rule__Recipe__Group_9__02700 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_12_in_rule__Recipe__Group_9__0__Impl2728 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Recipe__Group_9__1__Impl_in_rule__Recipe__Group_9__12759 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Recipe__IngredientsAssignment_9_1_in_rule__Recipe__Group_9__1__Impl2786 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEffect_in_rule__AlchemyLabModel__EffectsAssignment_02825 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleIngredient_in_rule__AlchemyLabModel__IngredientsAssignment_12856 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleRecipe_in_rule__AlchemyLabModel__RecipesAssignment_22887 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Ingredient__NameAssignment_12918 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEffectRef_in_rule__Ingredient__EffectsAssignment_32949 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_NUMBER_in_rule__Ingredient__PriceAssignment_52980 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_NUMBER_in_rule__Ingredient__WeightAssignment_73011 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__Ingredient__SourceAssignment_93042 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Effect__NameAssignment_13073 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEffectType_in_rule__Effect__TypeAssignment_33104 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__Effect__DescriptionAssignment_5_13135 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__EffectRef__EffectAssignment_13170 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleToxicity_in_rule__Recipe__ToxicityAssignment_03205 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Recipe__NameAssignment_13236 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEffectRef_in_rule__Recipe__EffectsAssignment_33267 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_NUMBER_in_rule__Recipe__PriceAssignment_53298 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Recipe__IngredientsAssignment_83333 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Recipe__IngredientsAssignment_9_13372 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Ingredient__Group_8__0_in_rule__Ingredient__Group__8__Impl1259 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Ingredient__Group__9__Impl_in_rule__Ingredient__Group__91290 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_20_in_rule__Ingredient__Group__9__Impl1318 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Ingredient__Group_8__0__Impl_in_rule__Ingredient__Group_8__01369 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_rule__Ingredient__Group_8__1_in_rule__Ingredient__Group_8__01372 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_21_in_rule__Ingredient__Group_8__0__Impl1400 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Ingredient__Group_8__1__Impl_in_rule__Ingredient__Group_8__11431 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Ingredient__SourceAssignment_8_1_in_rule__Ingredient__Group_8__1__Impl1458 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Effect__Group__0__Impl_in_rule__Effect__Group__01492 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__Effect__Group__1_in_rule__Effect__Group__01495 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_22_in_rule__Effect__Group__0__Impl1523 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Effect__Group__1__Impl_in_rule__Effect__Group__11554 = new BitSet(new long[]{0x0000000000800000L});
+    public static final BitSet FOLLOW_rule__Effect__Group__2_in_rule__Effect__Group__11557 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Effect__NameAssignment_1_in_rule__Effect__Group__1__Impl1584 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Effect__Group__2__Impl_in_rule__Effect__Group__21614 = new BitSet(new long[]{0x0000000000003000L});
+    public static final BitSet FOLLOW_rule__Effect__Group__3_in_rule__Effect__Group__21617 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_23_in_rule__Effect__Group__2__Impl1645 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Effect__Group__3__Impl_in_rule__Effect__Group__31676 = new BitSet(new long[]{0x0000000001000000L});
+    public static final BitSet FOLLOW_rule__Effect__Group__4_in_rule__Effect__Group__31679 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Effect__TypeAssignment_3_in_rule__Effect__Group__3__Impl1706 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Effect__Group__4__Impl_in_rule__Effect__Group__41736 = new BitSet(new long[]{0x0000000002000000L});
+    public static final BitSet FOLLOW_rule__Effect__Group__5_in_rule__Effect__Group__41739 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_24_in_rule__Effect__Group__4__Impl1767 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Effect__Group__5__Impl_in_rule__Effect__Group__51798 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Effect__Group_5__0_in_rule__Effect__Group__5__Impl1825 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Effect__Group_5__0__Impl_in_rule__Effect__Group_5__01868 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_rule__Effect__Group_5__1_in_rule__Effect__Group_5__01871 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_25_in_rule__Effect__Group_5__0__Impl1899 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Effect__Group_5__1__Impl_in_rule__Effect__Group_5__11930 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Effect__DescriptionAssignment_5_1_in_rule__Effect__Group_5__1__Impl1957 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EffectRef__Group__0__Impl_in_rule__EffectRef__Group__01991 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__EffectRef__Group__1_in_rule__EffectRef__Group__01994 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_26_in_rule__EffectRef__Group__0__Impl2022 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EffectRef__Group__1__Impl_in_rule__EffectRef__Group__12053 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EffectRef__EffectAssignment_1_in_rule__EffectRef__Group__1__Impl2080 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Recipe__Group__0__Impl_in_rule__Recipe__Group__02114 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__Recipe__Group__1_in_rule__Recipe__Group__02117 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Recipe__ToxicityAssignment_0_in_rule__Recipe__Group__0__Impl2144 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Recipe__Group__1__Impl_in_rule__Recipe__Group__12174 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_rule__Recipe__Group__2_in_rule__Recipe__Group__12177 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Recipe__NameAssignment_1_in_rule__Recipe__Group__1__Impl2204 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Recipe__Group__2__Impl_in_rule__Recipe__Group__22234 = new BitSet(new long[]{0x0000000004000000L});
+    public static final BitSet FOLLOW_rule__Recipe__Group__3_in_rule__Recipe__Group__22237 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_17_in_rule__Recipe__Group__2__Impl2265 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Recipe__Group__3__Impl_in_rule__Recipe__Group__32296 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_rule__Recipe__Group__4_in_rule__Recipe__Group__32299 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Recipe__EffectsAssignment_3_in_rule__Recipe__Group__3__Impl2328 = new BitSet(new long[]{0x0000000004000002L});
+    public static final BitSet FOLLOW_rule__Recipe__EffectsAssignment_3_in_rule__Recipe__Group__3__Impl2340 = new BitSet(new long[]{0x0000000004000002L});
+    public static final BitSet FOLLOW_rule__Recipe__Group__4__Impl_in_rule__Recipe__Group__42373 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_rule__Recipe__Group__5_in_rule__Recipe__Group__42376 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_18_in_rule__Recipe__Group__4__Impl2404 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Recipe__Group__5__Impl_in_rule__Recipe__Group__52435 = new BitSet(new long[]{0x0000000000100000L});
+    public static final BitSet FOLLOW_rule__Recipe__Group__6_in_rule__Recipe__Group__52438 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Recipe__PriceAssignment_5_in_rule__Recipe__Group__5__Impl2465 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Recipe__Group__6__Impl_in_rule__Recipe__Group__62495 = new BitSet(new long[]{0x0000000008000000L});
+    public static final BitSet FOLLOW_rule__Recipe__Group__7_in_rule__Recipe__Group__62498 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_20_in_rule__Recipe__Group__6__Impl2526 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Recipe__Group__7__Impl_in_rule__Recipe__Group__72557 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__Recipe__Group__8_in_rule__Recipe__Group__72560 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_27_in_rule__Recipe__Group__7__Impl2588 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Recipe__Group__8__Impl_in_rule__Recipe__Group__82619 = new BitSet(new long[]{0x0000000000001000L});
+    public static final BitSet FOLLOW_rule__Recipe__Group__9_in_rule__Recipe__Group__82622 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Recipe__IngredientsAssignment_8_in_rule__Recipe__Group__8__Impl2649 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Recipe__Group__9__Impl_in_rule__Recipe__Group__92679 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Recipe__Group_9__0_in_rule__Recipe__Group__9__Impl2706 = new BitSet(new long[]{0x0000000000001002L});
+    public static final BitSet FOLLOW_rule__Recipe__Group_9__0__Impl_in_rule__Recipe__Group_9__02757 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__Recipe__Group_9__1_in_rule__Recipe__Group_9__02760 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_12_in_rule__Recipe__Group_9__0__Impl2788 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Recipe__Group_9__1__Impl_in_rule__Recipe__Group_9__12819 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Recipe__IngredientsAssignment_9_1_in_rule__Recipe__Group_9__1__Impl2846 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEffect_in_rule__AlchemyLabModel__EffectsAssignment_02885 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleIngredient_in_rule__AlchemyLabModel__IngredientsAssignment_12916 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleRecipe_in_rule__AlchemyLabModel__RecipesAssignment_22947 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Ingredient__NameAssignment_12978 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEffectRef_in_rule__Ingredient__EffectsAssignment_33009 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_NUMBER_in_rule__Ingredient__PriceAssignment_53040 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_NUMBER_in_rule__Ingredient__WeightAssignment_73071 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rule__Ingredient__SourceAssignment_8_13102 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Effect__NameAssignment_13133 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEffectType_in_rule__Effect__TypeAssignment_33164 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rule__Effect__DescriptionAssignment_5_13195 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__EffectRef__EffectAssignment_13230 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleToxicity_in_rule__Recipe__ToxicityAssignment_03265 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Recipe__NameAssignment_13296 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEffectRef_in_rule__Recipe__EffectsAssignment_33327 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_NUMBER_in_rule__Recipe__PriceAssignment_53358 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Recipe__IngredientsAssignment_83393 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Recipe__IngredientsAssignment_9_13432 = new BitSet(new long[]{0x0000000000000002L});
 
 }

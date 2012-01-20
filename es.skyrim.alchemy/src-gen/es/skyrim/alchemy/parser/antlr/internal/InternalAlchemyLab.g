@@ -241,15 +241,15 @@ ruleIngredient returns [EObject current=null]
 	    }
 
 )
-)	otherlv_8='source:' 
+)(	otherlv_8='source:' 
     {
-    	newLeafNode(otherlv_8, grammarAccess.getIngredientAccess().getSourceKeyword_8());
+    	newLeafNode(otherlv_8, grammarAccess.getIngredientAccess().getSourceKeyword_8_0());
     }
 (
 (
 		lv_source_9_0=RULE_STRING
 		{
-			newLeafNode(lv_source_9_0, grammarAccess.getIngredientAccess().getSourceSTRINGTerminalRuleCall_9_0()); 
+			newLeafNode(lv_source_9_0, grammarAccess.getIngredientAccess().getSourceSTRINGTerminalRuleCall_8_1_0()); 
 		}
 		{
 	        if ($current==null) {
@@ -263,9 +263,9 @@ ruleIngredient returns [EObject current=null]
 	    }
 
 )
-)	otherlv_10='}' 
+))?	otherlv_10='}' 
     {
-    	newLeafNode(otherlv_10, grammarAccess.getIngredientAccess().getRightCurlyBracketKeyword_10());
+    	newLeafNode(otherlv_10, grammarAccess.getIngredientAccess().getRightCurlyBracketKeyword_9());
     }
 )
 ;
@@ -580,7 +580,7 @@ ruleToxicity returns [Enumerator current=null]
 
 
 
-RULE_ID : '"' '^'? ('a'..'z'|'A'..'Z'|' '|'\u00E4'|'\u00C4'|'\u00F6'|'\u00D6'|'\u00DC'|'\u00FC')+ '"';
+RULE_ID : '"' '^'? ('a'..'z'|'A'..'Z'|' '|'\u00E4'|'\u00C4'|'\u00F6'|'\u00D6'|'\u00DC'|'\u00FC'|'\u00DF')+ '"';
 
 RULE_STRING : '\'' ('\\' ('b'|'t'|'n'|'f'|'r'|'u'|'"'|'\''|'\\')|~(('\\'|'\'')))* '\'';
 
