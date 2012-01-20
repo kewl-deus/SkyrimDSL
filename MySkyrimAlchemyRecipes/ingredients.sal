@@ -1,0 +1,7 @@
+ingredient "Abeceanischer Mirakelbarsch" {
+	-> "Damage Health"
+	-> "Weakness to Poison"
+	price: 15
+	weight: 0.5
+	source: 'Flüsse'
+}

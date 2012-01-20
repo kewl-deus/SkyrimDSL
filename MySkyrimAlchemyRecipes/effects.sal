@@ -1,0 +1,8 @@
+effect "Wiederherstellung verstärken"(+)
+
+effect "Damage Health"(-)
+
+effect "Ravage Health"(-)
+
+effect "Weakness to Poison"(-)
+

@@ -1,0 +1,8 @@
+
+potion "Andrews Favorite" {
+	-> "Damage Health"
+	-> "Weakness to Poison"
+	
+	price: 500
+	
+} = "Abeceanischer Mirakelbarsch"
