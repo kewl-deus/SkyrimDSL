@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <unitInfo fileName="Alchemy_Language.java" startLine="9" startPosition="0" endLine="16" endPosition="0" unitName="es.skyrim.alchemy.structure.Alchemy_Language" />
+  <unitInfo fileName="StructureAspectDescriptor.java" startLine="10" startPosition="0" endLine="41" endPosition="0" unitName="es.skyrim.alchemy.structure.StructureAspectDescriptor" />
+  <root nodeId="296901729014133200">
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="14" startPosition="60" endLine="15" endPosition="76" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="15" startPosition="76" endLine="16" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="DESCRIPTION" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="16" startPosition="57" endLine="17" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="NAME" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="17" startPosition="43" endLine="18" endPosition="68" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="SHORT_DESCRIPTION" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="18" startPosition="68" endLine="19" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="ALIAS" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="19" startPosition="45" endLine="20" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="VIRTUAL_PACKAGE" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="20" startPosition="64" endLine="21" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="NATURE" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="21" startPosition="47" endLine="22" endPosition="66" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="SMODEL_ATTRIBUTE" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="24" startPosition="29" endLine="25" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="28" startPosition="34" endLine="29" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="32" startPosition="44" endLine="33" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="36" startPosition="27" endLine="37" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="40" startPosition="37" endLine="41" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="44" startPosition="39" endLine="45" endPosition="54" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="48" startPosition="49" endLine="49" endPosition="54" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="52" startPosition="28" endLine="53" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="56" startPosition="38" endLine="57" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="60" startPosition="37" endLine="61" endPosition="52" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="64" startPosition="47" endLine="65" endPosition="52" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="68" startPosition="35" endLine="69" endPosition="52" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="69" startPosition="52" endLine="70" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="73" startPosition="45" endLine="74" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="77" startPosition="41" endLine="78" endPosition="55" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="81" startPosition="49" endLine="82" endPosition="67" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="85" startPosition="48" endLine="86" endPosition="70" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="89" startPosition="50" endLine="90" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="93" startPosition="69" endLine="94" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="97" startPosition="61" endLine="98" endPosition="153" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="101" startPosition="47" endLine="102" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="23" startPosition="0" endLine="26" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="Effect#(Ljetbrains/mps/smodel/SNode;)V" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="27" startPosition="0" endLine="31" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getDescription#()Ljava/lang/String;" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="31" startPosition="0" endLine="35" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setDescription#(Ljava/lang/String;)V" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="35" startPosition="0" endLine="39" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getName#()Ljava/lang/String;" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="39" startPosition="0" endLine="43" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setName#(Ljava/lang/String;)V" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="43" startPosition="0" endLine="47" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getShortDescription#()Ljava/lang/String;" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="47" startPosition="0" endLine="51" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setShortDescription#(Ljava/lang/String;)V" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="51" startPosition="0" endLine="55" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getAlias#()Ljava/lang/String;" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="55" startPosition="0" endLine="59" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setAlias#(Ljava/lang/String;)V" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="59" startPosition="0" endLine="63" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getVirtualPackage#()Ljava/lang/String;" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="63" startPosition="0" endLine="67" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setVirtualPackage#(Ljava/lang/String;)V" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="72" startPosition="0" endLine="76" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setNature#(Les/skyrim/alchemy/structure/EffectNature;)V" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="76" startPosition="0" endLine="80" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getSmodelAttributesCount#()I" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="80" startPosition="0" endLine="84" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="smodelAttributes#()Ljava/util/Iterator;" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="84" startPosition="0" endLine="88" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getSmodelAttributes#()Ljava/util/List;" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="88" startPosition="0" endLine="92" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="addSmodelAttribute#(Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="92" startPosition="0" endLine="96" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="insertSmodelAttribute#(Ljetbrains/mps/smodel/INodeAdapter;Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="96" startPosition="0" endLine="100" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;Z)Les/skyrim/alchemy/structure/Effect;" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="100" startPosition="0" endLine="104" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;)Les/skyrim/alchemy/structure/Effect;" />
+    <nodeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="67" startPosition="0" endLine="72" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getNature#()Les/skyrim/alchemy/structure/EffectNature;" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="24" startPosition="29" endLine="25" endPosition="16" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="28" startPosition="34" endLine="29" endPosition="48" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="32" startPosition="44" endLine="33" endPosition="48" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="36" startPosition="27" endLine="37" endPosition="41" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="40" startPosition="37" endLine="41" endPosition="41" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="44" startPosition="39" endLine="45" endPosition="54" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="48" startPosition="49" endLine="49" endPosition="54" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="52" startPosition="28" endLine="53" endPosition="42" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="56" startPosition="38" endLine="57" endPosition="42" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="60" startPosition="37" endLine="61" endPosition="52" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="64" startPosition="47" endLine="65" endPosition="52" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="73" startPosition="45" endLine="74" endPosition="63" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="77" startPosition="41" endLine="78" endPosition="55" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="81" startPosition="49" endLine="82" endPosition="67" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="85" startPosition="48" endLine="86" endPosition="70" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="89" startPosition="50" endLine="90" endPosition="49" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="93" startPosition="69" endLine="94" endPosition="58" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="97" startPosition="61" endLine="98" endPosition="153" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="101" startPosition="47" endLine="102" endPosition="41" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="68" startPosition="35" endLine="70" endPosition="42" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="23" startPosition="0" endLine="26" endPosition="3" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="27" startPosition="0" endLine="31" endPosition="0" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="31" startPosition="0" endLine="35" endPosition="0" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="35" startPosition="0" endLine="39" endPosition="0" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="39" startPosition="0" endLine="43" endPosition="0" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="43" startPosition="0" endLine="47" endPosition="0" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="47" startPosition="0" endLine="51" endPosition="0" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="51" startPosition="0" endLine="55" endPosition="0" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="55" startPosition="0" endLine="59" endPosition="0" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="59" startPosition="0" endLine="63" endPosition="0" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="63" startPosition="0" endLine="67" endPosition="0" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="72" startPosition="0" endLine="76" endPosition="0" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="76" startPosition="0" endLine="80" endPosition="0" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="80" startPosition="0" endLine="84" endPosition="0" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="84" startPosition="0" endLine="88" endPosition="0" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="88" startPosition="0" endLine="92" endPosition="0" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="92" startPosition="0" endLine="96" endPosition="0" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="96" startPosition="0" endLine="100" endPosition="0" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="100" startPosition="0" endLine="104" endPosition="0" />
+    <scopeInfo nodeId="296901729014133200" fileName="Effect.java" startLine="67" startPosition="0" endLine="72" endPosition="0" />
+    <unitInfo nodeId="296901729014133200" fileName="Effect.java" startLine="14" startPosition="0" endLine="105" endPosition="0" unitName="es.skyrim.alchemy.structure.Effect" />
+  </root>
+  <root nodeId="296901729014143358">
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="14" startPosition="65" endLine="15" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="15" startPosition="81" endLine="16" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="NAME" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="16" startPosition="43" endLine="17" endPosition="68" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="SHORT_DESCRIPTION" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="17" startPosition="68" endLine="18" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="ALIAS" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="18" startPosition="45" endLine="19" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="VIRTUAL_PACKAGE" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="19" startPosition="64" endLine="20" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="EFFECT" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="20" startPosition="47" endLine="21" endPosition="66" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="SMODEL_ATTRIBUTE" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="23" startPosition="34" endLine="24" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="27" startPosition="27" endLine="28" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="31" startPosition="37" endLine="32" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="35" startPosition="39" endLine="36" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="39" startPosition="49" endLine="40" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="43" startPosition="28" endLine="44" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="47" startPosition="38" endLine="48" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="51" startPosition="37" endLine="52" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="55" startPosition="47" endLine="56" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="59" startPosition="30" endLine="60" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="63" startPosition="39" endLine="64" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="67" startPosition="41" endLine="68" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="71" startPosition="49" endLine="72" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="75" startPosition="48" endLine="76" endPosition="75" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="79" startPosition="50" endLine="80" endPosition="54" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="83" startPosition="69" endLine="84" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="87" startPosition="66" endLine="88" endPosition="163" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="91" startPosition="52" endLine="92" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="22" startPosition="0" endLine="25" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="EffectAlias#(Ljetbrains/mps/smodel/SNode;)V" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="26" startPosition="0" endLine="30" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getName#()Ljava/lang/String;" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="30" startPosition="0" endLine="34" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setName#(Ljava/lang/String;)V" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="34" startPosition="0" endLine="38" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getShortDescription#()Ljava/lang/String;" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="38" startPosition="0" endLine="42" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setShortDescription#(Ljava/lang/String;)V" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="42" startPosition="0" endLine="46" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getAlias#()Ljava/lang/String;" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="46" startPosition="0" endLine="50" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setAlias#(Ljava/lang/String;)V" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="50" startPosition="0" endLine="54" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getVirtualPackage#()Ljava/lang/String;" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="54" startPosition="0" endLine="58" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setVirtualPackage#(Ljava/lang/String;)V" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="58" startPosition="0" endLine="62" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getEffect#()Ljetbrains/mps/smodel/INodeAdapter;" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="62" startPosition="0" endLine="66" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setEffect#(Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="66" startPosition="0" endLine="70" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getSmodelAttributesCount#()I" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="70" startPosition="0" endLine="74" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="smodelAttributes#()Ljava/util/Iterator;" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="74" startPosition="0" endLine="78" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getSmodelAttributes#()Ljava/util/List;" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="78" startPosition="0" endLine="82" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="addSmodelAttribute#(Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="82" startPosition="0" endLine="86" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="insertSmodelAttribute#(Ljetbrains/mps/smodel/INodeAdapter;Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="86" startPosition="0" endLine="90" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;Z)Les/skyrim/alchemy/structure/EffectAlias;" />
+    <nodeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="90" startPosition="0" endLine="94" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;)Les/skyrim/alchemy/structure/EffectAlias;" />
+    <scopeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="23" startPosition="34" endLine="24" endPosition="16" />
+    <scopeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="27" startPosition="27" endLine="28" endPosition="46" />
+    <scopeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="31" startPosition="37" endLine="32" endPosition="46" />
+    <scopeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="35" startPosition="39" endLine="36" endPosition="59" />
+    <scopeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="39" startPosition="49" endLine="40" endPosition="59" />
+    <scopeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="43" startPosition="28" endLine="44" endPosition="47" />
+    <scopeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="47" startPosition="38" endLine="48" endPosition="47" />
+    <scopeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="51" startPosition="37" endLine="52" endPosition="57" />
+    <scopeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="55" startPosition="47" endLine="56" endPosition="57" />
+    <scopeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="59" startPosition="30" endLine="60" endPosition="73" />
+    <scopeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="63" startPosition="39" endLine="64" endPosition="48" />
+    <scopeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="67" startPosition="41" endLine="68" endPosition="60" />
+    <scopeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="71" startPosition="49" endLine="72" endPosition="72" />
+    <scopeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="75" startPosition="48" endLine="76" endPosition="75" />
+    <scopeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="79" startPosition="50" endLine="80" endPosition="54" />
+    <scopeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="83" startPosition="69" endLine="84" endPosition="63" />
+    <scopeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="87" startPosition="66" endLine="88" endPosition="163" />
+    <scopeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="91" startPosition="52" endLine="92" endPosition="46" />
+    <scopeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="22" startPosition="0" endLine="25" endPosition="3" />
+    <scopeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="26" startPosition="0" endLine="30" endPosition="0" />
+    <scopeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="30" startPosition="0" endLine="34" endPosition="0" />
+    <scopeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="34" startPosition="0" endLine="38" endPosition="0" />
+    <scopeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="38" startPosition="0" endLine="42" endPosition="0" />
+    <scopeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="42" startPosition="0" endLine="46" endPosition="0" />
+    <scopeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="46" startPosition="0" endLine="50" endPosition="0" />
+    <scopeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="50" startPosition="0" endLine="54" endPosition="0" />
+    <scopeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="54" startPosition="0" endLine="58" endPosition="0" />
+    <scopeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="58" startPosition="0" endLine="62" endPosition="0" />
+    <scopeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="62" startPosition="0" endLine="66" endPosition="0" />
+    <scopeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="66" startPosition="0" endLine="70" endPosition="0" />
+    <scopeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="70" startPosition="0" endLine="74" endPosition="0" />
+    <scopeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="74" startPosition="0" endLine="78" endPosition="0" />
+    <scopeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="78" startPosition="0" endLine="82" endPosition="0" />
+    <scopeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="82" startPosition="0" endLine="86" endPosition="0" />
+    <scopeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="86" startPosition="0" endLine="90" endPosition="0" />
+    <scopeInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="90" startPosition="0" endLine="94" endPosition="0" />
+    <unitInfo nodeId="296901729014143358" fileName="EffectAlias.java" startLine="14" startPosition="0" endLine="95" endPosition="0" unitName="es.skyrim.alchemy.structure.EffectAlias" />
+  </root>
+  <root nodeId="296901729014143406">
+    <nodeInfo nodeId="296901729014143406" fileName="IEffect.java" startLine="7" startPosition="48" endLine="8" endPosition="77" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />
+    <unitInfo nodeId="296901729014143406" fileName="IEffect.java" startLine="7" startPosition="0" endLine="10" endPosition="0" unitName="es.skyrim.alchemy.structure.IEffect" />
+  </root>
+  <root nodeId="6612588870387972505">
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="15" startPosition="70" endLine="16" endPosition="80" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="16" startPosition="80" endLine="17" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="PRICE" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="17" startPosition="45" endLine="18" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="WEIGHT" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="18" startPosition="47" endLine="19" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="SOURCE" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="19" startPosition="47" endLine="20" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="NAME" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="20" startPosition="43" endLine="21" endPosition="68" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="SHORT_DESCRIPTION" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="21" startPosition="68" endLine="22" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="ALIAS" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="22" startPosition="45" endLine="23" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="VIRTUAL_PACKAGE" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="23" startPosition="64" endLine="24" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="EFFECTS" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="24" startPosition="49" endLine="25" endPosition="66" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="SMODEL_ATTRIBUTE" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="27" startPosition="33" endLine="28" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="31" startPosition="28" endLine="32" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="35" startPosition="38" endLine="36" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="39" startPosition="29" endLine="40" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="43" startPosition="39" endLine="44" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="47" startPosition="29" endLine="48" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="51" startPosition="39" endLine="52" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="55" startPosition="27" endLine="56" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="59" startPosition="37" endLine="60" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="63" startPosition="39" endLine="64" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="67" startPosition="49" endLine="68" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="71" startPosition="28" endLine="72" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="75" startPosition="38" endLine="76" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="79" startPosition="37" endLine="80" endPosition="56" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="83" startPosition="47" endLine="84" endPosition="56" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="87" startPosition="34" endLine="88" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="91" startPosition="48" endLine="92" endPosition="68" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="95" startPosition="47" endLine="96" endPosition="71" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="99" startPosition="48" endLine="100" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="103" startPosition="73" endLine="104" endPosition="53" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="107" startPosition="41" endLine="108" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="111" startPosition="49" endLine="112" endPosition="71" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="115" startPosition="48" endLine="116" endPosition="74" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="119" startPosition="50" endLine="120" endPosition="53" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="123" startPosition="69" endLine="124" endPosition="62" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="127" startPosition="65" endLine="128" endPosition="161" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="131" startPosition="51" endLine="132" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="26" startPosition="0" endLine="29" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="Ingredient#(Ljetbrains/mps/smodel/SNode;)V" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="30" startPosition="0" endLine="34" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getPrice#()Ljava/lang/String;" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="34" startPosition="0" endLine="38" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setPrice#(Ljava/lang/String;)V" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="38" startPosition="0" endLine="42" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getWeight#()Ljava/lang/String;" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="42" startPosition="0" endLine="46" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setWeight#(Ljava/lang/String;)V" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="46" startPosition="0" endLine="50" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getSource#()Ljava/lang/String;" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="50" startPosition="0" endLine="54" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setSource#(Ljava/lang/String;)V" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="54" startPosition="0" endLine="58" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getName#()Ljava/lang/String;" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="58" startPosition="0" endLine="62" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setName#(Ljava/lang/String;)V" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="62" startPosition="0" endLine="66" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getShortDescription#()Ljava/lang/String;" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="66" startPosition="0" endLine="70" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setShortDescription#(Ljava/lang/String;)V" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="70" startPosition="0" endLine="74" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getAlias#()Ljava/lang/String;" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="74" startPosition="0" endLine="78" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setAlias#(Ljava/lang/String;)V" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="78" startPosition="0" endLine="82" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getVirtualPackage#()Ljava/lang/String;" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="82" startPosition="0" endLine="86" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setVirtualPackage#(Ljava/lang/String;)V" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="86" startPosition="0" endLine="90" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getEffectsesCount#()I" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="90" startPosition="0" endLine="94" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="effectses#()Ljava/util/Iterator;" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="94" startPosition="0" endLine="98" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getEffectses#()Ljava/util/List;" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="98" startPosition="0" endLine="102" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="addEffects#(Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="102" startPosition="0" endLine="106" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="insertEffects#(Ljetbrains/mps/smodel/INodeAdapter;Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="106" startPosition="0" endLine="110" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getSmodelAttributesCount#()I" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="110" startPosition="0" endLine="114" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="smodelAttributes#()Ljava/util/Iterator;" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="114" startPosition="0" endLine="118" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getSmodelAttributes#()Ljava/util/List;" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="118" startPosition="0" endLine="122" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="addSmodelAttribute#(Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="122" startPosition="0" endLine="126" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="insertSmodelAttribute#(Ljetbrains/mps/smodel/INodeAdapter;Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="126" startPosition="0" endLine="130" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;Z)Les/skyrim/alchemy/structure/Ingredient;" />
+    <nodeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="130" startPosition="0" endLine="134" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;)Les/skyrim/alchemy/structure/Ingredient;" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="27" startPosition="33" endLine="28" endPosition="16" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="31" startPosition="28" endLine="32" endPosition="46" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="35" startPosition="38" endLine="36" endPosition="46" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="39" startPosition="29" endLine="40" endPosition="47" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="43" startPosition="39" endLine="44" endPosition="47" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="47" startPosition="29" endLine="48" endPosition="47" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="51" startPosition="39" endLine="52" endPosition="47" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="55" startPosition="27" endLine="56" endPosition="45" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="59" startPosition="37" endLine="60" endPosition="45" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="63" startPosition="39" endLine="64" endPosition="58" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="67" startPosition="49" endLine="68" endPosition="58" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="71" startPosition="28" endLine="72" endPosition="46" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="75" startPosition="38" endLine="76" endPosition="46" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="79" startPosition="37" endLine="80" endPosition="56" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="83" startPosition="47" endLine="84" endPosition="56" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="87" startPosition="34" endLine="88" endPosition="50" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="91" startPosition="48" endLine="92" endPosition="68" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="95" startPosition="47" endLine="96" endPosition="71" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="99" startPosition="48" endLine="100" endPosition="44" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="103" startPosition="73" endLine="104" endPosition="53" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="107" startPosition="41" endLine="108" endPosition="59" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="111" startPosition="49" endLine="112" endPosition="71" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="115" startPosition="48" endLine="116" endPosition="74" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="119" startPosition="50" endLine="120" endPosition="53" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="123" startPosition="69" endLine="124" endPosition="62" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="127" startPosition="65" endLine="128" endPosition="161" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="131" startPosition="51" endLine="132" endPosition="45" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="26" startPosition="0" endLine="29" endPosition="3" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="30" startPosition="0" endLine="34" endPosition="0" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="34" startPosition="0" endLine="38" endPosition="0" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="38" startPosition="0" endLine="42" endPosition="0" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="42" startPosition="0" endLine="46" endPosition="0" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="46" startPosition="0" endLine="50" endPosition="0" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="50" startPosition="0" endLine="54" endPosition="0" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="54" startPosition="0" endLine="58" endPosition="0" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="58" startPosition="0" endLine="62" endPosition="0" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="62" startPosition="0" endLine="66" endPosition="0" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="66" startPosition="0" endLine="70" endPosition="0" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="70" startPosition="0" endLine="74" endPosition="0" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="74" startPosition="0" endLine="78" endPosition="0" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="78" startPosition="0" endLine="82" endPosition="0" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="82" startPosition="0" endLine="86" endPosition="0" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="86" startPosition="0" endLine="90" endPosition="0" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="90" startPosition="0" endLine="94" endPosition="0" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="94" startPosition="0" endLine="98" endPosition="0" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="98" startPosition="0" endLine="102" endPosition="0" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="102" startPosition="0" endLine="106" endPosition="0" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="106" startPosition="0" endLine="110" endPosition="0" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="110" startPosition="0" endLine="114" endPosition="0" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="114" startPosition="0" endLine="118" endPosition="0" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="118" startPosition="0" endLine="122" endPosition="0" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="122" startPosition="0" endLine="126" endPosition="0" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="126" startPosition="0" endLine="130" endPosition="0" />
+    <scopeInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="130" startPosition="0" endLine="134" endPosition="0" />
+    <unitInfo nodeId="6612588870387972505" fileName="Ingredient.java" startLine="15" startPosition="0" endLine="135" endPosition="0" unitName="es.skyrim.alchemy.structure.Ingredient" />
+  </root>
+  <root nodeId="6612588870387972510">
+    <nodeInfo nodeId="6612588870387972510" fileName="number_PropertySupport.java" startLine="8" startPosition="44" endLine="9" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="6612588870387972510" fileName="number_PropertySupport.java" startLine="10" startPosition="24" endLine="11" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6612588870387972510" fileName="number_PropertySupport.java" startLine="12" startPosition="12" endLine="13" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6612588870387972510" fileName="number_PropertySupport.java" startLine="14" startPosition="5" endLine="15" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870387972510" fileName="number_PropertySupport.java" startLine="12" startPosition="10" endLine="14" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="6612588870387972510" fileName="number_PropertySupport.java" startLine="9" startPosition="28" endLine="14" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6612588870387972510" fileName="number_PropertySupport.java" startLine="7" startPosition="61" endLine="17" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="canSetValue#(Ljava/lang/String;)Z" />
+    <scopeInfo nodeId="6612588870387972510" fileName="number_PropertySupport.java" startLine="10" startPosition="24" endLine="11" endPosition="21" />
+    <scopeInfo nodeId="6612588870387972510" fileName="number_PropertySupport.java" startLine="12" startPosition="12" endLine="13" endPosition="24" />
+    <scopeInfo nodeId="6612588870387972510" fileName="number_PropertySupport.java" startLine="8" startPosition="44" endLine="15" endPosition="51" />
+    <scopeInfo nodeId="6612588870387972510" fileName="number_PropertySupport.java" startLine="7" startPosition="61" endLine="17" endPosition="0" />
+    <unitInfo nodeId="6612588870387972510" fileName="number_PropertySupport.java" startLine="7" startPosition="0" endLine="18" endPosition="0" unitName="es.skyrim.alchemy.structure.number_PropertySupport" />
+  </root>
+  <root nodeId="6612588870387988288">
+    <nodeInfo nodeId="6612588870387988288" fileName="EffectReference.java" startLine="11" startPosition="50" endLine="12" endPosition="85" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />
+    <nodeInfo nodeId="6612588870387988288" fileName="EffectReference.java" startLine="12" startPosition="85" endLine="13" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="EFFECT" />
+    <nodeInfo nodeId="6612588870387988288" fileName="EffectReference.java" startLine="15" startPosition="38" endLine="16" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="6612588870387988288" fileName="EffectReference.java" startLine="19" startPosition="30" endLine="20" endPosition="77" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870387988288" fileName="EffectReference.java" startLine="23" startPosition="39" endLine="24" endPosition="52" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6612588870387988288" fileName="EffectReference.java" startLine="27" startPosition="70" endLine="28" endPosition="171" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870387988288" fileName="EffectReference.java" startLine="31" startPosition="56" endLine="32" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870387988288" fileName="EffectReference.java" startLine="14" startPosition="0" endLine="17" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="EffectReference#(Ljetbrains/mps/smodel/SNode;)V" />
+    <nodeInfo nodeId="6612588870387988288" fileName="EffectReference.java" startLine="18" startPosition="0" endLine="22" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getEffect#()Ljetbrains/mps/smodel/INodeAdapter;" />
+    <nodeInfo nodeId="6612588870387988288" fileName="EffectReference.java" startLine="22" startPosition="0" endLine="26" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setEffect#(Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="6612588870387988288" fileName="EffectReference.java" startLine="26" startPosition="0" endLine="30" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;Z)Les/skyrim/alchemy/structure/EffectReference;" />
+    <nodeInfo nodeId="6612588870387988288" fileName="EffectReference.java" startLine="30" startPosition="0" endLine="34" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;)Les/skyrim/alchemy/structure/EffectReference;" />
+    <scopeInfo nodeId="6612588870387988288" fileName="EffectReference.java" startLine="15" startPosition="38" endLine="16" endPosition="16" />
+    <scopeInfo nodeId="6612588870387988288" fileName="EffectReference.java" startLine="19" startPosition="30" endLine="20" endPosition="77" />
+    <scopeInfo nodeId="6612588870387988288" fileName="EffectReference.java" startLine="23" startPosition="39" endLine="24" endPosition="52" />
+    <scopeInfo nodeId="6612588870387988288" fileName="EffectReference.java" startLine="27" startPosition="70" endLine="28" endPosition="171" />
+    <scopeInfo nodeId="6612588870387988288" fileName="EffectReference.java" startLine="31" startPosition="56" endLine="32" endPosition="50" />
+    <scopeInfo nodeId="6612588870387988288" fileName="EffectReference.java" startLine="14" startPosition="0" endLine="17" endPosition="3" />
+    <scopeInfo nodeId="6612588870387988288" fileName="EffectReference.java" startLine="18" startPosition="0" endLine="22" endPosition="0" />
+    <scopeInfo nodeId="6612588870387988288" fileName="EffectReference.java" startLine="22" startPosition="0" endLine="26" endPosition="0" />
+    <scopeInfo nodeId="6612588870387988288" fileName="EffectReference.java" startLine="26" startPosition="0" endLine="30" endPosition="0" />
+    <scopeInfo nodeId="6612588870387988288" fileName="EffectReference.java" startLine="30" startPosition="0" endLine="34" endPosition="0" />
+    <unitInfo nodeId="6612588870387988288" fileName="EffectReference.java" startLine="11" startPosition="0" endLine="35" endPosition="0" unitName="es.skyrim.alchemy.structure.EffectReference" />
+  </root>
+  <root nodeId="6612588870388073287">
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="15" startPosition="67" endLine="16" endPosition="77" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="16" startPosition="77" endLine="17" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="CPR_Toxic" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="17" startPosition="49" endLine="18" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="NAME" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="18" startPosition="43" endLine="19" endPosition="68" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="SHORT_DESCRIPTION" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="19" startPosition="68" endLine="20" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="ALIAS" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="20" startPosition="45" endLine="21" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="VIRTUAL_PACKAGE" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="21" startPosition="64" endLine="22" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="RECIPE" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="22" startPosition="47" endLine="23" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="EFFECTS" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="23" startPosition="49" endLine="24" endPosition="66" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="SMODEL_ATTRIBUTE" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="26" startPosition="30" endLine="27" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="30" startPosition="27" endLine="31" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="34" startPosition="37" endLine="35" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="38" startPosition="39" endLine="39" endPosition="55" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="42" startPosition="49" endLine="43" endPosition="55" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="46" startPosition="28" endLine="47" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="50" startPosition="38" endLine="51" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="54" startPosition="37" endLine="55" endPosition="53" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="58" startPosition="47" endLine="59" endPosition="53" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="62" startPosition="29" endLine="63" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="66" startPosition="38" endLine="67" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="70" startPosition="34" endLine="71" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="74" startPosition="48" endLine="75" endPosition="65" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="78" startPosition="47" endLine="79" endPosition="68" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="82" startPosition="48" endLine="83" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="86" startPosition="73" endLine="87" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="90" startPosition="41" endLine="91" endPosition="56" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="94" startPosition="49" endLine="95" endPosition="68" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="98" startPosition="48" endLine="99" endPosition="71" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="102" startPosition="50" endLine="103" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="106" startPosition="69" endLine="107" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="110" startPosition="62" endLine="111" endPosition="155" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="114" startPosition="48" endLine="115" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="25" startPosition="0" endLine="28" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="Mixture#(Ljetbrains/mps/smodel/SNode;)V" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="29" startPosition="0" endLine="33" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getName#()Ljava/lang/String;" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="33" startPosition="0" endLine="37" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setName#(Ljava/lang/String;)V" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="37" startPosition="0" endLine="41" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getShortDescription#()Ljava/lang/String;" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="41" startPosition="0" endLine="45" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setShortDescription#(Ljava/lang/String;)V" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="45" startPosition="0" endLine="49" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getAlias#()Ljava/lang/String;" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="49" startPosition="0" endLine="53" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setAlias#(Ljava/lang/String;)V" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="53" startPosition="0" endLine="57" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getVirtualPackage#()Ljava/lang/String;" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="57" startPosition="0" endLine="61" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setVirtualPackage#(Ljava/lang/String;)V" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="61" startPosition="0" endLine="65" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getRecipe#()Ljetbrains/mps/smodel/INodeAdapter;" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="65" startPosition="0" endLine="69" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setRecipe#(Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="69" startPosition="0" endLine="73" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getEffectsesCount#()I" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="73" startPosition="0" endLine="77" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="effectses#()Ljava/util/Iterator;" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="77" startPosition="0" endLine="81" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getEffectses#()Ljava/util/List;" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="81" startPosition="0" endLine="85" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="addEffects#(Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="85" startPosition="0" endLine="89" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="insertEffects#(Ljetbrains/mps/smodel/INodeAdapter;Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="89" startPosition="0" endLine="93" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getSmodelAttributesCount#()I" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="93" startPosition="0" endLine="97" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="smodelAttributes#()Ljava/util/Iterator;" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="97" startPosition="0" endLine="101" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getSmodelAttributes#()Ljava/util/List;" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="101" startPosition="0" endLine="105" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="addSmodelAttribute#(Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="105" startPosition="0" endLine="109" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="insertSmodelAttribute#(Ljetbrains/mps/smodel/INodeAdapter;Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="109" startPosition="0" endLine="113" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;Z)Les/skyrim/alchemy/structure/Mixture;" />
+    <nodeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="113" startPosition="0" endLine="117" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;)Les/skyrim/alchemy/structure/Mixture;" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="26" startPosition="30" endLine="27" endPosition="16" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="30" startPosition="27" endLine="31" endPosition="42" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="34" startPosition="37" endLine="35" endPosition="42" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="38" startPosition="39" endLine="39" endPosition="55" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="42" startPosition="49" endLine="43" endPosition="55" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="46" startPosition="28" endLine="47" endPosition="43" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="50" startPosition="38" endLine="51" endPosition="43" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="54" startPosition="37" endLine="55" endPosition="53" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="58" startPosition="47" endLine="59" endPosition="53" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="62" startPosition="29" endLine="63" endPosition="64" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="66" startPosition="38" endLine="67" endPosition="41" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="70" startPosition="34" endLine="71" endPosition="47" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="74" startPosition="48" endLine="75" endPosition="65" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="78" startPosition="47" endLine="79" endPosition="68" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="82" startPosition="48" endLine="83" endPosition="41" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="86" startPosition="73" endLine="87" endPosition="50" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="90" startPosition="41" endLine="91" endPosition="56" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="94" startPosition="49" endLine="95" endPosition="68" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="98" startPosition="48" endLine="99" endPosition="71" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="102" startPosition="50" endLine="103" endPosition="50" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="106" startPosition="69" endLine="107" endPosition="59" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="110" startPosition="62" endLine="111" endPosition="155" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="114" startPosition="48" endLine="115" endPosition="42" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="25" startPosition="0" endLine="28" endPosition="3" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="29" startPosition="0" endLine="33" endPosition="0" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="33" startPosition="0" endLine="37" endPosition="0" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="37" startPosition="0" endLine="41" endPosition="0" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="41" startPosition="0" endLine="45" endPosition="0" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="45" startPosition="0" endLine="49" endPosition="0" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="49" startPosition="0" endLine="53" endPosition="0" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="53" startPosition="0" endLine="57" endPosition="0" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="57" startPosition="0" endLine="61" endPosition="0" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="61" startPosition="0" endLine="65" endPosition="0" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="65" startPosition="0" endLine="69" endPosition="0" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="69" startPosition="0" endLine="73" endPosition="0" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="73" startPosition="0" endLine="77" endPosition="0" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="77" startPosition="0" endLine="81" endPosition="0" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="81" startPosition="0" endLine="85" endPosition="0" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="85" startPosition="0" endLine="89" endPosition="0" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="89" startPosition="0" endLine="93" endPosition="0" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="93" startPosition="0" endLine="97" endPosition="0" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="97" startPosition="0" endLine="101" endPosition="0" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="101" startPosition="0" endLine="105" endPosition="0" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="105" startPosition="0" endLine="109" endPosition="0" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="109" startPosition="0" endLine="113" endPosition="0" />
+    <scopeInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="113" startPosition="0" endLine="117" endPosition="0" />
+    <unitInfo nodeId="6612588870388073287" fileName="Mixture.java" startLine="15" startPosition="0" endLine="118" endPosition="0" unitName="es.skyrim.alchemy.structure.Mixture" />
+  </root>
+  <root nodeId="6612588870388073292">
+    <nodeInfo nodeId="6612588870388073292" fileName="IngredientReference.java" startLine="11" startPosition="54" endLine="12" endPosition="89" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />
+    <nodeInfo nodeId="6612588870388073292" fileName="IngredientReference.java" startLine="12" startPosition="89" endLine="13" endPosition="55" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="INGREDIENT" />
+    <nodeInfo nodeId="6612588870388073292" fileName="IngredientReference.java" startLine="15" startPosition="42" endLine="16" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="6612588870388073292" fileName="IngredientReference.java" startLine="19" startPosition="37" endLine="20" endPosition="91" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870388073292" fileName="IngredientReference.java" startLine="23" startPosition="46" endLine="24" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6612588870388073292" fileName="IngredientReference.java" startLine="27" startPosition="74" endLine="28" endPosition="179" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870388073292" fileName="IngredientReference.java" startLine="31" startPosition="60" endLine="32" endPosition="54" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870388073292" fileName="IngredientReference.java" startLine="14" startPosition="0" endLine="17" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="IngredientReference#(Ljetbrains/mps/smodel/SNode;)V" />
+    <nodeInfo nodeId="6612588870388073292" fileName="IngredientReference.java" startLine="18" startPosition="0" endLine="22" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getIngredient#()Ljetbrains/mps/smodel/INodeAdapter;" />
+    <nodeInfo nodeId="6612588870388073292" fileName="IngredientReference.java" startLine="22" startPosition="0" endLine="26" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setIngredient#(Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="6612588870388073292" fileName="IngredientReference.java" startLine="26" startPosition="0" endLine="30" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;Z)Les/skyrim/alchemy/structure/IngredientReference;" />
+    <nodeInfo nodeId="6612588870388073292" fileName="IngredientReference.java" startLine="30" startPosition="0" endLine="34" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;)Les/skyrim/alchemy/structure/IngredientReference;" />
+    <scopeInfo nodeId="6612588870388073292" fileName="IngredientReference.java" startLine="15" startPosition="42" endLine="16" endPosition="16" />
+    <scopeInfo nodeId="6612588870388073292" fileName="IngredientReference.java" startLine="19" startPosition="37" endLine="20" endPosition="91" />
+    <scopeInfo nodeId="6612588870388073292" fileName="IngredientReference.java" startLine="23" startPosition="46" endLine="24" endPosition="60" />
+    <scopeInfo nodeId="6612588870388073292" fileName="IngredientReference.java" startLine="27" startPosition="74" endLine="28" endPosition="179" />
+    <scopeInfo nodeId="6612588870388073292" fileName="IngredientReference.java" startLine="31" startPosition="60" endLine="32" endPosition="54" />
+    <scopeInfo nodeId="6612588870388073292" fileName="IngredientReference.java" startLine="14" startPosition="0" endLine="17" endPosition="3" />
+    <scopeInfo nodeId="6612588870388073292" fileName="IngredientReference.java" startLine="18" startPosition="0" endLine="22" endPosition="0" />
+    <scopeInfo nodeId="6612588870388073292" fileName="IngredientReference.java" startLine="22" startPosition="0" endLine="26" endPosition="0" />
+    <scopeInfo nodeId="6612588870388073292" fileName="IngredientReference.java" startLine="26" startPosition="0" endLine="30" endPosition="0" />
+    <scopeInfo nodeId="6612588870388073292" fileName="IngredientReference.java" startLine="30" startPosition="0" endLine="34" endPosition="0" />
+    <unitInfo nodeId="6612588870388073292" fileName="IngredientReference.java" startLine="11" startPosition="0" endLine="35" endPosition="0" unitName="es.skyrim.alchemy.structure.IngredientReference" />
+  </root>
+  <root nodeId="6612588870388079545">
+    <nodeInfo nodeId="6612588870388079545" fileName="Recipe.java" startLine="13" startPosition="41" endLine="14" endPosition="76" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />
+    <nodeInfo nodeId="6612588870388079545" fileName="Recipe.java" startLine="14" startPosition="76" endLine="15" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="INGREDIENTS" />
+    <nodeInfo nodeId="6612588870388079545" fileName="Recipe.java" startLine="17" startPosition="29" endLine="18" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="6612588870388079545" fileName="Recipe.java" startLine="21" startPosition="38" endLine="22" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870388079545" fileName="Recipe.java" startLine="25" startPosition="56" endLine="26" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870388079545" fileName="Recipe.java" startLine="29" startPosition="55" endLine="30" endPosition="75" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870388079545" fileName="Recipe.java" startLine="33" startPosition="56" endLine="34" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6612588870388079545" fileName="Recipe.java" startLine="37" startPosition="85" endLine="38" endPosition="53" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6612588870388079545" fileName="Recipe.java" startLine="41" startPosition="61" endLine="42" endPosition="153" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870388079545" fileName="Recipe.java" startLine="45" startPosition="47" endLine="46" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6612588870388079545" fileName="Recipe.java" startLine="16" startPosition="0" endLine="19" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="Recipe#(Ljetbrains/mps/smodel/SNode;)V" />
+    <nodeInfo nodeId="6612588870388079545" fileName="Recipe.java" startLine="20" startPosition="0" endLine="24" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getIngredientsesCount#()I" />
+    <nodeInfo nodeId="6612588870388079545" fileName="Recipe.java" startLine="24" startPosition="0" endLine="28" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="ingredientses#()Ljava/util/Iterator;" />
+    <nodeInfo nodeId="6612588870388079545" fileName="Recipe.java" startLine="28" startPosition="0" endLine="32" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getIngredientses#()Ljava/util/List;" />
+    <nodeInfo nodeId="6612588870388079545" fileName="Recipe.java" startLine="32" startPosition="0" endLine="36" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="addIngredients#(Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="6612588870388079545" fileName="Recipe.java" startLine="36" startPosition="0" endLine="40" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="insertIngredients#(Ljetbrains/mps/smodel/INodeAdapter;Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="6612588870388079545" fileName="Recipe.java" startLine="40" startPosition="0" endLine="44" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;Z)Les/skyrim/alchemy/structure/Recipe;" />
+    <nodeInfo nodeId="6612588870388079545" fileName="Recipe.java" startLine="44" startPosition="0" endLine="48" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;)Les/skyrim/alchemy/structure/Recipe;" />
+    <scopeInfo nodeId="6612588870388079545" fileName="Recipe.java" startLine="17" startPosition="29" endLine="18" endPosition="16" />
+    <scopeInfo nodeId="6612588870388079545" fileName="Recipe.java" startLine="21" startPosition="38" endLine="22" endPosition="50" />
+    <scopeInfo nodeId="6612588870388079545" fileName="Recipe.java" startLine="25" startPosition="56" endLine="26" endPosition="72" />
+    <scopeInfo nodeId="6612588870388079545" fileName="Recipe.java" startLine="29" startPosition="55" endLine="30" endPosition="75" />
+    <scopeInfo nodeId="6612588870388079545" fileName="Recipe.java" startLine="33" startPosition="56" endLine="34" endPosition="44" />
+    <scopeInfo nodeId="6612588870388079545" fileName="Recipe.java" startLine="37" startPosition="85" endLine="38" endPosition="53" />
+    <scopeInfo nodeId="6612588870388079545" fileName="Recipe.java" startLine="41" startPosition="61" endLine="42" endPosition="153" />
+    <scopeInfo nodeId="6612588870388079545" fileName="Recipe.java" startLine="45" startPosition="47" endLine="46" endPosition="41" />
+    <scopeInfo nodeId="6612588870388079545" fileName="Recipe.java" startLine="16" startPosition="0" endLine="19" endPosition="3" />
+    <scopeInfo nodeId="6612588870388079545" fileName="Recipe.java" startLine="20" startPosition="0" endLine="24" endPosition="0" />
+    <scopeInfo nodeId="6612588870388079545" fileName="Recipe.java" startLine="24" startPosition="0" endLine="28" endPosition="0" />
+    <scopeInfo nodeId="6612588870388079545" fileName="Recipe.java" startLine="28" startPosition="0" endLine="32" endPosition="0" />
+    <scopeInfo nodeId="6612588870388079545" fileName="Recipe.java" startLine="32" startPosition="0" endLine="36" endPosition="0" />
+    <scopeInfo nodeId="6612588870388079545" fileName="Recipe.java" startLine="36" startPosition="0" endLine="40" endPosition="0" />
+    <scopeInfo nodeId="6612588870388079545" fileName="Recipe.java" startLine="40" startPosition="0" endLine="44" endPosition="0" />
+    <scopeInfo nodeId="6612588870388079545" fileName="Recipe.java" startLine="44" startPosition="0" endLine="48" endPosition="0" />
+    <unitInfo nodeId="6612588870388079545" fileName="Recipe.java" startLine="13" startPosition="0" endLine="49" endPosition="0" unitName="es.skyrim.alchemy.structure.Recipe" />
+  </root>
+  <root nodeId="7730761602172222426">
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="16" startPosition="82" endLine="17" endPosition="80" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="concept" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="17" startPosition="80" endLine="18" endPosition="68" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="SHORT_DESCRIPTION" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="18" startPosition="68" endLine="19" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="ALIAS" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="19" startPosition="45" endLine="20" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="VIRTUAL_PACKAGE" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="20" startPosition="64" endLine="21" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="NAME" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="21" startPosition="43" endLine="22" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="EFFECTS" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="22" startPosition="49" endLine="23" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="INGREDIENTS" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="23" startPosition="57" endLine="24" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="MIXTURES" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="24" startPosition="51" endLine="25" endPosition="66" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="SMODEL_ATTRIBUTE" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="27" startPosition="33" endLine="28" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="31" startPosition="39" endLine="32" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="35" startPosition="49" endLine="36" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="39" startPosition="28" endLine="40" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="43" startPosition="38" endLine="44" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="47" startPosition="37" endLine="48" endPosition="56" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="51" startPosition="47" endLine="52" endPosition="56" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="55" startPosition="27" endLine="56" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="59" startPosition="37" endLine="60" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="63" startPosition="34" endLine="64" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="67" startPosition="40" endLine="68" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="71" startPosition="39" endLine="72" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="75" startPosition="40" endLine="76" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="79" startPosition="57" endLine="80" endPosition="53" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="83" startPosition="38" endLine="84" endPosition="54" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="87" startPosition="47" endLine="88" endPosition="67" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="91" startPosition="46" endLine="92" endPosition="70" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="95" startPosition="47" endLine="96" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="99" startPosition="67" endLine="100" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="103" startPosition="35" endLine="104" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="107" startPosition="41" endLine="108" endPosition="61" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="111" startPosition="40" endLine="112" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="115" startPosition="41" endLine="116" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="119" startPosition="58" endLine="120" endPosition="54" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="123" startPosition="41" endLine="124" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="127" startPosition="49" endLine="128" endPosition="71" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="131" startPosition="48" endLine="132" endPosition="74" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="135" startPosition="50" endLine="136" endPosition="53" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="139" startPosition="69" endLine="140" endPosition="62" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="143" startPosition="65" endLine="144" endPosition="161" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="147" startPosition="51" endLine="148" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="26" startPosition="0" endLine="29" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="AlchemyLab#(Ljetbrains/mps/smodel/SNode;)V" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="30" startPosition="0" endLine="34" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getShortDescription#()Ljava/lang/String;" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="34" startPosition="0" endLine="38" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setShortDescription#(Ljava/lang/String;)V" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="38" startPosition="0" endLine="42" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getAlias#()Ljava/lang/String;" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="42" startPosition="0" endLine="46" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setAlias#(Ljava/lang/String;)V" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="46" startPosition="0" endLine="50" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getVirtualPackage#()Ljava/lang/String;" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="50" startPosition="0" endLine="54" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setVirtualPackage#(Ljava/lang/String;)V" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="54" startPosition="0" endLine="58" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getName#()Ljava/lang/String;" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="58" startPosition="0" endLine="62" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setName#(Ljava/lang/String;)V" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="62" startPosition="0" endLine="66" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getEffectsesCount#()I" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="66" startPosition="0" endLine="70" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="effectses#()Ljava/util/Iterator;" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="70" startPosition="0" endLine="74" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getEffectses#()Ljava/util/List;" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="74" startPosition="0" endLine="78" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="addEffects#(Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="78" startPosition="0" endLine="82" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="insertEffects#(Ljetbrains/mps/smodel/INodeAdapter;Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="82" startPosition="0" endLine="86" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getIngredientsesCount#()I" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="86" startPosition="0" endLine="90" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="ingredientses#()Ljava/util/Iterator;" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="90" startPosition="0" endLine="94" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getIngredientses#()Ljava/util/List;" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="94" startPosition="0" endLine="98" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="addIngredients#(Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="98" startPosition="0" endLine="102" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="insertIngredients#(Ljetbrains/mps/smodel/INodeAdapter;Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="102" startPosition="0" endLine="106" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getMixturesesCount#()I" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="106" startPosition="0" endLine="110" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="mixtureses#()Ljava/util/Iterator;" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="110" startPosition="0" endLine="114" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getMixtureses#()Ljava/util/List;" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="114" startPosition="0" endLine="118" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="addMixtures#(Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="118" startPosition="0" endLine="122" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="insertMixtures#(Ljetbrains/mps/smodel/INodeAdapter;Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="122" startPosition="0" endLine="126" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getSmodelAttributesCount#()I" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="126" startPosition="0" endLine="130" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="smodelAttributes#()Ljava/util/Iterator;" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="130" startPosition="0" endLine="134" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getSmodelAttributes#()Ljava/util/List;" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="134" startPosition="0" endLine="138" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="addSmodelAttribute#(Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="138" startPosition="0" endLine="142" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="insertSmodelAttribute#(Ljetbrains/mps/smodel/INodeAdapter;Ljetbrains/mps/smodel/INodeAdapter;)V" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="142" startPosition="0" endLine="146" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;Z)Les/skyrim/alchemy/structure/AlchemyLab;" />
+    <nodeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="146" startPosition="0" endLine="150" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="newInstance#(Ljetbrains/mps/smodel/SModel;)Les/skyrim/alchemy/structure/AlchemyLab;" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="27" startPosition="33" endLine="28" endPosition="16" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="31" startPosition="39" endLine="32" endPosition="58" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="35" startPosition="49" endLine="36" endPosition="58" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="39" startPosition="28" endLine="40" endPosition="46" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="43" startPosition="38" endLine="44" endPosition="46" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="47" startPosition="37" endLine="48" endPosition="56" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="51" startPosition="47" endLine="52" endPosition="56" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="55" startPosition="27" endLine="56" endPosition="45" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="59" startPosition="37" endLine="60" endPosition="45" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="63" startPosition="34" endLine="64" endPosition="50" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="67" startPosition="40" endLine="68" endPosition="60" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="71" startPosition="39" endLine="72" endPosition="63" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="75" startPosition="40" endLine="76" endPosition="44" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="79" startPosition="57" endLine="80" endPosition="53" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="83" startPosition="38" endLine="84" endPosition="54" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="87" startPosition="47" endLine="88" endPosition="67" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="91" startPosition="46" endLine="92" endPosition="70" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="95" startPosition="47" endLine="96" endPosition="48" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="99" startPosition="67" endLine="100" endPosition="57" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="103" startPosition="35" endLine="104" endPosition="51" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="107" startPosition="41" endLine="108" endPosition="61" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="111" startPosition="40" endLine="112" endPosition="64" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="115" startPosition="41" endLine="116" endPosition="45" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="119" startPosition="58" endLine="120" endPosition="54" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="123" startPosition="41" endLine="124" endPosition="59" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="127" startPosition="49" endLine="128" endPosition="71" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="131" startPosition="48" endLine="132" endPosition="74" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="135" startPosition="50" endLine="136" endPosition="53" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="139" startPosition="69" endLine="140" endPosition="62" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="143" startPosition="65" endLine="144" endPosition="161" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="147" startPosition="51" endLine="148" endPosition="45" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="26" startPosition="0" endLine="29" endPosition="3" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="30" startPosition="0" endLine="34" endPosition="0" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="34" startPosition="0" endLine="38" endPosition="0" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="38" startPosition="0" endLine="42" endPosition="0" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="42" startPosition="0" endLine="46" endPosition="0" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="46" startPosition="0" endLine="50" endPosition="0" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="50" startPosition="0" endLine="54" endPosition="0" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="54" startPosition="0" endLine="58" endPosition="0" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="58" startPosition="0" endLine="62" endPosition="0" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="62" startPosition="0" endLine="66" endPosition="0" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="66" startPosition="0" endLine="70" endPosition="0" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="70" startPosition="0" endLine="74" endPosition="0" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="74" startPosition="0" endLine="78" endPosition="0" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="78" startPosition="0" endLine="82" endPosition="0" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="82" startPosition="0" endLine="86" endPosition="0" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="86" startPosition="0" endLine="90" endPosition="0" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="90" startPosition="0" endLine="94" endPosition="0" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="94" startPosition="0" endLine="98" endPosition="0" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="98" startPosition="0" endLine="102" endPosition="0" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="102" startPosition="0" endLine="106" endPosition="0" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="106" startPosition="0" endLine="110" endPosition="0" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="110" startPosition="0" endLine="114" endPosition="0" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="114" startPosition="0" endLine="118" endPosition="0" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="118" startPosition="0" endLine="122" endPosition="0" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="122" startPosition="0" endLine="126" endPosition="0" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="126" startPosition="0" endLine="130" endPosition="0" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="130" startPosition="0" endLine="134" endPosition="0" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="134" startPosition="0" endLine="138" endPosition="0" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="138" startPosition="0" endLine="142" endPosition="0" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="142" startPosition="0" endLine="146" endPosition="0" />
+    <scopeInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="146" startPosition="0" endLine="150" endPosition="0" />
+    <unitInfo nodeId="7730761602172222426" fileName="AlchemyLab.java" startLine="16" startPosition="0" endLine="151" endPosition="0" unitName="es.skyrim.alchemy.structure.AlchemyLab" />
+  </root>
+  <root nodeId="7730761602172222430">
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature_PropertySupport.java" startLine="11" startPosition="24" endLine="12" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="12" startPosition="0" endLine="13" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myName" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature_PropertySupport.java" startLine="13" startPosition="5" endLine="14" endPosition="101" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="13" startPosition="24" endLine="14" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myValue" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature_PropertySupport.java" startLine="15" startPosition="33" endLine="16" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="16" startPosition="43" endLine="17" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="17" startPosition="23" endLine="18" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature_PropertySupport.java" startLine="17" startPosition="45" endLine="18" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature_PropertySupport.java" startLine="20" startPosition="5" endLine="21" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="21" startPosition="27" endLine="22" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature_PropertySupport.java" startLine="25" startPosition="24" endLine="26" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="25" startPosition="36" endLine="26" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature_PropertySupport.java" startLine="27" startPosition="5" endLine="28" endPosition="101" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="29" startPosition="28" endLine="30" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature_PropertySupport.java" startLine="29" startPosition="33" endLine="30" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature_PropertySupport.java" startLine="31" startPosition="45" endLine="32" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="33" startPosition="51" endLine="34" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature_PropertySupport.java" startLine="34" startPosition="5" endLine="35" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="34" startPosition="84" endLine="35" endPosition="65" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="35" startPosition="65" endLine="36" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="36" startPosition="64" endLine="37" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature_PropertySupport.java" startLine="38" startPosition="49" endLine="39" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature_PropertySupport.java" startLine="40" startPosition="27" endLine="41" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="40" startPosition="43" endLine="41" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature_PropertySupport.java" startLine="42" startPosition="5" endLine="43" endPosition="14" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="45" startPosition="24" endLine="46" endPosition="39" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="48" startPosition="64" endLine="49" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="51" startPosition="63" endLine="52" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="53" startPosition="5" endLine="54" endPosition="37" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature_PropertySupport.java" startLine="10" startPosition="44" endLine="13" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature_PropertySupport.java" startLine="16" startPosition="47" endLine="19" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature_PropertySupport.java" startLine="24" startPosition="47" endLine="27" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature_PropertySupport.java" startLine="30" startPosition="47" endLine="33" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature_PropertySupport.java" startLine="39" startPosition="59" endLine="42" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="44" startPosition="55" endLine="47" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="47" startPosition="5" endLine="50" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="50" startPosition="5" endLine="53" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="15" startPosition="0" endLine="19" endPosition="3" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="EffectNature#(Ljava/lang/String;Ljava/lang/String;)V" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="20" startPosition="0" endLine="24" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getName#()Ljava/lang/String;" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="24" startPosition="0" endLine="28" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getValueAsString#()Ljava/lang/String;" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="28" startPosition="0" endLine="32" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getValue#()Ljava/lang/String;" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="39" startPosition="0" endLine="43" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="getDefault#()Les/skyrim/alchemy/structure/EffectNature;" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature_PropertySupport.java" startLine="14" startPosition="101" endLine="20" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.WhileStatement" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature_PropertySupport.java" startLine="28" startPosition="101" endLine="34" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.WhileStatement" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="32" startPosition="0" endLine="39" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="getConstants#()Ljava/util/List;" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature_PropertySupport.java" startLine="37" startPosition="0" endLine="45" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="fromInternalValue#(Ljava/lang/String;)Ljava/lang/String;" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="43" startPosition="0" endLine="56" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="parseValue#(Ljava/lang/String;)Les/skyrim/alchemy/structure/EffectNature;" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature_PropertySupport.java" startLine="9" startPosition="67" endLine="23" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="canSetValue#(Ljava/lang/String;)Z" />
+    <nodeInfo nodeId="7730761602172222430" fileName="EffectNature_PropertySupport.java" startLine="23" startPosition="0" endLine="37" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="toInternalValue#(Ljava/lang/String;)Ljava/lang/String;" />
+    <scopeInfo nodeId="7730761602172222430" fileName="EffectNature_PropertySupport.java" startLine="11" startPosition="24" endLine="12" endPosition="18" />
+    <scopeInfo nodeId="7730761602172222430" fileName="EffectNature_PropertySupport.java" startLine="17" startPosition="45" endLine="18" endPosition="20" />
+    <scopeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="21" startPosition="27" endLine="22" endPosition="23" />
+    <scopeInfo nodeId="7730761602172222430" fileName="EffectNature_PropertySupport.java" startLine="25" startPosition="24" endLine="26" endPosition="18" />
+    <scopeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="25" startPosition="36" endLine="26" endPosition="24" />
+    <scopeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="29" startPosition="28" endLine="30" endPosition="24" />
+    <scopeInfo nodeId="7730761602172222430" fileName="EffectNature_PropertySupport.java" startLine="31" startPosition="45" endLine="32" endPosition="43" />
+    <scopeInfo nodeId="7730761602172222430" fileName="EffectNature_PropertySupport.java" startLine="40" startPosition="27" endLine="41" endPosition="32" />
+    <scopeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="40" startPosition="43" endLine="41" endPosition="32" />
+    <scopeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="45" startPosition="24" endLine="46" endPosition="39" />
+    <scopeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="48" startPosition="64" endLine="49" endPosition="34" />
+    <scopeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="51" startPosition="63" endLine="52" endPosition="33" />
+    <scopeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="16" startPosition="43" endLine="18" endPosition="25" />
+    <scopeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="15" startPosition="0" endLine="19" endPosition="3" />
+    <scopeInfo nodeId="7730761602172222430" fileName="EffectNature_PropertySupport.java" startLine="15" startPosition="33" endLine="19" endPosition="7" />
+    <scopeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="20" startPosition="0" endLine="24" endPosition="0" />
+    <scopeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="24" startPosition="0" endLine="28" endPosition="0" />
+    <scopeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="28" startPosition="0" endLine="32" endPosition="0" />
+    <scopeInfo nodeId="7730761602172222430" fileName="EffectNature_PropertySupport.java" startLine="29" startPosition="33" endLine="33" endPosition="7" />
+    <scopeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="33" startPosition="51" endLine="37" endPosition="16" />
+    <scopeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="39" startPosition="0" endLine="43" endPosition="0" />
+    <scopeInfo nodeId="7730761602172222430" fileName="EffectNature_PropertySupport.java" startLine="38" startPosition="49" endLine="43" endPosition="14" />
+    <scopeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="32" startPosition="0" endLine="39" endPosition="0" />
+    <scopeInfo nodeId="7730761602172222430" fileName="EffectNature_PropertySupport.java" startLine="37" startPosition="0" endLine="45" endPosition="0" />
+    <scopeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="44" startPosition="55" endLine="54" endPosition="37" />
+    <scopeInfo nodeId="7730761602172222430" fileName="EffectNature_PropertySupport.java" startLine="10" startPosition="44" endLine="21" endPosition="17" />
+    <scopeInfo nodeId="7730761602172222430" fileName="EffectNature_PropertySupport.java" startLine="24" startPosition="47" endLine="35" endPosition="16" />
+    <scopeInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="43" startPosition="0" endLine="56" endPosition="0" />
+    <scopeInfo nodeId="7730761602172222430" fileName="EffectNature_PropertySupport.java" startLine="9" startPosition="67" endLine="23" endPosition="0" />
+    <scopeInfo nodeId="7730761602172222430" fileName="EffectNature_PropertySupport.java" startLine="23" startPosition="0" endLine="37" endPosition="0" />
+    <unitInfo nodeId="7730761602172222430" fileName="EffectNature_PropertySupport.java" startLine="9" startPosition="0" endLine="46" endPosition="0" unitName="es.skyrim.alchemy.structure.EffectNature_PropertySupport" />
+    <unitInfo nodeId="7730761602172222430" fileName="EffectNature.java" startLine="9" startPosition="0" endLine="57" endPosition="0" unitName="es.skyrim.alchemy.structure.EffectNature" />
+  </root>
+</debugInfo>
+

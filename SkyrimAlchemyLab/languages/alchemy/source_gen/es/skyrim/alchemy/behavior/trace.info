@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <unitInfo fileName="IEffect_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="9" endPosition="0" unitName="es.skyrim.alchemy.behavior.IEffect_BehaviorDescriptor" />
+  <unitInfo fileName="Recipe_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="es.skyrim.alchemy.behavior.Recipe_BehaviorDescriptor" />
+  <unitInfo fileName="IngredientReference_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="es.skyrim.alchemy.behavior.IngredientReference_BehaviorDescriptor" />
+  <unitInfo fileName="EffectReference_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="es.skyrim.alchemy.behavior.EffectReference_BehaviorDescriptor" />
+  <unitInfo fileName="EffectAlias_BehaviorDescriptor.java" startLine="9" startPosition="0" endLine="22" endPosition="0" unitName="es.skyrim.alchemy.behavior.EffectAlias_BehaviorDescriptor" />
+  <unitInfo fileName="Effect_BehaviorDescriptor.java" startLine="9" startPosition="0" endLine="22" endPosition="0" unitName="es.skyrim.alchemy.behavior.Effect_BehaviorDescriptor" />
+  <unitInfo fileName="Mixture_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="es.skyrim.alchemy.behavior.Mixture_BehaviorDescriptor" />
+  <unitInfo fileName="Ingredient_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="es.skyrim.alchemy.behavior.Ingredient_BehaviorDescriptor" />
+  <unitInfo fileName="AlchemyLab_BehaviorDescriptor.java" startLine="11" startPosition="0" endLine="24" endPosition="0" unitName="es.skyrim.alchemy.behavior.AlchemyLab_BehaviorDescriptor" />
+  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="38" endPosition="0" unitName="es.skyrim.alchemy.behavior.BehaviorAspectDescriptor" />
+</debugInfo>
+
