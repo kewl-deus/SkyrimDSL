@@ -310,7 +310,7 @@
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="1207545486242702886" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefCell" typeId="tpc2.1088013125922" id="1207545486242702893">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="g0a9.1207545486242702877" />
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="g0a9.5703238871183979160" />
         <node role="editorComponent" roleId="tpc2.1088186146602" type="tpc2.InlineEditorComponent" typeId="tpc2.1088185857835" id="1207545486242702894">
           <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_ReferencePresentation" typeId="tpc2.625126330682908270" id="1207545486242702896" />
         </node>
