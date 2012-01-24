@@ -56,11 +56,11 @@ public class EffectAlias extends BaseConcept implements IEffect {
     this.setProperty(EffectAlias.VIRTUAL_PACKAGE, value);
   }
 
-  public IEffect getEffect() {
-    return (IEffect) this.getReferent(IEffect.class, EffectAlias.EFFECT);
+  public Effect getEffect() {
+    return (Effect) this.getReferent(Effect.class, EffectAlias.EFFECT);
   }
 
-  public void setEffect(IEffect node) {
+  public void setEffect(Effect node) {
     super.setReferent(EffectAlias.EFFECT, node);
   }
 

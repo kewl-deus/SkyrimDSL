@@ -14,17 +14,25 @@ import jetbrains.mps.project.GlobalScope;
 
 public class Mixture extends BaseConcept implements INamedConcept {
   public static final String concept = "es.skyrim.alchemy.structure.Mixture";
-  public static final String CPR_Toxic = "toxic";
+  public static final String PRICE = "price";
   public static final String NAME = "name";
   public static final String SHORT_DESCRIPTION = "shortDescription";
   public static final String ALIAS = "alias";
   public static final String VIRTUAL_PACKAGE = "virtualPackage";
   public static final String RECIPE = "recipe";
-  public static final String EFFECTS = "effects";
+  public static final String EFFECT = "effect";
   public static final String SMODEL_ATTRIBUTE = "smodelAttribute";
 
   public Mixture(SNode node) {
     super(node);
+  }
+
+  public String getPrice() {
+    return this.getProperty(Mixture.PRICE);
+  }
+
+  public void setPrice(String value) {
+    this.setProperty(Mixture.PRICE, value);
   }
 
   public String getName() {
@@ -67,24 +75,24 @@ public class Mixture extends BaseConcept implements INamedConcept {
     super.setChild(Mixture.RECIPE, node);
   }
 
-  public int getEffectsesCount() {
-    return this.getChildCount(Mixture.EFFECTS);
+  public int getEffectsCount() {
+    return this.getChildCount(Mixture.EFFECT);
   }
 
-  public Iterator<EffectReference> effectses() {
-    return this.children(EffectReference.class, Mixture.EFFECTS);
+  public Iterator<EffectReference> effects() {
+    return this.children(EffectReference.class, Mixture.EFFECT);
   }
 
-  public List<EffectReference> getEffectses() {
-    return this.getChildren(EffectReference.class, Mixture.EFFECTS);
+  public List<EffectReference> getEffects() {
+    return this.getChildren(EffectReference.class, Mixture.EFFECT);
   }
 
-  public void addEffects(EffectReference node) {
-    this.addChild(Mixture.EFFECTS, node);
+  public void addEffect(EffectReference node) {
+    this.addChild(Mixture.EFFECT, node);
   }
 
-  public void insertEffects(EffectReference prev, EffectReference node) {
-    this.insertChild(prev, Mixture.EFFECTS, node);
+  public void insertEffect(EffectReference prev, EffectReference node) {
+    this.insertChild(prev, Mixture.EFFECT, node);
   }
 
   public int getSmodelAttributesCount() {

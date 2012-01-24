@@ -12,30 +12,30 @@ import jetbrains.mps.project.GlobalScope;
 
 public class Recipe extends BaseConcept {
   public static final String concept = "es.skyrim.alchemy.structure.Recipe";
-  public static final String INGREDIENTS = "ingredients";
+  public static final String INGREDIENT = "ingredient";
 
   public Recipe(SNode node) {
     super(node);
   }
 
-  public int getIngredientsesCount() {
-    return this.getChildCount(Recipe.INGREDIENTS);
+  public int getIngredientsCount() {
+    return this.getChildCount(Recipe.INGREDIENT);
   }
 
-  public Iterator<IngredientReference> ingredientses() {
-    return this.children(IngredientReference.class, Recipe.INGREDIENTS);
+  public Iterator<IngredientReference> ingredients() {
+    return this.children(IngredientReference.class, Recipe.INGREDIENT);
   }
 
-  public List<IngredientReference> getIngredientses() {
-    return this.getChildren(IngredientReference.class, Recipe.INGREDIENTS);
+  public List<IngredientReference> getIngredients() {
+    return this.getChildren(IngredientReference.class, Recipe.INGREDIENT);
   }
 
-  public void addIngredients(IngredientReference node) {
-    this.addChild(Recipe.INGREDIENTS, node);
+  public void addIngredient(IngredientReference node) {
+    this.addChild(Recipe.INGREDIENT, node);
   }
 
-  public void insertIngredients(IngredientReference prev, IngredientReference node) {
-    this.insertChild(prev, Recipe.INGREDIENTS, node);
+  public void insertIngredient(IngredientReference prev, IngredientReference node) {
+    this.insertChild(prev, Recipe.INGREDIENT, node);
   }
 
   public static Recipe newInstance(SModel sm, boolean init) {

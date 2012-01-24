@@ -16,11 +16,11 @@ public class IngredientReference extends BaseConcept {
     super(node);
   }
 
-  public Ingredient getIngredient() {
-    return (Ingredient) this.getReferent(Ingredient.class, IngredientReference.INGREDIENT);
+  public IIngredient getIngredient() {
+    return (IIngredient) this.getReferent(IIngredient.class, IngredientReference.INGREDIENT);
   }
 
-  public void setIngredient(Ingredient node) {
+  public void setIngredient(IIngredient node) {
     super.setReferent(IngredientReference.INGREDIENT, node);
   }
 

@@ -5,7 +5,7 @@
   <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
   <dep model="r:aa31e43e-9240-4f4d-b6db-5c1c9a86c59e(jetbrains.mps.lang.project.structure)" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
-  <dep model="r:db5209a2-5d43-4f34-b94b-9ce83a93826f(es.skyrim.alchemy.typesystem)" hash="-9cu4v89oloazs1u6xqjm709hw500gb2" />
+  <dep model="r:db5209a2-5d43-4f34-b94b-9ce83a93826f(es.skyrim.alchemy.typesystem)" hash="-5ob1yalkuy4ujmem7zu51gcm1ugpkn2" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
   <common>
     <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />

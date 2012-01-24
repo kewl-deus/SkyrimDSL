@@ -10,27 +10,33 @@
   <roots>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="296901729014133200">
       <property name="name" nameId="tpck.1169194664001" value="Effect" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="effect" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="296901729014143358">
       <property name="name" nameId="tpck.1169194664001" value="EffectAlias" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="effect" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="296901729014143406">
       <property name="name" nameId="tpck.1169194664001" value="IEffect" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="effect" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7730761602172222426">
-      <property name="name" nameId="tpck.1169194664001" value="AlchemyLab" />
+      <property name="name" nameId="tpck.1169194664001" value="MixtureList" />
       <property name="rootable" nameId="tpce.1096454100552" value="true" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mixture" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="7730761602172222430">
       <property name="name" nameId="tpck.1169194664001" value="EffectNature" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="effect" />
       <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983041843" resolveInfo="string" />
       <link role="defaultMember" roleId="tpce.1083241965437" targetNodeId="7730761602172222431" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6612588870387972505">
       <property name="name" nameId="tpck.1169194664001" value="Ingredient" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="ingredient" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConstrainedDataTypeDeclaration" typeId="tpce.1082978499127" id="6612588870387972510">
@@ -39,19 +45,53 @@
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6612588870387988288">
       <property name="name" nameId="tpck.1169194664001" value="EffectReference" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="effect" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6612588870388073287">
       <property name="name" nameId="tpck.1169194664001" value="Mixture" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mixture" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6612588870388073292">
       <property name="name" nameId="tpck.1169194664001" value="IngredientReference" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="ingredient" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6612588870388079545">
       <property name="name" nameId="tpck.1169194664001" value="Recipe" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1207545486242546028">
+      <property name="name" nameId="tpck.1169194664001" value="Satchel" />
+      <property name="rootable" nameId="tpce.1096454100552" value="true" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="ingredient" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="1207545486242556190">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="ingredient" />
+      <property name="name" nameId="tpck.1169194664001" value="IIngredient" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1207545486242556193">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="ingredient" />
+      <property name="name" nameId="tpck.1169194664001" value="IngredientAlias" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1207545486242556212">
+      <property name="name" nameId="tpck.1169194664001" value="EffectTome" />
+      <property name="rootable" nameId="tpce.1096454100552" value="true" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="effect" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1207545486242702954">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mixture" />
+      <property name="name" nameId="tpck.1169194664001" value="Potion" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="6612588870388073287" resolveInfo="Mixture" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1207545486242702955">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mixture" />
+      <property name="name" nameId="tpck.1169194664001" value="Poison" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="6612588870388073287" resolveInfo="Mixture" />
     </node>
   </roots>
   <root id="296901729014133200">
@@ -83,14 +123,14 @@
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <property name="role" nameId="tpce.1071599776563" value="effect" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="296901729014143406" resolveInfo="IEffect" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="296901729014133200" resolveInfo="Effect" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="6612588870388073281">
       <property name="value" nameId="tpce.1105725733873" value="effect-alias" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="6612588870388073283">
-      <property name="value" nameId="tpce.1105725733873" value="another name for an existing effect" />
+      <property name="value" nameId="tpce.1105725733873" value="alternative name for an effect" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
   </root>
@@ -100,21 +140,17 @@
     </node>
   </root>
   <root id="7730761602172222426">
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7730761602172222427">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
-      <property name="role" nameId="tpce.1071599776563" value="effects" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="296901729014143406" resolveInfo="IEffect" />
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="1207545486242702911">
+      <property name="value" nameId="tpce.1105725733873" value="MixtureList" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6612588870387982835">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="ingredients" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="6612588870387972505" resolveInfo="Ingredient" />
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="1207545486242702913">
+      <property name="value" nameId="tpce.1105725733873" value="list of recipes for mixtures" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6612588870388087910">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="mixtures" />
+      <property name="role" nameId="tpce.1071599776563" value="mixture" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="6612588870388073287" resolveInfo="Mixture" />
     </node>
@@ -148,13 +184,10 @@
       <property name="name" nameId="tpck.1169194664001" value="source" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6612588870387972506">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
-    </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6612588870387972515">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
-      <property name="role" nameId="tpce.1071599776563" value="effects" />
+      <property name="role" nameId="tpce.1071599776563" value="effect" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="6612588870387988288" resolveInfo="EffectReference" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="6612588870388073284">
@@ -164,6 +197,9 @@
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="6612588870388073286">
       <property name="value" nameId="tpce.1105725733873" value="ingredient for brewing a potion" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1207545486242556192">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1207545486242556190" resolveInfo="IIngredient" />
     </node>
   </root>
   <root id="6612588870387972510" />
@@ -176,9 +212,13 @@
     </node>
   </root>
   <root id="6612588870388073287">
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="6612588870388123806">
+      <property name="name" nameId="tpck.1169194664001" value="price" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="6612588870387972510" resolveInfo="number" />
+    </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6612588870388073290">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="effects" />
+      <property name="role" nameId="tpce.1071599776563" value="effect" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1..n" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="6612588870387988288" resolveInfo="EffectReference" />
     </node>
@@ -190,10 +230,6 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6612588870388073288">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
-    </node>
-    <node role="conceptPropertyDeclaration" roleId="tpce.1137467167200" type="tpce.BooleanConceptPropertyDeclaration" typeId="tpce.1105725240314" id="6612588870388073296">
-      <property name="name" nameId="tpck.1169194664001" value="toxic" />
-      <property name="inheritable" nameId="tpce.1218571350029" value="true" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="6612588870388087920">
       <property name="value" nameId="tpce.1105725733873" value="mixture" />
@@ -209,13 +245,13 @@
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="ingredient" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="6612588870387972505" resolveInfo="Ingredient" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="1207545486242556190" resolveInfo="IIngredient" />
     </node>
   </root>
   <root id="6612588870388079545">
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6612588870388080416">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="ingredients" />
+      <property name="role" nameId="tpce.1071599776563" value="ingredient" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1..n" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="6612588870388073292" resolveInfo="IngredientReference" />
     </node>
@@ -228,5 +264,75 @@
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
   </root>
+  <root id="1207545486242546028">
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="1207545486242702898">
+      <property name="value" nameId="tpce.1105725733873" value="Satchel" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+    </node>
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="1207545486242702900">
+      <property name="value" nameId="tpce.1105725733873" value="container for ingredients" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1207545486242546030">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="ingredient" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="1207545486242556190" resolveInfo="IIngredient" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1207545486242546032">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1233160296597" resolveInfo="IContainer" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1207545486242546033">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
+    </node>
+  </root>
+  <root id="1207545486242556190">
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1207545486242556191">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
+    </node>
+  </root>
+  <root id="1207545486242556193">
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="1207545486242702879">
+      <property name="value" nameId="tpce.1105725733873" value="ingredient-alias" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+    </node>
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="1207545486242702881">
+      <property name="value" nameId="tpce.1105725733873" value="alternative name for an ingredient" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1207545486242702877">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="ingredient" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="6612588870387972505" resolveInfo="Ingredient" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1207545486242556194">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1207545486242556190" resolveInfo="IIngredient" />
+    </node>
+  </root>
+  <root id="1207545486242556212">
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="1207545486242702904">
+      <property name="value" nameId="tpce.1105725733873" value="EffectTome" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
+    </node>
+    <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="1207545486242702906">
+      <property name="value" nameId="tpce.1105725733873" value="tome of effects" />
+      <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1207545486242556213">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
+      <property name="role" nameId="tpce.1071599776563" value="effect" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="296901729014143406" resolveInfo="IEffect" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1207545486242556216">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1233160296597" resolveInfo="IContainer" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1207545486242556217">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
+    </node>
+  </root>
+  <root id="1207545486242702954" />
+  <root id="1207545486242702955" />
 </model>
 

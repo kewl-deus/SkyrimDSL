@@ -8,8 +8,8 @@ import jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor;
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.lang.core.behavior.INamedConcept_Behavior;
 
-public class AlchemyLab_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements IContainer_BehaviorDescriptor, INamedConcept_BehaviorDescriptor {
-  public AlchemyLab_BehaviorDescriptor() {
+public class MixtureList_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements IContainer_BehaviorDescriptor, INamedConcept_BehaviorDescriptor {
+  public MixtureList_BehaviorDescriptor() {
   }
 
   public String virtual_getFqName_1213877404258(SNode thisNode) {
@@ -18,6 +18,6 @@ public class AlchemyLab_BehaviorDescriptor extends BaseConcept_BehaviorDescripto
 
   @Override
   public String getConceptFqName() {
-    return "es.skyrim.alchemy.structure.AlchemyLab";
+    return "es.skyrim.alchemy.structure.MixtureList";
   }
 }

@@ -18,6 +18,7 @@ import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.nodeEditor.EditorManager;
+import jetbrains.mps.editor.runtime.EditorCell_Empty;
 import jetbrains.mps.smodel.IScope;
 import jetbrains.mps.nodeEditor.BlockCells;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
@@ -86,21 +87,10 @@ public class Ingredient_Editor extends DefaultNodeEditor {
     editorCell.setCellId("Collection_3sjvf1_b1a");
     editorCell.addEditorCell(this.createConstant_3sjvf1_a1b0(editorContext, node));
     editorCell.addEditorCell(this.createRefNodeList_3sjvf1_b1b0(editorContext, node));
-    editorCell.addEditorCell(this.createCollection_3sjvf1_c1b0(editorContext, node));
+    editorCell.addEditorCell(this.createEmpty_3sjvf1_c1b0(editorContext, node));
     editorCell.addEditorCell(this.createCollection_3sjvf1_d1b0(editorContext, node));
     editorCell.addEditorCell(this.createCollection_3sjvf1_e1b0(editorContext, node));
-    return editorCell;
-  }
-
-  private EditorCell createCollection_3sjvf1_c1b0(EditorContext editorContext, SNode node) {
-    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_3sjvf1_c1b0");
-    {
-      Style style = editorCell.getStyle();
-      style.set(StyleAttributes.SELECTABLE, false);
-    }
-    editorCell.addEditorCell(this.createConstant_3sjvf1_a2b1a(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_3sjvf1_b2b1a(editorContext, node));
+    editorCell.addEditorCell(this.createCollection_3sjvf1_f1b0(editorContext, node));
     return editorCell;
   }
 
@@ -128,6 +118,18 @@ public class Ingredient_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
+  private EditorCell createCollection_3sjvf1_f1b0(EditorContext editorContext, SNode node) {
+    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+    editorCell.setCellId("Collection_3sjvf1_f1b0");
+    {
+      Style style = editorCell.getStyle();
+      style.set(StyleAttributes.SELECTABLE, false);
+    }
+    editorCell.addEditorCell(this.createConstant_3sjvf1_a5b1a(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_3sjvf1_b5b1a(editorContext, node));
+    return editorCell;
+  }
+
   private EditorCell createConstant_3sjvf1_a0a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "ingredient");
     editorCell.setCellId("Constant_3sjvf1_a0a0");
@@ -150,23 +152,23 @@ public class Ingredient_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createConstant_3sjvf1_a2b1a(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "price:");
-    editorCell.setCellId("Constant_3sjvf1_a2b1a");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-
   private EditorCell createConstant_3sjvf1_a3b1a(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "weight:");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "price:");
     editorCell.setCellId("Constant_3sjvf1_a3b1a");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
   private EditorCell createConstant_3sjvf1_a4b1a(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "source:");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "weight:");
     editorCell.setCellId("Constant_3sjvf1_a4b1a");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private EditorCell createConstant_3sjvf1_a5b1a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "source:");
+    editorCell.setCellId("Constant_3sjvf1_a5b1a");
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -180,9 +182,9 @@ public class Ingredient_Editor extends DefaultNodeEditor {
   }
 
   private EditorCell createRefNodeList_3sjvf1_b1b0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new Ingredient_Editor.effectsListHandler_3sjvf1_b1b0(node, "effects", editorContext);
+    AbstractCellListHandler handler = new Ingredient_Editor.effectListHandler_3sjvf1_b1b0(node, "effect", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Vertical(), false);
-    editorCell.setCellId("refNodeList_effects");
+    editorCell.setCellId("refNodeList_effect");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.SELECTABLE, false);
@@ -214,7 +216,7 @@ public class Ingredient_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createProperty_3sjvf1_b2b1a(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_3sjvf1_b3b1a(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("price");
     provider.setNoTargetText("<no price>");
@@ -232,7 +234,7 @@ public class Ingredient_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createProperty_3sjvf1_b3b1a(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_3sjvf1_b4b1a(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("weight");
     provider.setNoTargetText("<no weight>");
@@ -250,7 +252,7 @@ public class Ingredient_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createProperty_3sjvf1_b4b1a(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_3sjvf1_b5b1a(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("source");
     provider.setNoTargetText("<no source>");
@@ -268,6 +270,12 @@ public class Ingredient_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
+  private EditorCell createEmpty_3sjvf1_c1b0(EditorContext editorContext, SNode node) {
+    EditorCell_Empty editorCell = new EditorCell_Empty(editorContext, node);
+    editorCell.setCellId("Empty_3sjvf1_c1b0");
+    return editorCell;
+  }
+
   private static boolean renderingCondition_3sjvf1_a1a0(SNode node, EditorContext editorContext, IScope scope) {
     return BlockCells.useBraces();
   }
@@ -276,8 +284,8 @@ public class Ingredient_Editor extends DefaultNodeEditor {
     return BlockCells.useBraces();
   }
 
-  private static class effectsListHandler_3sjvf1_b1b0 extends RefNodeListHandler {
-    public effectsListHandler_3sjvf1_b1b0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class effectListHandler_3sjvf1_b1b0 extends RefNodeListHandler {
+    public effectListHandler_3sjvf1_b1b0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
 

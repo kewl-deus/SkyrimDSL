@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="es.skyrim.alchemy.behavior.AlchemyLab_BehaviorDescriptor" file="AlchemyLab_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
-    <classNode dependClassName="jetbrains.mps.lang.core.behavior.IContainer_BehaviorDescriptor" />
-    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_Behavior" />
-    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
-    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
-    <classNode extendsClassName="java.lang.Cloneable" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
-  </dependency>
   <dependency className="es.skyrim.alchemy.behavior.BehaviorAspectDescriptor" file="BehaviorAspectDescriptor.java">
-    <classNode dependClassName="es.skyrim.alchemy.behavior.AlchemyLab_BehaviorDescriptor" />
     <classNode dependClassName="es.skyrim.alchemy.behavior.EffectAlias_BehaviorDescriptor" />
     <classNode dependClassName="es.skyrim.alchemy.behavior.EffectReference_BehaviorDescriptor" />
+    <classNode dependClassName="es.skyrim.alchemy.behavior.EffectTome_BehaviorDescriptor" />
     <classNode dependClassName="es.skyrim.alchemy.behavior.Effect_BehaviorDescriptor" />
+    <classNode dependClassName="es.skyrim.alchemy.behavior.IngredientAlias_BehaviorDescriptor" />
     <classNode dependClassName="es.skyrim.alchemy.behavior.IngredientReference_BehaviorDescriptor" />
     <classNode dependClassName="es.skyrim.alchemy.behavior.Ingredient_BehaviorDescriptor" />
+    <classNode dependClassName="es.skyrim.alchemy.behavior.MixtureList_BehaviorDescriptor" />
     <classNode dependClassName="es.skyrim.alchemy.behavior.Mixture_BehaviorDescriptor" />
+    <classNode dependClassName="es.skyrim.alchemy.behavior.Poison_BehaviorDescriptor" />
+    <classNode dependClassName="es.skyrim.alchemy.behavior.Potion_BehaviorDescriptor" />
     <classNode dependClassName="es.skyrim.alchemy.behavior.Recipe_BehaviorDescriptor" />
+    <classNode dependClassName="es.skyrim.alchemy.behavior.Satchel_BehaviorDescriptor" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorDescriptor" />
@@ -42,6 +36,17 @@
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
+  <dependency className="es.skyrim.alchemy.behavior.EffectTome_BehaviorDescriptor" file="EffectTome_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.IContainer_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_Behavior" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
   <dependency className="es.skyrim.alchemy.behavior.Effect_BehaviorDescriptor" file="Effect_BehaviorDescriptor.java">
     <classNode dependClassName="es.skyrim.alchemy.behavior.IEffect_BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Override" />
@@ -56,6 +61,20 @@
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
     <classNode extendsClassName="java.lang.Cloneable" />
   </dependency>
+  <dependency className="es.skyrim.alchemy.behavior.IIngredient_BehaviorDescriptor" file="IIngredient_BehaviorDescriptor.java">
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
+    <classNode extendsClassName="java.lang.Cloneable" />
+  </dependency>
+  <dependency className="es.skyrim.alchemy.behavior.IngredientAlias_BehaviorDescriptor" file="IngredientAlias_BehaviorDescriptor.java">
+    <classNode dependClassName="es.skyrim.alchemy.behavior.IIngredient_BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_Behavior" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
   <dependency className="es.skyrim.alchemy.behavior.IngredientReference_BehaviorDescriptor" file="IngredientReference_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -63,9 +82,20 @@
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="es.skyrim.alchemy.behavior.Ingredient_BehaviorDescriptor" file="Ingredient_BehaviorDescriptor.java">
+    <classNode dependClassName="es.skyrim.alchemy.behavior.IIngredient_BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_Behavior" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="es.skyrim.alchemy.behavior.MixtureList_BehaviorDescriptor" file="MixtureList_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.IContainer_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_Behavior" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
@@ -82,10 +112,33 @@
     <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
+  <dependency className="es.skyrim.alchemy.behavior.Poison_BehaviorDescriptor" file="Poison_BehaviorDescriptor.java">
+    <classNode dependClassName="es.skyrim.alchemy.behavior.Mixture_BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="es.skyrim.alchemy.behavior.Potion_BehaviorDescriptor" file="Potion_BehaviorDescriptor.java">
+    <classNode dependClassName="es.skyrim.alchemy.behavior.Mixture_BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
   <dependency className="es.skyrim.alchemy.behavior.Recipe_BehaviorDescriptor" file="Recipe_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="es.skyrim.alchemy.behavior.Satchel_BehaviorDescriptor" file="Satchel_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.IContainer_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_Behavior" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
 </dependenciesRoot>
