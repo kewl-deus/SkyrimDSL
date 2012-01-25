@@ -267,6 +267,21 @@
     </node>
   </root>
   <root id="5703238871183979135">
+    <node role="mixture" roleId="g0a9.6612588870388087910" type="g0a9.Mixture" typeId="g0a9.6612588870388073287" id="3233403453751768775">
+      <property name="name" nameId="tpck.1169194664001" value="testmix" />
+      <property name="price" nameId="g0a9.6612588870388123806" value="440" />
+      <node role="effect" roleId="g0a9.6612588870388073290" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="3233403453751768776">
+        <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="1307545486242860000" resolveInfo="Einhändig verstärken" />
+      </node>
+      <node role="recipe" roleId="g0a9.6612588870388080426" type="g0a9.Recipe" typeId="g0a9.3233403453751666098" id="7344367026218335185">
+        <node role="head" roleId="g0a9.7344367026218301892" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="7344367026218335188">
+          <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="5703238871183979144" resolveInfo="Another Ingredient" />
+        </node>
+        <node role="tail" roleId="g0a9.7344367026218301894" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="7344367026218335189">
+          <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="3233403453751488519" resolveInfo="English ingredient name" />
+        </node>
+      </node>
+    </node>
     <node role="mixture" roleId="g0a9.6612588870388087910" type="g0a9.Potion" typeId="g0a9.1207545486242702954" id="5703238871183979136">
       <property name="name" nameId="tpck.1169194664001" value="Test Potion" />
       <property name="price" nameId="g0a9.6612588870388123806" value="100" />
@@ -282,12 +297,27 @@
       <node role="effect" roleId="g0a9.6612588870388073290" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="5703238871183992802">
         <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="1307545486242740000" resolveInfo="Anfälligkeit für Gift" />
       </node>
-      <node role="recipe" roleId="g0a9.6612588870388080426" type="g0a9.Recipe" typeId="g0a9.6612588870388079545" id="5703238871183979138">
-        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="5703238871183979140">
+      <node role="recipe" roleId="g0a9.6612588870388080426" type="g0a9.Recipe" typeId="g0a9.3233403453751666098" id="7344367026218335179">
+        <node role="head" roleId="g0a9.7344367026218301892" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="7344367026218335182">
           <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="1207545486242716657" resolveInfo="TestIngredient" />
         </node>
-        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="5703238871183979147">
+        <node role="tail" roleId="g0a9.7344367026218301894" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="7344367026218335183">
+          <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="3233403453751488519" resolveInfo="English ingredient name" />
+        </node>
+      </node>
+    </node>
+    <node role="mixture" roleId="g0a9.6612588870388087910" type="g0a9.Poison" typeId="g0a9.1207545486242702955" id="7344367026218301873">
+      <property name="name" nameId="tpck.1169194664001" value="tödliches gift" />
+      <property name="price" nameId="g0a9.6612588870388123806" value="400" />
+      <node role="effect" roleId="g0a9.6612588870388073290" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="7344367026218301874">
+        <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="1307545486242840000" resolveInfo="Dauerhafter Ausdauerschaden" />
+      </node>
+      <node role="recipe" roleId="g0a9.6612588870388080426" type="g0a9.Recipe" typeId="g0a9.3233403453751666098" id="7344367026218335173">
+        <node role="head" roleId="g0a9.7344367026218301892" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="7344367026218335176">
           <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="5703238871183979144" resolveInfo="Another Ingredient" />
+        </node>
+        <node role="tail" roleId="g0a9.7344367026218301894" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="7344367026218335177">
+          <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="1207545486242716657" resolveInfo="TestIngredient" />
         </node>
       </node>
     </node>
