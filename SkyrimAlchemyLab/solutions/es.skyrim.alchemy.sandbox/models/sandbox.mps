@@ -6,19 +6,19 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <roots>
     <node type="g0a9.Satchel" typeId="g0a9.1207545486242546028" id="1207545486242716656">
-      <property name="name" nameId="tpck.1169194664001" value="Skyrim's natural resources" />
+      <property name="name" nameId="tpck.1169194664001" value="Skyrims natürliche Ressourcen" />
     </node>
     <node type="g0a9.EffectTome" typeId="g0a9.1207545486242556212" id="1207545486242716659">
-      <property name="name" nameId="tpck.1169194664001" value="All known effects" />
+      <property name="name" nameId="tpck.1169194664001" value="Alle magischen Effekte" />
     </node>
     <node type="g0a9.EffectTome" typeId="g0a9.1207545486242556212" id="1207545486242716662">
-      <property name="name" nameId="tpck.1169194664001" value="English effect aliases" />
+      <property name="name" nameId="tpck.1169194664001" value="All magical effects" />
     </node>
     <node type="g0a9.MixtureList" typeId="g0a9.7730761602172222426" id="5703238871183979135">
       <property name="name" nameId="tpck.1169194664001" value="Useful Potions" />
     </node>
     <node type="g0a9.Satchel" typeId="g0a9.1207545486242546028" id="3233403453751488518">
-      <property name="name" nameId="tpck.1169194664001" value="English ingredient aliases" />
+      <property name="name" nameId="tpck.1169194664001" value="Skyrim's natural resources" />
     </node>
   </roots>
   <root id="1207545486242716656">
@@ -278,14 +278,11 @@
         <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="1307545486242860000" resolveInfo="Einhändig verstärken" />
       </node>
       <node role="recipe" roleId="g0a9.6612588870388080426" type="g0a9.IngredientList" typeId="g0a9.6612588870388079545" id="7344367026218427787">
-        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="7344367026218427789">
+        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="4521199767040556887">
+          <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="1207545486242716657" resolveInfo="TestIngredient" />
+        </node>
+        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="4521199767040557520">
           <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="5703238871183979144" resolveInfo="Another Ingredient" />
-        </node>
-        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="7344367026218427791">
-          <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="3233403453751488519" resolveInfo="English ingredient name" />
-        </node>
-        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="7344367026218427793">
-          <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="3233403453751488519" resolveInfo="English ingredient name" />
         </node>
       </node>
     </node>
@@ -305,11 +302,11 @@
         <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="1307545486242740000" resolveInfo="Anfälligkeit für Gift" />
       </node>
       <node role="recipe" roleId="g0a9.6612588870388080426" type="g0a9.IngredientList" typeId="g0a9.6612588870388079545" id="7344367026219109716">
-        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="7344367026219109718">
+        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="4521199767040539255">
           <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="5703238871183979144" resolveInfo="Another Ingredient" />
         </node>
-        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="7344367026219109720">
-          <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="3233403453751488519" resolveInfo="English ingredient name" />
+        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="4521199767040539257">
+          <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="1207545486242716657" resolveInfo="TestIngredient" />
         </node>
       </node>
     </node>
@@ -323,10 +320,28 @@
         <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="7344367026218427807">
           <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="1207545486242716657" resolveInfo="TestIngredient" />
         </node>
-        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="7344367026218427809">
+        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="4521199767040556882">
+          <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="5703238871183979144" resolveInfo="Another Ingredient" />
+        </node>
+      </node>
+    </node>
+    <node role="mixture" roleId="g0a9.6612588870388087910" type="g0a9.Mixture" typeId="g0a9.6612588870388073287" id="4521199767040555176">
+      <property name="name" nameId="tpck.1169194664001" value="Noch ein Mix" />
+      <property name="price" nameId="g0a9.6612588870388123806" value="1212" />
+      <node role="effect" roleId="g0a9.6612588870388073290" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="4521199767040555177">
+        <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="1307545486242720000" resolveInfo="Anfälligkeit für Feuer" />
+      </node>
+      <node role="recipe" roleId="g0a9.6612588870388080426" type="g0a9.IngredientList" typeId="g0a9.6612588870388079545" id="4521199767040555187">
+        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="4521199767040556883">
+          <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="5703238871183979144" resolveInfo="Another Ingredient" />
+        </node>
+        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="4521199767040556885">
           <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="1207545486242716657" resolveInfo="TestIngredient" />
         </node>
       </node>
+    </node>
+    <node role="usedSatchel" roleId="g0a9.4521199767040213534" type="g0a9.SatchelImport" typeId="g0a9.4521199767040192981" id="4521199767040345936">
+      <link role="satchel" roleId="g0a9.4521199767040192982" targetNodeId="1207545486242716656" resolveInfo="Skyrims natürliche Ressourcen" />
     </node>
   </root>
   <root id="3233403453751488518">

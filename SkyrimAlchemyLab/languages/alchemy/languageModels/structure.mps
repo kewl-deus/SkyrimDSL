@@ -108,19 +108,20 @@
       <property name="iconPath" nameId="tpce.1160488491229" value="U:/coding/SkyrimDSL/icons/16x16/potion_green.png" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="6612588870388073287" resolveInfo="Mixture" />
     </node>
-    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3233403453751498679">
-      <property name="name" nameId="tpck.1169194664001" value="IRecipe" />
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="recipe" />
-    </node>
-    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3233403453751666098">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="recipe" />
-      <property name="name" nameId="tpck.1169194664001" value="Recipe" />
-      <property name="iconPath" nameId="tpce.1160488491229" value="U:/coding/SkyrimDSL/icons/16x16/transform.png" />
-      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    </node>
     <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7344367026218133618">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="mixture" />
       <property name="name" nameId="tpck.1169194664001" value="IMixture" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4521199767040192981">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="ingredient" />
+      <property name="name" nameId="tpck.1169194664001" value="SatchelImport" />
+      <property name="iconPath" nameId="tpce.1160488491229" value="U:/coding/SkyrimDSL/icons/16x16/wallet_open.png" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    </node>
+    <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4521199767040192994">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="effect" />
+      <property name="name" nameId="tpck.1169194664001" value="EffectTomeImport" />
+      <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
   </roots>
   <root id="296901729014133200">
@@ -176,6 +177,12 @@
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="1207545486242702913">
       <property name="value" nameId="tpce.1105725733873" value="list of recipes for mixtures" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4521199767040213534">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="usedSatchel" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1..n" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="4521199767040192981" resolveInfo="SatchelImport" />
     </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6612588870388087910">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -277,9 +284,6 @@
       <property name="role" nameId="tpce.1071599776563" value="ingredient" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="1207545486242556190" resolveInfo="IIngredient" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7344367026218331094">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3233403453751498679" resolveInfo="IRecipe" />
     </node>
   </root>
   <root id="6612588870388079545">
@@ -386,27 +390,25 @@
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
   </root>
-  <root id="3233403453751498679" />
-  <root id="3233403453751666098">
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7344367026218301892">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <property name="role" nameId="tpce.1071599776563" value="head" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="6612588870388073292" resolveInfo="IngredientReference" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7344367026218301894">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="tail" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="3233403453751498679" resolveInfo="IRecipe" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3233403453751666099">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3233403453751498679" resolveInfo="IRecipe" />
-    </node>
-  </root>
   <root id="7344367026218133618">
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7344367026218133619">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
+    </node>
+  </root>
+  <root id="4521199767040192981">
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4521199767040192982">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="satchel" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="1207545486242546028" resolveInfo="Satchel" />
+    </node>
+  </root>
+  <root id="4521199767040192994">
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4521199767040192995">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="tome" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="1207545486242556212" resolveInfo="EffectTome" />
     </node>
   </root>
 </model>
