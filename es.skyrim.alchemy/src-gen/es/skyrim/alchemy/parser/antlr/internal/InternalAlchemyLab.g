@@ -81,9 +81,9 @@ ruleAlchemyLabModel returns [EObject current=null]
 ((
 (
 		{ 
-	        newCompositeNode(grammarAccess.getAlchemyLabModelAccess().getEffectsEffectDefParserRuleCall_0_0()); 
+	        newCompositeNode(grammarAccess.getAlchemyLabModelAccess().getEffectsEffectParserRuleCall_0_0()); 
 	    }
-		lv_effects_0_0=ruleEffectDef		{
+		lv_effects_0_0=ruleEffect		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getAlchemyLabModelRule());
 	        }
@@ -91,7 +91,7 @@ ruleAlchemyLabModel returns [EObject current=null]
        			$current, 
        			"effects",
         		lv_effects_0_0, 
-        		"EffectDef");
+        		"Effect");
 	        afterParserOrEnumRuleCall();
 	    }
 
@@ -99,9 +99,9 @@ ruleAlchemyLabModel returns [EObject current=null]
 )*(
 (
 		{ 
-	        newCompositeNode(grammarAccess.getAlchemyLabModelAccess().getIngredientsIngredientDefParserRuleCall_1_0()); 
+	        newCompositeNode(grammarAccess.getAlchemyLabModelAccess().getIngredientsIngredientParserRuleCall_1_0()); 
 	    }
-		lv_ingredients_1_0=ruleIngredientDef		{
+		lv_ingredients_1_0=ruleIngredient		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getAlchemyLabModelRule());
 	        }
@@ -109,7 +109,7 @@ ruleAlchemyLabModel returns [EObject current=null]
        			$current, 
        			"ingredients",
         		lv_ingredients_1_0, 
-        		"IngredientDef");
+        		"Ingredient");
 	        afterParserOrEnumRuleCall();
 	    }
 
@@ -136,6 +136,44 @@ ruleAlchemyLabModel returns [EObject current=null]
 ;
 
 
+
+
+
+// Entry rule entryRuleEffect
+entryRuleEffect returns [EObject current=null] 
+	:
+	{ newCompositeNode(grammarAccess.getEffectRule()); }
+	 iv_ruleEffect=ruleEffect 
+	 { $current=$iv_ruleEffect.current; } 
+	 EOF 
+;
+
+// Rule Effect
+ruleEffect returns [EObject current=null] 
+    @init { enterRule(); 
+    }
+    @after { leaveRule(); }:
+(
+    { 
+        newCompositeNode(grammarAccess.getEffectAccess().getEffectDefParserRuleCall_0()); 
+    }
+    this_EffectDef_0=ruleEffectDef
+    { 
+        $current = $this_EffectDef_0.current; 
+        afterParserOrEnumRuleCall();
+    }
+
+    |
+    { 
+        newCompositeNode(grammarAccess.getEffectAccess().getEffectAliasParserRuleCall_1()); 
+    }
+    this_EffectAlias_1=ruleEffectAlias
+    { 
+        $current = $this_EffectAlias_1.current; 
+        afterParserOrEnumRuleCall();
+    }
+)
+;
 
 
 
@@ -327,6 +365,44 @@ ruleEffectAlias returns [EObject current=null]
 ;
 
 
+
+
+
+// Entry rule entryRuleIngredient
+entryRuleIngredient returns [EObject current=null] 
+	:
+	{ newCompositeNode(grammarAccess.getIngredientRule()); }
+	 iv_ruleIngredient=ruleIngredient 
+	 { $current=$iv_ruleIngredient.current; } 
+	 EOF 
+;
+
+// Rule Ingredient
+ruleIngredient returns [EObject current=null] 
+    @init { enterRule(); 
+    }
+    @after { leaveRule(); }:
+(
+    { 
+        newCompositeNode(grammarAccess.getIngredientAccess().getIngredientDefParserRuleCall_0()); 
+    }
+    this_IngredientDef_0=ruleIngredientDef
+    { 
+        $current = $this_IngredientDef_0.current; 
+        afterParserOrEnumRuleCall();
+    }
+
+    |
+    { 
+        newCompositeNode(grammarAccess.getIngredientAccess().getIngredientAliasParserRuleCall_1()); 
+    }
+    this_IngredientAlias_1=ruleIngredientAlias
+    { 
+        $current = $this_IngredientAlias_1.current; 
+        afterParserOrEnumRuleCall();
+    }
+)
+;
 
 
 

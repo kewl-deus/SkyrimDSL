@@ -2,6 +2,8 @@ package es.skyrim.alchemy.generator;
 
 import es.skyrim.alchemy.alchemyLab.Effect;
 import es.skyrim.alchemy.alchemyLab.EffectDef;
+import es.skyrim.alchemy.alchemyLab.Ingredient;
+import es.skyrim.alchemy.alchemyLab.IngredientAlias;
 import es.skyrim.alchemy.alchemyLab.IngredientDef;
 import java.math.BigInteger;
 import java.util.HashMap;
@@ -50,8 +52,33 @@ public class AlchemyLabGenerator implements IGenerator {
       TreeIterator<EObject> _allContents = resource.getAllContents();
       Iterator<IngredientDef> _filter = IteratorExtensions.<IngredientDef>filter(_allContents, es.skyrim.alchemy.alchemyLab.IngredientDef.class);
       Iterator<IngredientDef> ings = _filter;
-      String _generateSatchel = this.generateSatchel(ings);
-      fsa.generateFile("satchel.xml", _generateSatchel);
+      StringBuilder _stringBuilder = new StringBuilder();
+      final Function2<StringBuilder,IngredientDef,StringBuilder> _function = new Function2<StringBuilder,IngredientDef,StringBuilder>() {
+          public StringBuilder apply(final StringBuilder sb, final IngredientDef ing) {
+            CharSequence _generate = AlchemyLabGenerator.this.generate(ing);
+            StringBuilder _append = sb.append(_generate);
+            StringBuilder _append_1 = _append.append("\n");
+            return _append_1;
+          }
+        };
+      StringBuilder _fold = IteratorExtensions.<IngredientDef, StringBuilder>fold(ings, _stringBuilder, _function);
+      String _string = _fold.toString();
+      fsa.generateFile("satchel.xml", _string);
+      TreeIterator<EObject> _allContents_1 = resource.getAllContents();
+      Iterator<IngredientAlias> _filter_1 = IteratorExtensions.<IngredientAlias>filter(_allContents_1, es.skyrim.alchemy.alchemyLab.IngredientAlias.class);
+      Iterator<IngredientAlias> ingAliases = _filter_1;
+      StringBuilder _stringBuilder_1 = new StringBuilder();
+      final Function2<StringBuilder,IngredientAlias,StringBuilder> _function_1 = new Function2<StringBuilder,IngredientAlias,StringBuilder>() {
+          public StringBuilder apply(final StringBuilder sb, final IngredientAlias ia) {
+            CharSequence _generate = AlchemyLabGenerator.this.generate(ia);
+            StringBuilder _append = sb.append(_generate);
+            StringBuilder _append_1 = _append.append("\n");
+            return _append_1;
+          }
+        };
+      StringBuilder _fold_1 = IteratorExtensions.<IngredientAlias, StringBuilder>fold(ingAliases, _stringBuilder_1, _function_1);
+      String _string_1 = _fold_1.toString();
+      fsa.generateFile("ing_aliases.xml", _string_1);
   }
   
   public BigInteger fillEffectIdCache() {
@@ -166,21 +193,6 @@ public class AlchemyLabGenerator implements IGenerator {
     return _xblockexpression;
   }
   
-  public String generateSatchel(final Iterator<IngredientDef> ings) {
-    StringBuilder _stringBuilder = new StringBuilder();
-    final Function2<StringBuilder,IngredientDef,StringBuilder> _function = new Function2<StringBuilder,IngredientDef,StringBuilder>() {
-        public StringBuilder apply(final StringBuilder sb, final IngredientDef ing) {
-          CharSequence _generate = AlchemyLabGenerator.this.generate(ing);
-          StringBuilder _append = sb.append(_generate);
-          StringBuilder _append_1 = _append.append("\n");
-          return _append_1;
-        }
-      };
-    StringBuilder _fold = IteratorExtensions.<IngredientDef, StringBuilder>fold(ings, _stringBuilder, _function);
-    String _string = _fold.toString();
-    return _string;
-  }
-  
   public CharSequence generate(final IngredientDef ing) {
     CharSequence _xblockexpression = null;
     {
@@ -253,6 +265,40 @@ public class AlchemyLabGenerator implements IGenerator {
           _builder.newLine();
         }
       }
+      _builder.append("</node>");
+      _builder.newLine();
+      _xblockexpression = (_builder);
+    }
+    return _xblockexpression;
+  }
+  
+  public CharSequence generate(final IngredientAlias alias) {
+    CharSequence _xblockexpression = null;
+    {
+      Ingredient _ingredient = alias.getIngredient();
+      String _name = ((IngredientDef) _ingredient).getName();
+      final String ingName = _name;
+      BigInteger _get = this.ingredientIdCache.get(ingName);
+      final BigInteger ingId = _get;
+      StringConcatenation _builder = new StringConcatenation();
+      _builder.append("<node role=\"ingredient\" roleId=\"g0a9.1207545486242546030\" type=\"g0a9.IngredientAlias\" typeId=\"g0a9.1207545486242556193\" id=\"");
+      BigInteger _nextId = this.nextId();
+      _builder.append(_nextId, "");
+      _builder.append("\">");
+      _builder.newLineIfNotEmpty();
+      _builder.append("  ");
+      _builder.append("<property name=\"name\" nameId=\"tpck.1169194664001\" value=");
+      String _alias = alias.getAlias();
+      _builder.append(_alias, "  ");
+      _builder.append(" />");
+      _builder.newLineIfNotEmpty();
+      _builder.append("  ");
+      _builder.append("<link role=\"ingredient\" roleId=\"g0a9.5703238871183979160\" targetNodeId=\"");
+      _builder.append(ingId, "  ");
+      _builder.append("\" resolveInfo=");
+      _builder.append(ingName, "  ");
+      _builder.append(" />");
+      _builder.newLineIfNotEmpty();
       _builder.append("</node>");
       _builder.newLine();
       _xblockexpression = (_builder);

@@ -20,30 +20,30 @@ public class AlchemyLabGrammarAccess extends AbstractGrammarElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "AlchemyLabModel");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cEffectsAssignment_0 = (Assignment)cGroup.eContents().get(0);
-		private final RuleCall cEffectsEffectDefParserRuleCall_0_0 = (RuleCall)cEffectsAssignment_0.eContents().get(0);
+		private final RuleCall cEffectsEffectParserRuleCall_0_0 = (RuleCall)cEffectsAssignment_0.eContents().get(0);
 		private final Assignment cIngredientsAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final RuleCall cIngredientsIngredientDefParserRuleCall_1_0 = (RuleCall)cIngredientsAssignment_1.eContents().get(0);
+		private final RuleCall cIngredientsIngredientParserRuleCall_1_0 = (RuleCall)cIngredientsAssignment_1.eContents().get(0);
 		private final Assignment cRecipesAssignment_2 = (Assignment)cGroup.eContents().get(2);
 		private final RuleCall cRecipesRecipeParserRuleCall_2_0 = (RuleCall)cRecipesAssignment_2.eContents().get(0);
 		
 		//AlchemyLabModel:
-		//	effects+=EffectDef* ingredients+=IngredientDef* recipes+=Recipe*;
+		//	effects+=Effect* ingredients+=Ingredient* recipes+=Recipe*;
 		public ParserRule getRule() { return rule; }
 
-		//effects+=EffectDef* ingredients+=IngredientDef* recipes+=Recipe*
+		//effects+=Effect* ingredients+=Ingredient* recipes+=Recipe*
 		public Group getGroup() { return cGroup; }
 
-		//effects+=EffectDef*
+		//effects+=Effect*
 		public Assignment getEffectsAssignment_0() { return cEffectsAssignment_0; }
 
-		//EffectDef
-		public RuleCall getEffectsEffectDefParserRuleCall_0_0() { return cEffectsEffectDefParserRuleCall_0_0; }
+		//Effect
+		public RuleCall getEffectsEffectParserRuleCall_0_0() { return cEffectsEffectParserRuleCall_0_0; }
 
-		//ingredients+=IngredientDef*
+		//ingredients+=Ingredient*
 		public Assignment getIngredientsAssignment_1() { return cIngredientsAssignment_1; }
 
-		//IngredientDef
-		public RuleCall getIngredientsIngredientDefParserRuleCall_1_0() { return cIngredientsIngredientDefParserRuleCall_1_0; }
+		//Ingredient
+		public RuleCall getIngredientsIngredientParserRuleCall_1_0() { return cIngredientsIngredientParserRuleCall_1_0; }
 
 		//recipes+=Recipe*
 		public Assignment getRecipesAssignment_2() { return cRecipesAssignment_2; }
@@ -547,7 +547,7 @@ public class AlchemyLabGrammarAccess extends AbstractGrammarElementFinder {
 
 	
 	//AlchemyLabModel:
-	//	effects+=EffectDef* ingredients+=IngredientDef* recipes+=Recipe*;
+	//	effects+=Effect* ingredients+=Ingredient* recipes+=Recipe*;
 	public AlchemyLabModelElements getAlchemyLabModelAccess() {
 		return (pAlchemyLabModel != null) ? pAlchemyLabModel : (pAlchemyLabModel = new AlchemyLabModelElements());
 	}

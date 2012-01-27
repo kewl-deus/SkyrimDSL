@@ -5,9 +5,9 @@
     nsURI="http://www.skyrim.es/alchemy/AlchemyLab" nsPrefix="alchemyLab">
   <eClassifiers xsi:type="ecore:EClass" name="AlchemyLabModel">
     <eStructuralFeatures xsi:type="ecore:EReference" name="effects" upperBound="-1"
-        eType="#//EffectDef" containment="true"/>
+        eType="#//Effect" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="ingredients" upperBound="-1"
-        eType="#//IngredientDef" containment="true"/>
+        eType="#//Ingredient" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="recipes" upperBound="-1"
         eType="#//Recipe" containment="true"/>
   </eClassifiers>

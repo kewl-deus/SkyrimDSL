@@ -575,8 +575,8 @@ public class AlchemyLabPackageImpl extends EPackageImpl implements AlchemyLabPac
 
     // Initialize classes and features; add operations and parameters
     initEClass(alchemyLabModelEClass, AlchemyLabModel.class, "AlchemyLabModel", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getAlchemyLabModel_Effects(), this.getEffectDef(), null, "effects", null, 0, -1, AlchemyLabModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getAlchemyLabModel_Ingredients(), this.getIngredientDef(), null, "ingredients", null, 0, -1, AlchemyLabModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getAlchemyLabModel_Effects(), this.getEffect(), null, "effects", null, 0, -1, AlchemyLabModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getAlchemyLabModel_Ingredients(), this.getIngredient(), null, "ingredients", null, 0, -1, AlchemyLabModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getAlchemyLabModel_Recipes(), this.getRecipe(), null, "recipes", null, 0, -1, AlchemyLabModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(effectEClass, Effect.class, "Effect", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

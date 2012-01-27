@@ -4,10 +4,10 @@
 package es.skyrim.alchemy.generator
 
 import es.skyrim.alchemy.alchemyLab.Effect
+import es.skyrim.alchemy.alchemyLab.IngredientAlias
 import es.skyrim.alchemy.alchemyLab.EffectDef
 import es.skyrim.alchemy.alchemyLab.IngredientDef
 import java.math.BigInteger
-import java.util.Iterator
 import java.util.Map
 import org.eclipse.emf.ecore.resource.Resource
 import org.eclipse.xtext.generator.IFileSystemAccess
@@ -26,7 +26,10 @@ class AlchemyLabGenerator implements IGenerator {
 		fillEffectIdCache
 		
 		var ings = resource.allContents.filter(typeof( IngredientDef ));
-		fsa.generateFile("satchel.xml", generateSatchel(ings));
+		fsa.generateFile("satchel.xml", ings.fold(new StringBuilder(), [sb, ing | sb.append(ing.generate).append("\n")]).toString);
+		
+		var ingAliases = resource.allContents.filter(typeof(IngredientAlias))
+		fsa.generateFile("ing_aliases.xml",ingAliases.fold(new StringBuilder(), [sb, ia | sb.append(ia.generate).append("\n")]).toString)
 	}
 	
 	
@@ -85,13 +88,6 @@ class AlchemyLabGenerator implements IGenerator {
 		effectIdCache.put("Zweihändig verstärken", new BigInteger("1307545486243220000"))
 	}
 		
-	def String generateSatchel(Iterator<IngredientDef> ings) {
-//		val buf = new StringBuilder()
-//		ings.forEach(it | buf.append(it.generate))
-//		buf.toString
-		
-		ings.fold(new StringBuilder(), [sb, ing | sb.append(ing.generate).append("\n")]).toString
-	} 
 	
 	def generate(IngredientDef ing) {
 		
@@ -100,9 +96,6 @@ class AlchemyLabGenerator implements IGenerator {
 
 		val effects = ing.effects.map[it.effect].toArray
 
-		//val effectNames = effects.map[(it as EffectDef).name].toArray
-		//val effectIds = effectNames.map[effectIdCache.get(it).toString].toArray
-		
 		
 		'''
 	    <node role="ingredient" roleId="g0a9.1207545486242546030" type="g0a9.Ingredient" typeId="g0a9.6612588870387972505" id="«ingId»">
@@ -120,6 +113,19 @@ class AlchemyLabGenerator implements IGenerator {
 		
 	}
 	
+	def generate(IngredientAlias alias){
+		
+		val ingName = (alias.ingredient as IngredientDef).name
+		val ingId = ingredientIdCache.get(ingName)
+		
+		'''
+		<node role="ingredient" roleId="g0a9.1207545486242546030" type="g0a9.IngredientAlias" typeId="g0a9.1207545486242556193" id="«nextId»">
+		  <property name="name" nameId="tpck.1169194664001" value=«alias.alias» />
+		  <link role="ingredient" roleId="g0a9.5703238871183979160" targetNodeId="«ingId»" resolveInfo=«ingName» />
+		</node>
+		'''
+	}
+		
 	def generate(Effect eff) {
 		
 		val effectName = (eff as EffectDef).name

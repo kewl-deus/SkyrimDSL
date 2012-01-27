@@ -50,11 +50,11 @@ protected class ThisRootNode extends RootToken {
 /************ begin Rule AlchemyLabModel ****************
  *
  * AlchemyLabModel:
- * 	effects+=EffectDef* ingredients+=IngredientDef* recipes+=Recipe*;
+ * 	effects+=Effect* ingredients+=Ingredient* recipes+=Recipe*;
  *
  **/
 
-// effects+=EffectDef* ingredients+=IngredientDef* recipes+=Recipe*
+// effects+=Effect* ingredients+=Ingredient* recipes+=Recipe*
 protected class AlchemyLabModel_Group extends GroupToken {
 	
 	public AlchemyLabModel_Group(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -85,7 +85,7 @@ protected class AlchemyLabModel_Group extends GroupToken {
 
 }
 
-// effects+=EffectDef*
+// effects+=Effect*
 protected class AlchemyLabModel_EffectsAssignment_0 extends AssignmentToken  {
 	
 	public AlchemyLabModel_EffectsAssignment_0(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -100,7 +100,7 @@ protected class AlchemyLabModel_EffectsAssignment_0 extends AssignmentToken  {
     @Override
 	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
 		switch(index) {
-			case 0: return new EffectDef_Group(this, this, 0, inst);
+			case 0: return new Effect_Alternatives(this, this, 0, inst);
 			default: return null;
 		}	
 	}
@@ -111,9 +111,9 @@ protected class AlchemyLabModel_EffectsAssignment_0 extends AssignmentToken  {
 		IEObjectConsumer obj = eObjectConsumer.cloneAndConsume("effects");
 		if(value instanceof EObject) { // org::eclipse::xtext::impl::RuleCallImpl
 			IEObjectConsumer param = createEObjectConsumer((EObject)value);
-			if(param.isInstanceOf(grammarAccess.getEffectDefRule().getType().getClassifier())) {
+			if(param.isInstanceOf(grammarAccess.getEffectRule().getType().getClassifier())) {
 				type = AssignmentType.PARSER_RULE_CALL;
-				element = grammarAccess.getAlchemyLabModelAccess().getEffectsEffectDefParserRuleCall_0_0(); 
+				element = grammarAccess.getAlchemyLabModelAccess().getEffectsEffectParserRuleCall_0_0(); 
 				consumed = obj;
 				return param;
 			}
@@ -131,7 +131,7 @@ protected class AlchemyLabModel_EffectsAssignment_0 extends AssignmentToken  {
 	}	
 }
 
-// ingredients+=IngredientDef*
+// ingredients+=Ingredient*
 protected class AlchemyLabModel_IngredientsAssignment_1 extends AssignmentToken  {
 	
 	public AlchemyLabModel_IngredientsAssignment_1(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -146,7 +146,7 @@ protected class AlchemyLabModel_IngredientsAssignment_1 extends AssignmentToken 
     @Override
 	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
 		switch(index) {
-			case 0: return new IngredientDef_Group(this, this, 0, inst);
+			case 0: return new Ingredient_Alternatives(this, this, 0, inst);
 			default: return null;
 		}	
 	}
@@ -157,9 +157,9 @@ protected class AlchemyLabModel_IngredientsAssignment_1 extends AssignmentToken 
 		IEObjectConsumer obj = eObjectConsumer.cloneAndConsume("ingredients");
 		if(value instanceof EObject) { // org::eclipse::xtext::impl::RuleCallImpl
 			IEObjectConsumer param = createEObjectConsumer((EObject)value);
-			if(param.isInstanceOf(grammarAccess.getIngredientDefRule().getType().getClassifier())) {
+			if(param.isInstanceOf(grammarAccess.getIngredientRule().getType().getClassifier())) {
 				type = AssignmentType.PARSER_RULE_CALL;
-				element = grammarAccess.getAlchemyLabModelAccess().getIngredientsIngredientDefParserRuleCall_1_0(); 
+				element = grammarAccess.getAlchemyLabModelAccess().getIngredientsIngredientParserRuleCall_1_0(); 
 				consumed = obj;
 				return param;
 			}
