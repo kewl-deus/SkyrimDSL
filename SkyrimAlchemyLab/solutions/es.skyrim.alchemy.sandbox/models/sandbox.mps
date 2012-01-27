@@ -27,16 +27,16 @@
       <property name="price" nameId="g0a9.6612588870387972509" value="10" />
       <property name="weight" nameId="g0a9.6612588870387972511" value="0.5" />
       <property name="source" nameId="g0a9.6612588870387972512" value="unknown" />
-      <node role="effect" roleId="g0a9.6612588870387972515" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="1207545486242716658">
+      <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="1207545486242716658">
         <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="1307545486242710000" resolveInfo="Anfälligkeit für Blitz" />
       </node>
-      <node role="effect" roleId="g0a9.6612588870387972515" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="3233403453751488520">
+      <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="3233403453751488520">
         <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="1307545486242720000" resolveInfo="Anfälligkeit für Feuer" />
       </node>
-      <node role="effect" roleId="g0a9.6612588870387972515" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="3233403453751488521">
+      <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="3233403453751488521">
         <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="1307545486242730000" resolveInfo="Anfälligkeit für Frost" />
       </node>
-      <node role="effect" roleId="g0a9.6612588870387972515" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="3233403453751488522">
+      <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="3233403453751488522">
         <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="1307545486242740000" resolveInfo="Anfälligkeit für Gift" />
       </node>
     </node>
@@ -45,9 +45,31 @@
       <property name="price" nameId="g0a9.6612588870387972509" value="100" />
       <property name="source" nameId="g0a9.6612588870387972512" value="unknown" />
       <property name="weight" nameId="g0a9.6612588870387972511" value="0.2" />
-      <node role="effect" roleId="g0a9.6612588870387972515" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="5703238871183979145">
+      <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="5703238871183979145">
         <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="1307545486242760000" resolveInfo="Ausdauer regenerieren" />
       </node>
+      <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="1820559564970879466">
+        <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="1307545486242710000" resolveInfo="Anfälligkeit für Blitz" />
+      </node>
+      <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="1820559564970879467">
+        <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="1307545486242720000" resolveInfo="Anfälligkeit für Feuer" />
+      </node>
+      <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="1820559564970879468">
+        <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="1307545486242790000" resolveInfo="Ausdauer wiederherstellen" />
+      </node>
+    </node>
+    <node role="ingredient" roleId="g0a9.1207545486242546030" type="g0a9.Ingredient" typeId="g0a9.6612588870387972505" id="1820559564970879478">
+      <property name="name" nameId="tpck.1169194664001" value="Dummy Ingredient" />
+      <property name="price" nameId="g0a9.6612588870387972509" value="40" />
+      <property name="weight" nameId="g0a9.6612588870387972511" value="0.4" />
+      <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="1820559564970879479">
+        <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="1307545486243190000" resolveInfo="Wiederherstellung verstärken" />
+      </node>
+    </node>
+    <node role="ingredient" roleId="g0a9.1207545486242546030" type="g0a9.Ingredient" typeId="g0a9.6612588870387972505" id="1820559564970881189">
+      <property name="name" nameId="tpck.1169194664001" value="Yet another ingredient" />
+      <property name="price" nameId="g0a9.6612588870387972509" value="20" />
+      <property name="weight" nameId="g0a9.6612588870387972511" value="0.1" />
     </node>
   </root>
   <root id="1207545486242716659">
@@ -274,31 +296,34 @@
     <node role="mixture" roleId="g0a9.6612588870388087910" type="g0a9.Mixture" typeId="g0a9.6612588870388073287" id="3233403453751768775">
       <property name="name" nameId="tpck.1169194664001" value="testmix" />
       <property name="price" nameId="g0a9.6612588870388123806" value="440" />
-      <node role="effect" roleId="g0a9.6612588870388073290" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="3233403453751768776">
-        <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="1307545486242860000" resolveInfo="Einhändig verstärken" />
-      </node>
       <node role="recipe" roleId="g0a9.6612588870388080426" type="g0a9.IngredientList" typeId="g0a9.6612588870388079545" id="7344367026218427787">
         <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="4521199767040556887">
           <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="1207545486242716657" resolveInfo="TestIngredient" />
         </node>
-        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="4521199767040557520">
+        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="1820559564970881184">
+          <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="1820559564970879478" resolveInfo="Dummy Ingredient" />
+        </node>
+        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="1820559564970881187">
           <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="5703238871183979144" resolveInfo="Another Ingredient" />
         </node>
+      </node>
+      <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="1820559564970879470">
+        <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="1307545486242710000" resolveInfo="Anfälligkeit für Blitz" />
       </node>
     </node>
     <node role="mixture" roleId="g0a9.6612588870388087910" type="g0a9.Potion" typeId="g0a9.1207545486242702954" id="5703238871183979136">
       <property name="name" nameId="tpck.1169194664001" value="Test Potion" />
       <property name="price" nameId="g0a9.6612588870388123806" value="100" />
-      <node role="effect" roleId="g0a9.6612588870388073290" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="5703238871183979137">
+      <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="5703238871183979137">
         <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="1307545486242710000" resolveInfo="Anfälligkeit für Blitz" />
       </node>
-      <node role="effect" roleId="g0a9.6612588870388073290" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="5703238871183992800">
+      <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="5703238871183992800">
         <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="1307545486242720000" resolveInfo="Anfälligkeit für Feuer" />
       </node>
-      <node role="effect" roleId="g0a9.6612588870388073290" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="5703238871183992801">
+      <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="5703238871183992801">
         <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="1307545486242730000" resolveInfo="Anfälligkeit für Frost" />
       </node>
-      <node role="effect" roleId="g0a9.6612588870388073290" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="5703238871183992802">
+      <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="5703238871183992802">
         <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="1307545486242740000" resolveInfo="Anfälligkeit für Gift" />
       </node>
       <node role="recipe" roleId="g0a9.6612588870388080426" type="g0a9.IngredientList" typeId="g0a9.6612588870388079545" id="7344367026219109716">
@@ -313,7 +338,7 @@
     <node role="mixture" roleId="g0a9.6612588870388087910" type="g0a9.Poison" typeId="g0a9.1207545486242702955" id="7344367026218427802">
       <property name="name" nameId="tpck.1169194664001" value="Tödliches gift" />
       <property name="price" nameId="g0a9.6612588870388123806" value="330" />
-      <node role="effect" roleId="g0a9.6612588870388073290" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="7344367026218427803">
+      <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="7344367026218427803">
         <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="1307545486242770000" resolveInfo="Ausdauer senken" />
       </node>
       <node role="recipe" roleId="g0a9.6612588870388080426" type="g0a9.IngredientList" typeId="g0a9.6612588870388079545" id="7344367026218427804">
@@ -328,7 +353,7 @@
     <node role="mixture" roleId="g0a9.6612588870388087910" type="g0a9.Mixture" typeId="g0a9.6612588870388073287" id="4521199767040555176">
       <property name="name" nameId="tpck.1169194664001" value="Noch ein Mix" />
       <property name="price" nameId="g0a9.6612588870388123806" value="1212" />
-      <node role="effect" roleId="g0a9.6612588870388073290" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="4521199767040555177">
+      <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="4521199767040555177">
         <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="1307545486242720000" resolveInfo="Anfälligkeit für Feuer" />
       </node>
       <node role="recipe" roleId="g0a9.6612588870388080426" type="g0a9.IngredientList" typeId="g0a9.6612588870388079545" id="4521199767040555187">

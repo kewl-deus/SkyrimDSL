@@ -237,7 +237,7 @@
           <property name="text" nameId="tpc2.1073389577007" value="effects:" />
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNodeList" typeId="tpc2.1073390211982" id="6612588870387988304">
-          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="g0a9.6612588870387972515" />
+          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="g0a9.2039275433489786449" />
           <node role="cellLayout" roleId="tpc2.1140524464360" type="tpc2.CellLayout_Vertical" typeId="tpc2.1106270571710" id="6612588870387988305" />
           <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="6612588870387988306">
             <property name="flag" nameId="tpc2.1186414551515" value="false" />
@@ -334,7 +334,7 @@
         <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="6612588870388121022" />
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Indent" typeId="tpc2.1198256887712" id="6612588870388121028" />
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNodeList" typeId="tpc2.1073390211982" id="6612588870388080496">
-          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="g0a9.6612588870388073290" />
+          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="g0a9.2039275433489786449" />
           <node role="cellLayout" roleId="tpc2.1140524464360" type="tpc2.CellLayout_Vertical" typeId="tpc2.1106270571710" id="6612588870388080497" />
           <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="6612588870388080498">
             <property name="flag" nameId="tpc2.1186414551515" value="false" />
@@ -475,7 +475,7 @@
         <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="1207545486242702970" />
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Indent" typeId="tpc2.1198256887712" id="1207545486242702971" />
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNodeList" typeId="tpc2.1073390211982" id="1207545486242702972">
-          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="g0a9.6612588870388073290" />
+          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="g0a9.2039275433489786449" />
           <node role="cellLayout" roleId="tpc2.1140524464360" type="tpc2.CellLayout_Vertical" typeId="tpc2.1106270571710" id="1207545486242702973" />
           <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="1207545486242702974">
             <property name="flag" nameId="tpc2.1186414551515" value="false" />
@@ -554,7 +554,7 @@
         <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="1207545486242703006" />
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Indent" typeId="tpc2.1198256887712" id="1207545486242703007" />
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNodeList" typeId="tpc2.1073390211982" id="1207545486242703008">
-          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="g0a9.6612588870388073290" />
+          <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="g0a9.2039275433489786449" />
           <node role="cellLayout" roleId="tpc2.1140524464360" type="tpc2.CellLayout_Vertical" typeId="tpc2.1106270571710" id="1207545486242703009" />
           <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="1207545486242703010">
             <property name="flag" nameId="tpc2.1186414551515" value="false" />
