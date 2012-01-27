@@ -8,8 +8,8 @@ package es.skyrim.alchemy.alchemyLab.impl;
 
 import es.skyrim.alchemy.alchemyLab.AlchemyLabModel;
 import es.skyrim.alchemy.alchemyLab.AlchemyLabPackage;
-import es.skyrim.alchemy.alchemyLab.Effect;
-import es.skyrim.alchemy.alchemyLab.Ingredient;
+import es.skyrim.alchemy.alchemyLab.EffectDef;
+import es.skyrim.alchemy.alchemyLab.IngredientDef;
 import es.skyrim.alchemy.alchemyLab.Recipe;
 
 import java.util.Collection;
@@ -51,7 +51,7 @@ public class AlchemyLabModelImpl extends MinimalEObjectImpl.Container implements
    * @generated
    * @ordered
    */
-  protected EList<Effect> effects;
+  protected EList<EffectDef> effects;
 
   /**
    * The cached value of the '{@link #getIngredients() <em>Ingredients</em>}' containment reference list.
@@ -61,7 +61,7 @@ public class AlchemyLabModelImpl extends MinimalEObjectImpl.Container implements
    * @generated
    * @ordered
    */
-  protected EList<Ingredient> ingredients;
+  protected EList<IngredientDef> ingredients;
 
   /**
    * The cached value of the '{@link #getRecipes() <em>Recipes</em>}' containment reference list.
@@ -99,11 +99,11 @@ public class AlchemyLabModelImpl extends MinimalEObjectImpl.Container implements
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<Effect> getEffects()
+  public EList<EffectDef> getEffects()
   {
     if (effects == null)
     {
-      effects = new EObjectContainmentEList<Effect>(Effect.class, this, AlchemyLabPackage.ALCHEMY_LAB_MODEL__EFFECTS);
+      effects = new EObjectContainmentEList<EffectDef>(EffectDef.class, this, AlchemyLabPackage.ALCHEMY_LAB_MODEL__EFFECTS);
     }
     return effects;
   }
@@ -113,11 +113,11 @@ public class AlchemyLabModelImpl extends MinimalEObjectImpl.Container implements
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<Ingredient> getIngredients()
+  public EList<IngredientDef> getIngredients()
   {
     if (ingredients == null)
     {
-      ingredients = new EObjectContainmentEList<Ingredient>(Ingredient.class, this, AlchemyLabPackage.ALCHEMY_LAB_MODEL__INGREDIENTS);
+      ingredients = new EObjectContainmentEList<IngredientDef>(IngredientDef.class, this, AlchemyLabPackage.ALCHEMY_LAB_MODEL__INGREDIENTS);
     }
     return ingredients;
   }
@@ -189,11 +189,11 @@ public class AlchemyLabModelImpl extends MinimalEObjectImpl.Container implements
     {
       case AlchemyLabPackage.ALCHEMY_LAB_MODEL__EFFECTS:
         getEffects().clear();
-        getEffects().addAll((Collection<? extends Effect>)newValue);
+        getEffects().addAll((Collection<? extends EffectDef>)newValue);
         return;
       case AlchemyLabPackage.ALCHEMY_LAB_MODEL__INGREDIENTS:
         getIngredients().clear();
-        getIngredients().addAll((Collection<? extends Ingredient>)newValue);
+        getIngredients().addAll((Collection<? extends IngredientDef>)newValue);
         return;
       case AlchemyLabPackage.ALCHEMY_LAB_MODEL__RECIPES:
         getRecipes().clear();

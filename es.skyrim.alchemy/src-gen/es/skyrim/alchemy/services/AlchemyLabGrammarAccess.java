@@ -20,30 +20,30 @@ public class AlchemyLabGrammarAccess extends AbstractGrammarElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "AlchemyLabModel");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cEffectsAssignment_0 = (Assignment)cGroup.eContents().get(0);
-		private final RuleCall cEffectsEffectParserRuleCall_0_0 = (RuleCall)cEffectsAssignment_0.eContents().get(0);
+		private final RuleCall cEffectsEffectDefParserRuleCall_0_0 = (RuleCall)cEffectsAssignment_0.eContents().get(0);
 		private final Assignment cIngredientsAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final RuleCall cIngredientsIngredientParserRuleCall_1_0 = (RuleCall)cIngredientsAssignment_1.eContents().get(0);
+		private final RuleCall cIngredientsIngredientDefParserRuleCall_1_0 = (RuleCall)cIngredientsAssignment_1.eContents().get(0);
 		private final Assignment cRecipesAssignment_2 = (Assignment)cGroup.eContents().get(2);
 		private final RuleCall cRecipesRecipeParserRuleCall_2_0 = (RuleCall)cRecipesAssignment_2.eContents().get(0);
 		
 		//AlchemyLabModel:
-		//	effects+=Effect* ingredients+=Ingredient* recipes+=Recipe*;
+		//	effects+=EffectDef* ingredients+=IngredientDef* recipes+=Recipe*;
 		public ParserRule getRule() { return rule; }
 
-		//effects+=Effect* ingredients+=Ingredient* recipes+=Recipe*
+		//effects+=EffectDef* ingredients+=IngredientDef* recipes+=Recipe*
 		public Group getGroup() { return cGroup; }
 
-		//effects+=Effect*
+		//effects+=EffectDef*
 		public Assignment getEffectsAssignment_0() { return cEffectsAssignment_0; }
 
-		//Effect
-		public RuleCall getEffectsEffectParserRuleCall_0_0() { return cEffectsEffectParserRuleCall_0_0; }
+		//EffectDef
+		public RuleCall getEffectsEffectDefParserRuleCall_0_0() { return cEffectsEffectDefParserRuleCall_0_0; }
 
-		//ingredients+=Ingredient*
+		//ingredients+=IngredientDef*
 		public Assignment getIngredientsAssignment_1() { return cIngredientsAssignment_1; }
 
-		//Ingredient
-		public RuleCall getIngredientsIngredientParserRuleCall_1_0() { return cIngredientsIngredientParserRuleCall_1_0; }
+		//IngredientDef
+		public RuleCall getIngredientsIngredientDefParserRuleCall_1_0() { return cIngredientsIngredientDefParserRuleCall_1_0; }
 
 		//recipes+=Recipe*
 		public Assignment getRecipesAssignment_2() { return cRecipesAssignment_2; }
@@ -164,14 +164,14 @@ public class AlchemyLabGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cAliasIDTerminalRuleCall_1_0 = (RuleCall)cAliasAssignment_1.eContents().get(0);
 		private final Keyword cForKeyword_2 = (Keyword)cGroup.eContents().get(2);
 		private final Assignment cEffectAssignment_3 = (Assignment)cGroup.eContents().get(3);
-		private final CrossReference cEffectEffectCrossReference_3_0 = (CrossReference)cEffectAssignment_3.eContents().get(0);
-		private final RuleCall cEffectEffectIDTerminalRuleCall_3_0_1 = (RuleCall)cEffectEffectCrossReference_3_0.eContents().get(1);
+		private final CrossReference cEffectEffectDefCrossReference_3_0 = (CrossReference)cEffectAssignment_3.eContents().get(0);
+		private final RuleCall cEffectEffectDefIDTerminalRuleCall_3_0_1 = (RuleCall)cEffectEffectDefCrossReference_3_0.eContents().get(1);
 		
 		//EffectAlias:
-		//	"ealias" alias=ID "for" effect=[Effect];
+		//	"ealias" alias=ID "for" effect=[EffectDef];
 		public ParserRule getRule() { return rule; }
 
-		//"ealias" alias=ID "for" effect=[Effect]
+		//"ealias" alias=ID "for" effect=[EffectDef]
 		public Group getGroup() { return cGroup; }
 
 		//"ealias"
@@ -186,14 +186,14 @@ public class AlchemyLabGrammarAccess extends AbstractGrammarElementFinder {
 		//"for"
 		public Keyword getForKeyword_2() { return cForKeyword_2; }
 
-		//effect=[Effect]
+		//effect=[EffectDef]
 		public Assignment getEffectAssignment_3() { return cEffectAssignment_3; }
 
-		//[Effect]
-		public CrossReference getEffectEffectCrossReference_3_0() { return cEffectEffectCrossReference_3_0; }
+		//[EffectDef]
+		public CrossReference getEffectEffectDefCrossReference_3_0() { return cEffectEffectDefCrossReference_3_0; }
 
 		//ID
-		public RuleCall getEffectEffectIDTerminalRuleCall_3_0_1() { return cEffectEffectIDTerminalRuleCall_3_0_1; }
+		public RuleCall getEffectEffectDefIDTerminalRuleCall_3_0_1() { return cEffectEffectDefIDTerminalRuleCall_3_0_1; }
 	}
 
 	public class IngredientElements extends AbstractParserRuleElementFinder {
@@ -326,14 +326,14 @@ public class AlchemyLabGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cAliasIDTerminalRuleCall_1_0 = (RuleCall)cAliasAssignment_1.eContents().get(0);
 		private final Keyword cForKeyword_2 = (Keyword)cGroup.eContents().get(2);
 		private final Assignment cIngredientAssignment_3 = (Assignment)cGroup.eContents().get(3);
-		private final CrossReference cIngredientIngredientCrossReference_3_0 = (CrossReference)cIngredientAssignment_3.eContents().get(0);
-		private final RuleCall cIngredientIngredientIDTerminalRuleCall_3_0_1 = (RuleCall)cIngredientIngredientCrossReference_3_0.eContents().get(1);
+		private final CrossReference cIngredientIngredientDefCrossReference_3_0 = (CrossReference)cIngredientAssignment_3.eContents().get(0);
+		private final RuleCall cIngredientIngredientDefIDTerminalRuleCall_3_0_1 = (RuleCall)cIngredientIngredientDefCrossReference_3_0.eContents().get(1);
 		
 		//IngredientAlias:
-		//	"ialias" alias=ID "for" ingredient=[Ingredient];
+		//	"ialias" alias=ID "for" ingredient=[IngredientDef];
 		public ParserRule getRule() { return rule; }
 
-		//"ialias" alias=ID "for" ingredient=[Ingredient]
+		//"ialias" alias=ID "for" ingredient=[IngredientDef]
 		public Group getGroup() { return cGroup; }
 
 		//"ialias"
@@ -348,14 +348,14 @@ public class AlchemyLabGrammarAccess extends AbstractGrammarElementFinder {
 		//"for"
 		public Keyword getForKeyword_2() { return cForKeyword_2; }
 
-		//ingredient=[Ingredient]
+		//ingredient=[IngredientDef]
 		public Assignment getIngredientAssignment_3() { return cIngredientAssignment_3; }
 
-		//[Ingredient]
-		public CrossReference getIngredientIngredientCrossReference_3_0() { return cIngredientIngredientCrossReference_3_0; }
+		//[IngredientDef]
+		public CrossReference getIngredientIngredientDefCrossReference_3_0() { return cIngredientIngredientDefCrossReference_3_0; }
 
 		//ID
-		public RuleCall getIngredientIngredientIDTerminalRuleCall_3_0_1() { return cIngredientIngredientIDTerminalRuleCall_3_0_1; }
+		public RuleCall getIngredientIngredientDefIDTerminalRuleCall_3_0_1() { return cIngredientIngredientDefIDTerminalRuleCall_3_0_1; }
 	}
 
 	public class RecipeElements extends AbstractParserRuleElementFinder {
@@ -526,7 +526,6 @@ public class AlchemyLabGrammarAccess extends AbstractGrammarElementFinder {
 	private RecipeElements pRecipe;
 	private ToxicityElements unknownRuleToxicity;
 	private TerminalRule tID;
-	private TerminalRule tStrongID;
 	private TerminalRule tSTRING;
 	private TerminalRule tNUMBER;
 	private TerminalRule tML_COMMENT;
@@ -548,7 +547,7 @@ public class AlchemyLabGrammarAccess extends AbstractGrammarElementFinder {
 
 	
 	//AlchemyLabModel:
-	//	effects+=Effect* ingredients+=Ingredient* recipes+=Recipe*;
+	//	effects+=EffectDef* ingredients+=IngredientDef* recipes+=Recipe*;
 	public AlchemyLabModelElements getAlchemyLabModelAccess() {
 		return (pAlchemyLabModel != null) ? pAlchemyLabModel : (pAlchemyLabModel = new AlchemyLabModelElements());
 	}
@@ -598,7 +597,7 @@ public class AlchemyLabGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//EffectAlias:
-	//	"ealias" alias=ID "for" effect=[Effect];
+	//	"ealias" alias=ID "for" effect=[EffectDef];
 	public EffectAliasElements getEffectAliasAccess() {
 		return (pEffectAlias != null) ? pEffectAlias : (pEffectAlias = new EffectAliasElements());
 	}
@@ -639,7 +638,7 @@ public class AlchemyLabGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//IngredientAlias:
-	//	"ialias" alias=ID "for" ingredient=[Ingredient];
+	//	"ialias" alias=ID "for" ingredient=[IngredientDef];
 	public IngredientAliasElements getIngredientAliasAccess() {
 		return (pIngredientAlias != null) ? pIngredientAlias : (pIngredientAlias = new IngredientAliasElements());
 	}
@@ -673,12 +672,6 @@ public class AlchemyLabGrammarAccess extends AbstractGrammarElementFinder {
 	//	"\"" "^"? ("a".."z" | "A".."Z" | " " | "ä" | "Ä" | "ö" | "Ö" | "Ü" | "ü" | "ß" | "\'")+ "\"";
 	public TerminalRule getIDRule() {
 		return (tID != null) ? tID : (tID = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "ID"));
-	} 
-
-	//terminal strongID:
-	//	"^"? ("a".."z" | "A".."Z" | "_")+;
-	public TerminalRule getStrongIDRule() {
-		return (tStrongID != null) ? tStrongID : (tStrongID = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "strongID"));
 	} 
 
 	//terminal STRING:

@@ -81,9 +81,9 @@ ruleAlchemyLabModel returns [EObject current=null]
 ((
 (
 		{ 
-	        newCompositeNode(grammarAccess.getAlchemyLabModelAccess().getEffectsEffectParserRuleCall_0_0()); 
+	        newCompositeNode(grammarAccess.getAlchemyLabModelAccess().getEffectsEffectDefParserRuleCall_0_0()); 
 	    }
-		lv_effects_0_0=ruleEffect		{
+		lv_effects_0_0=ruleEffectDef		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getAlchemyLabModelRule());
 	        }
@@ -91,7 +91,7 @@ ruleAlchemyLabModel returns [EObject current=null]
        			$current, 
        			"effects",
         		lv_effects_0_0, 
-        		"Effect");
+        		"EffectDef");
 	        afterParserOrEnumRuleCall();
 	    }
 
@@ -99,9 +99,9 @@ ruleAlchemyLabModel returns [EObject current=null]
 )*(
 (
 		{ 
-	        newCompositeNode(grammarAccess.getAlchemyLabModelAccess().getIngredientsIngredientParserRuleCall_1_0()); 
+	        newCompositeNode(grammarAccess.getAlchemyLabModelAccess().getIngredientsIngredientDefParserRuleCall_1_0()); 
 	    }
-		lv_ingredients_1_0=ruleIngredient		{
+		lv_ingredients_1_0=ruleIngredientDef		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getAlchemyLabModelRule());
 	        }
@@ -109,7 +109,7 @@ ruleAlchemyLabModel returns [EObject current=null]
        			$current, 
        			"ingredients",
         		lv_ingredients_1_0, 
-        		"Ingredient");
+        		"IngredientDef");
 	        afterParserOrEnumRuleCall();
 	    }
 
@@ -136,44 +136,6 @@ ruleAlchemyLabModel returns [EObject current=null]
 ;
 
 
-
-
-
-// Entry rule entryRuleEffect
-entryRuleEffect returns [EObject current=null] 
-	:
-	{ newCompositeNode(grammarAccess.getEffectRule()); }
-	 iv_ruleEffect=ruleEffect 
-	 { $current=$iv_ruleEffect.current; } 
-	 EOF 
-;
-
-// Rule Effect
-ruleEffect returns [EObject current=null] 
-    @init { enterRule(); 
-    }
-    @after { leaveRule(); }:
-(
-    { 
-        newCompositeNode(grammarAccess.getEffectAccess().getEffectDefParserRuleCall_0()); 
-    }
-    this_EffectDef_0=ruleEffectDef
-    { 
-        $current = $this_EffectDef_0.current; 
-        afterParserOrEnumRuleCall();
-    }
-
-    |
-    { 
-        newCompositeNode(grammarAccess.getEffectAccess().getEffectAliasParserRuleCall_1()); 
-    }
-    this_EffectAlias_1=ruleEffectAlias
-    { 
-        $current = $this_EffectAlias_1.current; 
-        afterParserOrEnumRuleCall();
-    }
-)
-;
 
 
 
@@ -357,7 +319,7 @@ ruleEffectAlias returns [EObject current=null]
         }
 	otherlv_3=RULE_ID
 	{
-		newLeafNode(otherlv_3, grammarAccess.getEffectAliasAccess().getEffectEffectCrossReference_3_0()); 
+		newLeafNode(otherlv_3, grammarAccess.getEffectAliasAccess().getEffectEffectDefCrossReference_3_0()); 
 	}
 
 )
@@ -365,44 +327,6 @@ ruleEffectAlias returns [EObject current=null]
 ;
 
 
-
-
-
-// Entry rule entryRuleIngredient
-entryRuleIngredient returns [EObject current=null] 
-	:
-	{ newCompositeNode(grammarAccess.getIngredientRule()); }
-	 iv_ruleIngredient=ruleIngredient 
-	 { $current=$iv_ruleIngredient.current; } 
-	 EOF 
-;
-
-// Rule Ingredient
-ruleIngredient returns [EObject current=null] 
-    @init { enterRule(); 
-    }
-    @after { leaveRule(); }:
-(
-    { 
-        newCompositeNode(grammarAccess.getIngredientAccess().getIngredientDefParserRuleCall_0()); 
-    }
-    this_IngredientDef_0=ruleIngredientDef
-    { 
-        $current = $this_IngredientDef_0.current; 
-        afterParserOrEnumRuleCall();
-    }
-
-    |
-    { 
-        newCompositeNode(grammarAccess.getIngredientAccess().getIngredientAliasParserRuleCall_1()); 
-    }
-    this_IngredientAlias_1=ruleIngredientAlias
-    { 
-        $current = $this_IngredientAlias_1.current; 
-        afterParserOrEnumRuleCall();
-    }
-)
-;
 
 
 
@@ -626,7 +550,7 @@ ruleIngredientAlias returns [EObject current=null]
         }
 	otherlv_3=RULE_ID
 	{
-		newLeafNode(otherlv_3, grammarAccess.getIngredientAliasAccess().getIngredientIngredientCrossReference_3_0()); 
+		newLeafNode(otherlv_3, grammarAccess.getIngredientAliasAccess().getIngredientIngredientDefCrossReference_3_0()); 
 	}
 
 )
@@ -831,8 +755,6 @@ ruleToxicity returns [Enumerator current=null]
 
 
 RULE_ID : '"' '^'? ('a'..'z'|'A'..'Z'|' '|'\u00E4'|'\u00C4'|'\u00F6'|'\u00D6'|'\u00DC'|'\u00FC'|'\u00DF'|'\'')+ '"';
-
-RULE_STRONGID : '^'? ('a'..'z'|'A'..'Z'|'_')+;
 
 RULE_STRING : '\'' ('\\' ('b'|'t'|'n'|'f'|'r'|'u'|'"'|'\''|'\\')|~(('\\'|'\'')))* '\'';
 

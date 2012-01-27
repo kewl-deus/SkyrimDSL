@@ -3,13 +3,138 @@
  */
 package es.skyrim.alchemy.generator
 
+import es.skyrim.alchemy.alchemyLab.Effect
+import es.skyrim.alchemy.alchemyLab.EffectDef
+import es.skyrim.alchemy.alchemyLab.IngredientDef
+import java.math.BigInteger
+import java.util.Iterator
+import java.util.Map
 import org.eclipse.emf.ecore.resource.Resource
-import org.eclipse.xtext.generator.IGenerator
 import org.eclipse.xtext.generator.IFileSystemAccess
+import org.eclipse.xtext.generator.IGenerator
 
 class AlchemyLabGenerator implements IGenerator {
 	
+	private Map<String, BigInteger> effectIdCache = newHashMap()
+	
+	private Map<String, BigInteger> ingredientIdCache = newHashMap()
+	
+	private BigInteger idCounter = new BigInteger("1400000000000000000")
+	
 	override void doGenerate(Resource resource, IFileSystemAccess fsa) {
-		//TODO implement me
+		
+		fillEffectIdCache
+		
+		var ings = resource.allContents.filter(typeof( IngredientDef ));
+		fsa.generateFile("satchel.xml", generateSatchel(ings));
+	}
+	
+	
+	def fillEffectIdCache() {
+		effectIdCache.put("Anfälligkeit für Blitz", new BigInteger("1307545486242710000"))
+		effectIdCache.put("Anfälligkeit für Feuer", new BigInteger("1307545486242720000"))
+		effectIdCache.put("Anfälligkeit für Frost", new BigInteger("1307545486242730000"))
+		effectIdCache.put("Anfälligkeit für Gift", new BigInteger("1307545486242740000"))
+		effectIdCache.put("Anfälligkeit für Magie", new BigInteger("1307545486242750000"))
+		effectIdCache.put("Ausdauer regenerieren", new BigInteger("1307545486242760000"))
+		effectIdCache.put("Ausdauer senken", new BigInteger("1307545486242770000"))
+		effectIdCache.put("Ausdauer verstärken", new BigInteger("1307545486242780000"))
+		effectIdCache.put("Ausdauer wiederherstellen", new BigInteger("1307545486242790000"))
+		effectIdCache.put("Ausdauerregeneration senken", new BigInteger("1307545486242800000"))
+		effectIdCache.put("Beschwörung verstärken", new BigInteger("1307545486242810000"))
+		effectIdCache.put("Blitzresistenz", new BigInteger("1307545486242820000"))
+		effectIdCache.put("Blocken verstärken", new BigInteger("1307545486242830000"))
+		effectIdCache.put("Dauerhafter Ausdauerschaden", new BigInteger("1307545486242840000"))
+		effectIdCache.put("Dauerhafter Magickaschaden", new BigInteger("1307545486242850000"))
+		effectIdCache.put("Einhändig verstärken", new BigInteger("1307545486242860000"))
+		effectIdCache.put("Erzürnen", new BigInteger("1307545486242870000"))
+		effectIdCache.put("Feuerresistenz", new BigInteger("1307545486242880000"))
+		effectIdCache.put("Frostresistenz", new BigInteger("1307545486242890000"))
+		effectIdCache.put("Furcht", new BigInteger("1307545486242900000"))
+		effectIdCache.put("Gesundheit regenerieren", new BigInteger("1307545486242910000"))
+		effectIdCache.put("Gesundheit senken", new BigInteger("1307545486242920000"))
+		effectIdCache.put("Gesundheit verstärken", new BigInteger("1307545486242930000"))
+		effectIdCache.put("Gesundheit wiederherstellen", new BigInteger("1307545486242940000"))
+		effectIdCache.put("Giftresistenz", new BigInteger("1307545486242950000"))
+		effectIdCache.put("Illusion verstärken", new BigInteger("1307545486242960000"))
+		effectIdCache.put("Krankheit heilen", new BigInteger("1307545486242970000"))
+		effectIdCache.put("Lähmen", new BigInteger("1307545486242980000"))
+		effectIdCache.put("Leichte Rüstung verstärken", new BigInteger("1307545486242990000"))
+		effectIdCache.put("Magicka regenerieren", new BigInteger("1307545486243000000"))
+		effectIdCache.put("Magicka senken", new BigInteger("1307545486243010000"))
+		effectIdCache.put("Magicka verstärken", new BigInteger("1307545486243020000"))
+		effectIdCache.put("Magicka wiederherstellen", new BigInteger("1307545486243030000"))
+		effectIdCache.put("Magickaregeneration senken", new BigInteger("1307545486243040000"))
+		effectIdCache.put("Magieresistenz", new BigInteger("1307545486243050000"))
+		effectIdCache.put("Raserei", new BigInteger("1307545486243060000"))
+		effectIdCache.put("Redekunst verstärken", new BigInteger("1307545486243070000"))
+		effectIdCache.put("Schleichen verstärken", new BigInteger("1307545486243080000"))
+		effectIdCache.put("Schloßknacken verstärken", new BigInteger("1307545486243090000"))
+		effectIdCache.put("Schmiedekunst verstärken", new BigInteger("1307545486243100000"))
+		effectIdCache.put("Schwere Rüstung verstärken", new BigInteger("1307545486243110000"))
+		effectIdCache.put("Taschendiebstahl verstärken", new BigInteger("1307545486243120000"))
+		effectIdCache.put("Tragfähigkeit verstärken", new BigInteger("1307545486243130000"))
+		effectIdCache.put("Unsichtbarkeit", new BigInteger("1307545486243140000"))
+		effectIdCache.put("Veränderung verstärken", new BigInteger("1307545486243150000"))
+		effectIdCache.put("Verlangsamen", new BigInteger("1307545486243160000"))
+		effectIdCache.put("Verzaubern verstärken", new BigInteger("1307545486243170000"))
+		effectIdCache.put("Wasseratmung", new BigInteger("1307545486243180000"))
+		effectIdCache.put("Wiederherstellung verstärken", new BigInteger("1307545486243190000"))
+		effectIdCache.put("Zerstörung verstärken", new BigInteger("1307545486243200000"))
+		effectIdCache.put("Zielkunst verstärken", new BigInteger("1307545486243210000"))
+		effectIdCache.put("Zweihändig verstärken", new BigInteger("1307545486243220000"))
+	}
+		
+	def String generateSatchel(Iterator<IngredientDef> ings) {
+//		val buf = new StringBuilder()
+//		ings.forEach(it | buf.append(it.generate))
+//		buf.toString
+		
+		ings.fold(new StringBuilder(), [sb, ing | sb.append(ing.generate).append("\n")]).toString
+	} 
+	
+	def generate(IngredientDef ing) {
+		
+		val ingId = nextId
+		ingredientIdCache.put(ing.name, nextId)
+
+		val effects = ing.effects.map[it.effect].toArray
+
+		//val effectNames = effects.map[(it as EffectDef).name].toArray
+		//val effectIds = effectNames.map[effectIdCache.get(it).toString].toArray
+		
+		
+		'''
+	    <node role="ingredient" roleId="g0a9.1207545486242546030" type="g0a9.Ingredient" typeId="g0a9.6612588870387972505" id="«ingId»">
+	      <property name="name" nameId="tpck.1169194664001" value=«ing.name» />
+	      <property name="price" nameId="g0a9.6612588870387972509" value="«ing.price.intValue»" />
+	      <property name="weight" nameId="g0a9.6612588870387972511" value="«ing.weight»" />
+	      <property name="source" nameId="g0a9.6612588870387972512" value="«ing.source»" />
+	      «FOR eff:effects»
+	      <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="«nextId»">
+	        <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="«effectIdCache.get((eff as EffectDef).name)»" resolveInfo=«(eff as EffectDef).name» />
+	      </node>
+	      «ENDFOR»
+	    </node>
+		'''
+		
+	}
+	
+	def generate(Effect eff) {
+		
+		val effectName = (eff as EffectDef).name
+		val effectId = effectIdCache.get(effectName)
+		
+		'''
+		<node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="«nextId»">
+		<link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="«effectId»" resolveInfo="«effectName»" />
+		</node>
+		'''
+	}
+	
+	def nextId() {
+		val current = idCounter
+		idCounter = idCounter.add(new BigInteger("1"))
+		current
 	}
 }

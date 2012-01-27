@@ -32,7 +32,7 @@ public interface AlchemyLabModel extends EObject
 {
   /**
    * Returns the value of the '<em><b>Effects</b></em>' containment reference list.
-   * The list contents are of type {@link es.skyrim.alchemy.alchemyLab.Effect}.
+   * The list contents are of type {@link es.skyrim.alchemy.alchemyLab.EffectDef}.
    * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Effects</em>' containment reference list isn't clear,
@@ -44,11 +44,11 @@ public interface AlchemyLabModel extends EObject
    * @model containment="true"
    * @generated
    */
-  EList<Effect> getEffects();
+  EList<EffectDef> getEffects();
 
   /**
    * Returns the value of the '<em><b>Ingredients</b></em>' containment reference list.
-   * The list contents are of type {@link es.skyrim.alchemy.alchemyLab.Ingredient}.
+   * The list contents are of type {@link es.skyrim.alchemy.alchemyLab.IngredientDef}.
    * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Ingredients</em>' containment reference list isn't clear,
@@ -60,7 +60,7 @@ public interface AlchemyLabModel extends EObject
    * @model containment="true"
    * @generated
    */
-  EList<Ingredient> getIngredients();
+  EList<IngredientDef> getIngredients();
 
   /**
    * Returns the value of the '<em><b>Recipes</b></em>' containment reference list.

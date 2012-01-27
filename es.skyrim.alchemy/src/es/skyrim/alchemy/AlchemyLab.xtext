@@ -5,8 +5,8 @@ import "http://www.eclipse.org/emf/2002/Ecore" as ecore
 generate alchemyLab "http://www.skyrim.es/alchemy/AlchemyLab"
 
 AlchemyLabModel:
-	effects += Effect*
-	ingredients += Ingredient*
+	effects += EffectDef*
+	ingredients += IngredientDef*
 	recipes += Recipe*;
 	
 
@@ -23,7 +23,7 @@ enum EffectType:
 
 EffectRef returns Effect : '->' effect=[Effect];
 
-EffectAlias: 'ealias' alias=ID 'for' effect=[Effect];
+EffectAlias: 'ealias' alias=ID 'for' effect=[EffectDef];
 
 Ingredient: IngredientDef | IngredientAlias;
 
@@ -40,7 +40,7 @@ IngredientDef:
 
 IngredientRef returns Ingredient: ingredient=[Ingredient];
 
-IngredientAlias: 'ialias' alias=ID 'for' ingredient=[Ingredient];
+IngredientAlias: 'ialias' alias=ID 'for' ingredient=[IngredientDef];
 
 Recipe:
 	toxicity=Toxicity name=ID '{'
@@ -58,8 +58,6 @@ enum Toxicity:
 
 
 terminal ID : '"' '^'?('a'..'z'|'A'..'Z'|' '|'ä'|'Ä'|'ö'|'Ö'|'Ü'|'ü'|'ß'|"'")+ '"'; 
-
-terminal strongID : '^'?('a'..'z'|'A'..'Z'|'_')+;
 
 terminal STRING : "'" ( '\\' ('b'|'t'|'n'|'f'|'r'|'u'|'"'|"'"|'\\') | !('\\'|"'") )* "'";
 

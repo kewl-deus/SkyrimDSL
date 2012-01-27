@@ -50,11 +50,11 @@ protected class ThisRootNode extends RootToken {
 /************ begin Rule AlchemyLabModel ****************
  *
  * AlchemyLabModel:
- * 	effects+=Effect* ingredients+=Ingredient* recipes+=Recipe*;
+ * 	effects+=EffectDef* ingredients+=IngredientDef* recipes+=Recipe*;
  *
  **/
 
-// effects+=Effect* ingredients+=Ingredient* recipes+=Recipe*
+// effects+=EffectDef* ingredients+=IngredientDef* recipes+=Recipe*
 protected class AlchemyLabModel_Group extends GroupToken {
 	
 	public AlchemyLabModel_Group(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -85,7 +85,7 @@ protected class AlchemyLabModel_Group extends GroupToken {
 
 }
 
-// effects+=Effect*
+// effects+=EffectDef*
 protected class AlchemyLabModel_EffectsAssignment_0 extends AssignmentToken  {
 	
 	public AlchemyLabModel_EffectsAssignment_0(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -100,7 +100,7 @@ protected class AlchemyLabModel_EffectsAssignment_0 extends AssignmentToken  {
     @Override
 	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
 		switch(index) {
-			case 0: return new Effect_Alternatives(this, this, 0, inst);
+			case 0: return new EffectDef_Group(this, this, 0, inst);
 			default: return null;
 		}	
 	}
@@ -111,9 +111,9 @@ protected class AlchemyLabModel_EffectsAssignment_0 extends AssignmentToken  {
 		IEObjectConsumer obj = eObjectConsumer.cloneAndConsume("effects");
 		if(value instanceof EObject) { // org::eclipse::xtext::impl::RuleCallImpl
 			IEObjectConsumer param = createEObjectConsumer((EObject)value);
-			if(param.isInstanceOf(grammarAccess.getEffectRule().getType().getClassifier())) {
+			if(param.isInstanceOf(grammarAccess.getEffectDefRule().getType().getClassifier())) {
 				type = AssignmentType.PARSER_RULE_CALL;
-				element = grammarAccess.getAlchemyLabModelAccess().getEffectsEffectParserRuleCall_0_0(); 
+				element = grammarAccess.getAlchemyLabModelAccess().getEffectsEffectDefParserRuleCall_0_0(); 
 				consumed = obj;
 				return param;
 			}
@@ -131,7 +131,7 @@ protected class AlchemyLabModel_EffectsAssignment_0 extends AssignmentToken  {
 	}	
 }
 
-// ingredients+=Ingredient*
+// ingredients+=IngredientDef*
 protected class AlchemyLabModel_IngredientsAssignment_1 extends AssignmentToken  {
 	
 	public AlchemyLabModel_IngredientsAssignment_1(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -146,7 +146,7 @@ protected class AlchemyLabModel_IngredientsAssignment_1 extends AssignmentToken 
     @Override
 	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
 		switch(index) {
-			case 0: return new Ingredient_Alternatives(this, this, 0, inst);
+			case 0: return new IngredientDef_Group(this, this, 0, inst);
 			default: return null;
 		}	
 	}
@@ -157,9 +157,9 @@ protected class AlchemyLabModel_IngredientsAssignment_1 extends AssignmentToken 
 		IEObjectConsumer obj = eObjectConsumer.cloneAndConsume("ingredients");
 		if(value instanceof EObject) { // org::eclipse::xtext::impl::RuleCallImpl
 			IEObjectConsumer param = createEObjectConsumer((EObject)value);
-			if(param.isInstanceOf(grammarAccess.getIngredientRule().getType().getClassifier())) {
+			if(param.isInstanceOf(grammarAccess.getIngredientDefRule().getType().getClassifier())) {
 				type = AssignmentType.PARSER_RULE_CALL;
-				element = grammarAccess.getAlchemyLabModelAccess().getIngredientsIngredientParserRuleCall_1_0(); 
+				element = grammarAccess.getAlchemyLabModelAccess().getIngredientsIngredientDefParserRuleCall_1_0(); 
 				consumed = obj;
 				return param;
 			}
@@ -698,11 +698,11 @@ protected class EffectRef_EffectAssignment_1 extends AssignmentToken  {
 /************ begin Rule EffectAlias ****************
  *
  * EffectAlias:
- * 	"ealias" alias=ID "for" effect=[Effect];
+ * 	"ealias" alias=ID "for" effect=[EffectDef];
  *
  **/
 
-// "ealias" alias=ID "for" effect=[Effect]
+// "ealias" alias=ID "for" effect=[EffectDef]
 protected class EffectAlias_Group extends GroupToken {
 	
 	public EffectAlias_Group(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -808,7 +808,7 @@ protected class EffectAlias_ForKeyword_2 extends KeywordToken  {
 
 }
 
-// effect=[Effect]
+// effect=[EffectDef]
 protected class EffectAlias_EffectAssignment_3 extends AssignmentToken  {
 	
 	public EffectAlias_EffectAssignment_3(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -834,9 +834,9 @@ protected class EffectAlias_EffectAssignment_3 extends AssignmentToken  {
 		IEObjectConsumer obj = eObjectConsumer.cloneAndConsume("effect");
 		if(value instanceof EObject) { // org::eclipse::xtext::impl::CrossReferenceImpl
 			IEObjectConsumer param = createEObjectConsumer((EObject)value);
-			if(param.isInstanceOf(grammarAccess.getEffectAliasAccess().getEffectEffectCrossReference_3_0().getType().getClassifier())) {
+			if(param.isInstanceOf(grammarAccess.getEffectAliasAccess().getEffectEffectDefCrossReference_3_0().getType().getClassifier())) {
 				type = AssignmentType.CROSS_REFERENCE;
-				element = grammarAccess.getEffectAliasAccess().getEffectEffectCrossReference_3_0(); 
+				element = grammarAccess.getEffectAliasAccess().getEffectEffectDefCrossReference_3_0(); 
 				return obj;
 			}
 		}
@@ -1395,11 +1395,11 @@ protected class IngredientRef_IngredientAssignment extends AssignmentToken  {
 /************ begin Rule IngredientAlias ****************
  *
  * IngredientAlias:
- * 	"ialias" alias=ID "for" ingredient=[Ingredient];
+ * 	"ialias" alias=ID "for" ingredient=[IngredientDef];
  *
  **/
 
-// "ialias" alias=ID "for" ingredient=[Ingredient]
+// "ialias" alias=ID "for" ingredient=[IngredientDef]
 protected class IngredientAlias_Group extends GroupToken {
 	
 	public IngredientAlias_Group(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -1505,7 +1505,7 @@ protected class IngredientAlias_ForKeyword_2 extends KeywordToken  {
 
 }
 
-// ingredient=[Ingredient]
+// ingredient=[IngredientDef]
 protected class IngredientAlias_IngredientAssignment_3 extends AssignmentToken  {
 	
 	public IngredientAlias_IngredientAssignment_3(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -1531,9 +1531,9 @@ protected class IngredientAlias_IngredientAssignment_3 extends AssignmentToken  
 		IEObjectConsumer obj = eObjectConsumer.cloneAndConsume("ingredient");
 		if(value instanceof EObject) { // org::eclipse::xtext::impl::CrossReferenceImpl
 			IEObjectConsumer param = createEObjectConsumer((EObject)value);
-			if(param.isInstanceOf(grammarAccess.getIngredientAliasAccess().getIngredientIngredientCrossReference_3_0().getType().getClassifier())) {
+			if(param.isInstanceOf(grammarAccess.getIngredientAliasAccess().getIngredientIngredientDefCrossReference_3_0().getType().getClassifier())) {
 				type = AssignmentType.CROSS_REFERENCE;
-				element = grammarAccess.getIngredientAliasAccess().getIngredientIngredientCrossReference_3_0(); 
+				element = grammarAccess.getIngredientAliasAccess().getIngredientIngredientDefCrossReference_3_0(); 
 				return obj;
 			}
 		}
