@@ -108,10 +108,6 @@
       <property name="iconPath" nameId="tpce.1160488491229" value="U:/coding/SkyrimDSL/icons/16x16/potion_green.png" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="6612588870388073287" resolveInfo="Mixture" />
     </node>
-    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7344367026218133618">
-      <property name="virtualPackage" nameId="tpck.1193676396447" value="mixture" />
-      <property name="name" nameId="tpck.1169194664001" value="IMixture" />
-    </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4521199767040192981">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="ingredient" />
       <property name="name" nameId="tpck.1169194664001" value="SatchelImport" />
@@ -175,7 +171,7 @@
   </root>
   <root id="7730761602172222426">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="1207545486242702911">
-      <property name="value" nameId="tpce.1105725733873" value="MixtureList" />
+      <property name="value" nameId="tpce.1105725733873" value="RecipeScroll" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="1207545486242702913">
@@ -190,9 +186,9 @@
     </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6612588870388087910">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="mixture" />
+      <property name="role" nameId="tpce.1071599776563" value="potion" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="7344367026218133618" resolveInfo="IMixture" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="6612588870388073287" resolveInfo="Mixture" />
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7730761602172245675">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1233160296597" resolveInfo="IContainer" />
@@ -261,15 +257,18 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="6612588870388079545" resolveInfo="IngredientList" />
     </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7344367026218133620">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7344367026218133618" resolveInfo="IMixture" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6408533231781137834">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6408533231781137836">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2039275433489786448" resolveInfo="IEffectSource" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="6612588870388087920">
-      <property name="value" nameId="tpce.1105725733873" value="mixture" />
+      <property name="value" nameId="tpce.1105725733873" value="concoction" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="6612588870388087918">
-      <property name="value" nameId="tpce.1105725733873" value="combination of ingredients for using their magical effects" />
+      <property name="value" nameId="tpce.1105725733873" value="mixed ingredients" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
   </root>
@@ -383,14 +382,6 @@
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="7344367026218301879">
       <property name="value" nameId="tpce.1105725733873" value="toxic mixture" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
-    </node>
-  </root>
-  <root id="7344367026218133618">
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7344367026218133619">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
-    </node>
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2039275433489786453">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2039275433489786448" resolveInfo="IEffectSource" />
     </node>
   </root>
   <root id="4521199767040192981">
