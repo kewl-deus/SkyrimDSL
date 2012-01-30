@@ -21,6 +21,9 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="english aliases" />
       <property name="name" nameId="tpck.1169194664001" value="All known magical effects" />
     </node>
+    <node type="g0a9.MixtureList" typeId="g0a9.7730761602172222426" id="6408533231781022046">
+      <property name="name" nameId="tpck.1169194664001" value="Useful Potions" />
+    </node>
   </roots>
   <root id="1207545486242716659">
     <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.Effect" typeId="g0a9.296901729014133200" id="1307545486242710000">
@@ -2286,6 +2289,310 @@
       <link role="ingredient" roleId="g0a9.5703238871183979160" targetNodeId="1400000000000000552" resolveInfo="Zwergenöl" />
     </node>
   </root>
-  <root id="1820559564970883871" />
+  <root id="1820559564970883871">
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022052">
+      <property name="name" nameId="tpck.1169194664001" value="Weakness to Shock" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486242710000" resolveInfo="Anfälligkeit für Blitz" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022055">
+      <property name="name" nameId="tpck.1169194664001" value="Weakness to Fire" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486242720000" resolveInfo="Anfälligkeit für Feuer" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022056">
+      <property name="name" nameId="tpck.1169194664001" value="Weakness to Frost" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486242730000" resolveInfo="Anfälligkeit für Frost" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022057">
+      <property name="name" nameId="tpck.1169194664001" value="Weakness to Poison" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486242740000" resolveInfo="Anfälligkeit für Gift" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022058">
+      <property name="name" nameId="tpck.1169194664001" value="Weakness to Magicka" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486242750000" resolveInfo="Anfälligkeit für Magie" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022059">
+      <property name="name" nameId="tpck.1169194664001" value="Regenerate Stamina" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486242760000" resolveInfo="Ausdauer regenerieren" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022060">
+      <property name="name" nameId="tpck.1169194664001" value="Damage Stamina" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486242770000" resolveInfo="Ausdauer senken" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022062">
+      <property name="name" nameId="tpck.1169194664001" value="Fortify Stamina" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486242780000" resolveInfo="Ausdauer verstärken" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022064">
+      <property name="name" nameId="tpck.1169194664001" value="Restore Stamina" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486242790000" resolveInfo="Ausdauer wiederherstellen" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022065">
+      <property name="name" nameId="tpck.1169194664001" value="Damage Stamina Regen" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486242800000" resolveInfo="Ausdauerregeneration senken" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022066">
+      <property name="name" nameId="tpck.1169194664001" value="Fortify Conjuration" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486242810000" resolveInfo="Beschwörung verstärken" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022067">
+      <property name="name" nameId="tpck.1169194664001" value="Resist Shock" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486242820000" resolveInfo="Blitzresistenz" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022068">
+      <property name="name" nameId="tpck.1169194664001" value="Fortify Block" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486242830000" resolveInfo="Blocken verstärken" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022069">
+      <property name="name" nameId="tpck.1169194664001" value="Ravage Stamina" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486242840000" resolveInfo="Dauerhafter Ausdauerschaden" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022070">
+      <property name="name" nameId="tpck.1169194664001" value="Ravage Health" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1820559564970883864" resolveInfo="Dauerhafter Gesundheitsschaden" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022071">
+      <property name="name" nameId="tpck.1169194664001" value="Ravage Magicka" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486242850000" resolveInfo="Dauerhafter Magickaschaden" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022073">
+      <property name="name" nameId="tpck.1169194664001" value="Fortify One-handed" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486242860000" resolveInfo="Einhändig verstärken" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022072">
+      <property name="name" nameId="tpck.1169194664001" value="Frenzy" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486242870000" resolveInfo="Erzürnen" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022074">
+      <property name="name" nameId="tpck.1169194664001" value="Resist Fire" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486242880000" resolveInfo="Feuerresistenz" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022076">
+      <property name="name" nameId="tpck.1169194664001" value="Resist Frost" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486242890000" resolveInfo="Frostresistenz" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022078">
+      <property name="name" nameId="tpck.1169194664001" value="Fear" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486242900000" resolveInfo="Furcht" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022080">
+      <property name="name" nameId="tpck.1169194664001" value="Regenerate Health" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486242910000" resolveInfo="Gesundheit regenerieren" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022082">
+      <property name="name" nameId="tpck.1169194664001" value="Damage Health" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486242920000" resolveInfo="Gesundheit senken" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022077">
+      <property name="name" nameId="tpck.1169194664001" value="Fortify Health" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486242930000" resolveInfo="Gesundheit verstärken" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022079">
+      <property name="name" nameId="tpck.1169194664001" value="Restore Health" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486242940000" resolveInfo="Gesundheit wiederherstellen" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022081">
+      <property name="name" nameId="tpck.1169194664001" value="Resist Poison" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486242950000" resolveInfo="Giftresistenz" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022083">
+      <property name="name" nameId="tpck.1169194664001" value="Fortify Illusion" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486242960000" resolveInfo="Illusion verstärken" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022086">
+      <property name="name" nameId="tpck.1169194664001" value="Cure Diseas" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486242970000" resolveInfo="Krankheit heilen" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022085">
+      <property name="name" nameId="tpck.1169194664001" value="Fortify Light Armor" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486242990000" resolveInfo="Leichte Rüstung verstärken" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022084">
+      <property name="name" nameId="tpck.1169194664001" value="Paralysis" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486242980000" resolveInfo="Lähmen" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022075">
+      <property name="name" nameId="tpck.1169194664001" value="Regenerate Magicka" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486243000000" resolveInfo="Magicka regenerieren" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022088">
+      <property name="name" nameId="tpck.1169194664001" value="Damage Magicka" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486243010000" resolveInfo="Magicka senken" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022090">
+      <property name="name" nameId="tpck.1169194664001" value="Fortify Magicka" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486243020000" resolveInfo="Magicka verstärken" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022091">
+      <property name="name" nameId="tpck.1169194664001" value="Restore Magicka" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486243030000" resolveInfo="Magicka wiederherstellen" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022092">
+      <property name="name" nameId="tpck.1169194664001" value="Damage Magicka Regen" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486243040000" resolveInfo="Magickaregeneration senken" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022093">
+      <property name="name" nameId="tpck.1169194664001" value="Resist Magic" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486243050000" resolveInfo="Magieresistenz" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022094">
+      <property name="name" nameId="tpck.1169194664001" value="Fury" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486243060000" resolveInfo="Raserei" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022095">
+      <property name="name" nameId="tpck.1169194664001" value="Fortify Barter" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486243070000" resolveInfo="Redekunst verstärken" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022096">
+      <property name="name" nameId="tpck.1169194664001" value="Fortify Sneak" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486243080000" resolveInfo="Schleichen verstärken" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022098">
+      <property name="name" nameId="tpck.1169194664001" value="Fortify Lockpicking" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486243090000" resolveInfo="Schloßknacken verstärken" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022100">
+      <property name="name" nameId="tpck.1169194664001" value="Fortify Smithing" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486243100000" resolveInfo="Schmiedekunst verstärken" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022102">
+      <property name="name" nameId="tpck.1169194664001" value="Fortify Heavy Armor" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486243110000" resolveInfo="Schwere Rüstung verstärken" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022099">
+      <property name="name" nameId="tpck.1169194664001" value="Fortify Pickpocket" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486243120000" resolveInfo="Taschendiebstahl verstärken" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022101">
+      <property name="name" nameId="tpck.1169194664001" value="Fortify Carry Weight" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486243130000" resolveInfo="Tragfähigkeit verstärken" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022103">
+      <property name="name" nameId="tpck.1169194664001" value="Invisibility" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486243140000" resolveInfo="Unsichtbarkeit" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022104">
+      <property name="name" nameId="tpck.1169194664001" value="Slow" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486243160000" resolveInfo="Verlangsamen" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022105">
+      <property name="name" nameId="tpck.1169194664001" value="Fortify Enchanting" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486243170000" resolveInfo="Verzaubern verstärken" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022106">
+      <property name="name" nameId="tpck.1169194664001" value="Fortify Alteration" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486243150000" resolveInfo="Veränderung verstärken" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022097">
+      <property name="name" nameId="tpck.1169194664001" value="Waterbreathing" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486243180000" resolveInfo="Wasseratmung" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022108">
+      <property name="name" nameId="tpck.1169194664001" value="Fortify Restoration" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486243190000" resolveInfo="Wiederherstellung verstärken" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022109">
+      <property name="name" nameId="tpck.1169194664001" value="Fortify Destruction" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486243200000" resolveInfo="Zerstörung verstärken" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022111">
+      <property name="name" nameId="tpck.1169194664001" value="Fortify Archery" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486243210000" resolveInfo="Zielkunst verstärken" />
+    </node>
+    <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.EffectAlias" typeId="g0a9.296901729014143358" id="6408533231781022113">
+      <property name="name" nameId="tpck.1169194664001" value="Fortify Two-handed" />
+      <link role="effect" roleId="g0a9.296901729014143404" targetNodeId="1307545486243220000" resolveInfo="Zweihändig verstärken" />
+    </node>
+  </root>
+  <root id="6408533231781022046">
+    <node role="usedSatchel" roleId="g0a9.4521199767040213534" type="g0a9.SatchelImport" typeId="g0a9.4521199767040192981" id="6408533231781022047">
+      <link role="satchel" roleId="g0a9.4521199767040192982" targetNodeId="1207545486242716656" resolveInfo="Skyrims natürliche Ressourcen" />
+    </node>
+    <node role="usedSatchel" roleId="g0a9.4521199767040213534" type="g0a9.SatchelImport" typeId="g0a9.4521199767040192981" id="6408533231781022048">
+      <link role="satchel" roleId="g0a9.4521199767040192982" targetNodeId="1820559564970883869" resolveInfo="Skyrim's natural resources" />
+    </node>
+    <node role="potion" roleId="g0a9.6612588870388087910" type="g0a9.Potion" typeId="g0a9.1207545486242702954" id="6408533231781022049">
+      <property name="name" nameId="tpck.1169194664001" value="Healing Potion #1" />
+      <node role="recipe" roleId="g0a9.6612588870388080426" type="g0a9.IngredientList" typeId="g0a9.6612588870388079545" id="6408533231781022050">
+        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="6408533231781022116">
+          <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="6408533231780761006" resolveInfo="Blue Mountain Flower" />
+        </node>
+        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="6408533231781022118">
+          <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="6408533231780761090" resolveInfo="Wheat" />
+        </node>
+      </node>
+      <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="6408533231781022114">
+        <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="6408533231781022077" resolveInfo="Fortify Health" />
+      </node>
+      <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="6408533231781022115">
+        <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="6408533231781022079" resolveInfo="Restore Health" />
+      </node>
+    </node>
+    <node role="potion" roleId="g0a9.6612588870388087910" type="g0a9.Potion" typeId="g0a9.1207545486242702954" id="6408533231781022122">
+      <property name="name" nameId="tpck.1169194664001" value="Healing Potion #2" />
+      <node role="recipe" roleId="g0a9.6612588870388080426" type="g0a9.IngredientList" typeId="g0a9.6612588870388079545" id="6408533231781022123">
+        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="6408533231781022127">
+          <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="6408533231780761006" resolveInfo="Blue Mountain Flower" />
+        </node>
+        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="6408533231781022129">
+          <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="6408533231780761063" resolveInfo="Giant's Toe" />
+        </node>
+        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="6408533231781022131">
+          <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="6408533231780761044" resolveInfo="Imp Stool" />
+        </node>
+      </node>
+      <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="6408533231781022125">
+        <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="6408533231781022077" resolveInfo="Fortify Health" />
+      </node>
+      <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="6408533231781022126">
+        <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="6408533231781022079" resolveInfo="Restore Health" />
+      </node>
+    </node>
+    <node role="potion" roleId="g0a9.6612588870388087910" type="g0a9.Potion" typeId="g0a9.1207545486242702954" id="6408533231781022139">
+      <property name="name" nameId="tpck.1169194664001" value="Rare Effect Potion" />
+      <node role="recipe" roleId="g0a9.6612588870388080426" type="g0a9.IngredientList" typeId="g0a9.6612588870388079545" id="6408533231781022140">
+        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="6408533231781022145">
+          <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="6408533231780761016" resolveInfo="Dragon's Tongue" />
+        </node>
+        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="6408533231781022147">
+          <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="6408533231780761072" resolveInfo="Mudcrab Chitin" />
+        </node>
+        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="6408533231781022149">
+          <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="6408533231780761083" resolveInfo="Troll Fat" />
+        </node>
+      </node>
+      <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="6408533231781022142">
+        <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="6408533231781022113" resolveInfo="Fortify Two-handed" />
+      </node>
+      <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="6408533231781022143">
+        <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="6408533231781022074" resolveInfo="Resist Fire" />
+      </node>
+      <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="6408533231781022144">
+        <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="6408533231781022081" resolveInfo="Resist Poison" />
+      </node>
+    </node>
+    <node role="potion" roleId="g0a9.6612588870388087910" type="g0a9.Poison" typeId="g0a9.1207545486242702955" id="6408533231781022151">
+      <property name="name" nameId="tpck.1169194664001" value="Attacking Health #1" />
+      <node role="recipe" roleId="g0a9.6612588870388080426" type="g0a9.IngredientList" typeId="g0a9.6612588870388079545" id="6408533231781022152">
+        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="6408533231781022157">
+          <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="6408533231780761081" resolveInfo="Deathbell" />
+        </node>
+        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="6408533231781022159">
+          <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="6408533231780761062" resolveInfo="Giant Lichen" />
+        </node>
+        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="6408533231781022161">
+          <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="6408533231780761077" resolveInfo="Skeever Tail" />
+        </node>
+      </node>
+      <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="6408533231781022154">
+        <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="6408533231781022082" resolveInfo="Damage Health" />
+      </node>
+      <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="6408533231781022155">
+        <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="6408533231781022070" resolveInfo="Ravage Health" />
+      </node>
+      <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="6408533231781022156">
+        <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="6408533231781022057" resolveInfo="Weakness to Poison" />
+      </node>
+    </node>
+  </root>
 </model>
 

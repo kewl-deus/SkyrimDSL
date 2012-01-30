@@ -175,7 +175,7 @@
   </root>
   <root id="7730761602172222426">
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="1207545486242702911">
-      <property name="value" nameId="tpce.1105725733873" value="MixtureList" />
+      <property name="value" nameId="tpce.1105725733873" value="RecipeScroll" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="1207545486242702913">
@@ -190,7 +190,7 @@
     </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6612588870388087910">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="mixture" />
+      <property name="role" nameId="tpce.1071599776563" value="potion" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="7344367026218133618" resolveInfo="IMixture" />
     </node>
@@ -265,11 +265,11 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7344367026218133618" resolveInfo="IMixture" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="6612588870388087920">
-      <property name="value" nameId="tpce.1105725733873" value="mixture" />
+      <property name="value" nameId="tpce.1105725733873" value="concoction" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="6612588870388087918">
-      <property name="value" nameId="tpce.1105725733873" value="combination of ingredients for using their magical effects" />
+      <property name="value" nameId="tpce.1105725733873" value="mixed ingredients" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
   </root>
