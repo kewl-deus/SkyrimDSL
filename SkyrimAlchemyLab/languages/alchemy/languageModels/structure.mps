@@ -11,13 +11,13 @@
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="296901729014133200">
       <property name="name" nameId="tpck.1169194664001" value="Effect" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="effect" />
-      <property name="iconPath" nameId="tpce.1160488491229" value="U:/coding/SkyrimDSL/icons/16x16/flash.png" />
+      <property name="iconPath" nameId="tpce.1160488491229" value="U:/coding/sources/SkyrimDSL/icons/16x16/flash.png" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="296901729014143358">
       <property name="name" nameId="tpck.1169194664001" value="EffectAlias" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="effect" />
-      <property name="iconPath" nameId="tpce.1160488491229" value="U:/coding/SkyrimDSL/icons/16x16/flash.png" />
+      <property name="iconPath" nameId="tpce.1160488491229" value="U:/coding/sources/SkyrimDSL/icons/16x16/flash.png" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="296901729014143406">
@@ -25,10 +25,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="effect" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7730761602172222426">
-      <property name="name" nameId="tpck.1169194664001" value="MixtureList" />
+      <property name="name" nameId="tpck.1169194664001" value="RecipeScroll" />
       <property name="rootable" nameId="tpce.1096454100552" value="true" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="mixture" />
-      <property name="iconPath" nameId="tpce.1160488491229" value="U:/coding/SkyrimDSL/icons/16x16/scroll.png" />
+      <property name="iconPath" nameId="tpce.1160488491229" value="U:/coding/sources/SkyrimDSL/icons/16x16/scroll.png" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="7730761602172222430">
@@ -41,7 +41,7 @@
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6612588870387972505">
       <property name="name" nameId="tpck.1169194664001" value="Ingredient" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="ingredient" />
-      <property name="iconPath" nameId="tpce.1160488491229" value="U:/coding/SkyrimDSL/icons/16x16/flower_blue.png" />
+      <property name="iconPath" nameId="tpce.1160488491229" value="U:/coding/sources/SkyrimDSL/icons/16x16/flower_blue.png" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConstrainedDataTypeDeclaration" typeId="tpce.1082978499127" id="6612588870387972510">
@@ -51,32 +51,32 @@
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6612588870387988288">
       <property name="name" nameId="tpck.1169194664001" value="EffectReference" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="effect" />
-      <property name="iconPath" nameId="tpce.1160488491229" value="U:/coding/SkyrimDSL/icons/16x16/flash.png" />
+      <property name="iconPath" nameId="tpce.1160488491229" value="U:/coding/sources/SkyrimDSL/icons/16x16/flash.png" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6612588870388073287">
       <property name="name" nameId="tpck.1169194664001" value="Mixture" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="mixture" />
-      <property name="iconPath" nameId="tpce.1160488491229" value="U:/coding/SkyrimDSL/icons/16x16/potion_blue.png" />
+      <property name="iconPath" nameId="tpce.1160488491229" value="U:/coding/sources/SkyrimDSL/icons/16x16/potion_yellow.png" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6612588870388073292">
       <property name="name" nameId="tpck.1169194664001" value="IngredientReference" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="ingredient" />
-      <property name="iconPath" nameId="tpce.1160488491229" value="U:/coding/SkyrimDSL/icons/16x16/flower_blue.png" />
+      <property name="iconPath" nameId="tpce.1160488491229" value="U:/coding/sources/SkyrimDSL/icons/16x16/flower_blue.png" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6612588870388079545">
       <property name="name" nameId="tpck.1169194664001" value="IngredientList" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="ingredient" />
-      <property name="iconPath" nameId="tpce.1160488491229" value="U:/coding/SkyrimDSL/icons/16x16/note.png" />
+      <property name="iconPath" nameId="tpce.1160488491229" value="U:/coding/sources/SkyrimDSL/icons/16x16/note.png" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1207545486242546028">
       <property name="name" nameId="tpck.1169194664001" value="Satchel" />
       <property name="rootable" nameId="tpce.1096454100552" value="true" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="ingredient" />
-      <property name="iconPath" nameId="tpce.1160488491229" value="U:/coding/SkyrimDSL/icons/16x16/wallet_closed.png" />
+      <property name="iconPath" nameId="tpce.1160488491229" value="U:/coding/sources/SkyrimDSL/icons/16x16/wallet_closed.png" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="1207545486242556190">
@@ -86,32 +86,32 @@
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1207545486242556193">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="ingredient" />
       <property name="name" nameId="tpck.1169194664001" value="IngredientAlias" />
-      <property name="iconPath" nameId="tpce.1160488491229" value="U:/coding/SkyrimDSL/icons/16x16/flower_blue.png" />
+      <property name="iconPath" nameId="tpce.1160488491229" value="U:/coding/sources/SkyrimDSL/icons/16x16/flower_blue.png" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1207545486242556212">
       <property name="name" nameId="tpck.1169194664001" value="EffectTome" />
       <property name="rootable" nameId="tpce.1096454100552" value="true" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="effect" />
-      <property name="iconPath" nameId="tpce.1160488491229" value="U:/coding/SkyrimDSL/icons/16x16/book_yellow.png" />
+      <property name="iconPath" nameId="tpce.1160488491229" value="U:/coding/sources/SkyrimDSL/icons/16x16/book_yellow.png" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1207545486242702954">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="mixture" />
       <property name="name" nameId="tpck.1169194664001" value="Potion" />
-      <property name="iconPath" nameId="tpce.1160488491229" value="U:/coding/SkyrimDSL/icons/16x16/potion_red.png" />
+      <property name="iconPath" nameId="tpce.1160488491229" value="U:/coding/sources/SkyrimDSL/icons/16x16/potion_blue.png" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="6612588870388073287" resolveInfo="Mixture" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1207545486242702955">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="mixture" />
       <property name="name" nameId="tpck.1169194664001" value="Poison" />
-      <property name="iconPath" nameId="tpce.1160488491229" value="U:/coding/SkyrimDSL/icons/16x16/potion_green.png" />
+      <property name="iconPath" nameId="tpce.1160488491229" value="U:/coding/sources/SkyrimDSL/icons/16x16/potion_green.png" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="6612588870388073287" resolveInfo="Mixture" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4521199767040192981">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="ingredient" />
       <property name="name" nameId="tpck.1169194664001" value="SatchelImport" />
-      <property name="iconPath" nameId="tpce.1160488491229" value="U:/coding/SkyrimDSL/icons/16x16/wallet_open.png" />
+      <property name="iconPath" nameId="tpce.1160488491229" value="U:/coding/sources/SkyrimDSL/icons/16x16/wallet_open.png" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4521199767040192994">
@@ -122,6 +122,10 @@
     <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="2039275433489786448">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="effect" />
       <property name="name" nameId="tpck.1169194664001" value="IEffectSource" />
+    </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="1098823917305284921">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="mixture" />
+      <property name="name" nameId="tpck.1169194664001" value="IMixture" />
     </node>
   </roots>
   <root id="296901729014133200">
@@ -186,9 +190,9 @@
     </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6612588870388087910">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="potion" />
+      <property name="role" nameId="tpce.1071599776563" value="mixture" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="6612588870388073287" resolveInfo="Mixture" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="1098823917305284921" resolveInfo="IMixture" />
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7730761602172245675">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1233160296597" resolveInfo="IContainer" />
@@ -257,18 +261,15 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="6612588870388079545" resolveInfo="IngredientList" />
     </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6408533231781137834">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6408533231781137836">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2039275433489786448" resolveInfo="IEffectSource" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1098823917305284925">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1098823917305284921" resolveInfo="IMixture" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="6612588870388087920">
-      <property name="value" nameId="tpce.1105725733873" value="concoction" />
+      <property name="value" nameId="tpce.1105725733873" value="mixture" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473891462" resolveInfo="alias" />
     </node>
     <node role="conceptProperty" roleId="tpce.1105725339613" type="tpce.StringConceptProperty" typeId="tpce.1105725638761" id="6612588870388087918">
-      <property name="value" nameId="tpce.1105725733873" value="mixed ingredients" />
+      <property name="value" nameId="tpce.1105725733873" value="concoction of mixed ingredients" />
       <link role="conceptPropertyDeclaration" roleId="tpce.1105725439818" targetNodeId="tpck.1137473914776" resolveInfo="shortDescription" />
     </node>
   </root>
@@ -406,6 +407,14 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
       <property name="role" nameId="tpce.1071599776563" value="effect" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="6612588870387988288" resolveInfo="EffectReference" />
+    </node>
+  </root>
+  <root id="1098823917305284921">
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1098823917305284922">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
+    </node>
+    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1098823917305284924">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2039275433489786448" resolveInfo="IEffectSource" />
     </node>
   </root>
 </model>

@@ -17,7 +17,7 @@
     <node type="g0a9.EffectTome" typeId="g0a9.1207545486242556212" id="1820559564970883868">
       <property name="name" nameId="tpck.1169194664001" value="Effekte Aliases" />
     </node>
-    <node type="g0a9.MixtureList" typeId="g0a9.7730761602172222426" id="6408533231780961951">
+    <node type="g0a9.RecipeScroll" typeId="g0a9.7730761602172222426" id="6408533231780961951">
       <property name="name" nameId="tpck.1169194664001" value="Leckere Rezepte" />
     </node>
   </roots>
@@ -79,7 +79,7 @@
     <node role="usedSatchel" roleId="g0a9.4521199767040213534" type="g0a9.SatchelImport" typeId="g0a9.4521199767040192981" id="6408533231780961953">
       <link role="satchel" roleId="g0a9.4521199767040192982" targetNodeId="1820559564970883866" resolveInfo="Zutaten Aliases" />
     </node>
-    <node role="potion" roleId="g0a9.6612588870388087910" type="g0a9.Mixture" typeId="g0a9.6612588870388073287" id="6408533231780986883">
+    <node role="mixture" roleId="g0a9.6612588870388087910" type="g0a9.Mixture" typeId="g0a9.6612588870388073287" id="6408533231780986883">
       <property name="name" nameId="tpck.1169194664001" value="Einfache Mixtur" />
       <property name="price" nameId="g0a9.6612588870388123806" value="400" />
       <node role="recipe" roleId="g0a9.6612588870388080426" type="g0a9.IngredientList" typeId="g0a9.6612588870388079545" id="6408533231780986884">

@@ -21,10 +21,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="english aliases" />
       <property name="name" nameId="tpck.1169194664001" value="All known magical effects" />
     </node>
-    <node type="g0a9.MixtureList" typeId="g0a9.7730761602172222426" id="6408533231781022046">
+    <node type="g0a9.RecipeScroll" typeId="g0a9.7730761602172222426" id="6408533231781022046">
       <property name="name" nameId="tpck.1169194664001" value="Useful Potions" />
     </node>
-    <node type="g0a9.MixtureList" typeId="g0a9.7730761602172222426" id="1110625020859092766">
+    <node type="g0a9.RecipeScroll" typeId="g0a9.7730761602172222426" id="1110625020859092766">
       <property name="name" nameId="tpck.1169194664001" value="Useful Potions Translated" />
     </node>
   </roots>
@@ -2513,7 +2513,7 @@
     <node role="usedSatchel" roleId="g0a9.4521199767040213534" type="g0a9.SatchelImport" typeId="g0a9.4521199767040192981" id="6408533231781022048">
       <link role="satchel" roleId="g0a9.4521199767040192982" targetNodeId="1820559564970883869" resolveInfo="Skyrim's natural resources" />
     </node>
-    <node role="potion" roleId="g0a9.6612588870388087910" type="g0a9.Potion" typeId="g0a9.1207545486242702954" id="6408533231781022049">
+    <node role="mixture" roleId="g0a9.6612588870388087910" type="g0a9.Potion" typeId="g0a9.1207545486242702954" id="6408533231781022049">
       <property name="name" nameId="tpck.1169194664001" value="Healing Potion #1" />
       <node role="recipe" roleId="g0a9.6612588870388080426" type="g0a9.IngredientList" typeId="g0a9.6612588870388079545" id="6408533231781022050">
         <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="6408533231781022116">
@@ -2530,7 +2530,7 @@
         <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="6408533231781022079" resolveInfo="Restore Health" />
       </node>
     </node>
-    <node role="potion" roleId="g0a9.6612588870388087910" type="g0a9.Potion" typeId="g0a9.1207545486242702954" id="6408533231781022122">
+    <node role="mixture" roleId="g0a9.6612588870388087910" type="g0a9.Potion" typeId="g0a9.1207545486242702954" id="6408533231781022122">
       <property name="name" nameId="tpck.1169194664001" value="Healing Potion #2" />
       <node role="recipe" roleId="g0a9.6612588870388080426" type="g0a9.IngredientList" typeId="g0a9.6612588870388079545" id="6408533231781022123">
         <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="6408533231781022127">
@@ -2550,7 +2550,7 @@
         <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="6408533231781022079" resolveInfo="Restore Health" />
       </node>
     </node>
-    <node role="potion" roleId="g0a9.6612588870388087910" type="g0a9.Potion" typeId="g0a9.1207545486242702954" id="6408533231781022139">
+    <node role="mixture" roleId="g0a9.6612588870388087910" type="g0a9.Potion" typeId="g0a9.1207545486242702954" id="6408533231781022139">
       <property name="name" nameId="tpck.1169194664001" value="Rare Effect Potion" />
       <node role="recipe" roleId="g0a9.6612588870388080426" type="g0a9.IngredientList" typeId="g0a9.6612588870388079545" id="6408533231781022140">
         <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="6408533231781022145">
@@ -2573,7 +2573,7 @@
         <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="6408533231781022081" resolveInfo="Resist Poison" />
       </node>
     </node>
-    <node role="potion" roleId="g0a9.6612588870388087910" type="g0a9.Poison" typeId="g0a9.1207545486242702955" id="6408533231781022151">
+    <node role="mixture" roleId="g0a9.6612588870388087910" type="g0a9.Poison" typeId="g0a9.1207545486242702955" id="6408533231781022151">
       <property name="name" nameId="tpck.1169194664001" value="Attacking Health #1" />
       <node role="recipe" roleId="g0a9.6612588870388080426" type="g0a9.IngredientList" typeId="g0a9.6612588870388079545" id="6408533231781022152">
         <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="6408533231781022157">
@@ -2604,7 +2604,7 @@
     <node role="usedSatchel" roleId="g0a9.4521199767040213534" type="g0a9.SatchelImport" typeId="g0a9.4521199767040192981" id="1110625020859092768">
       <link role="satchel" roleId="g0a9.4521199767040192982" targetNodeId="1820559564970883869" resolveInfo="Skyrim's natural resources" />
     </node>
-    <node role="potion" roleId="g0a9.6612588870388087910" type="g0a9.Potion" typeId="g0a9.1207545486242702954" id="1110625020859092769">
+    <node role="mixture" roleId="g0a9.6612588870388087910" type="g0a9.Potion" typeId="g0a9.1207545486242702954" id="1110625020859092769">
       <property name="name" nameId="tpck.1169194664001" value="Healing Potion #1" />
       <node role="recipe" roleId="g0a9.6612588870388080426" type="g0a9.IngredientList" typeId="g0a9.6612588870388079545" id="1110625020859092770">
         <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="1110625020859092771">
@@ -2621,7 +2621,7 @@
         <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="1307545486242940000" resolveInfo="Gesundheit wiederherstellen" />
       </node>
     </node>
-    <node role="potion" roleId="g0a9.6612588870388087910" type="g0a9.Potion" typeId="g0a9.1207545486242702954" id="1110625020859092775">
+    <node role="mixture" roleId="g0a9.6612588870388087910" type="g0a9.Potion" typeId="g0a9.1207545486242702954" id="1110625020859092775">
       <property name="name" nameId="tpck.1169194664001" value="Healing Potion #2" />
       <node role="recipe" roleId="g0a9.6612588870388080426" type="g0a9.IngredientList" typeId="g0a9.6612588870388079545" id="1110625020859092776">
         <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="1110625020859092777">
@@ -2641,7 +2641,7 @@
         <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="1307545486242940000" resolveInfo="Gesundheit wiederherstellen" />
       </node>
     </node>
-    <node role="potion" roleId="g0a9.6612588870388087910" type="g0a9.Potion" typeId="g0a9.1207545486242702954" id="1110625020859092782">
+    <node role="mixture" roleId="g0a9.6612588870388087910" type="g0a9.Potion" typeId="g0a9.1207545486242702954" id="1110625020859092782">
       <property name="name" nameId="tpck.1169194664001" value="Rare Effect Potion" />
       <node role="recipe" roleId="g0a9.6612588870388080426" type="g0a9.IngredientList" typeId="g0a9.6612588870388079545" id="1110625020859092783">
         <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="1110625020859092784">
@@ -2664,7 +2664,7 @@
         <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="1307545486242950000" resolveInfo="Giftresistenz" />
       </node>
     </node>
-    <node role="potion" roleId="g0a9.6612588870388087910" type="g0a9.Poison" typeId="g0a9.1207545486242702955" id="1110625020859092790">
+    <node role="mixture" roleId="g0a9.6612588870388087910" type="g0a9.Poison" typeId="g0a9.1207545486242702955" id="1110625020859092790">
       <property name="name" nameId="tpck.1169194664001" value="Attacking Health #1" />
       <node role="recipe" roleId="g0a9.6612588870388080426" type="g0a9.IngredientList" typeId="g0a9.6612588870388079545" id="1110625020859092791">
         <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="1110625020859092792">

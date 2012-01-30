@@ -24,12 +24,12 @@
     <node type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="6408533231781132401">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="mixture" />
       <property name="name" nameId="tpck.1169194664001" value="resolve_aliases_in_mixture" />
-      <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="g0a9.6612588870388073287" resolveInfo="Mixture" />
+      <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="g0a9.1098823917305284921" resolveInfo="IMixture" />
     </node>
     <node type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="1110625020859092798">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="mixture" />
-      <property name="name" nameId="tpck.1169194664001" value="resolve_aliases_in_mixturelist" />
-      <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="g0a9.7730761602172222426" resolveInfo="MixtureList" />
+      <property name="name" nameId="tpck.1169194664001" value="resolve_aliases_in_recipescroll" />
+      <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="g0a9.7730761602172222426" resolveInfo="RecipeScroll" />
     </node>
   </roots>
   <root id="6408533231781041816">
@@ -37,7 +37,7 @@
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6408533231781041818">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6408533231781117073">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6408533231781117074">
-            <property name="value" nameId="tpee.1070475926801" value="resolve aliased effect" />
+            <property name="value" nameId="tpee.1070475926801" value="Resolve aliased effect" />
           </node>
         </node>
       </node>
@@ -96,7 +96,7 @@
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6408533231781118881">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6408533231781118899">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6408533231781118900">
-            <property name="value" nameId="tpee.1070475926801" value="resolve aliased ingredient" />
+            <property name="value" nameId="tpee.1070475926801" value="Resolve aliased ingredient" />
           </node>
         </node>
       </node>
@@ -155,7 +155,7 @@
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6408533231781132403">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6408533231781132421">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6408533231781132422">
-            <property name="value" nameId="tpee.1070475926801" value="resolve aliases" />
+            <property name="value" nameId="tpee.1070475926801" value="Resolve aliases" />
           </node>
         </node>
       </node>
@@ -165,8 +165,8 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6408533231781132936">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6408533231781132938">
             <node role="operand" roleId="tpee.1197027771414" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="6408533231781132937" />
-            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="6408533231781132942">
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="8vxu.6408533231781132929" resolveInfo="resolveAliases" />
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="1098823917305338185">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="8vxu.1098823917305313474" resolveInfo="resolveAliases" />
             </node>
           </node>
         </node>
@@ -178,7 +178,7 @@
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="1110625020859092800">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1110625020859101267">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1110625020859101268">
-            <property name="value" nameId="tpee.1070475926801" value="resolve aliases" />
+            <property name="value" nameId="tpee.1070475926801" value="Resolve aliases" />
           </node>
         </node>
       </node>
