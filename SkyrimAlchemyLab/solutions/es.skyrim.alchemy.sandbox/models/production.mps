@@ -24,6 +24,9 @@
     <node type="g0a9.MixtureList" typeId="g0a9.7730761602172222426" id="6408533231781022046">
       <property name="name" nameId="tpck.1169194664001" value="Useful Potions" />
     </node>
+    <node type="g0a9.MixtureList" typeId="g0a9.7730761602172222426" id="1110625020859092766">
+      <property name="name" nameId="tpck.1169194664001" value="Useful Potions Translated" />
+    </node>
   </roots>
   <root id="1207545486242716659">
     <node role="effect" roleId="g0a9.1207545486242556213" type="g0a9.Effect" typeId="g0a9.296901729014133200" id="1307545486242710000">
@@ -2591,6 +2594,97 @@
       </node>
       <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="6408533231781022156">
         <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="6408533231781022057" resolveInfo="Weakness to Poison" />
+      </node>
+    </node>
+  </root>
+  <root id="1110625020859092766">
+    <node role="usedSatchel" roleId="g0a9.4521199767040213534" type="g0a9.SatchelImport" typeId="g0a9.4521199767040192981" id="1110625020859092767">
+      <link role="satchel" roleId="g0a9.4521199767040192982" targetNodeId="1207545486242716656" resolveInfo="Skyrims natürliche Ressourcen" />
+    </node>
+    <node role="usedSatchel" roleId="g0a9.4521199767040213534" type="g0a9.SatchelImport" typeId="g0a9.4521199767040192981" id="1110625020859092768">
+      <link role="satchel" roleId="g0a9.4521199767040192982" targetNodeId="1820559564970883869" resolveInfo="Skyrim's natural resources" />
+    </node>
+    <node role="potion" roleId="g0a9.6612588870388087910" type="g0a9.Potion" typeId="g0a9.1207545486242702954" id="1110625020859092769">
+      <property name="name" nameId="tpck.1169194664001" value="Healing Potion #1" />
+      <node role="recipe" roleId="g0a9.6612588870388080426" type="g0a9.IngredientList" typeId="g0a9.6612588870388079545" id="1110625020859092770">
+        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="1110625020859092771">
+          <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="1400000000000000036" resolveInfo="Blaue Bergblume" />
+        </node>
+        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="1110625020859092772">
+          <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="1400000000000000540" resolveInfo="Weizen" />
+        </node>
+      </node>
+      <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="1110625020859092773">
+        <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="1307545486242930000" resolveInfo="Gesundheit verstärken" />
+      </node>
+      <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="1110625020859092774">
+        <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="1307545486242940000" resolveInfo="Gesundheit wiederherstellen" />
+      </node>
+    </node>
+    <node role="potion" roleId="g0a9.6612588870388087910" type="g0a9.Potion" typeId="g0a9.1207545486242702954" id="1110625020859092775">
+      <property name="name" nameId="tpck.1169194664001" value="Healing Potion #2" />
+      <node role="recipe" roleId="g0a9.6612588870388080426" type="g0a9.IngredientList" typeId="g0a9.6612588870388079545" id="1110625020859092776">
+        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="1110625020859092777">
+          <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="1400000000000000036" resolveInfo="Blaue Bergblume" />
+        </node>
+        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="1110625020859092778">
+          <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="1400000000000000378" resolveInfo="Riesenzeh" />
+        </node>
+        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="1110625020859092779">
+          <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="1400000000000000264" resolveInfo="Koboldschemel" />
+        </node>
+      </node>
+      <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="1110625020859092780">
+        <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="1307545486242930000" resolveInfo="Gesundheit verstärken" />
+      </node>
+      <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="1110625020859092781">
+        <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="1307545486242940000" resolveInfo="Gesundheit wiederherstellen" />
+      </node>
+    </node>
+    <node role="potion" roleId="g0a9.6612588870388087910" type="g0a9.Potion" typeId="g0a9.1207545486242702954" id="1110625020859092782">
+      <property name="name" nameId="tpck.1169194664001" value="Rare Effect Potion" />
+      <node role="recipe" roleId="g0a9.6612588870388080426" type="g0a9.IngredientList" typeId="g0a9.6612588870388079545" id="1110625020859092783">
+        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="1110625020859092784">
+          <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="1400000000000000096" resolveInfo="Drachenbaum" />
+        </node>
+        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="1110625020859092785">
+          <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="1400000000000000432" resolveInfo="Schlammkrabben Chitin" />
+        </node>
+        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="1110625020859092786">
+          <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="1400000000000000498" resolveInfo="Trollfett" />
+        </node>
+      </node>
+      <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="1110625020859092787">
+        <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="1307545486243220000" resolveInfo="Zweihändig verstärken" />
+      </node>
+      <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="1110625020859092788">
+        <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="1307545486242880000" resolveInfo="Feuerresistenz" />
+      </node>
+      <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="1110625020859092789">
+        <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="1307545486242950000" resolveInfo="Giftresistenz" />
+      </node>
+    </node>
+    <node role="potion" roleId="g0a9.6612588870388087910" type="g0a9.Poison" typeId="g0a9.1207545486242702955" id="1110625020859092790">
+      <property name="name" nameId="tpck.1169194664001" value="Attacking Health #1" />
+      <node role="recipe" roleId="g0a9.6612588870388080426" type="g0a9.IngredientList" typeId="g0a9.6612588870388079545" id="1110625020859092791">
+        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="1110625020859092792">
+          <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="1400000000000000486" resolveInfo="Todesglockenblume" />
+        </node>
+        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="1110625020859092793">
+          <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="1400000000000000372" resolveInfo="Riesenflechte" />
+        </node>
+        <node role="ingredient" roleId="g0a9.6612588870388080416" type="g0a9.IngredientReference" typeId="g0a9.6612588870388073292" id="1110625020859092794">
+          <link role="ingredient" roleId="g0a9.6612588870388073293" targetNodeId="1400000000000000462" resolveInfo="Skeeverschwanz" />
+        </node>
+      </node>
+      <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="1110625020859092795">
+        <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="1307545486242920000" resolveInfo="Gesundheit senken" />
+      </node>
+      <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="1110625020859092796">
+        <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="1820559564970883864" resolveInfo="Dauerhafter Gesundheitsschaden" />
+      </node>
+      <node role="effect" roleId="g0a9.2039275433489786449" type="g0a9.EffectReference" typeId="g0a9.6612588870387988288" id="1110625020859092797">
+        <link role="effect" roleId="g0a9.6612588870387988289" targetNodeId="1307545486242740000" resolveInfo="Anfälligkeit für Gift" />
       </node>
     </node>
   </root>

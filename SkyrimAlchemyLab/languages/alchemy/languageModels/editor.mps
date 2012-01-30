@@ -372,6 +372,7 @@
           <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="6408533231780759734" resolveInfo="keyword" />
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="6612588870388123820">
+          <property name="allowEmptyText" nameId="tpc2.1140114345053" value="true" />
           <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="g0a9.6612588870388123806" resolveInfo="price" />
         </node>
         <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="6612588870388123815" />
@@ -520,6 +521,7 @@
           <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="6408533231780759734" resolveInfo="keyword" />
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="1207545486242702983">
+          <property name="allowEmptyText" nameId="tpc2.1140114345053" value="true" />
           <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="g0a9.6612588870388123806" resolveInfo="price" />
         </node>
         <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="1207545486242702984" />
@@ -597,6 +599,7 @@
           <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="6408533231780759734" resolveInfo="keyword" />
         </node>
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="1207545486242703019">
+          <property name="allowEmptyText" nameId="tpc2.1140114345053" value="true" />
           <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="g0a9.6612588870388123806" resolveInfo="price" />
         </node>
         <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="1207545486242703020" />
