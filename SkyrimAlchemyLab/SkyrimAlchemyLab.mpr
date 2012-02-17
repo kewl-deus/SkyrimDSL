@@ -7,6 +7,8 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="${project}/languages/alchemy/alchemy.mpl" />
+      <modulePath path="${project}/solutions/SkyrimAlchemyLab.build/SkyrimAlchemyLab.build.msd" />
+      <modulePath path="${project}/solutions/SkyrimAlchemyLab.custombuild/SkyrimAlchemyLab.custombuild.msd" />
       <modulePath path="${project}/solutions/es.skyrim.alchemy.sandbox/es.skyrim.alchemy.sandbox.msd" />
     </projectModules>
     <genConfs />

@@ -1,0 +1,70 @@
+<project name="SkyrimAlchemyLab-default" default="main">
+  <property file="${ant.file}/../SkyrimAlchemyLab.properties" />
+  <property file="${mps_home}/build.number" />
+  <fail unless="version" message="Property version unspecified." />
+  <import file="${ant.file.SkyrimAlchemyLab-default}/../SkyrimAlchemyLab-compile.xml" />
+  <import file="${ant.file.SkyrimAlchemyLab-default}/../help-build.xml" />
+  <import file="${ant.file.SkyrimAlchemyLab-default}/../SkyrimAlchemyLab-languages.xml" />
+  <target name="main" depends="compile,clean.before,folders.create,do.the.job,clean.after" />
+  <target name="compile">
+    <antcall target="compile.all" />
+  </target>
+  <target name="clean.before" depends="compile">
+    <delete dir="${deploy.dir}" />
+    <tstamp />
+  </target>
+  <target name="folders.create" depends="clean.before">
+    <mkdir dir="${deploy.dir}" />
+    <mkdir dir="${deploy.dir}/MPS/lib/help-build.add.libraries_a" />
+    <mkdir dir="${deploy.dir}/MPS/lib" />
+    <mkdir dir="${deploy.dir}/MPS/license" />
+    <mkdir dir="${deploy.dir}/MPS/help-build.append.mps.version" />
+    <mkdir dir="${deploy.dir}/MPS/SkyrimAlchemyLab" />
+    <mkdir dir="${deploy.dir}/MPS" />
+    <mkdir dir="${deploy.dir}/help-build.unpack.buildtools.zip_a" />
+  </target>
+  <target name="do.the.job" depends="folders.create">
+    <copy todir="${deploy.dir}/MPS">
+      <fileset dir="${mps_home}" excludes="samples/**, build/**, **/MPS-buildTools.zip, " />
+    </copy>
+    <copy todir="${deploy.dir}/MPS/lib/help-build.add.libraries_a">
+      <fileset dir="${mps_home}/lib" />
+    </copy>
+    <antcall target="help-build.add.libraries_a" inheritall="true">
+      <param name="deploy.dir" value="${deploy.dir}" />
+      <param name="input.dir" value="${deploy.dir}/MPS/lib/help-build.add.libraries_a" />
+      <param name="output.dir" value="${deploy.dir}/MPS/lib" />
+      <param name="base_dir" value="${base_dir}" />
+    </antcall>
+    <delete dir="${deploy.dir}/MPS/lib/help-build.add.libraries_a" />
+    <mkdir dir="${deploy.dir}/MPS/lib" />
+    <copy todir="${deploy.dir}/MPS/license">
+      <fileset dir="${mps_home}/license" />
+    </copy>
+    <echo file="${deploy.dir}/MPS/help-build.append.mps.version/build.number">date=${DSTAMP}</echo>
+    <antcall target="help-build.append.mps.version" inheritall="true">
+      <param name="deploy.dir" value="${deploy.dir}" />
+      <param name="input.dir" value="${deploy.dir}/MPS/help-build.append.mps.version" />
+      <param name="output.dir" value="${deploy.dir}/MPS" />
+      <param name="base_dir" value="${base_dir}" />
+    </antcall>
+    <delete dir="${deploy.dir}/MPS/help-build.append.mps.version" />
+    <copy file="${mps_home}/readme.txt" tofile="${deploy.dir}/MPS/readme.mps.txt" />
+    <echo file="${deploy.dir}/MPS/readme.txt" append="true">This package contains JetBrains MPS ${version} packaged with libraries:${line.separator}</echo>
+    <echo file="${deploy.dir}/MPS/readme.txt" append="true">${line.separator}</echo>
+    <echo file="${deploy.dir}/MPS/readme.txt" append="true">library skyrimalchemylab in folder SkyrimAlchemyLab/${line.separator}</echo>
+    <echo file="${deploy.dir}/MPS/readme.txt" append="true">    es.skyrim.alchemy${line.separator}</echo>
+    <echo file="${deploy.dir}/MPS/readme.txt" append="true">${line.separator}</echo>
+    <antcall target="SkyrimAlchemyLab-languages.pack.es.skyrim.alchemy" />
+    <mkdir dir="${deploy.dir}/MPS/SkyrimAlchemyLab" />
+    <mkdir dir="${deploy.dir}/MPS" />
+    <antcall target="help-build.unpack.buildtools.zip_a" inheritall="true">
+      <param name="deploy.dir" value="${deploy.dir}" />
+      <param name="input.dir" value="${deploy.dir}/help-build.unpack.buildtools.zip_a" />
+      <param name="output.dir" value="${deploy.dir}/" />
+      <param name="base_dir" value="${base_dir}" />
+    </antcall>
+    <delete dir="${deploy.dir}/help-build.unpack.buildtools.zip_a" />
+  </target>
+  <target name="clean.after" depends="do.the.job" />
+</project>

@@ -30,7 +30,7 @@
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2039275433489633938">
         <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="2039275433489715777">
           <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="2039275433489784164">
-            <property name="value" nameId="2omo.1237305576108" value="EffectTome" />
+            <property name="value" nameId="2omo.1237305576108" value="EffectTome " />
           </node>
           <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="2039275433489784166">
             <property name="value" nameId="2omo.1237305576108" value="&quot;" />
