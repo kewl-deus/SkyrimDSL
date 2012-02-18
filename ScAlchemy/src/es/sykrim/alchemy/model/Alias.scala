@@ -2,7 +2,9 @@ package es.sykrim.alchemy.model
 
 trait Aliasable[T] {
 
-  def aliasedType: T
+  self : T =>
+
+  type AliasedType = T
 
 }
 

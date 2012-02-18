@@ -2,23 +2,28 @@ package es.sykrim.alchemy.syntax
 
 import es.sykrim.alchemy.model.Effect
 
-class EffectBuilder(var name: String) {
+case class effect(val name: String){
 
-  protected var description: String = ""
-  protected var positive: Boolean = true
+//  def isPositive = new Effect(name, "", true)
+//  def isNegative = new Effect(name, "", false)
 
-  def + = { this.positive = true; this }
+  def + = new Effect(name, "", true)
+  def - = new Effect(name, "", false)
 
-  def - = { this.positive = false; this }
-
-  def + (description: String) = { this.positive = true; this.description = description; this }
-
-  def - (description: String) = {  this.positive = false; this.description = description; this }
-
+  def does(b: Boolean) = new Effect(name, "", b)
 }
 
-object EffectBuilder {
-  def effect(name:String) = new EffectBuilder(name)
+object effect {
+  val fortify = true
+  val weaken = false
+}
 
-  implicit def builderToEffect(eb: EffectBuilder) = new Effect(eb.name, eb.description, eb.positive)
+object positive{
+  def effect(name: String) = new Effect(name, "", true)
+  def effect(nameDesc: (String, String)) = new Effect(nameDesc._1, nameDesc._2, true)
+}
+
+object negative{
+  def effect(name: String) = new Effect(name, "", false)
+  def effect(nameDesc: (String, String)) = new Effect(nameDesc._1, nameDesc._2, false)
 }
