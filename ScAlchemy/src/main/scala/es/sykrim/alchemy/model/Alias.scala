@@ -8,6 +8,6 @@ trait Aliasable[T] {
 
 }
 
-class Alias(val name: String, val aliased: String) {
+class Alias[A <: Aliasable[A]](val name: String, val aliased: A) {
 
 }
